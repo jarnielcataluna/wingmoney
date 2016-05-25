@@ -3,7 +3,17 @@ h1 { font-size: 60px; line-height:68px; }
 h2 { font-size: 40px; line-height:48px; }
 h3 { font-size: 30px; line-height:38px; }
 h4 { font-size: 24px; }
-h5 { font-size: 0.83em; }
+h5 { font-size: 20px; }
 h6 { font-size: 0.67em; }
 .par p { padding:10px 0px; }
 .par2 p { padding:5px 0px; }
+
+
+@media only screen and (max-width: 767px) {
+
+
+	h1 { font-size: 40px; line-height:48px; }
+	h2 { font-size: 30px; line-height:38px; }
+	h3 { font-size: 26px; line-height:32px; }
+	h4 { font-size: 22px; }
+}

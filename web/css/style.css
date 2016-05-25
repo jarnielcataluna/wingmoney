@@ -5957,7 +5957,7 @@ h4 {
 }
 
 h5 {
-  font-size: 0.83em;
+  font-size: 20px;
 }
 
 h6 {
@@ -5970,6 +5970,24 @@ h6 {
 
 .par2 p {
   padding: 5px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  h4 {
+    font-size: 22px;
+  }
 }
 
 /** CSS for pace preloader **/
@@ -6018,6 +6036,7 @@ body:before, body:after {
 html, body {
   height: 100%;
   min-height: 100%;
+  min-width: 1100px;
 }
 
 .hide {
@@ -6055,6 +6074,8 @@ html, body {
   height: 100%;
   height: auto !important;
   min-height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 header {
@@ -6338,6 +6359,10 @@ header {
   background: #b0c025;
 }
 
+.co-blue {
+  color: #0098d7;
+}
+
 .btn {
   padding: 10px 50px;
   color: #ffffff;
@@ -6350,6 +6375,7 @@ header {
   position: relative;
   border: 2px solid transparent;
   right: 0;
+  cursor: pointer;
 }
 
 .btn.btn-green {
@@ -6365,6 +6391,10 @@ header {
 .btn.btn-white {
   background: transparent;
   border: 2px solid #ffffff;
+}
+
+.btn.btn-blue {
+  background: #0098d7;
 }
 
 .btn.btn-orange {
@@ -6413,7 +6443,9 @@ header {
 }
 
 .signup-fb {
-  margin: 10px 0;
+  margin: 10px auto;
+  text-align: center;
+  max-width: 301px;
 }
 
 .signup-fb a {
@@ -6659,10 +6691,10 @@ header {
 .wing-form-wrap {
   max-width: 321px;
   position: absolute;
-  right: 0;
+  right: 15px;
   padding: 15px 10px;
   background: rgba(0, 152, 215, 0.8);
-  margin-top: 250px;
+  top: -300px;
 }
 
 .wing-form-wrap h3 {
@@ -6761,6 +6793,7 @@ header {
   height: 650px;
   position: relative;
   overflow: visible;
+  width: 100%;
   z-index: 99;
 }
 
@@ -6772,6 +6805,7 @@ header {
   height: 650px;
   background: transparent;
   position: relative;
+  width: 100%;
 }
 
 .banner-wrap h1 {
@@ -6789,10 +6823,16 @@ header {
 
 .features {
   color: #ffffff;
+  position: relative;
+  z-index: 88;
 }
 
 .features .sec-title {
   color: #ffffff;
+}
+
+.features .container {
+  position: relative;
 }
 
 .features .feature-tag {
@@ -7277,6 +7317,114 @@ header {
   margin-right: 8px;
 }
 
+.final-step-form .input-wrap {
+  max-width: 450px;
+  margin: 0 auto 30px;
+}
+
+.final-step-form .input-wrap input[type="text"] {
+  background: #a7a9ac;
+}
+
+.final-step-wrap {
+  min-height: 305px;
+}
+
+.thank-you-page header {
+  position: relative;
+  background: url("../images/thankyou-banner.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 8px 0;
+}
+
+.ty-text {
+  padding-top: 30px;
+  display: none;
+}
+
+.ty-text h2 {
+  color: #b0c025;
+  font-size: 60px;
+  line-height: 68px;
+}
+
+.other-stuff {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px dashed #8c8d8e;
+}
+
+.stuff-col {
+  margin-top: 30px;
+}
+
+.stuff-wrap h5 {
+  margin-bottom: 6px;
+}
+
+.stuff-wrap img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.stuff-wrap:after {
+  content: '';
+  display: block;
+  float: none;
+  clear: both;
+}
+
+.stuff-wrap .left {
+  width: 50%;
+}
+
+.stuff-wrap .right {
+  width: 50%;
+}
+
+.stuff-wrap .btn {
+  padding: 6px 24px;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.middle-user {
+  border: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+}
+
+.s-card-holder {
+  padding: 7px;
+  background: #b0c025;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.s-card-holder img {
+  width: 100%;
+  height: auto;
+}
+
+.mainsite-links {
+  margin-top: 8px;
+}
+
+.mainsite-links li {
+  display: block;
+  padding: 3px 0;
+}
+
+.mainsite-links li a {
+  display: inline-block;
+  font-size: 20px;
+  color: #0098d7;
+}
+
 @media only screen and (max-width: 1200px) {
   .enjoy-discount .container {
     position: static;
@@ -7292,6 +7440,9 @@ header {
   }
   .wing-ket-img {
     padding-right: 15px;
+  }
+  body, html {
+    min-width: 320px;
   }
 }
 
@@ -7311,6 +7462,10 @@ header {
 }
 
 @media only screen and (max-width: 991px) {
+  .banner-wrap h1 {
+    font-size: 40px;
+    line-height: 62px;
+  }
   .wing-benifits-img {
     width: 120px;
     height: 120px;
@@ -7346,6 +7501,215 @@ header {
   }
   .store-partners {
     padding-bottom: 0;
+  }
+  .share-this-wrap label {
+    font-size: 24px;
+  }
+  .share-this-wrap a {
+    width: 53px;
+    height: 53px;
+    line-height: 53px;
+  }
+  .email-link {
+    font-size: 16px;
+  }
+  /*** Thank You Page ***/
+  .other-stuff .stuff-wrap .left, .other-stuff .stuff-wrap .right {
+    width: 100%;
+    float: none;
+    clear: both;
+    padding: 0px 0px 16px;
+  }
+  .other-stuff .middle-user {
+    border-right: 0;
+    border-left: 0;
+  }
+  .features .feature-tag {
+    padding-right: 0;
+  }
+  .features ul li {
+    padding-left: 24px;
+  }
+  .features ul li a {
+    font-size: 16px;
+  }
+  .features ul li:before {
+    width: 19px;
+    height: 17px;
+    background-size: 17px auto;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sec-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .share-this-wrap {
+    text-align: center;
+  }
+  .footer-bottom .text-right {
+    text-align: center;
+  }
+  .footer-bottom {
+    padding: 10px 0;
+  }
+  .ty-text h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .ty-text h2 br {
+    display: none;
+  }
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  .wing-form-wrap {
+    max-width: 100%;
+    margin: 0 auto 40px;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 15px;
+  }
+  .banner-wrap {
+    height: 450px;
+  }
+  .banner-wrap .parallax-window {
+    height: 450px;
+  }
+  .features {
+    padding-top: 0;
+  }
+  .features .container {
+    padding: 0;
+  }
+  .features .row {
+    margin: 0;
+  }
+  .wing-benifits ul li {
+    width: 48%;
+  }
+  .wing-account.section-pad {
+    padding-top: 20px;
+  }
+  .dis-model {
+    display: none;
+  }
+  .enjoy-discount .ed-text {
+    padding-right: 30px;
+  }
+  .wing-ket-img {
+    width: 100%;
+    float: none;
+    clear: both;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .wing-ket-info {
+    float: none;
+    clear: both;
+    text-align: center;
+  }
+  .wm-content-text {
+    margin-bottom: 30px;
+  }
+  .footer-top {
+    text-align: center;
+  }
+  .enjoy-discount .container {
+    padding: 20px 0;
+  }
+  .pay-online-partners {
+    padding: 30px 0 20px;
+  }
+  .pay-bills {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .banner-wrap {
+    height: 313px;
+  }
+  .banner-wrap .parallax-window {
+    height: 100%;
+  }
+  .banner-wrap h1 {
+    font-size: 28px;
+    line-height: 42px;
+    margin-top: 20px;
+  }
+  .banner-wrap h1 span {
+    line-height: 38px;
+  }
+  .features ul li {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .other-stuff .col-xs-6 {
+    width: 100%;
+  }
+  .other-stuff .stuff-wrap .left, .other-stuff .stuff-wrap .right {
+    text-align: center;
+  }
+  .other-stuff .stuff-wrap .btn {
+    float: none;
+    clear: both;
+  }
+  .sec-title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+  .sec-tagline {
+    padding: 0px;
+  }
+  .enjoy-discount h2 {
+    margin-bottom: 10px;
+  }
+  .middle-user {
+    margin: 15px 0;
+  }
+  .section-pad {
+    padding: 20px 0;
+  }
+  .final-step-form .input-wrap {
+    margin-bottom: 10px;
+  }
+  .ty-text {
+    padding-top: 15px;
+  }
+  .apply-now-sec {
+    padding-bottom: 0;
+  }
+  .signup-fb .fa {
+    padding: 0 10px 0 10px;
+  }
+  .features {
+    padding-top: 0;
+  }
+  .wing-benifits ul li {
+    width: 100%;
+  }
+  .wing-benifits-img {
+    margin-bottom: 15px;
+  }
+  .wing-benifits-info h3 {
+    margin-bottom: 10px;
+  }
+  .pay-online-partners ul li img {
+    max-width: 75%;
   }
 }
 

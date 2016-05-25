@@ -17,12 +17,15 @@ $(document).ready(function() {
 	resize();
     initCustomForm();
 
-    $( "#birthday" ).datepicker({
-        changeMonth: true,
-        changeYear: true,
-        yearRange: '1945:2009',
-        defaultDate: '01/01/1980'
-    });
+    if($('#birthday').length > 0 ){
+        $('#birthday').datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1945:2009',
+            defaultDate: '01/01/1980'
+        });
+    }
+    
 
     if($('html').hasClass('desktop')) {
         $('.animated').appear(function() {
@@ -97,7 +100,90 @@ $(document).ready(function() {
         $(this).closest('.input-wrap').removeClass('error');
     });
 
+    $('.wing-form').submit(function(e){
+        $('.input-wrap').addClass('error');
+        isvalidate = false;
 
+
+        if( IsEmail($('#account-email').val() )) {
+            $('#account-email').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( !$('#last-name').val() == '') {
+            $('#last-name').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( !$('#first-name').val() == '') {
+            $('#first-name').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( !$('#id-number').val() == '') {
+            $('#id-number').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( !$('#birthday').val() == '') {
+            $('#birthday').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( !$('#contact-num').val() == '') {
+            $('#contact-num').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( $('.gender select').val() != '0'){
+            $('.gender').removeClass('error');
+            isvalidate = true;
+
+        } else {
+            isvalidate = false;
+        }
+
+        if( $('.select-branch select').val() != '0'){
+            $('.select-branch').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( $('.id-type select').val() != '0') {
+            $('.id-type').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        console.log(isvalidate);
+
+        if( isvalidate == true) {
+            return true;
+        } else {
+            e.preventDefault();
+        }
+    })
+
+    // Verification Field
+    $('.final-step-form').submit(function(e){
+        e.preventDefault();
+        $('.final-step').hide();
+        $('.ty-text').show();
+    });
 });
 
 $(window).load(function() {
