@@ -278,7 +278,7 @@ function scrollToDiv(element){
     var totalScroll = offsetTop;
     var headerH = $('header').outerHeight(false);
     $('body, html').animate({
-        scrollTop: totalScroll - headerH
+        scrollTop: totalScroll - headerH + 1
     }, 500);
 }
 
