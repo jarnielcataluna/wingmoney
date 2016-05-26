@@ -200,19 +200,20 @@ $(document).ready(function(){
                 data: data,
 
                 success: function (response) {
-                    var data = jQuery.parseJSON(response);
-                    console.log(data);
-
-                    var fb_details = {};
-                    fb_details.fb_uid = data.fb_uid;
-                    fb_details.fname = data.fb_fname;
-                    fb_details.lname = data.fb_lname;
-                    fb_details.email = data.fb_email;
-                    fb_details.picture = data.fb_profile_pic;
-
-                    writeUserData(data.lname, data.fname, data.email, data.contact, data.gender, data.id_type, data.id_number, data.dob, data.store_branch, data.currency, fb_details);
-                    $('.wing-form-wrap').addClass('remove');
-                    window.location('thankyou.php');
+                    //var data = jQuery.parseJSON(response);
+                    //console.log(data);
+                    console.log(response);
+                    $('.wing-form-wrap').removeClass('overlay');
+                    //var fb_details = {};
+                    //fb_details.fb_uid = data.fb_uid;
+                    //fb_details.fname = data.fb_fname;
+                    //fb_details.lname = data.fb_lname;
+                    //fb_details.email = data.fb_email;
+                    //fb_details.picture = data.fb_profile_pic;
+                    //
+                    //writeUserData(data.lname, data.fname, data.email, data.contact, data.gender, data.id_type, data.id_number, data.dob, data.store_branch, data.currency, fb_details);
+                    //$('.wing-form-wrap').addClass('remove');
+                    window.location.assign('thankyou.php')
                 }
             });
 
