@@ -210,6 +210,11 @@ footer {}
 	}
 }
 
+#ui-datepicker-div {
+	position: absolute;
+	z-index: 9999 !important;
+}
+
 /*** WAVE EFFECT ***/
 .waves-effect {
   position: relative;
@@ -224,7 +229,7 @@ footer {}
   vertical-align: middle;
   z-index: 1;
   will-change: opacity, transform;
-  transition: all .3s ease-out;
+  @include transition(all, 0.2s, cubic-bezier(0.645, 0.045, 0.355, 1));
 }
 
 .waves-effect .waves-ripple {
@@ -624,6 +629,27 @@ a.waves-effect .waves-ripple {
 	top: -300px;
 	z-index: 9;
 	-webkit-backface-visibility: hidden;
+
+	&:before {
+		content:'';
+		width: 100%;
+		height: 100%;
+		background: rgba($coWhite, 0.6);
+		position: absolute;
+		@include transition(all, 0.5s, cubic-bezier(0.645, 0.045, 0.355, 1));
+		opacity: 0;
+		@include transform(scale(0));
+		top: 0;
+		left: 0;
+		z-index: 9;
+	}
+
+	&.overlay {
+		&:before {
+			opacity: 1;
+			@include transform(scale(1));
+		}
+	}
 
 	h3 {
 		color: $coYellow;
