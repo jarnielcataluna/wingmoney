@@ -15,20 +15,35 @@ html, body { height:100%; min-height:100%; min-width: 1100px; }
 	overflow: hidden;
 }
 
+
 header {
-	background: rgba($coWhite, 0.8);
+	background: rgba($coWhite, 0.9);
 	width: 100%;
 	position: fixed;
 	z-index: 9999;
+	-webkit-backface-visibility: hidden;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+
+	.logo {
+		display: none;
+	}
+}
+
+.parallax-mirror {
+	-webkit-backface-visibility: hidden !important;
+	visibility: hidden;
 }
 
 .menu {
 
+	text-align: right;
+
 	ul {
+
 		li {
 			
 			display: inline-block;
-			padding: 20px 10px;
+			padding: 20px 0px 20px 15px;
 
 			&:first-child {
 				padding-left: 0;
@@ -36,6 +51,32 @@ header {
 
 			a {
 				display: block;
+				color: $coBlue;
+				position: relative;
+
+				&:before {
+					content:'';
+					display: block;
+					bottom: -10px;
+					width: 100%;
+					position: absolute;
+					height: 2px;
+					background: $coBlue;
+					opacity: 1;
+					opacity: 0;
+					@include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
+				}
+			}
+
+			&.active {
+
+				a {
+
+					&:before {
+						bottom: -5px;
+						opacity: 1;
+					}
+				}
 			}
 		}
 	}
@@ -427,6 +468,11 @@ footer {}
 	}
 }
 
+.banner-text {
+	position: relative;
+	-webkit-backface-visibility: hidden;
+}
+
 
 .wing-form-wrap {
 	max-width: 321px;
@@ -435,6 +481,8 @@ footer {}
 	padding: 15px 10px;
 	background: rgba($coBlue, 0.8);
 	top: -300px;
+	z-index: 9;
+	-webkit-backface-visibility: hidden;
 
 	h3 {
 		color: $coYellow;
@@ -530,7 +578,7 @@ footer {}
 	position: relative;
 	overflow: visible;
 	width: 100%;
-	z-index: 99;
+	z-index: 77;
 
 	.container {
 		position: relative;
@@ -1203,6 +1251,63 @@ footer {}
 	}
 }
 
+
+.header-hamburger {
+	display: none;
+	float: right;
+	position: relative;
+	cursor: pointer;
+	z-index: 101;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-color: transparent;
+	margin: 20px 0;
+	right:0; 
+	@include transition(all, 0.4s, cubic-bezier(0.645, 0.045, 0.355, 1));
+}
+
+.header-hamburger span, .header-hamburger span:after, .header-hamburger span:before {
+	content: '';
+	cursor: pointer;
+	height: 3px;
+	width: 25px;
+	background: $coBlue;
+	position: absolute;
+	display: block;
+	@include transition(all, 0.2s, ease-in-out);
+	@include transform(rotate(0deg));
+}
+
+.header-hamburger span {
+	  right: 0px;
+	  top: 12px;
+}
+
+.header-hamburger span:before {
+  	top: -7px;
+}
+
+.header-hamburger span:after {
+  	top: 7px;
+}
+
+.header-hamburger.active span {
+  	background: transparent !important;
+}
+
+.header-hamburger.active span:before, .header-hamburger.active span:after {
+  	top: 0;
+}
+
+.header-hamburger.active span:before {
+  	@include transform(rotate(45deg));
+}
+
+.header-hamburger.active span:after {
+ 	@include transform(rotate(-45deg));
+}
+
 @media only screen and (max-width: 1200px) {
 
 	.enjoy-discount {
@@ -1262,6 +1367,12 @@ footer {}
 
 }
 
+@media only screen and (min-width: 992px) {
+	.menu {
+		display: block !important;
+	}
+}
+
 
 @media only screen and (max-width: 991px) {
 
@@ -1270,6 +1381,61 @@ footer {}
 		h1 {
 			font-size: 40px;
 			line-height: 62px;
+		}
+	}
+
+	.menu {
+		top: 66px;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		overflow: auto;
+		background: rgba($coWhite, 0.9);
+		text-align: center;
+		z-index: 999;
+		display: none;
+
+		ul {
+			padding-top: 30px;
+
+			li {
+				display: block;
+				float: none;
+				clear: both;
+				padding: 15px 0px 15px 15px;
+				opacity: 0;
+				@include transition(all, 0.2s, cubic-bezier(0.645, 0.045, 0.355, 1));
+				@include transform(translateY(-40px) scale(0.9));
+				font-size: 24px;
+
+				&.is-open {
+					@include transform(translateY(0px) scale(1));
+					opacity: 1;
+				}
+
+				a {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+
+	}
+
+	.header-hamburger {
+		display: block;
+	}
+
+	header {
+		.logo {
+			display: inline-block;
+			padding: 8px 0;
+
+			img {
+				width: 80px;
+			}
 		}
 	}
 
@@ -1409,6 +1575,13 @@ footer {}
 		}
 	}
 
+	.wing-form-wrap {
+
+		.required-tooltip {
+			display: none;
+		}
+	}
+
 	.footer-bottom {
 		padding: 10px 0;
 	}
@@ -1437,7 +1610,7 @@ footer {}
 		max-width: 100%;
 		margin: 0 auto 40px;
 		position: relative;
-		top: 0;
+		top: 0 !important;
 		right: 0;
 		padding: 15px;
 	}
@@ -1514,9 +1687,7 @@ footer {}
 		padding: 30px 0 20px;
 	}
 
-	.pay-bills {
-		min-height: 450px;
-	}
+	
 }
 
 @media only screen and (max-width: 640px) {
@@ -1536,7 +1707,7 @@ footer {}
 		h1 {
 			font-size: 28px;
 			line-height: 42px;
-			margin-top: 20px;
+			margin-top: 115px;
 
 			span {
 				line-height: 38px;
@@ -1546,6 +1717,18 @@ footer {}
 
 	.features ul li {
 		width: 100%;
+	}
+
+	.wing-mobile-menu {
+		margin-right: -15px;
+		margin-left: -15px;
+
+		ul li {
+			a {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
 	}
 }
 
@@ -1567,6 +1750,10 @@ footer {}
 				clear: both;
 			}
 		}
+	}
+
+	.pay-bills {
+		min-height: 450px;
 	}
 
 	.sec-title {

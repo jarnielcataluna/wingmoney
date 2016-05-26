@@ -20,6 +20,8 @@
 <section id="main-container">
 	<header>
 		<div class="container">
+			<div class="logo fl"><img src="images/wing-logo.png" alt=""></div>
+			<div class="header-hamburger"><span></span></div>
 			<div class="menu">
 				<ul>
 					<li><a href="#wing-account">Wing Account</a></li>
@@ -34,23 +36,15 @@
 	<section id="main-wrapper">
 
 		<section class="banner-wrap jq-section">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="images/banner3.jpg" data-bleed="10" naturalWidth="1400" naturalHeight="650" alt=""></div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="images/banner4.jpg" data-bleed="10" naturalWidth="1400" naturalHeight="650" alt=""></div>
 			<div class="table-wrap">
 				<div class="table-content">
 					<div class="container">
-						<div class="fl animated hiding" data-animation="fadeInLeft" data-delay="300">
+						<div class="fl banner-text animated hiding" data-animation="fadeInLeft" data-delay="300">
 							<div class="logo"><img src="images/wing-logo.png" alt=""></div>
 							<h1><span>START WITH YOUR </span><br><span>VALUE PROPOSITION </span><br><span>HERE</span></h1>
 						</div>
-						<div class="wing-form-wrap animated hiding" data-animation="fadeInUp" data-delay="300">
-							
-								<h3>Signup to Wing with these simple steps</h3>
-								<p>Creating a Wing Account in two easy steps. 1. Sign up using Facebook or just fill up this form, choose a currency and 2. tell us how you want receive your card, store pick up or get it delivered!</p>
-								<div class="signup-fb">
-									<a href="#" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign-up with Facebook</span></a>
-								</div>
-								<?php include 'form.php' ?>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -59,6 +53,15 @@
 
 		<section id="features" class="features bg-green section-pad jq-section">
 			<div class="container">
+				<div class="wing-form-wrap animated hiding" data-animation="fadeInUp" data-delay="300">
+							
+					<h3>Signup to Wing with these simple steps</h3>
+					<p>Creating a Wing Account in two easy steps. 1. Sign up using Facebook or just fill up this form, choose a currency and 2. tell us how you want receive your card, store pick up or get it delivered!</p>
+					<div class="signup-fb">
+						<a href="#" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign-up with Facebook</span></a>
+					</div>
+					<?php include 'form.php' ?>
+				</div>
 				<div class="row">
 					<div class="col-sm-8 animated hiding" data-animation="fadeInUp" data-delay="300">
 						<h2 class="sec-title">Not Just a <br>Mobile Wallet</h2>
@@ -123,7 +126,7 @@
 			<div class="enjoy-discount">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8 ed-text animated hiding" data-animation="fadeInUp">
+						<div class="col-md-8 col-sm-12 ed-text animated hiding" data-animation="fadeInUp">
 							<h2 class="sec-title">Enjoy Discounts From <br>Our Store Partners</h2>
 							<p>Get your Wing Card and use it to get discounts at Wing’s partner merchants such as restaurants, coffee shops, retail stores and more. Enjoy up to 50% discount by just showing the Wing card at our merchant partners.</p>
 						</div>
@@ -287,6 +290,7 @@
 					<div class="wm-content" id="money-transfer" style="display: block;">
 						<div class="row">
 							<div class="col-sm-6">
+								<div class="wm-content-text">
 								<h4>Wing-2-Wing <span>(Account to Account)</span> </h4>
 								<p>How to do Wing-2-Wing via your Phone:</p>
 								<ul>
@@ -299,86 +303,98 @@
 									<li>Enter "PIN", press send</li>
 								</ul>
 								<p><em>When done, both sender and receiver will instantly receive a notification by SMS.</em></p>
+								</div>
 							</div>
 							<div class="col-sm-6">
-								<h4>Wing Wei Luy <span>(Account to Non-Account)</span></h4>
-								<p>How to do Wing Wei Luy:</p>
-								<ul>
-									<li>Dial *989#</li>
-									<li>Enter your WING number xxxxxxxx</li>
-									<li>Enter 4 [WING WEI LUY]</li>
-									<li>Enter amount xxxx</li>
-									<li>Enter Recipient Phone #</li>
-									<li>Enter PIN xxxx</li>
-									<li>Communicate your passcode to the receiver (by phone/SMS)</li>
-								</ul>
-								<p><em>When done, the receiver will instantly be able to withdraw at any Wing Cash Xpress.</em></p>
+								<div class="wm-content-text">
+									<h4>Wing Wei Luy <span>(Account to Non-Account)</span></h4>
+									<p>How to do Wing Wei Luy:</p>
+									<ul>
+										<li>Dial *989#</li>
+										<li>Enter your WING number xxxxxxxx</li>
+										<li>Enter 4 [WING WEI LUY]</li>
+										<li>Enter amount xxxx</li>
+										<li>Enter Recipient Phone #</li>
+										<li>Enter PIN xxxx</li>
+										<li>Communicate your passcode to the receiver (by phone/SMS)</li>
+									</ul>
+									<p><em>When done, the receiver will instantly be able to withdraw at any Wing Cash Xpress.</em></p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="wm-content" id="bill-payment">
 						<div class="row">
 							<div class="col-sm-6">
-								
+								<div class="wm-content-text">
+								</div>
 							</div>
 							<div class="col-sm-6">
-								<h4>Wing Wei Luy <span>(Account to Non-Account)</span></h4>
-								<p>How to do Wing Wei Luy:</p>
-								<ul>
-									<li>Dial *989#</li>
-									<li>Enter your WING number xxxxxxxx</li>
-									<li>Enter 4 [WING WEI LUY]</li>
-									<li>Enter amount xxxx</li>
-									<li>Enter Recipient Phone #</li>
-									<li>Enter PIN xxxx</li>
-									<li>Communicate your passcode to the receiver (by phone/SMS)</li>
-								</ul>
-								<p><em>When done, the receiver will instantly be able to withdraw at any Wing Cash Xpress.</em></p>
+								<div class="wm-content-text">
+									<h4>Wing Wei Luy <span>(Account to Non-Account)</span></h4>
+									<p>How to do Wing Wei Luy:</p>
+									<ul>
+										<li>Dial *989#</li>
+										<li>Enter your WING number xxxxxxxx</li>
+										<li>Enter 4 [WING WEI LUY]</li>
+										<li>Enter amount xxxx</li>
+										<li>Enter Recipient Phone #</li>
+										<li>Enter PIN xxxx</li>
+										<li>Communicate your passcode to the receiver (by phone/SMS)</li>
+									</ul>
+									<p><em>When done, the receiver will instantly be able to withdraw at any Wing Cash Xpress.</em></p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="wm-content" id="online-payment">
 						<div class="row">
 							<div class="col-sm-6">
-								<h4>Wing-2-Wing <span>(Account to Account)</span> </h4>
-								<p>How to do Wing-2-Wing via your Phone:</p>
-								<ul>
-									<li>Dial *989#, press send</li>
-									<li>Enter "Wing Account Number", press send</li>
-									<li>Enter "2. WING-2-WING", press send</li>
-									<li>Select "1. Enter Wing #", press send</li>
-									<li>Enter "Receiver’s Wing Account #", press send</li>
-									<li>Enter amount (USD/KHR), press send</li>
-									<li>Enter "PIN", press send</li>
-								</ul>
-								<p><em>When done, both sender and receiver will instantly receive a notification by SMS.</em></p>
+								<div class="wm-content-text">
+									<h4>Wing-2-Wing <span>(Account to Account)</span> </h4>
+									<p>How to do Wing-2-Wing via your Phone:</p>
+									<ul>
+										<li>Dial *989#, press send</li>
+										<li>Enter "Wing Account Number", press send</li>
+										<li>Enter "2. WING-2-WING", press send</li>
+										<li>Select "1. Enter Wing #", press send</li>
+										<li>Enter "Receiver’s Wing Account #", press send</li>
+										<li>Enter amount (USD/KHR), press send</li>
+										<li>Enter "PIN", press send</li>
+									</ul>
+									<p><em>When done, both sender and receiver will instantly receive a notification by SMS.</em></p>
+								</div>
 							</div>
 							<div class="col-sm-6">
-								
+								<div class="wm-content-text"></div>
 						</div>
 					</div>
 					<div class="wm-content" id="top-up">
 						<div class="row">
 							<div class="col-sm-6">
-								<h4>Wing-2-Wing <span>(Account to Account)</span> </h4>
-								<p>How to do Wing-2-Wing via your Phone:</p>
-								<ul>
-									<li>Dial *989#, press send</li>
-									<li>Enter "Wing Account Number", press send</li>
-									
-								</ul>
-								<p><em>When done, both sender and receiver will instantly receive a notification by SMS.</em></p>
+								<div class="wm-content-text">
+									<h4>Wing-2-Wing <span>(Account to Account)</span> </h4>
+									<p>How to do Wing-2-Wing via your Phone:</p>
+									<ul>
+										<li>Dial *989#, press send</li>
+										<li>Enter "Wing Account Number", press send</li>
+										
+									</ul>
+									<p><em>When done, both sender and receiver will instantly receive a notification by SMS.</em></p>
+								</div>
 							</div>
 							<div class="col-sm-6">
-								<h4>Wing Wei Luy <span>(Account to Non-Account)</span></h4>
-								<p>How to do Wing Wei Luy:</p>
-								<ul>
-									<li>Dial *989#</li>
-									<li>Enter your WING number xxxxxxxx</li>
-									<li>Enter 4 [WING WEI LUY]</li>
-									
-								</ul>
-								<p><em>When done, the receiver will instantly be able to withdraw at any Wing Cash Xpress.</em></p>
+								<div class="wm-content-text">
+									<h4>Wing Wei Luy <span>(Account to Non-Account)</span></h4>
+									<p>How to do Wing Wei Luy:</p>
+									<ul>
+										<li>Dial *989#</li>
+										<li>Enter your WING number xxxxxxxx</li>
+										<li>Enter 4 [WING WEI LUY]</li>
+										
+									</ul>
+									<p><em>When done, the receiver will instantly be able to withdraw at any Wing Cash Xpress.</em></p>
+								</div>
 							</div>
 						</div>
 					</div>
