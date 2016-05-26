@@ -1,7 +1,7 @@
 /* CSS DOCUMENT */
 html, body { height:100%; min-height:100%; min-width: 1100px; }
 .hide { position:relative;}
-.ease,a,input[type="submit"],button { @include transition(all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)); }
+.ease,a,input[type="submit"],button { @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)); }
 .loader { position:relative; overflow:hidden; background:#fff url('../images/loading.gif') no-repeat center; }
 .auto { width:$maxWidth; margin: 0 auto; }
 * { @include box-sizing(border-box); }
@@ -15,6 +15,14 @@ html, body { height:100%; min-height:100%; min-width: 1100px; }
 	overflow: hidden;
 }
 
+body {
+	background: $coGreen;
+}
+
+
+.jq-section {
+	background: $coWhite;
+}
 
 header {
 	background: rgba($coWhite, 0.9);
@@ -22,6 +30,7 @@ header {
 	position: fixed;
 	z-index: 9999;
 	-webkit-backface-visibility: hidden;
+	height: 62px;
 	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
 
 	.logo {
@@ -35,15 +44,30 @@ header {
 }
 
 .menu {
-
+	float: right;
 	text-align: right;
 
 	ul {
 
 		li {
 			
-			display: inline-block;
-			padding: 20px 0px 20px 15px;
+			float: left;
+			position: relative;
+
+			&:before {
+				content:'';
+				display: block;
+				bottom: 0px;
+				width: 100%;
+				position: absolute;
+				height: 2px;
+				background: $coBlue;
+				opacity: 1;
+				opacity: 0;
+				@include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
+				@include transform(scale(0));
+			}
+			
 
 			&:first-child {
 				padding-left: 0;
@@ -53,29 +77,15 @@ header {
 				display: block;
 				color: $coBlue;
 				position: relative;
-
-				&:before {
-					content:'';
-					display: block;
-					bottom: -10px;
-					width: 100%;
-					position: absolute;
-					height: 2px;
-					background: $coBlue;
-					opacity: 1;
-					opacity: 0;
-					@include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
-				}
+				padding: 20px 15px;
 			}
 
 			&.active {
 
-				a {
-
-					&:before {
-						bottom: -5px;
-						opacity: 1;
-					}
+				&:before {
+					@include transform(scale(1));
+					bottom: 0px;
+					opacity: 1;
 				}
 			}
 		}
@@ -154,7 +164,7 @@ footer {}
 
 
 		&:hover {
-			background-color: transparent;
+			background: rgba($coGreen, 0.2);
 			color: $coGreen;
 			border: 2px solid $coGreen;
 		}
@@ -163,14 +173,30 @@ footer {}
 	&.btn-white {
 		background: transparent;
 		border: 2px solid $coWhite;
+
+		&:hover {
+			background: rgba($coWhite, 0.4);
+		}
 	}
 
 	&.btn-blue {
 		background: $bgBlue;
+
+		&:hover {
+			background: rgba($coWhite, 0.4);
+		}
 	}
 
 	&.btn-orange {
 		background: $bgDarkOrange;
+		color: $coWhite;
+
+		&:hover {
+			background: rgba($coOrange, 0.4);
+			color: $coOrange;
+			border: 2px solid $coOrange;
+
+		}
 	}
 
 	&.btn-block {
@@ -183,6 +209,109 @@ footer {}
 		max-width: 300px;
 	}
 }
+
+/*** WAVE EFFECT ***/
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  transition: all .3s ease-out;
+}
+
+.waves-effect .waves-ripple {
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.7s ease-out;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  pointer-events: none;
+}
+
+.waves-effect.btn-white .waves-ripple {
+  background-color: rgba($coWhite, 0.7);
+}
+
+.waves-effect.btn-orange .waves-ripple {
+  background-color: rgba($coOrange, 0.7);
+}
+
+.waves-effect.btn-green .waves-ripple {
+  background-color: rgba($coGreen, 0.7);
+}
+
+.menu .waves-effect .waves-ripple {
+  background-color: rgba($coBlue, 0.7);
+}
+
+.waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
+  border: 0;
+  font-style: normal;
+  font-size: inherit;
+  text-transform: inherit;
+  background: none;
+  color: $coWhite;
+
+}
+
+.waves-notransition {
+  transition: none !important;
+}
+
+.waves-circle {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.waves-input-wrapper {
+  vertical-align: bottom;
+}
+
+.waves-input-wrapper .waves-button-input {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.waves-circle {
+  text-align: center;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  border-radius: 50%;
+  -webkit-mask-image: none;
+}
+
+.waves-block {
+  display: block;
+}
+
+/* Firefox Bug: link not triggered */
+a.waves-effect .waves-ripple {
+  z-index: -1;
+}
+
+
+
 
 .btn-apply {
 	max-width: 180px;
@@ -233,6 +362,16 @@ footer {}
 		padding: 5px 5px;
 		height: 50px;
 		vertical-align: middle;
+
+		&:hover {
+			.fa {
+				color: $coWhite;
+			}
+
+			span {
+				border-left: 1px solid $coWhite;
+			}
+		}
 	}
 
 	.fa {
@@ -242,6 +381,7 @@ footer {}
 		padding: 0px 15px 0px 15px;
 		position: relative;
 		top: 2px;
+		@include transition(all, 0.5s, cubic-bezier(0.645, 0.045, 0.355, 1));
 	}
 
 	span {
@@ -252,6 +392,7 @@ footer {}
 		border-left: 1px solid #1e2e52;
 		font-size: 18px;
 		color: $coWhite;
+		@include transition(all, 0.5s, cubic-bezier(0.645, 0.045, 0.355, 1));
 	}
 }
 
@@ -579,6 +720,10 @@ footer {}
 	overflow: visible;
 	width: 100%;
 	z-index: 77;
+
+	&.jq-section {
+		background: transparent;
+	}
 
 	.container {
 		position: relative;
@@ -917,7 +1062,7 @@ footer {}
 .pay-bills {
 	border-top: 2px solid #dedfe0;
 	min-height: 600px;
-	background: url('../images/paybills-bg.jpg') no-repeat bottom left;
+	background: $coWhite url('../images/paybills-bg.jpg') no-repeat bottom left;
 	border-bottom: 14px solid $coBlue;
 }
 
@@ -1079,8 +1224,28 @@ footer {}
 	}
 }
 
+.apply-now-sec {
+	.btn.btn-orange {
+
+		&:hover {
+			background: rgba($coOrange, 1);
+			color: $coWhite;
+			border: 2px solid transparent;
+		}
+	}
+}
+
 .footer-top {
 	color: $coWhite;
+
+	.btn.btn-orange {
+
+		&:hover {
+			background: rgba($coOrange, 1);
+			color: $coWhite;
+			border: 2px solid transparent;
+		}
+	}
 }
 
 .logo-bot {
@@ -1385,7 +1550,7 @@ footer {}
 	}
 
 	.menu {
-		top: 66px;
+		top: 62px;
 		position: fixed;
 		height: 100%;
 		width: 100%;
@@ -1409,15 +1574,17 @@ footer {}
 				@include transform(translateY(-40px) scale(0.9));
 				font-size: 24px;
 
+				&:before {
+					display: none;
+				}
+
 				&.is-open {
 					@include transform(translateY(0px) scale(1));
 					opacity: 1;
 				}
 
 				a {
-					&:before {
-						display: none;
-					}
+					padding: 0;
 				}
 			}
 		}

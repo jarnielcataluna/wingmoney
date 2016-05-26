@@ -24,11 +24,11 @@
 			<div class="header-hamburger"><span></span></div>
 			<div class="menu">
 				<ul>
-					<li><a href="#wing-account">Wing Account</a></li>
-					<li><a href="#enjoy-discount">Enjoy Discount</a></li>
-					<li><a href="#store-partners">Payment Partners</a></li>
-					<li><a href="#">Sample</a></li>
-					<li><a href="#">Sample</a></li>
+					<li><a href="#wing-account" class="waves-effect">Wing Account</a></li>
+					<li><a href="#enjoy-discount" class="waves-effect">Enjoy Discount</a></li>
+					<li><a href="#store-partners" class="waves-effect">Payment Partners</a></li>
+					<li><a href="#" class="waves-effect">Sample</a></li>
+					<li><a href="#" class="waves-effect">Sample</a></li>
 				</ul>
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 					<h3>Signup to Wing with these simple steps</h3>
 					<p>Creating a Wing Account in two easy steps. 1. Sign up using Facebook or just fill up this form, choose a currency and 2. tell us how you want receive your card, store pick up or get it delivered!</p>
 					<div class="signup-fb">
-						<a href="#" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign-up with Facebook</span></a>
+						<a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign-up with Facebook</span></a>
 					</div>
 					<?php include 'form.php' ?>
 				</div>
@@ -199,7 +199,7 @@
 						</div>
 					</div>
 					<div class="text-center animated hiding" data-animation="fadeInUp">
-						<a href="" class="btn btn-1e btn-green text-uppercase"> View All</a>
+						<a href="" class="btn btn-1e btn-green text-uppercase waves-effect"> View All</a>
 					</div>
 				</div>
 			</div>
@@ -241,7 +241,7 @@
 						<div class="pay-bill-info animated hiding" data-animation="fadeInRight">
 							<h2 class="sec-title">Pay Bills With Your <br>Wing Money Account</h2>
 							<p>Wing provides bill payment services to allow anyone to pay their bills easily through their mobile phones or via Wing’s agents nationwide. We have partnered with more than 65 billers including Utilities, Microfinance, Phone Distributors and more.</p>
-							<a href="" class="btn btn-green fr"> View List</a>
+							<a href="" class="btn btn-green waves-effect fr"> View List</a>
 						</div>
 					</div>
 				</div>
@@ -266,7 +266,7 @@
 						<div class="col-sm-7 wing-ket-info fl animated hiding" data-animation="fadeInLeft">
 							<h2 class="sec-title">Wing Ket Luy</h2>
 							<p>Wing Ket Luy is one of Wing services that allow the clients to pay/buy something at many different business locations with a Wing Card like Restaurant, Cinema, Clothes Shops, and the like. Clients just swipe or tap their Wing card on Wing Terminal to get payment done quickly. All you need is a Wing account.</p>
-							<a href="" class="btn btn-white">Inquire</a>
+							<a href="" class="btn btn-white waves-effect">Inquire</a>
 						</div>
 						
 					</div>
@@ -440,6 +440,7 @@
 
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/jquery-ui.min.js"></script>
+<script src="js/materialize.js"></script>
 <script src="js/parallax.js"></script>
 <script src="js/jquery.appear.js"></script>
 <script src="js/devices.js"></script>

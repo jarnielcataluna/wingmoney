@@ -96,7 +96,7 @@
         </div>
         <hr>
         <div class="input-wrap text-center btn-wrapper">
-            <input type="submit" class="btn btn-orange" name="" value="SUBMIT" />
+            <input type="submit" class="btn btn-orange waves-effect" name="" value="SUBMIT" />
         </div>
     </div>
 </form>
