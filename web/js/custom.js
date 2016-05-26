@@ -55,10 +55,10 @@ $(document).ready(function() {
         pullDrag: false,
         responsive:{
             0:{
-                items:2
+                items:1
             },
             430:{
-                items:3
+                items:2
             },
             580:{
                 items:5
@@ -97,7 +97,6 @@ $(document).ready(function() {
             $('.menu').hide();
             $('.header-hamburger').removeClass('active');
         }
-
         $this.parent().addClass('active');
         scrollToDiv($targetDiv,0);
         return false;
@@ -194,37 +193,42 @@ $(document).ready(function() {
 
     $('.header-hamburger').click(function(){
         var _this = $(this);
-        $('.menu ul li').removeClass('is-open');
-    
-
-        if (_this.hasClass('active')) {
-
-            $('.menu').hide();
-            
             $('.menu ul li').removeClass('is-open');
-            setTimeout(function(){
-                _this.removeClass('active');
-            }, 400);
-            
+        
 
-        } else {
+            if (_this.hasClass('active')) {
 
+                $('.menu').hide();
                 
-            $('.menu').stop(true, false).slideDown(300);
-
-            $('.menu ul li').each(function(index){
-                var _this = $(this);
+                $('.menu ul li').removeClass('is-open');
                 setTimeout(function(){
-                    _this.addClass('is-open');
-                }, 100 + (index * 100));
+                    _this.removeClass('active');
+                }, 400);
+                
 
-            });
-            setTimeout(function(){
-                _this.addClass('active');
-            }, 100 + ($('.menu ul li').size() * 100));
-        }
+            } else {
+
+                    
+                $('.menu').stop(true, false).slideDown(300);
+
+                $('.menu ul li').each(function(index){
+                    var _this = $(this);
+                    setTimeout(function(){
+                        _this.addClass('is-open');
+                    }, 100 + (index * 100));
+
+                });
+                setTimeout(function(){
+                    _this.addClass('active');
+                }, 100 + ($('.menu ul li').size() * 100));
+            }
+        
+
+        
         
     });
+
+    
 });
 
 $(window).load(function() {
@@ -234,6 +238,7 @@ $(window).load(function() {
 
 $(window).scroll(function() {
     updateNav();
+   
 });
 
 $(window).on("load resize scroll",function(e){
@@ -261,7 +266,7 @@ function scrollParallax() {
         var total = Math.round(-sT*0.20) - 300;
 
         $('.wing-form-wrap').css({'top': total  });
-        $('.banner-text').css('top', Math.round(sT*0.25));
+        $('.banner-text').css('top', Math.round(sT*0.20));
     }
 
     
@@ -272,7 +277,7 @@ function scrollToDiv(element){
     var offsetTop = offset.top;
     var totalScroll = offsetTop;
     var headerH = $('header').outerHeight(false);
-    $('body,html').animate({
+    $('body, html').animate({
         scrollTop: totalScroll - headerH
     }, 500);
 }

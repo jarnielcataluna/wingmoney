@@ -617,6 +617,8 @@ a.waves-effect .waves-ripple {
 .banner-text {
 	position: relative;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	top: 0;
 }
 
 
