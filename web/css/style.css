@@ -6200,6 +6200,11 @@ header .logo {
   position: absolute;
 }
 
+footer {
+  position: relative;
+  z-index: 1;
+}
+
 .preloader {
   position: fixed;
   width: 100%;
@@ -6757,6 +6762,13 @@ a.waves-effect .waves-ripple {
   bottom: 5px;
   cursor: text;
   color: #414042;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .input-wrap input[required] + label:after {
@@ -6766,7 +6778,9 @@ a.waves-effect .waves-ripple {
 }
 
 .input-wrap input[required]:valid + label, .input-wrap input[required]:focus + label, .input-wrap input:not([value=""]) + label {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 10px;
 }
 
 .custom-select-wrapper {
@@ -7540,6 +7554,16 @@ a.waves-effect .waves-ripple {
   padding: 20px 0;
 }
 
+.footer-bottom .privacy-link {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-bottom .privacy-link:hover {
+  color: #b0c025;
+}
+
 .share-this-wrap label {
   font-size: 30px;
   color: #ffffff;
@@ -7560,11 +7584,16 @@ a.waves-effect .waves-ripple {
   margin: 0px 5px;
 }
 
+.share-this-wrap a:hover {
+  color: #b0c025;
+  border: 2px solid #b0c025;
+}
+
 .email-link {
   display: inline-block;
   vertical-align: middle;
   color: #ffffff;
-  margin: 15px 0;
+  margin: 15px 0 0;
   font-size: 20px;
   text-align: right;
   font-weight: bold;
@@ -7574,24 +7603,48 @@ a.waves-effect .waves-ripple {
   margin-right: 8px;
 }
 
+.email-link:hover {
+  color: #b0c025;
+}
+
 .final-step-form .input-wrap {
-  max-width: 450px;
+  max-width: 300px;
   margin: 0 auto 30px;
 }
 
 .final-step-form .input-wrap input[type="text"] {
-  background: #a7a9ac;
+  background: #ffffff;
+  border: 3px solid #0098d7;
+  padding: 12px 20px;
+  height: auto;
+  color: #0098d7;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .final-step-wrap {
   min-height: 305px;
 }
 
-.thank-you-page header {
+.thank-you-page, .inner-page {
+  background: #ffffff;
+}
+
+.thank-you-page header, .inner-page header {
   position: relative;
   background: url("../images/thankyou-banner.jpg") no-repeat center center;
   background-size: cover;
   padding: 8px 0;
+  height: auto;
+}
+
+.thank-you-page header .logo, .inner-page header .logo {
+  display: block;
+}
+
+.page-404-wrap h1 {
+  margin-bottom: 20px;
 }
 
 .ty-text {
@@ -7680,6 +7733,28 @@ a.waves-effect .waves-ripple {
   display: inline-block;
   font-size: 20px;
   color: #0098d7;
+}
+
+.privacy-policy h1 {
+  margin-bottom: 25px;
+}
+
+.privacy-policy ol {
+  padding-left: 25px;
+  margin: 15px 0;
+}
+
+.privacy-policy ol li {
+  list-style-type: decimal;
+}
+
+.privacy-policy ul {
+  padding-left: 25px;
+  margin: 15px 0;
+}
+
+.privacy-policy ul li {
+  list-style-type: disc;
 }
 
 .header-hamburger {
@@ -8117,6 +8192,12 @@ a.waves-effect .waves-ripple {
   }
   .pay-online-partners ul li img {
     max-width: 75%;
+  }
+  .final-step-form {
+    margin-top: 20px;
+  }
+  .final-step .sec-tagline {
+    margin: 20px 0;
   }
 }
 

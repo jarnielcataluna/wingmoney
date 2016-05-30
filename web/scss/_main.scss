@@ -105,7 +105,7 @@ header {
 .bp-rel { position:relative; }
 .bp-ab { position:absolute; }
 
-footer {}
+footer { position: relative; z-index: 1; }
 
 .preloader { position:fixed; width:100%; height:100%; overflow:hidden; z-index: 999; }
 .spinner { position: absolute; width:80px; height:80px; top: 50%; left: 50%; margin-left:-40px; margin-top:-40px; @include animation(rotatee 2.0s infinite linear); }
@@ -476,6 +476,10 @@ a.waves-effect .waves-ripple {
 	    bottom: 5px;
 	    cursor: text;
 	    color: $coGrey;
+	    opacity: 1;
+	    visibility: visible;
+
+	    @include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
 	}
 
 	input[required] + label:after {
@@ -489,7 +493,9 @@ a.waves-effect .waves-ripple {
 
 	/* hide the placeholder when input has some text typed in */
 	input[required]:valid + label, input[required]:focus + label, input:not([value=""]) + label{
-	    display: none;
+	    opacity: 0;
+	    visibility: hidden;
+	    font-size: 10px;
 	}
 }
 
@@ -1284,6 +1290,16 @@ a.waves-effect .waves-ripple {
 
 .footer-bottom {
 	padding: 20px 0;
+
+	.privacy-link {
+		display: block;
+		font-size: 14px;
+		color: $coWhite;
+
+		&:hover {
+			color: $coGreen;
+		}
+	}
 }
 
 .share-this-wrap {
@@ -1306,6 +1322,11 @@ a.waves-effect .waves-ripple {
 		border: 2px solid $coWhite;
 		line-height: 63px;
 		margin: 0px 5px;
+
+		&:hover {
+			color: $coGreen;
+			border: 2px solid $coGreen;
+		}
 	}
 }
 
@@ -1314,7 +1335,7 @@ a.waves-effect .waves-ripple {
 	display: inline-block;
 	vertical-align: middle;
 	color: $coWhite;
-	margin: 15px 0;
+	margin: 15px 0 0;
 	font-size: 20px;
 	text-align: right;
 	font-weight: bold;
@@ -1322,16 +1343,27 @@ a.waves-effect .waves-ripple {
 	span {
 		margin-right: 8px;
 	}
+
+	&:hover {
+		color: $coGreen;
+	}
 }
 
 .final-step-form {
 
 	.input-wrap {
-		max-width: 450px;
+		max-width: 300px;
 		margin: 0 auto 30px;
 
 		input[type="text"] {
-			background: #a7a9ac;
+			background: $bgWhite;
+			border: 3px solid $coBlue;
+			padding: 12px 20px;
+			height: auto;
+			color: $coBlue;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
 		}
 	}
 }
@@ -1341,17 +1373,30 @@ a.waves-effect .waves-ripple {
 }
 
 
-.thank-you-page {
+.thank-you-page, .inner-page {
+	background: $bgWhite;
 
 	header {
 		position: relative;
 		background: url('../images/thankyou-banner.jpg') no-repeat center center;
 		background-size: cover;
 		padding: 8px 0;
+		height: auto;
+
+		.logo {
+			display: block;
+		}
 	}
 
 	.final-step {
 		
+	}
+}
+
+.page-404-wrap {
+
+	h1 {
+		margin-bottom: 20px;
 	}
 }
 
@@ -1440,6 +1485,31 @@ a.waves-effect .waves-ripple {
 			display: inline-block;
 			font-size: 20px;
 			color: $coBlue;
+		}
+	}
+}
+
+.privacy-policy {
+
+	h1 {
+		margin-bottom: 25px;
+	}
+
+	ol {
+		padding-left: 25px;
+		margin: 15px 0;
+
+		li {
+			list-style-type: decimal;
+		}
+	}
+
+	ul {
+		padding-left: 25px;
+		margin: 15px 0;
+
+		li {
+			list-style-type: disc;
 		}
 	}
 }
@@ -2008,6 +2078,16 @@ a.waves-effect .waves-ripple {
 
 	.pay-online-partners ul li img {
 		max-width: 75%;
+	}
+
+	.final-step-form {
+		margin-top: 20px;
+	}
+
+	.final-step {
+		.sec-tagline {
+			margin: 20px 0;
+		}
 	}
 
 
