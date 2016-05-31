@@ -200,7 +200,7 @@ $(document).ready(function(){
                 data: data,
 
                 success: function (response) {
-                    //var data = jQuery.parseJSON(response);
+                    var data = jQuery.parseJSON(response);
                     //console.log(data);
                     console.log(response);
                     $('.wing-form-wrap').removeClass('overlay');
@@ -213,7 +213,7 @@ $(document).ready(function(){
                     //
                     //writeUserData(data.lname, data.fname, data.email, data.contact, data.gender, data.id_type, data.id_number, data.dob, data.store_branch, data.currency, fb_details);
                     //$('.wing-form-wrap').addClass('remove');
-                    window.location.assign('thankyou.php')
+                    window.location.assign('thankyou.php?id=' + btoa())
                 }
             });
 
