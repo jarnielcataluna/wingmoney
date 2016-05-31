@@ -213,7 +213,7 @@ $(document).ready(function(){
                     //
                     //writeUserData(data.lname, data.fname, data.email, data.contact, data.gender, data.id_type, data.id_number, data.dob, data.store_branch, data.currency, fb_details);
                     //$('.wing-form-wrap').addClass('remove');
-                    window.location.assign('thankyou.php?id=' + btoa(data.id));
+                    window.location.assign('thankyou.php?id=' + data.id);
                 }
             });
 
@@ -221,6 +221,40 @@ $(document).ready(function(){
         } else {
             e.preventDefault();
         }
-    })
+    });
+
+    // Verification Field
+    $('.final-step-form').submit(function(e){
+        e.preventDefault();
+
+        var that = $(this),
+            url = that.attr('action'),
+            type = that.attr('method'),
+            data = {};
+
+        that.find('[name]').each(function (index, value) {
+            var that = $(this),
+                name = that.attr('name'),
+                value = that.val();
+                data[name] = value;
+        });
+
+        $.ajax({
+            url: url,
+            type: type,
+            data: data,
+
+            success: function (response) {
+                var data = jQuery.parseJSON(response);
+                if(data.error.length > 0){
+                    $('.final-step').hide();
+                    $('.ty-text').show();
+                }
+            }
+        });
+
+
+
+    });
 });
 

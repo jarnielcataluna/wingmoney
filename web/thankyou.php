@@ -50,9 +50,10 @@
 						<div class="sec-tagline">
 							<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
 						</div>
-						<form class="final-step-form" method="post" action="" novalidate>
+						<form class="final-step-form" method="post" action="/exec/validate2.php" novalidate>
 							<div class="input-wrap">
-								<input type="text" id="verfication-code" name="" value="" required="required">
+								<input type="hidden" name="<?php echo $_GET['id']; ?>" />
+								<input type="text" id="verfication-code" name="verification_code" value="" required="required">
 								<label for="verfication-code">Enter Verification Code</label>
 							</div>
 							<div class="input-wrap">

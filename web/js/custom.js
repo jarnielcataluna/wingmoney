@@ -184,12 +184,7 @@ $(document).ready(function() {
         }
     })
 
-    // Verification Field
-    $('.final-step-form').submit(function(e){
-        e.preventDefault();
-        $('.final-step').hide();
-        $('.ty-text').show();
-    });
+
 
     $('.header-hamburger').click(function(){
         var _this = $(this);
