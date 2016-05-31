@@ -202,7 +202,7 @@ $(document).ready(function(){
                 success: function (response) {
                     var data = jQuery.parseJSON(response);
                     //console.log(data);
-                    console.log(response);
+                    console.log(data);
                     $('.wing-form-wrap').removeClass('overlay');
                     //var fb_details = {};
                     //fb_details.fb_uid = data.fb_uid;
@@ -213,7 +213,7 @@ $(document).ready(function(){
                     //
                     //writeUserData(data.lname, data.fname, data.email, data.contact, data.gender, data.id_type, data.id_number, data.dob, data.store_branch, data.currency, fb_details);
                     //$('.wing-form-wrap').addClass('remove');
-                    window.location.assign('thankyou.php?id=' + btoa())
+                    window.location.assign('thankyou.php?id=' + btoa(data.id));
                 }
             });
 
