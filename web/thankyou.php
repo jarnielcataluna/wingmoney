@@ -52,7 +52,7 @@
 						</div>
 						<form class="final-step-form" method="post" action="/exec/validate2.php" novalidate>
 							<div class="input-wrap">
-								<input type="hidden" name="<?php echo $_GET['id']; ?>" />
+								<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
 								<input type="text" id="verfication-code" name="verification_code" value="" required="required">
 								<label for="verfication-code">Enter Verification Code</label>
 							</div>
