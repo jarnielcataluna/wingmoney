@@ -6848,6 +6848,8 @@ a.waves-effect .waves-ripple {
   width: auto;
   display: inline-block;
   vertical-align: middle;
+  visibility: visible;
+  opacity: 1;
 }
 
 .custom-radio input[type="radio"] + label span {
@@ -6961,8 +6963,28 @@ a.waves-effect .waves-ripple {
   color: #ffffff;
 }
 
-.wing-form-wrap .btn-orange {
+.wing-form-wrap .btn-wrapper {
   margin: 5px 0;
+}
+
+.wing-form-wrap .btn-orange {
+  margin: 0px 0;
+  margin: 0;
+}
+
+.wing-form-wrap .btn-orange.btn {
+  padding: 0;
+  border: none;
+}
+
+.wing-form-wrap .btn-orange.btn input[type="submit"] {
+  display: block;
+  border: 2px solid transparent;
+  padding: 10px 50px;
+}
+
+.wing-form-wrap .btn-orange.btn:hover input[type="submit"] {
+  border: 2px solid #f89f1b;
 }
 
 .wing-form-wrap hr {
