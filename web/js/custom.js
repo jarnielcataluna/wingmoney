@@ -161,12 +161,6 @@ $(document).ready(function() {
             isvalidate = false;
         }
 
-        if( $('.select-branch select').val() != '0'){
-            $('.select-branch').removeClass('error');
-            isvalidate = true;
-        } else {
-            isvalidate = false;
-        }
 
         if( $('.id-type select').val() != '0') {
             $('.id-type').removeClass('error');

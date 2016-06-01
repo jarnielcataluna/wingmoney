@@ -55,7 +55,7 @@
         </div>
         <div class="input-wrap input-half id-type">
             <select class="custom-select" name="id_type">
-                <option value="0" disabled>ID type</option>
+                <option value="0">ID type</option>
                 <option value="National ID" >NATIONAL ID</option>
                 <option value="Voters ID">VOTER'S ID</option>
                 <option value="Employee ID">EMPLOYEE ID</option>
@@ -81,17 +81,6 @@
             <div class="custom-radio">
                 <input type="radio" id="Khmer" name="currency" value="Khmer">
                 <label for="Khmer"><span></span>Khmer</label>
-            </div>
-        </div>
-        <div class="input-wrap select-branch">
-            <select class="custom-select" name="store_branch">
-                <option value="0" disabled>Select Store/Branch</option>
-                <option value="Branch 1">Branch 1</option>
-                <option value="Store 2">Store 2</option>
-                <option value="Branch 3">Branch 3</option>
-            </select>
-            <div class="required-tooltip left">
-                <p>This field is required <span>*</span></p>
             </div>
         </div>
         <hr>
