@@ -526,6 +526,14 @@ a.waves-effect .waves-ripple {
 	&.input-half {
 		width: 50%;
 		float: left;
+
+		.required-tooltip {
+
+			&.right {
+				right: 94%;
+			}
+			
+		}
 	}
 
 	&.btn-wrapper {
@@ -867,7 +875,7 @@ a.waves-effect .waves-ripple {
 	}
 
 	&.right {
-		left: 100%;
+		/*left: 100%;
 		margin-left: 10px;
 		box-shadow: inset -1px -1px 5px rgba($coBlack, 0.2);
 		@include transform(translateX(30px));
@@ -883,6 +891,25 @@ a.waves-effect .waves-ripple {
 		    border-top: 8px solid transparent;
 		    border-right: 8px solid $coWhite;
 		    border-bottom: 8px solid transparent;
+		}*/
+
+
+		right: 100%;
+		margin-right: 10px;
+		box-shadow: inset 1px 1px 5px rgba($coBlack, 0.2);
+		@include transform(translateX(-30px));
+
+		&:before {
+			content: '';
+			position: absolute;
+		    top: 50%;
+		    margin-top: -8px;
+			right: -6px;
+			width: 0;
+			height: 0;
+			border-top: 8px solid transparent;
+			border-left: 8px solid $coWhite;
+			border-bottom: 8px solid transparent;
 		}
 	}
 }
@@ -1505,6 +1532,23 @@ a.waves-effect .waves-ripple {
 			text-align: center;
 		}
 	}
+
+	.required-tooltip {
+		background: $coBlue;
+		color: $coWhite;
+		min-width: 170px;
+		max-width: 170px;
+		right: 97%;
+		
+
+		p {
+			color: $coWhite;
+		}
+
+		&:before {
+			    border-left: 8px solid $coBlue;
+		}
+	}
 }
 
 .final-step-wrap {
@@ -1769,12 +1813,12 @@ a.waves-effect .waves-ripple {
 }
 
 @media only screen and (max-width: 1024px) {
-	.required-tooltip {
+	/*.required-tooltip {
 
 		&.right {
 			left: 40px;
 		}
-	}
+	}*/
 }
 
 @media only screen and (min-width: 992px) {
