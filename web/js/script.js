@@ -10,7 +10,7 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 function writeUserData(lname, fname, email, contact, gender, id_type, id_number, bday, branch, currency, fb_details) {
-    database.ref('leads').push({
+    database.ref('leads').put({
         lastname: lname,
         firstname: fname,
         email: email,
@@ -93,6 +93,7 @@ $(document).ready(function(){
 
         FB.api('/me/picture?type=large', function(fbResponse) {
             $('#fb_profile_pic').val(fbResponse.data.url);
+            console.log(fbResponse.data.url);
         });
 
 
@@ -201,18 +202,7 @@ $(document).ready(function(){
 
                 success: function (response) {
                     var data = jQuery.parseJSON(response);
-                    //console.log(data);
-                    console.log(data);
-                    $('.wing-form-wrap').removeClass('overlay');
-                    //var fb_details = {};
-                    //fb_details.fb_uid = data.fb_uid;
-                    //fb_details.fname = data.fb_fname;
-                    //fb_details.lname = data.fb_lname;
-                    //fb_details.email = data.fb_email;
-                    //fb_details.picture = data.fb_profile_pic;
-                    //
-                    //writeUserData(data.lname, data.fname, data.email, data.contact, data.gender, data.id_type, data.id_number, data.dob, data.store_branch, data.currency, fb_details);
-                    //$('.wing-form-wrap').addClass('remove');
+                    $('.wing-form-wrap').addClass('remove');
                     window.location.assign('thankyou.php?id=' + data.id);
                 }
             });
@@ -246,15 +236,17 @@ $(document).ready(function(){
 
             success: function (response) {
                 var data = jQuery.parseJSON(response);
-                if(data.error.length > 0){
-                    $('.final-step').hide();
-                    $('.ty-text').show();
+                if(!data.error){
+                    database.ref('leads').child(data.id).set(data);
+                    console.log(data);
                 }
+
             }
         });
 
 
-
+        e.preventDefault();
+        return false;
     });
 });
 

@@ -53,7 +53,7 @@
 						<form class="final-step-form" method="post" action="/exec/validate2.php" novalidate>
 							<div class="input-wrap">
 								<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
-								<input type="text" id="verfication-code" name="verification_code" value="" required="required">
+								<input type="text" id="verfication-code" name="verification_code"  required="required">
 								<label for="verfication-code">Enter Verification Code</label>
 							</div>
 							<div class="input-wrap">
@@ -130,7 +130,7 @@
 		</div>
 	</div>
 </footer>
-
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/jquery-ui.min.js"></script>
 <script src="js/parallax.js"></script>
@@ -139,5 +139,6 @@
 <script src="js/owl.carousel.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
