@@ -158,7 +158,7 @@ $(document).ready(function() {
             isvalidate = false;
         }
 
-        if( !$('#contact-num').val() == '') {
+        if( !$('#contact-num').val() == '' ) {
             $('#contact-num').closest('.input-wrap').removeClass('error');
             isvalidate = true;
         } else {
@@ -265,10 +265,6 @@ Pace.on('done', function() {
 	}, 500);
 });
 
-function IsEmail(email) {
-  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  return regex.test(email);
-}
 
 function scrollParallax() {
 

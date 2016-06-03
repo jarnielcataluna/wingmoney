@@ -6803,8 +6803,41 @@ a.waves-effect .waves-ripple {
   margin: 0 -5px;
 }
 
+.input-group-addon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #414042;
+  z-index: 3;
+  line-height: 36px;
+  display: inline-block;
+  padding: 4px 5px 0;
+  left: 5px;
+  background: #0086be;
+  color: #ffffff;
+}
+
 .ui-datepicker-prev, .ui-datepicker-next {
   display: none;
+}
+
+.mobile-num input[type="text"]::-webkit-input-placeholder {
+  text-align: right;
+}
+
+.mobile-num input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: right;
+}
+
+.mobile-num input[type="text"]:-ms-input-placeholder {
+  /* IE 10+ */
+  text-align: right;
+}
+
+.mobile-num input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: right;
 }
 
 .input-wrap {
@@ -6814,6 +6847,14 @@ a.waves-effect .waves-ripple {
   width: 100%;
   /* show the placeholder when input has no content (no content = invalid) */
   /* hide the placeholder when input has some text typed in */
+}
+
+.input-wrap.mobile-num input[type="text"] {
+  padding-left: 65px;
+}
+
+.input-wrap.mobile-num input[value=""] + label, .input-wrap.mobile-num input[value=""] + label {
+  left: 67px;
 }
 
 .input-wrap.input-half {

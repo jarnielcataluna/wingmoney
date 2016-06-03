@@ -513,8 +513,38 @@ a.waves-effect .waves-ripple {
 	margin: 0 -5px;
 }
 
+.input-group-addon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: $coGrey;
+	z-index: 3;
+	line-height: 36px;
+	display: inline-block;
+	padding: 4px 5px 0;
+	left: 5px;
+	background: darken($coBlue, 5%);
+	color: $coWhite
+}
+
 .ui-datepicker-prev, .ui-datepicker-next {
 	display: none;
+}
+
+
+
+.mobile-num input[type="text"]::-webkit-input-placeholder {
+  text-align: right;
+}
+.mobile-num input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+  text-align: right;
+
+}
+.mobile-num input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+  text-align: right;
+}
+.mobile-num input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  text-align: right;
 }
 
 .input-wrap {
@@ -522,6 +552,17 @@ a.waves-effect .waves-ripple {
 	margin-bottom: 10px;
 	padding: 0px 5px;
 	width: 100%;
+
+	&.mobile-num {
+
+		input[type="text"] {
+			padding-left: 65px;
+		}
+
+		input[value=""] + label, input[value=""] + label {
+			left: 67px;
+		}
+	}
 
 	&.input-half {
 		width: 50%;
@@ -556,6 +597,7 @@ a.waves-effect .waves-ripple {
 			}
 		}
 	}
+
 
 	input[type="text"], input[type="email"] {
 		height: 40px;
@@ -1808,7 +1850,6 @@ a.waves-effect .waves-ripple {
 			padding-left: 30px;
 		}
 	}
-
 
 }
 
