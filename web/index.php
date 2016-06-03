@@ -71,7 +71,7 @@
 					<div class="container">
 						<div class="fl banner-text animated hiding" data-animation="fadeInLeft" data-delay="300">
 							<div class="logo"><img src="images/wing-logo.png" alt=""></div>
-							<h1><span>secure and fast </span><br><span>payments from your </span><br><span>mobile phone.</span></h1>
+							<h1><span>FAST AND SECURED </span><br><span>PAYMENTS FROM YOUR </span><br><span>MOBILE PHONE.</span></h1>
 						</div>
 						<div id="wing-form-wrap"></div>
 					</div>
