@@ -82,7 +82,7 @@
 
 		<section id="features" class="features bg-green section-pad jq-section">
 			<div class="container">
-				<div class="wing-form-wrap animated hiding" data-animation="fadeInUp" data-delay="300">
+				<div class="wing-form-wrap">
 							
 					<h3>Signup to Wing with these simple steps</h3>
 					<p>Creating a Wing Account in two easy steps. 1. Sign up using Facebook or just fill up this form, choose a currency and 2. tell us how you want receive your card, store pick up or get it delivered!</p>
