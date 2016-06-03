@@ -2,6 +2,7 @@
 <html class="no-js" lang="">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow" />
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title> Wing Money</title>
 <meta name="description" content="">
@@ -169,7 +170,7 @@
 			<div class="container">
 				<div class="store-partners">
 					<div class="text-center animated hiding" data-animation="fadeInUp">
-						<h3>Our Partner Stores:</h3>
+						<h3>Our Partner Stores</h3>
 					</div>
 					<div class="owl-carousel owl-theme animated hiding" data-animation="fadeInUp">
 						<div class="item-store">
