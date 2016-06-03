@@ -53,11 +53,11 @@
 			<div class="menu">
 				<ul>
 					<li><a href="#wing-account" class="waves-effect">Wing Account</a></li>
-					<li><a href="#enjoy-discount" class="waves-effect">Enjoy Discount</a></li>
+					<li><a href="#enjoy-discount" class="waves-effect">Enjoy Discounts</a></li>
 					<li><a href="#store-partners" class="waves-effect">Payment Partners</a></li>
-					<li><a href="#" class="waves-effect">Sample</a></li>
-					<li><a href="#" class="waves-effect">Sample</a></li>
-					<li><a href="#wing-form-wrap" class="waves-effect">Register</a></li>
+					<li><a href="#pay-bills" class="waves-effect">Pay Bills</a></li>
+					<li><a href="#wing-ket" class="waves-effect">Wing Ket Luy</a></li>
+					<li><a href="#wing-form-wrap" class="waves-effect">Register Now</a></li>
 				</ul>
 			</div>
 		</div>
@@ -71,7 +71,7 @@
 					<div class="container">
 						<div class="fl banner-text animated hiding" data-animation="fadeInLeft" data-delay="300">
 							<div class="logo"><img src="images/wing-logo.png" alt=""></div>
-							<h1><span>START WITH YOUR </span><br><span>VALUE PROPOSITION </span><br><span>HERE</span></h1>
+							<h1><span>secure and fast </span><br><span>payments from your </span><br><span>mobile phone.</span></h1>
 						</div>
 						<div id="wing-form-wrap"></div>
 					</div>
@@ -93,9 +93,9 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-sm-7 animated hiding" data-animation="fadeInUp" data-delay="300">
-						<h2 class="sec-title">Not Just a <br>Mobile Wallet</h2>
+						<h2 class="sec-title">More than a <br>Mobile Wallet</h2>
 						<div class="feature-tag">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p>Wing Money's mobile wallet function is just the beginning! There are so many ways Wing makes life easier and faster so you can focus on the things that really matter. Signing up is so simple:</p>
 						</div>
 						<ul>
 							<li><a href="#">Money Transfer</a></li>
@@ -156,8 +156,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-sm-12 ed-text animated hiding" data-animation="fadeInUp">
-							<h2 class="sec-title">Enjoy Discounts From <br>Our Store Partners</h2>
-							<p>Get your Wing Card and use it to get discounts at Wing’s partner merchants such as restaurants, coffee shops, retail stores and more. Enjoy up to 50% discount by just showing the Wing card at our merchant partners.</p>
+							<h2 class="sec-title">Enjoy Discounts From Our Store Partners</h2>
+							<p>Get exclusive discounts from your favorite stores with your Wing Card. Simply show your Win Card to our partner merchants to enjoy fine dining, shopping sprees, and so much more at discounted prices.</p>
 						</div>
 					</div>
 					<img class="dis-model animated hiding" data-animation="fadeInUp" src="images/discount-model.png" alt="">
@@ -236,9 +236,9 @@
 			
 		<section id="pay-online" class="section-pad jq-section">
 			<div class="container">
-				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Pay Online using <br>your Wing Account</h2>
+				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Always Busy? <br>Make Effortless  Online <br>  Purchases</h2>
 				<div class="sec-tagline text-center animated hiding" data-animation="fadeInUp">
-					<p>Wing card holders can use their Wing accounts to buy things online with local companies. From buying movie tickets to booking a bus, you can do it all with Wing online payments.</p>
+					<p>Your time is important, so simplify your life by doing your shopping online with your Wing Account. With a few clicks, you can pay for movie tickets or your next travel booking in a short time, all online!</p>
 
 				</div>
 				<div class="pay-online-partners text-center animated hiding" data-animation="fadeInUp">
@@ -294,7 +294,7 @@
 						<div class="col-sm-5 wing-ket-img null-padding-right fr animated hiding" data-animation="fadeInRight"><img src="images/wing-ket.png" alt=""></div>
 						<div class="col-sm-7 wing-ket-info fl animated hiding" data-animation="fadeInLeft">
 							<h2 class="sec-title">Wing Ket Luy</h2>
-							<p>Wing Ket Luy is one of Wing services that allow the clients to pay/buy something at many different business locations with a Wing Card like Restaurant, Cinema, Clothes Shops, and the like. Clients just swipe or tap their Wing card on Wing Terminal to get payment done quickly. All you need is a Wing account.</p>
+							<p>Discover Wing Ket Luy. Enjoy the convenience of never needing to bring cash to buy from your favorite shops. All you need to do is swipe or tap your Wing Card on the store's Wing terminal to make an instant, cash-free payment through your Wing Account.</p>
 							<a href="" class="btn btn-white waves-effect">Inquire</a>
 						</div>
 						
