@@ -46,8 +46,9 @@
             </div>
         </div>
         <div class="clr"></div>
-        <div class="input-wrap">
-            <input type="text" id="contact-num" name="contact" value="" required="required">
+        <div class="input-wrap mobile-num">
+            <span class="input-group-addon">(+855)</span>
+            <input type="text" id="contact-num" name="" value="" minlength="8" maxlength="8" required="required" onkeyup="this.setAttribute('value', this.value);">
             <label for="contact-num">Contact Number</label>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>

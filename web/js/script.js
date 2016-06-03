@@ -9,22 +9,6 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-function writeUserData(lname, fname, email, contact, gender, id_type, id_number, bday, branch, currency, fb_details) {
-    database.ref('leads').put({
-        lastname: lname,
-        firstname: fname,
-        email: email,
-        bday: bday,
-        contact: contact,
-        gender: gender,
-        id_type: id_type,
-        id_number: id_number,
-        currency: currency,
-        branch: branch,
-        fb_details: fb_details
-    });
-}
-
 $(document).ready(function(){
 
     // Initialize Facebook
@@ -74,7 +58,6 @@ $(document).ready(function(){
             $('#fb_fname').val(_fname);
             $('#fb_lname').val(_lname);
             $('#fb_email').val(_email);
-
             $('#last-name').val(_lname);
             $('#first-name').val(_fname);
             $('#birthday').val(_birthday);
@@ -108,12 +91,26 @@ $(document).ready(function(){
             }
         });
 
+    function isNumber(number) {
+        var numberValid = /^\+(?:[0-9]●?){6,14}[0-9]$/;
+
+        return numberValid.test(number);
+    }
+
+
+    function IsEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+    }
+
+
 
 
 
     $('.wing-form').submit(function(e){
         $('.input-wrap').addClass('error');
         isvalidate = false;
+
 
 
         if( IsEmail($('#account-email').val() )) {
@@ -151,9 +148,10 @@ $(document).ready(function(){
             isvalidate = false;
         }
 
-        if( !$('#contact-num').val() == '') {
+        if( $('#contact-num').val() != '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length == 8 ){
             $('#contact-num').closest('.input-wrap').removeClass('error');
             isvalidate = true;
+
         } else {
             isvalidate = false;
         }
@@ -180,7 +178,7 @@ $(document).ready(function(){
             isvalidate = false;
         }
 
-        if( $('.gender select').val() != '0' && $('.id-type select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#id-number').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isvalidate == true) {
+        if( $('.gender select').val() != '0' && $('.id-type select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#id-number').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length == 8 &&  isvalidate == true) {
             $('.wing-form-wrap').addClass('overlay');
             var that = $(this),
                 url = that.attr('action'),
@@ -203,7 +201,7 @@ $(document).ready(function(){
                 success: function (response) {
                     var data = jQuery.parseJSON(response);
                     $('.wing-form-wrap').addClass('remove');
-                    window.location.assign('thankyou.php?id=' + data.id);
+                    window.location.assign('confirmation?id=' + data.id);
                 }
             });
 
@@ -238,7 +236,11 @@ $(document).ready(function(){
                 var data = jQuery.parseJSON(response);
                 if(!data.error){
                     database.ref('leads').child(data.id).set(data);
-                    console.log(data);
+                    window.location.assign('thankyou');
+                }else{
+                    var errorOutput = $('#verfication-code').closest('.input-wrap');
+                    errorOutput.find('.required-tooltip p').html(data.error);
+                    errorOutput.addClass('error');
                 }
 
             }
