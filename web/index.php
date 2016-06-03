@@ -84,8 +84,8 @@
 			<div class="container">
 				<div class="wing-form-wrap">
 							
-					<h3>Signup to Wing with these simple steps</h3>
-					<p>Creating a Wing Account in two easy steps. 1. Sign up using Facebook or just fill up this form, choose a currency and 2. tell us how you want receive your card, store pick up or get it delivered!</p>
+					<h3>Make your Wing Account with only 2 steps:</h3>
+					<p>1. Sign up with Facebook or fill up this form. <br> 2. Wait for the confirmation text to pick up your kit!</p>
 					<div class="signup-fb">
 						<a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign-up with Facebook</span></a>
 					</div>
