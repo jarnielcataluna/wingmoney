@@ -2,6 +2,7 @@
 <html class="no-js" lang="">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow" />
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title> Wing Money</title>
 <meta name="description" content="">
