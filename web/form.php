@@ -4,6 +4,8 @@
     <input type="hidden" name="fb_lname" id="fb_lname"/>
     <input type="hidden" name="fb_email" id="fb_email"/>
     <input type="hidden" name="fb_profile_pic" id="fb_profile_pic"/>
+    <input type="hidden" name="client_ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>" />
+    <input type="hidden" name="client_id" value="<?php echo $_COOKIE['_ga']; ?>" />
 
     <p class="form-text">Or fill up this form</p>
     <div class="loading-spinner-wrapper" id="app-loader">
