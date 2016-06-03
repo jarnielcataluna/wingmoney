@@ -6,6 +6,13 @@
     <input type="hidden" name="fb_profile_pic" id="fb_profile_pic"/>
 
     <p class="form-text">Or fill up this form</p>
+    <div class="loading-spinner-wrapper" id="app-loader">
+        <span class="loading-spinner">
+          <i class="one"></i>
+          <i class="two"></i>
+          <i class="three"></i>
+        </span>
+    </div>
     <div class="form-row">
         <div class="input-wrap">
             <input type="text" id="last-name" name="lname" value="" required="required">
