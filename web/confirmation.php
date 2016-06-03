@@ -45,13 +45,26 @@
 		<div class="section-pad">
 			<div class="container">
 				<div class="final-step-wrap">
-					
-					<div class="ty-text text-center">
-						<h2>Thank You for Signing <br> Up with Wing!</h2>
+					<div class="final-step text-center">
+						<h3 class="co-blue">One final step and you are done!</h3>
 						<div class="sec-tagline">
 							<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
 						</div>
+						<form class="final-step-form" method="post" action="/exec/validate2.php" novalidate>
+							<div class="input-wrap error">
+								<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
+								<input type="text" id="verfication-code" name="verification_code"  required="required">
+								<label for="verfication-code">Enter Verification Code</label>
+								<div class="required-tooltip left">
+									<p>This field is required confirmation code <span>*</span></p>
+								</div>
+							</div>
+							<div class="input-wrap">
+								<input type="submit" class="btn btn-orange" name="" value="Submit">
+							</div>
+						</form>
 					</div>
+					
 				</div>
 
 				<div class="other-stuff">

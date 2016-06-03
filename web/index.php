@@ -47,6 +47,7 @@
 					<li><a href="#store-partners" class="waves-effect">Payment Partners</a></li>
 					<li><a href="#" class="waves-effect">Sample</a></li>
 					<li><a href="#" class="waves-effect">Sample</a></li>
+					<li><a href="#wing-form-wrap" class="waves-effect">Register</a></li>
 				</ul>
 			</div>
 		</div>
@@ -62,7 +63,7 @@
 							<div class="logo"><img src="images/wing-logo.png" alt=""></div>
 							<h1><span>START WITH YOUR </span><br><span>VALUE PROPOSITION </span><br><span>HERE</span></h1>
 						</div>
-						
+						<div id="wing-form-wrap"></div>
 					</div>
 				</div>
 			</div>
@@ -81,7 +82,7 @@
 					<?php include 'form.php' ?>
 				</div>
 				<div class="row">
-					<div class="col-sm-8 animated hiding" data-animation="fadeInUp" data-delay="300">
+					<div class="col-md-8 col-sm-7 animated hiding" data-animation="fadeInUp" data-delay="300">
 						<h2 class="sec-title">Not Just a <br>Mobile Wallet</h2>
 						<div class="feature-tag">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -216,9 +217,9 @@
 							<div class="itemstore-text"><p>00%-00%</p></div>
 						</div>
 					</div>
-					<div class="text-center animated hiding" data-animation="fadeInUp">
+					<!-- <div class="text-center animated hiding" data-animation="fadeInUp">
 						<a href="" class="btn btn-1e btn-green text-uppercase waves-effect"> View All</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
@@ -270,7 +271,7 @@
 			<div class="container">
 				<div class="text-center">
 					<h2 class="sec-title animated hiding" data-animation="fadeInUp">Get Your Wing Money <br>Account Now!</h2>
-					<a href="" class="btn btn-orange btn-apply animated hiding" data-animation="fadeIn" data-delay="300">Apply Now</a>
+					<a href="#wing-form-wrap" class="btn btn-orange btn-apply animated hiding" data-animation="fadeIn" data-delay="300">Apply Now</a>
 					<img class="apply-img animated hiding" data-animation="fadeIn" src="images/apply-now-model.jpg" alt="">
 				</div>
 			</div>
@@ -385,6 +386,7 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="wm-content-text"></div>
+							</div>
 						</div>
 					</div>
 					<div class="wm-content" id="top-up">
@@ -432,7 +434,7 @@
 				<div class="col-md-4 text-center animated hiding" data-animation="fadeInUp">
 
 					<img class="logo-bot" src="images/wing-logo-bot.png" alt="">
-					<a href="" class="btn btn-orange btn-block btn-signup">Sign Up Now!</a>
+					<a href="#wing-form-wrap" class="btn btn-orange btn-block btn-signup">Sign Up Now!</a>
 				</div>
 			</div>	
 		</div>
@@ -448,7 +450,7 @@
 					</div>
 				</div>	
 				<div class="col-sm-6 text-right">
-					<a href="#" class="email-link"><span><img src="images/icon-email.png" alt=""></span>care.centre@wingmoney.com</a>
+					<a href="mailto:care.centre@wingmoney.com" class="email-link"><span><img src="images/icon-email.png" alt=""></span>care.centre@wingmoney.com</a>
 					<a href="privacy-policy.html" class="privacy-link">Terms &amp; Privacy Policies</a>
 				</div>	
 			</div>

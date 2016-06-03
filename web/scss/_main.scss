@@ -210,6 +210,93 @@ footer { position: relative; z-index: 1; }
 	}
 }
 
+.loading-spinner-wrapper {
+	position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 99;
+    top: 50%;
+    margin-top: -6px;
+    opacity: 0;
+    @include transition(all, 0.3s, ease);
+}
+
+
+.loading-spinner {
+    position: relative;
+    vertical-align: middle;
+    width: 50px;
+    height: 12px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.loading-spinner i {
+    position: absolute;
+    top: 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: $coBlue;
+    -webkit-animation: pulse 1s infinite ease-in-out;
+    -moz-animation: pulse 1s infinite ease-in-out;
+    animation: pulse 1s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+.loading-spinner i.one {
+    left: 0;
+    -webkit-animation-delay: -.32s;
+    -moz-animation-delay: -.32s;
+    animation-delay: -.32s
+}
+.loading-spinner i.two {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation-delay: -.16s;
+    -moz-animation-delay: -.16s;
+    animation-delay: -.16s
+}
+.loading-spinner i.three {
+    right: 0;
+}
+.loading-spinner i {
+    background: $coBlue;
+}
+
+
+@-webkit-keyframes pulse {
+    0%, 100%, 80% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes pulse {
+    0%, 100%, 80% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}
+@keyframes pulse {
+    0%, 100%, 80% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}
+
 #ui-datepicker-div {
 	position: absolute;
 	z-index: 9999 !important;
@@ -457,6 +544,7 @@ a.waves-effect .waves-ripple {
 
 			&.left, &.right {
 				@include transform(translateX(0));
+				z-index: 3;
 			}
 		}
 	}
@@ -466,6 +554,12 @@ a.waves-effect .waves-ripple {
 		padding: 5px 8px 0px 8px;
 		width: 100%;
 		border: 1px solid transparent;
+		position: relative;
+		z-index: 1;
+
+		&:focus {
+			border-bottom: 1px solid $coGreen;
+		}
 	}
 
 	input[value=""] + label, input[value=""] + label {
@@ -478,7 +572,7 @@ a.waves-effect .waves-ripple {
 	    color: $coGrey;
 	    opacity: 1;
 	    visibility: visible;
-
+	    z-index: 3;
 	    @include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
 	}
 
@@ -496,7 +590,16 @@ a.waves-effect .waves-ripple {
 	    opacity: 0;
 	    visibility: hidden;
 	    font-size: 10px;
+	    position: absolute;
+
 	}
+}
+
+#wing-form-wrap {
+	position: relative;
+	height: 1px;
+	opacity: 0;
+	clear: both;
 }
 
 
@@ -523,6 +626,10 @@ a.waves-effect .waves-ripple {
 		border-right: 8px solid transparent;
 		border-top: 8px solid #a7a9ac;
 		margin-top: -4px;
+	}
+
+	&.focus {
+		border-bottom:1px solid $coGreen;
 	}
 }
 .custom-select-wrapper .custom-select-display { 
@@ -564,6 +671,7 @@ a.waves-effect .waves-ripple {
 	    vertical-align: middle;
 	    visibility: visible;
 	    opacity: 1;
+	    position: relative;
 
 	}
 	input[type="radio"] + label span {
@@ -658,6 +766,10 @@ a.waves-effect .waves-ripple {
 			opacity: 1;
 			@include transform(scale(1));
 		}
+
+		.loading-spinner-wrapper {
+			opacity: 1;
+		}
 	}
 
 	h3 {
@@ -704,73 +816,73 @@ a.waves-effect .waves-ripple {
 		border-bottom: 1px solid $coWhite;
 		margin: 0px 5px 8px;
 	}
+}
 
-	.required-tooltip {
-		position: absolute;
-		top: -4px;
-		background: $coWhite;
-		border-radius: 8px;
-		padding: 8px;
-		min-width: 120px;
-		@include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
-		opacity: 0;
+.required-tooltip {
+	position: absolute;
+	top: -4px;
+	background: $coWhite;
+	border-radius: 8px;
+	padding: 8px;
+	min-width: 120px;
+	@include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
+	opacity: 0;
+	z-index: -1;
+	
+	p {
+		font-size: 12px;
+		color: $coGrey;
 
-		
-		p {
-			font-size: 12px;
-			color: $coGrey;
-
-			span {
-				color: red;
-				display: inline-block;
-			}
+		span {
+			color: red;
+			display: inline-block;
 		}
+	}
 
+
+	&:before {
+		
+
+	}
+
+
+	&.left {
+		right: 100%;
+		margin-right: 10px;
+		box-shadow: inset 1px 1px 5px rgba($coBlack, 0.2);
+		@include transform(translateX(-30px));
 
 		&:before {
-			
-
+			content: '';
+			position: absolute;
+		    top: 50%;
+		    margin-top: -8px;
+			right: -6px;
+			width: 0;
+			height: 0;
+			border-top: 8px solid transparent;
+			border-left: 8px solid $coWhite;
+			border-bottom: 8px solid transparent;
 		}
+	}
 
+	&.right {
+		left: 100%;
+		margin-left: 10px;
+		box-shadow: inset -1px -1px 5px rgba($coBlack, 0.2);
+		@include transform(translateX(30px));
 
-		&.left {
-			right: 100%;
-			margin-right: 10px;
-			box-shadow: inset 1px 1px 5px rgba($coBlack, 0.2);
-			@include transform(translateX(-30px));
-
-			&:before {
-				content: '';
-				position: absolute;
-			    top: 50%;
-			    margin-top: -8px;
-				right: -6px;
-				width: 0;
-				height: 0;
-				border-top: 8px solid transparent;
-				border-left: 8px solid $coWhite;
-				border-bottom: 8px solid transparent;
-			}
-		}
-
-		&.right {
-			left: 100%;
-			margin-left: 10px;
-			box-shadow: inset -1px -1px 5px rgba($coBlack, 0.2);
-			@include transform(translateX(30px));
-
-			&:before {
-				left: -6px;
-				content:'';
-				width: 0;
-				position: absolute;
-			    top: 50%;
-			    margin-top: -8px;
-			    height: 0;
-			    border-top: 8px solid transparent;
-			    border-right: 8px solid $coWhite;
-			    border-bottom: 8px solid transparent;
-			}
+		&:before {
+			left: -6px;
+			content:'';
+			width: 0;
+			position: absolute;
+		    top: 50%;
+		    margin-top: -8px;
+		    height: 0;
+		    border-top: 8px solid transparent;
+		    border-right: 8px solid $coWhite;
+		    border-bottom: 8px solid transparent;
 		}
 	}
 }
@@ -1429,7 +1541,6 @@ a.waves-effect .waves-ripple {
 
 .ty-text {
 	padding-top: 30px;
-	display: none;
 
 	h2 {
 		color: $coGreen;
@@ -1657,6 +1768,15 @@ a.waves-effect .waves-ripple {
 
 }
 
+@media only screen and (max-width: 1024px) {
+	.required-tooltip {
+
+		&.right {
+			left: 40px;
+		}
+	}
+}
+
 @media only screen and (min-width: 992px) {
 	.menu {
 		display: block !important;
@@ -1867,11 +1987,8 @@ a.waves-effect .waves-ripple {
 		}
 	}
 
-	.wing-form-wrap {
-
-		.required-tooltip {
-			display: none;
-		}
+	.required-tooltip {
+		display: none;
 	}
 
 	.footer-bottom {
