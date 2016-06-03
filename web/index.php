@@ -169,7 +169,7 @@
 			<div class="container">
 				<div class="store-partners">
 					<div class="text-center animated hiding" data-animation="fadeInUp">
-						<h3>Our Partner Stores:</h3>
+						<h3>Our Partner Stores</h3>
 					</div>
 					<div class="owl-carousel owl-theme animated hiding" data-animation="fadeInUp">
 						<div class="item-store">
