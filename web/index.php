@@ -71,7 +71,7 @@
 					<div class="container">
 						<div class="fl banner-text animated hiding" data-animation="fadeInLeft" data-delay="300">
 							<div class="logo"><img src="images/wing-logo.png" alt=""></div>
-							<h1><span>FAST AND SECURED </span><br><span>PAYMENTS FROM YOUR </span><br><span>MOBILE PHONE.</span></h1>
+							<h1><span>FAST AND SECURE </span><br><span>PAYMENTS FROM YOUR </span><br><span>MOBILE PHONE.</span></h1>
 						</div>
 						<div id="wing-form-wrap"></div>
 					</div>
@@ -169,7 +169,7 @@
 			<div class="container">
 				<div class="store-partners">
 					<div class="text-center animated hiding" data-animation="fadeInUp">
-						<h3>Our Online Payment Partners:</h3>
+						<h3>Our Partner Stores:</h3>
 					</div>
 					<div class="owl-carousel owl-theme animated hiding" data-animation="fadeInUp">
 						<div class="item-store">
