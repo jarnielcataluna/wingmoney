@@ -48,30 +48,43 @@
 <!-- End Google Tag Manager -->
 <section id="main-container">
 	<header>
-		<div class="container">
-			<div class="logo fl"><img src="images/wing-logo.png" alt=""></div>
+		<div class="column" style="width:98%; margin: 0 auto;">
+			<div class="logo fl"><a href="#"><img src="images/Wing-Logo-10.png" alt=""></a></div>
+			<div class="slogan"><p>Cambodia's leading mobile <br>banking services provider</p></div>
 			<div class="header-hamburger"><span></span></div>
+			
 			<div class="menu">
 				<ul>
-					<li><a href="#wing-account" class="waves-effect">Wing Account</a></li>
-					<li><a href="#enjoy-discount" class="waves-effect">Enjoy Discounts</a></li>
-					<li><a href="#store-partners" class="waves-effect">Payment Partners</a></li>
-					<li><a href="#pay-bills" class="waves-effect">Pay Bills</a></li>
-					<li><a href="#wing-ket" class="waves-effect">Wing Ket Luy</a></li>
-					<li><a href="#wing-form-wrap" class="waves-effect">Register Now</a></li>
+					<li><a href="wingmoney.com"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></a></li>
+					<li><a href="#wing-account">Wing Account</a></li>
+					<li><a href="#enjoy-discount">Enjoy Discounts</a></li>
+					<li><a href="#store-partners">Payment Partners</a></li>
+					<li><a href="#pay-bills">Pay Bills</a></li>
+					<li><a href="#wing-ket">Wing Ket Luy</a></li>
+					<li><a href="#wing-form-wrap">Register Now</a></li>
 				</ul>
+				<div class="wpml-languages enabled">
+					<a class="active tooltip" data-tooltip="No translations available for this page">
+						<img src="images/en.png" alt="" width="18" height="12">
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</a>
+					<ul class="wpml-lang-dropdown">
+						<li><a href=""><img src="images/km.png" alt="" width="18" height="12"></a></li>
+					</ul>
+				</div>
 			</div>
+			
 		</div>
 	</header>
 	<section id="main-wrapper">
 
 		<section class="banner-wrap jq-section">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="images/banner4.jpg" data-bleed="10" naturalWidth="1400" naturalHeight="650" alt=""></div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="images/banner4.jpg" data-bleed="10" alt=""></div>
 			<div class="table-wrap">
 				<div class="table-content">
 					<div class="container">
 						<div class="fl banner-text animated hiding" data-animation="fadeInLeft" data-delay="300">
-							<div class="logo"><img src="images/wing-logo.png" alt=""></div>
+							<!-- <div class="logo"><img src="images/wing-logo.png" alt=""></div> -->
 							<h1><span>FAST AND SECURE </span><br><span>PAYMENTS FROM YOUR </span><br><span>MOBILE PHONE.</span></h1>
 						</div>
 						<div id="wing-form-wrap"></div>
@@ -278,6 +291,56 @@
 			</div>
 		</section>
 
+		<!-- <section id="how-to-sign" class="how-to-sign section-pad">
+			<div class="container">
+				<h2 class="sec-title text-center">How To Sign Up Online</h2>
+				<div class="step-signup">
+					<div class="owl-carousel owl-theme animated hiding" data-animation="fadeInUp">
+						<div class="step">
+							<span class="ss-num"><i>1</i></span>
+							<div class="ss-wrap">
+								<img src="images/step1.png" alt="">
+							</div>
+							<div class="wing-benifits-info">
+								<h3>Lorem Ipsum <br>Amit Sit</h3>
+								<p>Get up to 50% discount on our XX number of store partners nationwide.</p>
+							</div>
+						</div>
+						<div class="step">
+							<span class="ss-num"><i>2</i></span>
+							<div class="ss-wrap">
+								<img src="images/step2.png" alt="">
+							</div>
+							<div class="wing-benifits-info">
+								<h3>Lorem Ipsum <br>Amit Sit</h3>
+								<p>Get up to 50% discount on our XX number of store partners nationwide.</p>
+							</div>
+						</div>
+						<div class="step">
+							<span class="ss-num"><i>3</i></span>
+							<div class="ss-wrap">
+								<img src="images/step3.png" alt="">
+							</div>
+							<div class="wing-benifits-info">
+								<h3>Lorem Ipsum <br>Amit Sit</h3>
+								<p>Get up to 50% discount on our XX number of store partners nationwide.</p>
+							</div>
+						</div>
+						<div class="step">
+							<span class="ss-num no-border"><i>4</i></span>
+							<div class="ss-wrap">
+								<img src="images/step4.png" alt="">
+							</div>
+							<div class="wing-benifits-info">
+								<h3>Lorem Ipsum <br>Amit Sit</h3>
+								<p>Get up to 50% discount on our XX number of store partners nationwide.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
 		<section id="apply-now" class="apply-now-sec section-pad jq-section">
 			<div class="container">
 				<div class="text-center">
@@ -465,6 +528,52 @@
 					<a href="privacy-policy.html" class="privacy-link">Terms &amp; Privacy Policies</a>
 				</div>	
 			</div>
+		</div>
+	</div>
+
+	<div class="footer-action">
+		<div class="container">
+			<h4>Call us at +855 23 999 989 or dial *989# to use Wing.</h4>
+		</div>
+	</div>
+
+	<div class="widgets_wrapper">
+		<div class="container">
+			<div class="col-sm-4">
+				<h4>Our Company</h4>
+				<ul class="menu-company-info">
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Careers at Wing</a></li>
+					<li><a href="#">Terms &amp; Conditions</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h4>Contact Us</h4>
+				<div class="textwidget">
+					<p>Call us on +855 23 999 989</p>
+					<p><a href="mailto:care.centre@wingmoney.com">care.centre@wingmoney.com</a></p>
+					<p><a href="http://www.wingmoney.com">www.wingmoney.com</a></p>
+					<p><a href="http://www.facebook.com/WINGmoney">www.facebook.com/WINGmoney</a></p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="footer-logo"><a href="#"><img src="images/footer-logo.png" alt=""></a></div>
+				<div class="social-media-item">
+					<h4>
+						<a href="http://www.facebook.com/WINGmoney" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://plus.google.com/109000819204361931521" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/wingcambodia" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://www.youtube.com/user/WingCambodia" target="blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer_copy">
+		<div class="container">
+				<div class="copyright text-center">&copy; 2016 Wing (Cambodia) Limited Specialised Bank.</div>	
 		</div>
 	</div>
 </footer>

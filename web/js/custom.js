@@ -84,6 +84,34 @@ $(document).ready(function() {
         }
     });
 
+    $('.step-signup .owl-carousel').owlCarousel({
+        loop:false,
+        margin:1,
+        dots: true,
+        nav: true,
+        pullDrag: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            430:{
+                items:1
+            },
+            580:{
+                items:1
+            },
+            768:{
+                items:4
+            },
+            992:{
+                items:4
+            },
+            1200:{
+                items:4
+            }
+        }
+    });
+
     $('.wing-mobile-menu ul li a').click(function(e){
         e.preventDefault();
         var _this = $(this).attr('href');
@@ -119,6 +147,88 @@ $(document).ready(function() {
         $(this).closest('.input-wrap').removeClass('error');
     });
 
+    // $('.wing-form').submit(function(e){
+    //     $('.input-wrap').addClass('error');
+    //     isvalidate = false;
+
+    //     if( IsEmail($('#account-email').val() )) {
+    //         $('#account-email').closest('.input-wrap').removeClass('error');
+    //         isvalidate = true;
+    //     } else {
+    //         isvalidate = false;
+    //     }
+
+    //     if( !$('#last-name').val() == '') {
+    //         $('#last-name').closest('.input-wrap').removeClass('error');
+    //         isvalidate = true;
+    //     } else {
+    //         isvalidate = false;
+    //     }
+
+    //     if( !$('#first-name').val() == '') {
+    //         $('#first-name').closest('.input-wrap').removeClass('error');
+    //         isvalidate = true;
+    //     } else {
+    //         isvalidate = false;
+    //     }
+
+    //     if( !$('#id-number').val() == '') {
+    //         $('#id-number').closest('.input-wrap').removeClass('error');
+    //         isvalidate = true;
+    //     } else {
+    //         isvalidate = false;
+    //     }
+
+    //     if( !$('#birthday').val() == '') {
+    //         $('#birthday').closest('.input-wrap').removeClass('error');
+    //         isvalidate = true;
+    //     } else {
+    //         isvalidate = false;
+    //     }
+
+    //     if( !$('#contact-num').val() == '' && isNumber( $('#contact-num').val() )) {
+    //         $('#contact-num').closest('.input-wrap').removeClass('error');
+    //         isvalidate = true;
+
+    //     } else {
+    //         isvalidate = false;
+    //     }
+
+    //     if( $('.gender select').val() != '0'){
+    //         $('.gender').removeClass('error');
+    //         isvalidate = true;
+
+    //     } else {
+    //         isvalidate = false;
+    //     }
+
+    //     if( $('.select-branch select').val() != '0'){
+    //         $('.select-branch').removeClass('error');
+    //         isvalidate = true;
+    //     } else {
+    //         isvalidate = false;
+    //     }
+
+    //     if( $('.id-type select').val() != '0') {
+    //         $('.id-type').removeClass('error');
+    //         isvalidate = true;
+    //     } else {
+    //         isvalidate = false;
+    //     }
+
+    //     console.log(isvalidate);
+        
+
+    //     if( $('#contact-num').val() != '' && isNumber($('#contact-num').val()) && $('.gender select').val() != '0' && $('.id-type select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#id-number').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isvalidate == true) {
+    //     //if(  && isvalidate == true) {
+    //         //return true;
+    //         console.log(isvalidate);
+    //     } else {
+    //         e.preventDefault();
+    //         console.log(isvalidate);
+    //     }
+    // })
+
 
 
     // Verification Field
@@ -130,47 +240,54 @@ $(document).ready(function() {
 
     $('.header-hamburger').click(function(){
         var _this = $(this);
+        $('.menu ul li').removeClass('is-open');
+    
+
+        if (_this.hasClass('active')) {
+
+            $('.menu').hide();
+            
             $('.menu ul li').removeClass('is-open');
-        
+            setTimeout(function(){
+                _this.removeClass('active');
+            }, 400);
+            
 
-            if (_this.hasClass('active')) {
+        } else {
 
-                $('.menu').hide();
                 
-                $('.menu ul li').removeClass('is-open');
+            $('.menu').stop(true, false).slideDown(300);
+
+            $('.menu ul li').each(function(index){
+                var _this = $(this);
                 setTimeout(function(){
-                    _this.removeClass('active');
-                }, 400);
-                
+                    _this.addClass('is-open');
+                }, 100 + (index * 100));
 
-            } else {
-
-                    
-                $('.menu').stop(true, false).slideDown(300);
-
-                $('.menu ul li').each(function(index){
-                    var _this = $(this);
-                    setTimeout(function(){
-                        _this.addClass('is-open');
-                    }, 100 + (index * 100));
-
-                });
-                setTimeout(function(){
-                    _this.addClass('active');
-                }, 100 + ($('.menu ul li').size() * 100));
-            }
-        
-
+            });
+            setTimeout(function(){
+                _this.addClass('active');
+            }, 100 + ($('.menu ul li').size() * 100));
+        }
         
         
     });
 
-    
+    $('.wpml-languages').mouseenter(function(){
+        $(this).find('.wpml-lang-dropdown').css({'display' : 'block'});
+    });
+
+    $('.wpml-languages').mouseleave(function(){
+        $(this).find('.wpml-lang-dropdown').css({'display' : 'none'});
+    });
+
+    //console.log(isNumber('+85512345678'));
 });
 
 $(window).load(function() {
 	resize();
 
+    $('.wing-form-wrap').show();
 });
 
 $(window).scroll(function() {
@@ -182,7 +299,7 @@ $(window).on("load resize scroll",function(e){
     scrollParallax();
 });
 
-// preloader once done
+//preloader once done
 Pace.on('done', function() {
 	// totally hide the preloader especially for IE
 	setTimeout(function() {
@@ -191,6 +308,16 @@ Pace.on('done', function() {
 	}, 500);
 });
 
+// function isNumber(number) {
+//     var numberValid = /^\+(?:[0-9]●?){6,14}[0-9]$/;
+
+//     return numberValid.test(number);
+// }
+
+// function IsEmail(email) {
+//   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+//   return regex.test(email);
+// }
 
 function scrollParallax() {
 
@@ -202,7 +329,6 @@ function scrollParallax() {
         $('.wing-form-wrap').css({'top': total  });
         $('.banner-text').css('top', Math.round(sT*0.20));
     }
-
     
 }
 
