@@ -7206,6 +7206,10 @@ header .logo a img {
   color: #b0c024;
 }
 
+.how-to-sign .container {
+  max-width: 1100px;
+}
+
 .how-to-sign .ss-wrap {
   width: 160px;
   height: 160px;
@@ -7230,6 +7234,12 @@ header .logo a img {
 
 .how-to-sign .wing-benifits-info p {
   padding: 0;
+}
+
+.how-to-sign .wing-benifits-info h3 {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 15px;
 }
 
 .how-to-sign .step-signup {
@@ -7298,7 +7308,7 @@ header .logo a img {
   top: 50%;
   left: 0;
   margin-top: -1px;
-  width: 550%;
+  width: 600%;
   height: 2px;
   background: #0098d7;
   z-index: 1;

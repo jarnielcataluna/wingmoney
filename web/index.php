@@ -302,8 +302,8 @@
 								<img src="images/step1.png" alt="">
 							</div>
 							<div class="wing-benifits-info">
-								<h3>Lorem Ipsum <br>Amit Sit</h3>
-								<p>Get up to 50% discount on our XX number of store partners nationwide.</p>
+								<h3> Register Online</h3>
+								<p>Fill up the form <br> you'll find here.</p>
 							</div>
 						</div>
 						<div class="step">
@@ -312,8 +312,8 @@
 								<img src="images/step2.png" alt="">
 							</div>
 							<div class="wing-benifits-info">
-								<h3>Lorem Ipsum <br>Amit Sit</h3>
-								<p>Get up to 50% discount on our XX number of store partners nationwide.</p>
+								<h3>Receive <br>Confirmation Message</h3>
+								<p>Wait for a text or e-mail <br> from us.</p>
 							</div>
 						</div>
 						<div class="step">
@@ -322,8 +322,8 @@
 								<img src="images/step3.png" alt="">
 							</div>
 							<div class="wing-benifits-info">
-								<h3>Lorem Ipsum <br>Amit Sit</h3>
-								<p>Get up to 50% discount on our XX number of store partners nationwide.</p>
+								<h3>Finalize <br> Transaction</h3>
+								<p>Confirm your application with the code in the message.</p>
 							</div>
 						</div>
 						<div class="step">
@@ -332,8 +332,8 @@
 								<img src="images/step4.png" alt="">
 							</div>
 							<div class="wing-benifits-info">
-								<h3>Lorem Ipsum <br>Amit Sit</h3>
-								<p>Get up to 50% discount on our XX number of store partners nationwide.</p>
+								<h3>Claim <br>Wing Money Kit</h3>
+								<p>Head to a Wing Money Outlet <br> for your kit.</p>
 							</div>
 						</div>
 					</div>

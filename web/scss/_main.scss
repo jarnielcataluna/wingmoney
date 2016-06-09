@@ -78,6 +78,10 @@ header {
 		color: $coGreen;
 	}
 
+	.container {
+		max-width: 1100px;
+	}
+
 	.ss-wrap {
 		width: 160px;
 		height: 160px;
@@ -98,6 +102,13 @@ header {
 
 		p {
 			padding: 0;
+		}
+
+		h3 {
+			font-size: 20px;
+		    line-height: 28px;
+		    margin-bottom: 15px;
+
 		}
 	}
 
@@ -165,7 +176,7 @@ header {
 			top: 50%;
 			left: 0;
 			margin-top: -1px;
-			width: 550%;
+			width: 600%;
 			height: 2px;
 			background: $bgBlue;
 			z-index: 1;
