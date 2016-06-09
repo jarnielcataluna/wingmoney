@@ -7479,6 +7479,7 @@ header .logo a img {
 footer {
   position: relative;
   z-index: 1;
+  background: #b0c024;
 }
 
 .copyright {
@@ -7487,6 +7488,10 @@ footer {
   font-weight: 700;
   margin-bottom: 30px;
   padding-top: 40px;
+}
+
+.nolink-a a {
+  pointer-events: none;
 }
 
 .widgets_wrapper h4 {
@@ -9289,6 +9294,15 @@ a.waves-effect .waves-ripple {
 
 .thank-you-page header .logo, .inner-page header .logo {
   display: block;
+}
+
+.thank-you-page header .logo a, .inner-page header .logo a {
+  height: auto;
+}
+
+.thank-you-page header .logo a img, .inner-page header .logo a img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .page-404-wrap h1 {

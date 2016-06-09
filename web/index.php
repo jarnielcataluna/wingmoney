@@ -111,7 +111,7 @@
 						<div class="feature-tag">
 							<p>Wing Money's mobile wallet function is just the beginning! There are so many ways Wing makes life easier and faster so you can focus on the things that really matter. Signing up is so simple:</p>
 						</div>
-						<ul>
+						<ul class="nolink-a">
 							<li><a href="#">Money Transfer</a></li>
 							<li><a href="#">Discount Store Partners</a></li>
 							<li><a href="#">Bills Payment</a></li>
@@ -543,10 +543,10 @@
 			<div class="col-sm-4">
 				<h4>Our Company</h4>
 				<ul class="menu-company-info">
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Careers at Wing</a></li>
-					<li><a href="#">Terms &amp; Conditions</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="https://www.wingmoney.com/about-wing/" target="_blank">About Us</a></li>
+					<li><a href="https://www.wingmoney.com/about-wing/work-at-wing/" target="_blank">Careers at Wing</a></li>
+					<li><a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a></li>
+					<li><a href="https://www.wingmoney.com/contact-us/" target="_blank">Contact Us</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-4">
