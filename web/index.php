@@ -49,13 +49,13 @@
 <section id="main-container">
 	<header>
 		<div class="column" style="width:98%; margin: 0 auto;">
-			<div class="logo fl"><a href="#"><img src="images/Wing-Logo-10.png" alt=""></a></div>
+			<div class="logo fl"><a href="http://www.wingmoney.com/"><img src="images/Wing-Logo-10.png" alt=""></a></div>
 			<div class="slogan"><p>Cambodia's leading mobile <br>banking services provider</p></div>
 			<div class="header-hamburger"><span></span></div>
 			
 			<div class="menu">
 				<ul>
-					<li><a href="wingmoney.com"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></a></li>
+					<li><a href="http://www.wingmoney.com/" class="wing-btn"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></a></li>
 					<li><a href="#wing-account">Wing Account</a></li>
 					<li><a href="#enjoy-discount">Enjoy Discounts</a></li>
 					<li><a href="#store-partners">Payment Partners</a></li>
@@ -291,7 +291,7 @@
 			</div>
 		</section>
 
-		<!-- <section id="how-to-sign" class="how-to-sign section-pad">
+		<section id="how-to-sign" class="how-to-sign section-pad">
 			<div class="container">
 				<h2 class="sec-title text-center">How To Sign Up Online</h2>
 				<div class="step-signup">
@@ -339,7 +339,7 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 		<section id="apply-now" class="apply-now-sec section-pad jq-section">
 			<div class="container">
@@ -499,6 +499,7 @@
 	</section>
 </section>
 <footer>
+	<a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 	<div class="bg-green section-pad footer-top">
 		<div class="container">
 			<div class="row">

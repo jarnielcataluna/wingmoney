@@ -18,6 +18,12 @@ $(document).ready(function() {
 	resize();
     initCustomForm();
 
+    $('.back-to-top').click(function(e){
+        e.preventDefault();
+
+        $("html, body").animate({ scrollTop: "0" } , 1000);
+    });
+
     if($('#birthday').length > 0 ){
         $('#birthday').datepicker({
             changeMonth: true,
@@ -119,10 +125,9 @@ $(document).ready(function() {
         $(this).parent('li').addClass('active');
         $('.wm-content').stop(true, false).slideUp(300);
         $(_this).stop(true, false).slideDown(300);
-
     });
 
-    $('.menu ul li a, .btn-apply, .btn-signup').click(function(e){
+    $('.menu ul li a:not(".wing-btn"), .btn-apply, .btn-signup').click(function(e){
         e.preventDefault();
         var __this = $(this),
         $targetDiv = $(__this.attr('href'));

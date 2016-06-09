@@ -171,6 +171,13 @@ $(document).ready(function(){
             isvalidate = false;
         }
 
+        if( $('.finding-us select').val() != '0'){
+            $('.finding-us').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
         if( $('.id-type select').val() != '0') {
             $('.id-type').removeClass('error');
             isvalidate = true;
@@ -178,7 +185,7 @@ $(document).ready(function(){
             isvalidate = false;
         }
 
-        if( $('.gender select').val() != '0' && $('.id-type select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#id-number').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length == 8 &&  isvalidate == true) {
+        if( $('.gender select').val() != '0' && $('.id-type select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#id-number').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length == 8 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
             $('.wing-form-wrap').addClass('overlay');
             var that = $(this),
                 url = that.attr('action'),
@@ -214,41 +221,59 @@ $(document).ready(function(){
     // Verification Field
     $('.final-step-form').submit(function(e){
         e.preventDefault();
+        $('.input-wrap').addClass('error');
+        isvalidate = false;
 
-        var that = $(this),
+        if( !$('#verfication-code').val() == '') {
+            $('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( !$('#verfication-code').val() == '' &&  isvalidate == true) {
+            $('.final-step-form').addClass('overlay');
+
+            var that = $(this),
             url = that.attr('action'),
             type = that.attr('method'),
             data = {};
 
-        that.find('[name]').each(function (index, value) {
-            var that = $(this),
-                name = that.attr('name'),
-                value = that.val();
-                data[name] = value;
-        });
+            that.find('[name]').each(function (index, value) {
+                var that = $(this),
+                    name = that.attr('name'),
+                    value = that.val();
+                    data[name] = value;
+            });
 
-        $.ajax({
-            url: url,
-            type: type,
-            data: data,
+            $.ajax({
+                url: url,
+                type: type,
+                data: data,
 
-            success: function (response) {
-                var data = jQuery.parseJSON(response);
-                if(!data.error){
-                    database.ref('leads').child(data.id).set(data);
-                    window.location.assign('thankyou');
-                }else{
-                    var errorOutput = $('#verfication-code').closest('.input-wrap');
-                    errorOutput.find('.required-tooltip p').html(data.error);
-                    errorOutput.addClass('error');
+                success: function (response) {
+                    var data = jQuery.parseJSON(response);
+                    if(!data.error){
+                        $('.final-step-form').removeClass('overlay');
+                        database.ref('leads').child(data.id).set(data);
+                        window.location.assign('thankyou');
+                    }else{
+                        $('.final-step-form').removeClass('overlay');
+                        var errorOutput = $('#verfication-code').closest('.input-wrap');
+                        errorOutput.find('.required-tooltip p').html(data.error);
+                        errorOutput.addClass('error');
+                    }
+
                 }
+            });
 
-            }
-        });
+            e.preventDefault();
+            return false;
 
-
-        e.preventDefault();
-        return false;
+        } else {
+            e.preventDefault();
+        }
+        
     });
 });
 

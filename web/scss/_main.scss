@@ -2166,6 +2166,21 @@ a.waves-effect .waves-ripple {
  	@include transform(rotate(-45deg));
 }
 
+.back-to-top {
+	position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.50);
+    padding: 15px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;
+
+    &:hover {
+    	background: rgba(0, 0, 0, 1);
+    }
+}
+
 @media only screen and (max-width: 1350px) {
 	.menu ul li {
 		a {

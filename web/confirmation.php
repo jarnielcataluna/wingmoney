@@ -60,7 +60,14 @@
 							<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
 						</div>
 						<form class="final-step-form" method="post" action="/exec/validate2.php" novalidate>
-							<div class="input-wrap error">
+							<div class="loading-spinner-wrapper" id="app-loader">
+						        <span class="loading-spinner">
+						          <i class="one"></i>
+						          <i class="two"></i>
+						          <i class="three"></i>
+						        </span>
+						    </div>
+							<div class="input-wrap">
 								<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
 								<input type="text" id="verfication-code" name="verification_code"  required="required">
 								<label for="verfication-code">Enter Verification Code</label>
