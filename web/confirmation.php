@@ -69,10 +69,10 @@
 						    </div>
 							<div class="input-wrap">
 								<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
-								<input type="text" id="verfication-code" name="verification_code"  required="required">
+								<input type="text" id="verfication-code" name="verification_code"  value="" required="required">
 								<label for="verfication-code">Enter Verification Code</label>
 								<div class="required-tooltip left">
-									<p>This field is required confirmation code <span>*</span></p>
+									<p>This confirmation code is required <span>*</span></p>
 								</div>
 							</div>
 							<div class="input-wrap">
@@ -137,7 +137,7 @@
 					</div>
 				</div>	
 				<div class="col-sm-6 text-right">
-					<a href="#" class="email-link"><span><img src="images/icon-email.png" alt=""></span>care.centre@wingmoney.com</a>
+					<a href="mailto:care.centre@wingmoney.com" class="email-link"><span><img src="images/icon-email.png" alt=""></span>care.centre@wingmoney.com</a>
 					<a href="privacy-policy.html" class="privacy-link">Terms &amp; Privacy Policies</a>
 				</div>	
 			</div>

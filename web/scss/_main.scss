@@ -2589,6 +2589,28 @@ a.waves-effect .waves-ripple {
 		display: none;
 	}
 
+	.final-step-wrap {
+		.input-wrap.error {
+			/*input[type="text"] {
+				    border: 3px solid red;
+			}*/
+			.required-tooltip.left {
+				display: block;
+				top: -66px;
+			    right: 50%;
+			    left: inherit;
+			    margin-right: -85px;
+			}
+			.required-tooltip.left:before {
+				@include transform(rotate(90deg));
+				top: 100%;
+				right: 50%;
+				margin-top: -5px;
+				margin-right: -8px;
+			}
+		}
+	}
+
 	.footer-bottom {
 		padding: 10px 0;
 	}
