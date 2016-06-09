@@ -49,13 +49,13 @@
 <section id="main-container">
 	<header>
 		<div class="column" style="width:98%; margin: 0 auto;">
-			<div class="logo fl"><a href="http://www.wingmoney.com/"><img src="images/Wing-Logo-10.png" alt=""></a></div>
+			<div class="logo fl"><a href="http://www.wingmoney.com/" target="_blank"><img src="images/Wing-Logo-10.png" alt=""></a></div>
 			<div class="slogan"><p>Cambodia's leading mobile <br>banking services provider</p></div>
 			<div class="header-hamburger"><span></span></div>
 			
 			<div class="menu">
 				<ul>
-					<li><a href="http://www.wingmoney.com/" class="wing-btn"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></a></li>
+					<li><a href="http://www.wingmoney.com/" class="wing-btn" target="_blank"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></a></li>
 					<li><a href="#wing-account">Wing Account</a></li>
 					<li><a href="#enjoy-discount">Enjoy Discounts</a></li>
 					<li><a href="#store-partners">Payment Partners</a></li>

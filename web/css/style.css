@@ -9731,6 +9731,9 @@ a.waves-effect .waves-ripple {
 }
 
 @media only screen and (max-width: 767px) {
+  .back-to-top {
+    display: none;
+  }
   .widgets_wrapper {
     display: none;
   }
