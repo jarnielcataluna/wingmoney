@@ -60,9 +60,9 @@
 					<li><a href="#enjoy-discount">Enjoy Discounts</a></li>
 					<li><a href="#store-partners">Payment Partners</a></li>
 					<li><a href="#pay-bills">Pay Bills</a></li>
-					<li><a href="#how-to-sign">How to Sign Up</a></li>
 					<li><a href="#wing-ket">Wing Ket Luy</a></li>
 					<li><a href="#wing-form-wrap">Register Now</a></li>
+					<li><a href="#how-to-sign" class="menu-highlighted">How to Sign Up</a></li>
 				</ul>
 				<div class="wpml-languages enabled">
 					<a class="active tooltip" data-tooltip="No translations available for this page">
