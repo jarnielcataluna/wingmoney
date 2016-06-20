@@ -86,7 +86,7 @@
 					<div class="container">
 						<div class="fl banner-text animated hiding" data-animation="fadeInLeft" data-delay="300">
 							<!-- <div class="logo"><img src="images/wing-logo.png" alt=""></div> -->
-							<h1><span>FAST AND SECURE </span><br><span>PAYMENTS FROM YOUR </span><br><span>MOBILE PHONE.</span></h1>
+							<h1><span>FAST, SECURE </span><br><span>and convenient</span><br><span>PAYMENTS FROM</span><br><span>YOUR MOBILE PHONE.</span></h1>
 						</div>
 						<div id="wing-form-wrap"></div>
 					</div>

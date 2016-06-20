@@ -329,7 +329,7 @@ function scrollParallax() {
     if ( $('html').hasClass('desktop') && $(window).width() > 991 ) {
 
         var sT = $(window).scrollTop();
-        var total = Math.round(-sT*0.20) - 300;
+        var total = Math.round(-sT*0.20) - 320;
 
         $('.wing-form-wrap').css({'top': total  });
         $('.banner-text').css('top', Math.round(sT*0.20));

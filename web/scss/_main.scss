@@ -1355,6 +1355,7 @@ a.waves-effect .waves-ripple {
 			line-height: 54px;
 			padding: 0px 5px;
 			background: rgba(0, 174, 239, 0.40);
+			letter-spacing: -1px;
 		}
 	}
 
@@ -2366,7 +2367,7 @@ a.waves-effect .waves-ripple {
 	}
 
 	body, html {
-		min-width: 320px;
+		min-width: 300px;
 	}
 
 }
