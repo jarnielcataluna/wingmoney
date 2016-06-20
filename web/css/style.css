@@ -7360,7 +7360,7 @@ header .logo a img {
   display: block;
   color: #ffffff;
   position: relative;
-  padding: 20px 20px;
+  padding: 20px 15px;
   font-size: 15px;
   font-weight: bold;
 }
@@ -9718,7 +9718,7 @@ a.waves-effect .waves-ripple {
 @media only screen and (max-width: 1350px) {
   .menu ul li a {
     font-size: 13px;
-    padding: 20px 15px;
+    padding: 20px 10px;
   }
 }
 
