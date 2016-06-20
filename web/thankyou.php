@@ -1,4 +1,8 @@
-﻿<!doctype html>
+﻿<?php if(!isset($_GET['id']) || empty($_GET['id']) || is_null($_GET['id'])){ header('Location: /'); } ?>
+
+
+
+<!doctype html>
 <html class="no-js" lang="">
 <head>
 <meta charset="utf-8">

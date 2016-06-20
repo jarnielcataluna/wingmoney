@@ -66,9 +66,9 @@
         <div class="input-wrap input-half id-type">
             <select class="custom-select" name="id_type">
                 <option value="0">ID type</option>
-                <option value="National ID" >NATIONAL ID</option>
-                <option value="Voters ID">VOTER'S ID</option>
-                <option value="Employee ID">EMPLOYEE ID</option>
+                <option value="ID_NATIONAL" >NATIONAL ID</option>
+                <option value="ID_VOTER">VOTER'S ID</option>
+                <option value="ID_EMPLOYEE">EMPLOYEE ID</option>
             </select>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
@@ -86,18 +86,18 @@
             <label>Choose Currency:</label>
             <div class="custom-radio">
                 <input type="radio" id="usd" name="currency" checked value="USD">
-                <label for="usd"><span></span>USD</label>
+                <label for="usd"><span></span>US Dollar</label>
             </div>
             <div class="custom-radio">
-                <input type="radio" id="Khmer" name="currency" value="Khmer">
+                <input type="radio" id="Khmer" name="currency" value="KHR">
                 <label for="Khmer"><span></span>Khmer</label>
             </div>
         </div>
         <div class="input-wrap finding-us">
-            <select class="custom-select">
+            <select class="custom-select" name="feedback">
                 <option value="0">Where did you find us?</option>
-                <option value="1">Facebook</option>
-                <option value="3">Others</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Others">Others</option>
             </select>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>

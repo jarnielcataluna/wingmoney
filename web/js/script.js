@@ -15,9 +15,9 @@ $(document).ready(function(){
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId      : '501745020012175',
+            appId      : '236260280081948',
             xfbml      : true,
-            version    : 'v2.3'
+            version    : 'v2.6'
         });
     };
 
