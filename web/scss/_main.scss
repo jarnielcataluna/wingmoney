@@ -839,6 +839,7 @@ a.waves-effect .waves-ripple {
 		padding: 5px 5px;
 		height: 50px;
 		vertical-align: middle;
+		min-width: 290px;
 
 		&:hover {
 			.fa {
@@ -2484,7 +2485,7 @@ a.waves-effect .waves-ripple {
 
 	.wpml-languages {
 		max-width: 55px;
-	    margin: 0 auto;
+	    margin: 10px auto 0;
 	    float: none;
 	    clear: both;
 	    top: 0;
@@ -2527,10 +2528,29 @@ a.waves-effect .waves-ripple {
 					opacity: 1;
 				}
 
+
+
 				a {
 					padding: 0;
 					color: $coBlue;
 					font-size: 20px;
+
+					&.menu-highlighted {
+						color: $coBlue !important;
+
+						&:before {
+							display: none;
+						}
+
+						&:hover {
+							color: $coWhite !important;
+
+							&:before {
+
+								background: rgba($coBlue, 1);
+							}
+						}
+					}
 				}
 			}
 		}

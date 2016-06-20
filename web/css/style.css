@@ -8173,6 +8173,7 @@ a.waves-effect .waves-ripple {
   padding: 5px 5px;
   height: 50px;
   vertical-align: middle;
+  min-width: 290px;
 }
 
 .signup-fb a:hover .fa {
@@ -9840,7 +9841,7 @@ a.waves-effect .waves-ripple {
   }
   .wpml-languages {
     max-width: 55px;
-    margin: 0 auto;
+    margin: 10px auto 0;
     float: none;
     clear: both;
     top: 0;
@@ -9896,6 +9897,18 @@ a.waves-effect .waves-ripple {
     padding: 0;
     color: #0098d7;
     font-size: 20px;
+  }
+  .menu ul li a.menu-highlighted {
+    color: #0098d7 !important;
+  }
+  .menu ul li a.menu-highlighted:before {
+    display: none;
+  }
+  .menu ul li a.menu-highlighted:hover {
+    color: #ffffff !important;
+  }
+  .menu ul li a.menu-highlighted:hover:before {
+    background: #0098d7;
   }
   .header-hamburger {
     display: block;
