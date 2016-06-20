@@ -60,6 +60,7 @@
 					<li><a href="#enjoy-discount">Enjoy Discounts</a></li>
 					<li><a href="#store-partners">Payment Partners</a></li>
 					<li><a href="#pay-bills">Pay Bills</a></li>
+					<li><a href="#how-to-sign">How to Sign Up</a></li>
 					<li><a href="#wing-ket">Wing Ket Luy</a></li>
 					<li><a href="#wing-form-wrap">Register Now</a></li>
 				</ul>
@@ -91,7 +92,14 @@
 					</div>
 				</div>
 			</div>
-			
+			<div class="h-s-cursor">
+				<a href="#how-to-sign">
+					<span>How to Sign Up</span>
+					<div class="h-s-c-arrow one bp-rel"></div>
+					<div class="clr"></div>
+					<div class="h-s-c-arrow two bp-rel"></div>
+				</a>
+			</div>
 		</section>
 
 		<section id="features" class="features bg-green section-pad jq-section">
@@ -291,7 +299,7 @@
 			</div>
 		</section>
 
-		<section id="how-to-sign" class="how-to-sign section-pad">
+		<section id="how-to-sign" class="how-to-sign section-pad jq-section">
 			<div class="container">
 				<h2 class="sec-title text-center">How To Sign Up Online</h2>
 				<div class="step-signup">
@@ -337,6 +345,7 @@
 							</div>
 						</div>
 					</div>
+					<a href="#wing-form-wrap" class="btn btn-orange btn-block btn-signup">Sign Up Now!</a>
 				</div>
 			</div>
 		</section>

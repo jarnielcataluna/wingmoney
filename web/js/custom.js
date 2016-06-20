@@ -127,7 +127,7 @@ $(document).ready(function() {
         $(_this).stop(true, false).slideDown(300);
     });
 
-    $('.menu ul li a:not(".wing-btn"), .btn-apply, .btn-signup').click(function(e){
+    $('.menu ul li a:not(".wing-btn"), .btn-apply, .btn-signup, .h-s-cursor a').click(function(e){
         e.preventDefault();
         var __this = $(this),
         $targetDiv = $(__this.attr('href'));
