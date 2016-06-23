@@ -145,6 +145,7 @@ $(document).ready(function() {
         }
         __this.parent().addClass('active');
         scrollToDiv($targetDiv,0);
+
         
     });
 

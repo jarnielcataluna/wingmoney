@@ -242,6 +242,7 @@ header {
 				.glyphicon {
 					font-size: 13px;
 				}
+				article
 
 				&:hover {
 					color: $coBlue;
@@ -254,7 +255,7 @@ header {
 						color: $coWhite !important;
 
 						&:before {
-							background: rgba($coBlue, 1);
+							background: rgba($coOrange, 1);
 						}
 					}
 
@@ -266,7 +267,7 @@ header {
 						left: 0;
 						position: absolute;
 						height: 100%;
-						background: rgba($coBlue, 0.70);
+						background: rgba($bgDarkOrange, 1);
 						opacity: 1;
 						@include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
 						@include transform(scale(1));
@@ -577,9 +578,9 @@ footer { position: relative; z-index: 1; background: $bgGreen; }
 		color: $coWhite;
 
 		&:hover {
-			background: rgba($coOrange, 0.4);
-			color: $coOrange;
-			border: 2px solid $coOrange;
+			background: rgba($coOrange, 1);
+			color: $coWhite;
+			border: 2px solid transparent;
 
 		}
 	}
@@ -726,9 +727,9 @@ footer { position: relative; z-index: 1; background: $bgGreen; }
   background-color: rgba($coWhite, 0.7);
 }
 
-.waves-effect.btn-orange .waves-ripple {
+/*.waves-effect.btn-orange .waves-ripple {
   background-color: rgba($coOrange, 0.7);
-}
+}*/
 
 .waves-effect.btn-green .waves-ripple {
   background-color: rgba($coGreen, 0.7);
@@ -1579,6 +1580,10 @@ a.waves-effect .waves-ripple {
 .store-partners {
 
 	padding-bottom: 50px;
+
+	.owl-carousel {
+		margin-top: 30px;
+	}
 }
 
 .item-store {
@@ -1629,7 +1634,7 @@ a.waves-effect .waves-ripple {
 	.owl-prev {
 		position: absolute;
 		left: -40px;
-		top: 55px;
+		top: 25px;
 		display: block;
 		text-align: center;
 		width: 0;
@@ -1650,7 +1655,7 @@ a.waves-effect .waves-ripple {
 	.owl-next {
 		position: absolute;
 		right: -40px;
-		top: 55px;
+		top: 25px;
 		display: block;
 		text-align: center;
 		width: 0;
@@ -2172,6 +2177,7 @@ a.waves-effect .waves-ripple {
 	margin-left: -60px;
 	width: 120px;
 	height: 70px;
+	display: none;
 
 	a {
 		display: block;

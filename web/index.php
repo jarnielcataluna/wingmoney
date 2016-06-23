@@ -292,7 +292,7 @@
 						<div class="pay-bill-info animated hiding" data-animation="fadeInRight">
 							<h2 class="sec-title">Pay Bills With Your <br>Wing Money Account</h2>
 							<p>Wing provides bill payment services to allow anyone to pay their bills easily through their mobile phones or via Wing’s agents nationwide. We have partnered with more than 65 billers including Utilities, Microfinance, Phone Distributors and more.</p>
-							<a href="" class="btn btn-green waves-effect fr"> View List</a>
+							<a href="WCX-List-by-District-VB.pdf" target="_blank" class="btn btn-orange fr"> View List</a>
 						</div>
 					</div>
 				</div>
@@ -345,7 +345,9 @@
 							</div>
 						</div>
 					</div>
-					<a href="#wing-form-wrap" class="btn btn-orange btn-block btn-signup">Sign Up Now!</a>
+					<div class="text-center">
+						<a href="#wing-form-wrap" class="btn btn-orange btn-signup animated hiding" data-animation="fadeInUp">Sign Up Now!</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -368,7 +370,7 @@
 						<div class="col-sm-7 wing-ket-info fl animated hiding" data-animation="fadeInLeft">
 							<h2 class="sec-title">Wing Ket Luy</h2>
 							<p>Discover Wing Ket Luy. Enjoy the convenience of never needing to bring cash to buy from your favorite shops. All you need to do is swipe or tap your Wing Card on the store's Wing terminal to make an instant, cash-free payment through your Wing Account.</p>
-							<a href="" class="btn btn-white waves-effect">Inquire</a>
+							<!-- <a href="" class="btn btn-orange">Inquire</a> -->
 						</div>
 						
 					</div>

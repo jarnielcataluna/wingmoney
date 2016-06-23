@@ -7369,6 +7369,7 @@ header .logo a img {
   font-size: 13px;
 }
 
+article
 .menu ul li a:hover {
   color: #0098d7;
 }
@@ -7382,7 +7383,7 @@ header .logo a img {
 }
 
 .menu ul li a.menu-highlighted:hover:before {
-  background: #0098d7;
+  background: #f89f1b;
 }
 
 .menu ul li a.menu-highlighted:before {
@@ -7393,7 +7394,7 @@ header .logo a img {
   left: 0;
   position: absolute;
   height: 100%;
-  background: rgba(0, 152, 215, 0.7);
+  background: #f15a29;
   opacity: 1;
   -webkit-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -7910,9 +7911,9 @@ footer {
 }
 
 .btn.btn-orange:hover {
-  background: rgba(248, 159, 27, 0.4);
-  color: #f89f1b;
-  border: 2px solid #f89f1b;
+  background: #f89f1b;
+  color: #ffffff;
+  border: 2px solid transparent;
 }
 
 .btn.btn-block {
@@ -8067,10 +8068,9 @@ footer {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.waves-effect.btn-orange .waves-ripple {
-  background-color: rgba(248, 159, 27, 0.7);
-}
-
+/*.waves-effect.btn-orange .waves-ripple {
+  background-color: rgba($coOrange, 0.7);
+}*/
 .waves-effect.btn-green .waves-ripple {
   background-color: rgba(176, 192, 36, 0.7);
 }
@@ -8922,6 +8922,10 @@ a.waves-effect .waves-ripple {
   padding-bottom: 50px;
 }
 
+.store-partners .owl-carousel {
+  margin-top: 30px;
+}
+
 .item-store {
   width: 100%;
 }
@@ -8970,7 +8974,7 @@ a.waves-effect .waves-ripple {
 .owl-controls .owl-prev {
   position: absolute;
   left: -40px;
-  top: 55px;
+  top: 25px;
   display: block;
   text-align: center;
   width: 0;
@@ -8988,7 +8992,7 @@ a.waves-effect .waves-ripple {
 .owl-controls .owl-next {
   position: absolute;
   right: -40px;
-  top: 55px;
+  top: 25px;
   display: block;
   text-align: center;
   width: 0;
@@ -9472,6 +9476,7 @@ a.waves-effect .waves-ripple {
   margin-left: -60px;
   width: 120px;
   height: 70px;
+  display: none;
 }
 
 .h-s-cursor a {
