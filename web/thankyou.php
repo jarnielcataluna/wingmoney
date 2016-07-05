@@ -65,6 +65,7 @@
 						<div class="sec-tagline">
 							<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
 						</div>
+						<a href="http://www.wingmoney.com/" class="btn btn-orange">Back to Home</a>
 					</div>
 				</div>
 

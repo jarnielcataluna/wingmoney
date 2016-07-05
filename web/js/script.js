@@ -256,7 +256,7 @@ $(document).ready(function(){
                     if(!data.error){
                         $('.final-step-form').removeClass('overlay');
                         database.ref('leads').child(data.id).set(data);
-                        window.location.assign('thankyou');
+                        window.location.assign('thankyou.php');
                     }else{
                         $('.final-step-form').removeClass('overlay');
                         var errorOutput = $('#verfication-code').closest('.input-wrap');
