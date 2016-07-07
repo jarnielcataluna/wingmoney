@@ -63,7 +63,7 @@
 								<div class="sec-tagline">
 									<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
 								</div>
-								<form class="final-step-form" method="post" action="/exec/validate2.php" novalidate>
+								<form class="final-step-form" method="post" action="exec/validate2.php" >
 									<div class="loading-spinner-wrapper" id="app-loader">
 								        <span class="loading-spinner">
 								          <i class="one"></i>
@@ -139,13 +139,17 @@
 		</div>
 	</div>
 </footer>
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/jquery-ui.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/parallax.js"></script>
 <script src="js/jquery.appear.js"></script>
 <script src="js/devices.js"></script>
+<script src="js/owl.carousel.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>

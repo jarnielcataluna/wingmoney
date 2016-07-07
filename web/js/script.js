@@ -272,6 +272,7 @@ $(document).ready(function(){
 
         } else {
             e.preventDefault();
+            return false;
         }
         
     });

@@ -181,7 +181,9 @@
 <script src="js/jquery.appear.js"></script>
 <script src="js/devices.js"></script>
 <script src="js/plugins.js"></script>
+<script src="js/owl.carousel.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
