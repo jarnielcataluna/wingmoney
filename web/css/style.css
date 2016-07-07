@@ -9329,6 +9329,13 @@ a.waves-effect .waves-ripple {
 
 .final-step-wrap {
   min-height: 305px;
+  position: relative;
+  -webkit-transition: all, 0.3s, ease;
+  -moz-transition: all, 0.3s, ease;
+  -ms-transition: all, 0.3s, ease;
+  -o-transition: all, 0.3s, ease;
+  transition: all, 0.3s, ease;
+  max-height: 700px;
 }
 
 .thank-you-page, .inner-page {
@@ -9360,14 +9367,11 @@ a.waves-effect .waves-ripple {
   margin-bottom: 20px;
 }
 
-.ty-text {
-  padding-top: 30px;
-}
-
 .ty-text h2 {
   color: #b0c024;
   font-size: 60px;
   line-height: 68px;
+  margin-bottom: 30px;
 }
 
 .other-stuff {
@@ -9754,6 +9758,43 @@ a.waves-effect .waves-ripple {
 
 .back-to-top:hover {
   background: black;
+}
+
+.download-app span {
+  font-size: 24px;
+  display: block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.download-app a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.download-app a img {
+  width: 180px;
+  height: auto;
+}
+
+.ty-social-media {
+  margin: 30px 0;
+}
+
+.ty-social-media a {
+  font-size: 24px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+  background: #0098d7;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.ty-social-media a:hover {
+  background: #0bb8ff;
 }
 
 @media only screen and (max-width: 1350px) {
@@ -10150,6 +10191,9 @@ a.waves-effect .waves-ripple {
   .how-to-sign .step-signup .ss-num:after {
     display: none;
   }
+  .final-step-wrap {
+    height: auto !important;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -10181,6 +10225,14 @@ a.waves-effect .waves-ripple {
   .wing-mobile-menu ul li a {
     font-size: 14px;
     line-height: 18px;
+  }
+  .download-app a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .download-app a img {
+    width: 120px;
+    height: auto;
   }
 }
 

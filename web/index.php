@@ -511,38 +511,19 @@
 </section>
 <footer>
 	<a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-	<div class="bg-green section-pad footer-top">
+	<div class="bg-blue section-pad footer-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<h2 class="animated hiding" data-animation="fadeInUp">Wing Money, The Fastest and Easiest Mobile Transaction in Cambodia</h2>
+				<div class="col-md-12">
+					<h2 class="animated hiding text-center" data-animation="fadeInUp">Wing Money, The Fastest and Easiest Mobile Transaction in Cambodia</h2>
 				</div>
-				<div class="col-md-4 text-center animated hiding" data-animation="fadeInUp">
-
-					<img class="logo-bot" src="images/wing-logo-bot.png" alt="">
-					<a href="#wing-form-wrap" class="btn btn-orange btn-block btn-signup">Sign Up Now!</a>
-				</div>
+				
 			</div>	
-		</div>
-	</div>
-	<div class="bg-blue footer-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="share-this-wrap">
-						<label>Share This!</label>
-						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					</div>
-				</div>	
-				<div class="col-sm-6 text-right">
-					<a href="mailto:care.centre@wingmoney.com" class="email-link"><span><img src="images/icon-email.png" alt=""></span>care.centre@wingmoney.com</a>
-					<a href="privacy-policy.html" class="privacy-link">Terms &amp; Privacy Policies</a>
-				</div>	
+			<div class="text-center animated hiding" data-animation="fadeInUp">
+				<a href="#wing-form-wrap" class="btn btn-orange btn-block btn-signup">Sign Up Now!</a>
 			</div>
 		</div>
 	</div>
-
 	<div class="footer-action">
 		<div class="container">
 			<h4>Call us at +855 23 999 989 or dial *989# to use Wing.</h4>

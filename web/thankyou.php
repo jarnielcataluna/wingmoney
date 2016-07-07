@@ -59,13 +59,29 @@
 		<div class="section-pad">
 			<div class="container">
 				<div class="final-step-wrap">
-					
-					<div class="ty-text text-center">
-						<h2>Thank You for Signing <br> Up with Wing!</h2>
-						<div class="sec-tagline">
-							<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
+					<div class="table-wrap">
+						<div class="table-content">
+							<div class="ty-text text-center">
+								<h2>Thank You for Signing <br> Up with Wing!</h2>
+								<div class="download-app">
+									<span>Download Now</span>
+									<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay"><img src="images/download-android.png" alt=""></a>
+									<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8"><img src="images/download-apple.png"></a>
+								</div>
+								<!-- <div class="sec-tagline">
+									<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
+								</div> -->
+								<!-- <a href="http://www.wingmoney.com/" class="btn btn-orange">Back to Wing</a> -->
+								<div class="clr"></div>
+								<div class="ty-social-media">
+									<a href="http://www.facebook.com/WINGmoney" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="https://plus.google.com/109000819204361931521" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+									<a href="https://twitter.com/wingcambodia" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+									<a href="https://www.youtube.com/user/WingCambodia" target="blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+								</div>
+								
+							</div>
 						</div>
-						<a href="http://www.wingmoney.com/" class="btn btn-orange">Back to Home</a>
 					</div>
 				</div>
 
@@ -112,24 +128,7 @@
 	</section>
 </section>
 <footer>
-	<div class="bg-blue footer-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="share-this-wrap">
-						<label>Share This!</label>
-						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					</div>
-				</div>	
-				<div class="col-sm-6 text-right">
-					<a href="#" class="email-link"><span><img src="images/icon-email.png" alt=""></span>care.centre@wingmoney.com</a>
-					<a href="privacy-policy.html" class="privacy-link">Terms &amp; Privacy Policies</a>
-				</div>	
-			</div>
-		</div>
-	</div>
-
+	
 	<div class="footer-action">
 		<div class="container">
 			<h4>Call us at +855 23 999 989 or dial *989# to use Wing.</h4>
@@ -179,10 +178,8 @@
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/jquery-ui.min.js"></script>
-<script src="js/parallax.js"></script>
 <script src="js/jquery.appear.js"></script>
 <script src="js/devices.js"></script>
-<script src="js/owl.carousel.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/script.js"></script>

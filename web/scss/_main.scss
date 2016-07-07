@@ -2018,6 +2018,9 @@ a.waves-effect .waves-ripple {
 
 .final-step-wrap {
 	min-height: 305px;
+	position: relative;
+	@include transition(all, 0.3s, ease);
+	max-height: 700px;
 }
 
 
@@ -2058,12 +2061,12 @@ a.waves-effect .waves-ripple {
 }
 
 .ty-text {
-	padding-top: 30px;
 
 	h2 {
 		color: $coGreen;
 		font-size: 60px;
 		line-height: 68px;
+		margin-bottom: 30px;
 	}
 }
 
@@ -2340,6 +2343,45 @@ a.waves-effect .waves-ripple {
     &:hover {
     	background: rgba(0, 0, 0, 1);
     }
+}
+
+.download-app {
+
+	span {
+		font-size: 24px;
+		display: block;
+		vertical-align: middle;
+		margin-right: 10px;
+		margin-bottom: 15px;
+	}
+
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		img {
+			width: 180px;
+			height: auto;
+		}
+	}
+}
+
+.ty-social-media {
+	margin: 30px 0;
+
+	a {
+		font-size: 24px;
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		display: inline-block;
+		background: $coBlue;
+		color: $coWhite;
+		border-radius: 50%;
+
+		&:hover {
+			background: lighten($coBlue, 10%);
+		}
+	}
 }
 
 @media only screen and (max-width: 1350px) {
@@ -2901,6 +2943,10 @@ a.waves-effect .waves-ripple {
 			}
 		}
 	}
+
+	.final-step-wrap {
+		height: auto !important;
+	}
 	
 }
 
@@ -2941,6 +2987,18 @@ a.waves-effect .waves-ripple {
 			a {
 				font-size: 14px;
 				line-height: 18px;
+			}
+		}
+	}
+
+	.download-app {
+
+		a {
+			display: inline-block;
+			vertical-align: middle;
+			img {
+				width: 120px;
+				height: auto;
 			}
 		}
 	}

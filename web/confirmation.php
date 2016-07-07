@@ -56,69 +56,33 @@
 		<div class="section-pad">
 			<div class="container">
 				<div class="final-step-wrap">
-					<div class="final-step text-center">
-						<h3 class="co-blue">One final step and you are done!</h3>
-						<div class="sec-tagline">
-							<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
-						</div>
-						<form class="final-step-form" method="post" action="/exec/validate2.php" novalidate>
-							<div class="loading-spinner-wrapper" id="app-loader">
-						        <span class="loading-spinner">
-						          <i class="one"></i>
-						          <i class="two"></i>
-						          <i class="three"></i>
-						        </span>
-						    </div>
-							<div class="input-wrap">
-								<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
-								<input type="text" id="verfication-code" name="verification_code"  value="" required="required">
-								<label for="verfication-code">Enter Verification Code</label>
-								<div class="required-tooltip left">
-									<p>This confirmation code is required <span>*</span></p>
+					<div class="table-wrap">
+						<div class="table-content">
+							<div class="final-step text-center">
+								<h3 class="co-blue">One final step and you are done!</h3>
+								<div class="sec-tagline">
+									<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
 								</div>
-							</div>
-							<div class="input-wrap">
-								<input type="submit" class="btn btn-orange" name="" value="Submit">
-							</div>
-						</form>
-					</div>
-					
-				</div>
-
-				<div class="other-stuff">
-					<h3 class="text-center">Other Stuff You Might Be Interested With:</h3>
-					<div class="stuff-col">
-						<div class="row">
-							<div class="col-md-4 col-xs-6">
-								<div class="stuff-wrap">
-									<div class="left fl">
-										<h5 class="co-blue">Wing Ket Luy</h5>
-										<p>Learn more on how you can avail the Wing Ket Luy card</p>
-									</div>
-									<div class="right fr">
-										<div class="s-card-holder">
-											<img src="images/wing-ket.png" alt="">
+								<form class="final-step-form" method="post" action="/exec/validate2.php" novalidate>
+									<div class="loading-spinner-wrapper" id="app-loader">
+								        <span class="loading-spinner">
+								          <i class="one"></i>
+								          <i class="two"></i>
+								          <i class="three"></i>
+								        </span>
+								    </div>
+									<div class="input-wrap">
+										<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
+										<input type="text" id="verfication-code" name="verification_code"  value="" required="required">
+										<label for="verfication-code">Enter Verification Code</label>
+										<div class="required-tooltip left">
+											<p>This confirmation code is required <span>*</span></p>
 										</div>
-										<a href="#" class="btn btn-blue fr">Read More</a>
 									</div>
-									
-								</div>	
-							</div>
-							<div class="col-md-4 col-xs-6 middle-user">
-								<div class="stuff-wrap">
-									<img src="images/cell-user-img.jpg" alt="">
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-12">
-								<div class="stuff-wrap">
-									<p>Read More About:</p>
-									<ul class="mainsite-links">
-										<li><a href="#">Discount Programs</a></li>
-										<li><a href="#">Be an Agent</a></li>
-										<li><a href="#">Wing Account Fees</a></li>
-										<li><a href="#">Cashing In and Cashing Out</a></li>
-									</ul>
-								</div>
+									<div class="input-wrap">
+										<input type="submit" class="btn btn-orange" name="" value="Submit">
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
@@ -128,24 +92,7 @@
 	</section>
 </section>
 <footer>
-	<div class="bg-blue footer-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="share-this-wrap">
-						<label>Share This!</label>
-						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					</div>
-				</div>	
-				<div class="col-sm-6 text-right">
-					<a href="mailto:care.centre@wingmoney.com" class="email-link"><span><img src="images/icon-email.png" alt=""></span>care.centre@wingmoney.com</a>
-					<a href="privacy-policy.html" class="privacy-link">Terms &amp; Privacy Policies</a>
-				</div>	
-			</div>
-		</div>
-	</div>
-
+	
 	<div class="footer-action">
 		<div class="container">
 			<h4>Call us at +855 23 999 989 or dial *989# to use Wing.</h4>
@@ -195,10 +142,8 @@
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/jquery-ui.min.js"></script>
-<script src="js/parallax.js"></script>
 <script src="js/jquery.appear.js"></script>
 <script src="js/devices.js"></script>
-<script src="js/owl.carousel.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/script.js"></script>

@@ -12,11 +12,13 @@ function resize() {
 
 $(window).resize(function() {
 	resize();
+    finalwrapHeight();
 });
 
 $(document).ready(function() {
 	resize();
     initCustomForm();
+    finalwrapHeight();
 
     $('.back-to-top').click(function(e){
         e.preventDefault();
@@ -62,33 +64,36 @@ $(document).ready(function() {
         $('.hiding').css({'opacity' : 1});
     }
 
-    $('.store-partners .owl-carousel').owlCarousel({
-        loop:true,
-        margin:1,
-        dots: true,
-        nav: true,
-        pullDrag: false,
-        responsive:{
-            0:{
-                items:1
-            },
-            430:{
-                items:2
-            },
-            580:{
-                items:5
-            },
-            767:{
-                items:6
-            },
-            992:{
-                items:7
-            },
-            1200:{
-                items:9
+    if($('.store-partners .owl-carousel').length > 0) {
+
+        $('.store-partners .owl-carousel').owlCarousel({
+            loop:true,
+            margin:1,
+            dots: true,
+            nav: true,
+            pullDrag: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                430:{
+                    items:2
+                },
+                580:{
+                    items:5
+                },
+                767:{
+                    items:6
+                },
+                992:{
+                    items:7
+                },
+                1200:{
+                    items:9
+                }
             }
-        }
-    });
+        });
+    }
 
     $('.step-signup .owl-carousel').owlCarousel({
         loop:false,
@@ -292,8 +297,10 @@ $(document).ready(function() {
 
 $(window).load(function() {
 	resize();
+    finalwrapHeight();
 
     $('.wing-form-wrap').show();
+
 });
 
 $(window).scroll(function() {
@@ -386,4 +393,12 @@ function initCustomForm() {
         });
         $(this).change();
     });
+}
+
+function finalwrapHeight() {
+
+    var wH = $(window).height();
+    var hH = $('header').outerHeight(false);
+    var totalH = wH - hH;
+    $('.final-step-wrap').css({'height' : totalH});
 }
