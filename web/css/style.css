@@ -9797,6 +9797,21 @@ a.waves-effect .waves-ripple {
   background: #0bb8ff;
 }
 
+/*** V2 ***/
+#verifying {
+  position: relative;
+}
+
+#verifying .loading-spinner-wrapper {
+  opacity: 1;
+  top: 20px;
+  margin-top: 0;
+}
+
+.spacer {
+  padding: 40px 0 40px;
+}
+
 @media only screen and (max-width: 1350px) {
   .menu ul li a {
     font-size: 13px;

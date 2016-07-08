@@ -59,11 +59,30 @@
 					<div class="table-wrap">
 						<div class="table-content">
 							<div class="final-step text-center">
-								<h3 class="co-blue">One final step and you are done!</h3>
-								<div class="sec-tagline">
-									<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
+								<div id="verifying" class="spacer">
+									<p>Please wait...</p>
+									<div class="loading-spinner-wrapper" id="app-loader">
+										
+								        <span class="loading-spinner">
+								          <i class="one"></i>
+								          <i class="two"></i>
+								          <i class="three"></i>	
+								        </span>
+								    </div>
+							    </div>
+								<div id="email-sent" class="spacer">
+									<h3 class="co-blue">One final step and you are done!</h3>
+									<p>Go to your email to verify your registration.</p>
 								</div>
-								<form class="final-step-form" method="post" action="/exec/validate2.php" >
+								<div id="verification-failed" class="spacer">
+									<h3 class="co-blue">Go to your email to verify your registration.</h3>
+									<a href="" class="btn btn-orange">Resend</a>
+								</div>
+								<div id="already-verified" class="spacer">
+									<h3 class="co-blue">Already Verified</h3>
+									<a href="" class="btn btn-orange">Go to wing</a>
+								</div>
+								<!-- <form class="final-step-form" method="post" action="/exec/validate2.php" >
 									<div class="loading-spinner-wrapper" id="app-loader">
 								        <span class="loading-spinner">
 								          <i class="one"></i>
@@ -82,7 +101,7 @@
 									<div class="input-wrap">
 										<input type="submit" class="btn btn-orange" name="" value="Submit">
 									</div>
-								</form>
+								</form> -->
 							</div>
 						</div>
 					</div>
