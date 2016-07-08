@@ -63,8 +63,11 @@
 						<div class="table-content">
 							<div class="ty-text text-center">
 								<h2>Thank You for Signing <br> Up with Wing!</h2>
+								<div class="sec-tagline">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut endifm ad minim veniam.</p>
+								</div>
 								<div class="download-app">
-									<span>Download Now</span>
+									<span>Use Wing App Now</span>
 									<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay"><img src="images/download-android.png" alt=""></a>
 									<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8"><img src="images/download-apple.png"></a>
 								</div>

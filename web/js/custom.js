@@ -158,6 +158,36 @@ $(document).ready(function() {
         $(this).closest('.input-wrap').removeClass('error');
     });
 
+    $('.gender select').change(function(){
+
+        if($(this).val() !="0") {
+            $('.gender').find('.custom-select-display').css({'color' : '#000'});
+        } else {
+            console.log('test');
+            $('.gender').find('.custom-select-display').css({'color' : '#8d8d8d'});
+        }
+    });
+
+    $('.id-type select').change(function(){
+
+        if($(this).val() !="0") {
+            $('.id-type').find('.custom-select-display').css({'color' : '#000'});
+        } else {
+            console.log('test');
+            $('.id-type').find('.custom-select-display').css({'color' : '#8d8d8d'});
+        }
+    });
+
+    $('.finding-us select').change(function(){
+
+        if($(this).val() !="0") {
+            $('.finding-us').find('.custom-select-display').css({'color' : '#000'});
+        } else {
+            console.log('test');
+            $('.finding-us').find('.custom-select-display').css({'color' : '#8d8d8d'});
+        }
+    });
+
     // $('.wing-form').submit(function(e){
     //     $('.input-wrap').addClass('error');
     //     isvalidate = false;
