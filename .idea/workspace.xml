@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="838fe33a-5911-433f-b679-1ed8435db00c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/confirmation.php" afterPath="$PROJECT_DIR$/web/confirmation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script.js" afterPath="$PROJECT_DIR$/web/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,8 +31,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69040245" vertical-offset="3276" max-vertical-offset="4245">
-              <caret line="263" column="17" selection-start-line="263" selection-start-column="17" selection-end-line="263" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.36532506" vertical-offset="3261" max-vertical-offset="4230">
+              <caret line="241" column="35" selection-start-line="241" selection-start-column="35" selection-end-line="241" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -851,7 +850,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467962705479</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated AJAX Process&#10;">
+      <created>1467962831744</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1467962831744</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -907,7 +912,8 @@
     <MESSAGE value="Fixes Execution time errors,&#10;Added new field for user feedback name='feedback'&#10;" />
     <MESSAGE value="Updated FB App Integration&#10;" />
     <MESSAGE value="Updated Process&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Process&#10;" />
+    <MESSAGE value="Updated AJAX Process&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated AJAX Process&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1656,8 +1662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69040245" vertical-offset="3276" max-vertical-offset="4245">
-          <caret line="263" column="17" selection-start-line="263" selection-start-column="17" selection-end-line="263" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.36532506" vertical-offset="3261" max-vertical-offset="4230">
+          <caret line="241" column="35" selection-start-line="241" selection-start-column="35" selection-end-line="241" selection-end-column="35" />
           <folding />
         </state>
       </provider>

@@ -232,7 +232,6 @@ $(document).ready(function(){
         }
 
         if( !$('#verfication-code').val() == '' &&  isvalidate == true) {
-            $('.final-step-form').addClass('overlay');
 
             var that = $(this),
             url = that.attr('action'),
