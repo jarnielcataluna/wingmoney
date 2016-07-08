@@ -1158,6 +1158,88 @@ a.waves-effect .waves-ripple {
 	}
 }
 
+
+/* Base for label styling */
+.wing-checkbox [type="checkbox"]:not(:checked),
+.wing-checkbox [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+.wing-checkbox [type="checkbox"]:not(:checked) + label,
+.wing-checkbox [type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+.wing-checkbox [type="checkbox"]:not(:checked) + label:before,
+.wing-checkbox [type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:5px; top: 2px;
+  width: 17px; height: 17px;
+  background: #f8f8f8;
+}
+/* checked mark aspect */
+.wing-checkbox [type="checkbox"]:not(:checked) + label:after,
+.wing-checkbox [type="checkbox"]:checked + label:after {
+  content: "\f00c";
+  display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 6px; left: 7px;
+  font-size: 13px;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+.wing-checkbox [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.wing-checkbox [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+.wing-checkbox [type="checkbox"]:disabled:not(:checked) + label:before,
+.wing-checkbox [type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+.wing-checkbox [type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+.wing-checkbox [type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+
+.wing-form {
+	input[type="submit"]:disabled {
+		opacity: 0.8;
+		pointer-events: none;
+	}
+}
+
+
+.wing-checkbox {
+	label {
+		font-size: 11px;
+	    line-height: 20px;
+	    display: inline-block;
+	    vertical-align: middle;
+	    margin-bottom: 8px;
+	}
+}
+
 .choose-currency {
 	label {
 		color: $coWhite;
@@ -1236,7 +1318,6 @@ a.waves-effect .waves-ripple {
 		margin: 0;
 
 		&.btn {
-			padding: 0;
 			border: none;
 
 			input[type="submit"] {

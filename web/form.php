@@ -103,9 +103,13 @@
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
+        <div class="wing-checkbox">
+            <input type="checkbox" id="wing-checkbox" />
+            <label for="wing-checkbox">I want to receive email and sms notification from Wing.</label>
+        </div>
         <hr>
         <div class="input-wrap text-center btn-wrapper">
-            <input type="submit" class="btn btn-orange waves-effect" name="" value="SUBMIT" />
+            <input type="submit" class="btn btn-orange" disabled="disabled" name="" value="SUBMIT" />
         </div>
     </div>
 </form>

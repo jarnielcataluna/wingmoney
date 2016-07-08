@@ -103,8 +103,16 @@ $(document).ready(function(){
         return regex.test(email);
     }
 
+    $('#wing-checkbox').change(function(){
 
+        if($(this).is(':checked')) {
+            $('.wing-form input[type="submit"]').removeAttr('disabled');
+            console.log('checkbox');
+        } else {
+            $('.wing-form input[type="submit"]').attr('disabled', true);
+        }
 
+    });
 
 
     $('.wing-form').submit(function(e){
@@ -184,6 +192,8 @@ $(document).ready(function(){
         } else {
             isvalidate = false;
         }
+
+
 
         if( $('.gender select').val() != '0' && $('.id-type select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#id-number').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length == 8 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
             $('.wing-form-wrap').addClass('overlay');
