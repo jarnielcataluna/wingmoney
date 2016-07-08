@@ -88,11 +88,11 @@
 								<?php } ?>
 
 
-								<div id="verification-failed" class="spacer">
+								<div id="verification-failed" class="spacer" style="display: none;">
 									<h3 class="co-blue">Go to your email to verify your registration.</h3>
 									<a href="" class="btn btn-orange">Resend</a>
 								</div>
-								<div id="already-verified" class="spacer">
+								<div id="already-verified" class="spacer" style="display:none;">
 									<h3 class="co-blue">Already Verified</h3>
 									<a href="" class="btn btn-orange">Go to wing</a>
 								</div>

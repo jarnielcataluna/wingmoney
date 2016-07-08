@@ -258,10 +258,7 @@ $(document).ready(function(){
                         database.ref('leads').child(data.id).set(data);
                         window.location.assign('thankyou?id=' + data.id);
                     }else{
-                        $('.final-step-form').removeClass('overlay');
-                        var errorOutput = $('#verfication-code').closest('.input-wrap');
-                        errorOutput.find('.required-tooltip p').html(data.error);
-                        errorOutput.addClass('error');
+                        console.log(data.error);
                     }
 
                 }
