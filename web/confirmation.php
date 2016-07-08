@@ -1,4 +1,4 @@
-﻿<?php if(!isset($_GET['id']) || empty($_GET['id']) || is_null($_GET['id'])){ header('Location: /'); } ?>
+﻿<?php if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header('Location: /'); } ?>
 
 <!doctype html>
 <html class="no-js" lang="">
@@ -72,7 +72,7 @@
 								        </span>
 								    </div>
 									<div class="input-wrap">
-										<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
+										<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
 										<input type="text" id="verfication-code" name="verification_code"  value="" required="required">
 										<label for="verfication-code">Enter Verification Code</label>
 										<div class="required-tooltip left">

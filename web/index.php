@@ -571,7 +571,6 @@
 	</div>
 </footer>
 
-
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/jquery-ui.min.js"></script>
 <script src="js/materialize.js"></script>

@@ -208,7 +208,20 @@ $(document).ready(function(){
                 success: function (response) {
                     var data = jQuery.parseJSON(response);
                     $('.wing-form-wrap').addClass('remove');
-                    window.location.assign('confirmation?id=' + data.id);
+
+                    var f = document.createElement("form");
+                    f.setAttribute('method',"post");
+                    f.setAttribute('action',"confirmation.php");
+                    f.setAttribute('id',"redirect-form");
+
+                    var i = document.createElement("input"); //input element, text
+                    i.setAttribute('type',"hidden");
+                    i.setAttribute('name',"id");
+                    i.setAttribute('value', data.id);
+                    f.appendChild(i);
+                    document.getElementsByTagName('body')[0].appendChild(f);
+
+                    $('#redirect-form').submit();
                 }
             });
 
@@ -256,7 +269,19 @@ $(document).ready(function(){
                     if(!data.error){
                         $('.final-step-form').removeClass('overlay');
                         database.ref('leads').child(data.id).set(data);
-                        window.location.assign('thankyou?id=' + data.id);
+                        var f = document.createElement("form");
+                        f.setAttribute('method',"post");
+                        f.setAttribute('action',"thankyou.php");
+                        f.setAttribute('id',"redirect-form");
+
+                        var i = document.createElement("input"); //input element, text
+                        i.setAttribute('type',"hidden");
+                        i.setAttribute('name',"id");
+                        i.setAttribute('value', data.id);
+                        f.appendChild(i);
+                        document.getElementsByTagName('body')[0].appendChild(f);
+
+                        $('#redirect-form').submit();
                     }else{
                         $('.final-step-form').removeClass('overlay');
                         var errorOutput = $('#verfication-code').closest('.input-wrap');
