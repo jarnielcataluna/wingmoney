@@ -73,7 +73,7 @@
 								    </div>
 									<div class="input-wrap">
 										<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
-										<input type="text" id="verfication-code" name="verification_code"  value="" required="required">
+										<input type="text" id="verfication-code" name="verification_code"  value="<?php if(isset($_POST['verification_code'])) $_POST['verification_code']; ?>" required="required">
 										<label for="verfication-code">Enter Verification Code</label>
 										<div class="required-tooltip left">
 											<p>This confirmation code is required <span>*</span></p>
