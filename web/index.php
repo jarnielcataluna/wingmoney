@@ -80,7 +80,7 @@
 	<section id="main-wrapper">
 
 		<section class="banner-wrap jq-section">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="images/banner4.jpg" data-bleed="10" alt=""></div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="banner-whitecollar.jpg" data-bleed="10" alt=""></div>
 			<div class="table-wrap">
 				<div class="table-content">
 					<div class="container">

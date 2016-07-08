@@ -62,9 +62,11 @@
 					<div class="table-wrap">
 						<div class="table-content">
 							<div class="ty-text text-center">
-								<h2>Thank You for Signing <br> Up with Wing!</h2>
-								<div class="sec-tagline">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut endifm ad minim veniam.</p>
+								<h2>Thank you for applying!</h2>
+								<div class="sec-tagline ty-tagline">
+
+									<p>Now you're part of Wing Money. Start exploring Wing Money features and begin your quest to unlock awesome perks!</p>
+									<a href="#" class="btn btn-orange">Just Wing It Now!</a>
 								</div>
 								<div class="download-app">
 									<span>Use Wing App Now</span>

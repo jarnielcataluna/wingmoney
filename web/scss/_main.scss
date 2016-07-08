@@ -2017,7 +2017,7 @@ a.waves-effect .waves-ripple {
 }
 
 .final-step-wrap {
-	min-height: 465px;
+	min-height: 505px;
 	position: relative;
 	@include transition(all, 0.3s, ease);
 	max-height: 700px;
@@ -2066,7 +2066,7 @@ a.waves-effect .waves-ripple {
 		color: $coGreen;
 		font-size: 60px;
 		line-height: 68px;
-		margin-bottom: 30px;
+		margin-bottom: 0px;
 	}
 }
 
@@ -2348,7 +2348,7 @@ a.waves-effect .waves-ripple {
 .download-app {
 
 	span {
-		font-size: 24px;
+		font-size: 18px;
 		display: block;
 		vertical-align: middle;
 		margin-right: 10px;
@@ -2359,7 +2359,7 @@ a.waves-effect .waves-ripple {
 		display: inline-block;
 		vertical-align: middle;
 		img {
-			width: 180px;
+			width: 115px;
 			height: auto;
 		}
 	}
@@ -2381,6 +2381,14 @@ a.waves-effect .waves-ripple {
 		&:hover {
 			background: lighten($coBlue, 10%);
 		}
+	}
+}
+
+.ty-tagline {
+
+	p {
+		line-height: 32px;
+		font-size: 24px;
 	}
 }
 
@@ -3002,9 +3010,18 @@ a.waves-effect .waves-ripple {
 			}
 		}
 	}
+
+	.ty-tagline p {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
+
+	.ty-tagline {
+		margin-top: 20px;
+	}
 	
 	.other-stuff { 
 		.col-xs-6 {

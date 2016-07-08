@@ -9328,7 +9328,7 @@ a.waves-effect .waves-ripple {
 }
 
 .final-step-wrap {
-  min-height: 465px;
+  min-height: 505px;
   position: relative;
   -webkit-transition: all, 0.3s, ease;
   -moz-transition: all, 0.3s, ease;
@@ -9371,7 +9371,7 @@ a.waves-effect .waves-ripple {
   color: #b0c024;
   font-size: 60px;
   line-height: 68px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .other-stuff {
@@ -9761,7 +9761,7 @@ a.waves-effect .waves-ripple {
 }
 
 .download-app span {
-  font-size: 24px;
+  font-size: 18px;
   display: block;
   vertical-align: middle;
   margin-right: 10px;
@@ -9774,7 +9774,7 @@ a.waves-effect .waves-ripple {
 }
 
 .download-app a img {
-  width: 180px;
+  width: 115px;
   height: auto;
 }
 
@@ -9795,6 +9795,11 @@ a.waves-effect .waves-ripple {
 
 .ty-social-media a:hover {
   background: #0bb8ff;
+}
+
+.ty-tagline p {
+  line-height: 32px;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 1350px) {
@@ -10234,9 +10239,16 @@ a.waves-effect .waves-ripple {
     width: 120px;
     height: auto;
   }
+  .ty-tagline p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .ty-tagline {
+    margin-top: 20px;
+  }
   .other-stuff .col-xs-6 {
     width: 100%;
   }
