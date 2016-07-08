@@ -185,7 +185,41 @@
 <script src="js/script.js"></script>
 <?php if(isset($_GET['code']) && !empty($_GET['code'])){ ?>
 <script>
-	$('.final-step-form').submit();
+	function submitForm(){
+		if( !$('#verfication-code').val() == '' &&  isvalidate == true) {
+
+			var that = $('.final-step-form'),
+				url = that.attr('action'),
+				type = that.attr('method'),
+				data = {};
+
+			that.find('[name]').each(function (index, value) {
+				var that = $('.final-step-form'),
+					name = that.attr('name'),
+					value = that.val();
+				data[name] = value;
+			});
+
+			$.ajax({
+				url: url,
+				type: type,
+				data: data,
+
+				success: function (response) {
+					var data = jQuery.parseJSON(response);
+					if(!data.error){
+						database.ref('leads').child(data.id).set(data);
+						window.location.assign('thankyou.php?id=' + data.id);
+					}else{
+						console.log(data.error);
+					}
+
+				}
+			});
+		}
+	}
+
+	submitForm();
 </script>
 <?php } ?>
 

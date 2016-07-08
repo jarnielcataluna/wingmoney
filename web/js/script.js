@@ -219,58 +219,7 @@ $(document).ready(function(){
     });
 
     // Verification Field
-    $('.final-step-form').submit(function(e){
-        e.preventDefault();
-        $('.input-wrap').addClass('error');
-        isvalidate = false;
 
-        if( !$('#verfication-code').val() == '') {
-            $('.input-wrap').removeClass('error');
-            isvalidate = true;
-        } else {
-            isvalidate = false;
-        }
 
-        if( !$('#verfication-code').val() == '' &&  isvalidate == true) {
-
-            var that = $(this),
-            url = that.attr('action'),
-            type = that.attr('method'),
-            data = {};
-
-            that.find('[name]').each(function (index, value) {
-                var that = $(this),
-                    name = that.attr('name'),
-                    value = that.val();
-                    data[name] = value;
-            });
-
-            $.ajax({
-                url: url,
-                type: type,
-                data: data,
-
-                success: function (response) {
-                    var data = jQuery.parseJSON(response);
-                    if(!data.error){
-                        $('.final-step-form').removeClass('overlay');
-                        database.ref('leads').child(data.id).set(data);
-                        window.location.assign('thankyou?id=' + data.id);
-                    }else{
-                        console.log(data.error);
-                    }
-
-                }
-            });
-
-            e.preventDefault();
-            return false;
-
-        } else {
-            e.preventDefault();
-            return false;
-        }
-        
-    });
 });
 

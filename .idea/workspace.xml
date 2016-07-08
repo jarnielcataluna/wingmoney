@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="838fe33a-5911-433f-b679-1ed8435db00c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/confirmation.php" afterPath="$PROJECT_DIR$/web/confirmation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script.js" afterPath="$PROJECT_DIR$/web/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36532506" vertical-offset="3261" max-vertical-offset="4230">
-              <caret line="241" column="35" selection-start-line="241" selection-start-column="35" selection-end-line="241" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2496" max-vertical-offset="3465">
+              <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirmation.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="confirmation.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/confirmation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.791666" vertical-offset="671" max-vertical-offset="2985">
-              <caret line="94" column="94" selection-start-line="94" selection-start-column="94" selection-end-line="94" selection-end-column="94" />
+            <state vertical-scroll-proportion="0.96868473" vertical-offset="2387" max-vertical-offset="3495">
+              <caret line="221" column="17" selection-start-line="221" selection-start-column="17" selection-end-line="221" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -514,8 +515,8 @@
         <option value="$PROJECT_DIR$/web/thankyou.php" />
         <option value="$PROJECT_DIR$/web/exec/validate.php" />
         <option value="$PROJECT_DIR$/web/exec/validate2.php" />
-        <option value="$PROJECT_DIR$/web/confirmation.php" />
         <option value="$PROJECT_DIR$/web/js/script.js" />
+        <option value="$PROJECT_DIR$/web/confirmation.php" />
       </list>
     </option>
   </component>
@@ -856,7 +857,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467962831744</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Bug fix">
+      <created>1467962937868</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1467962937868</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -913,7 +920,8 @@
     <MESSAGE value="Updated FB App Integration&#10;" />
     <MESSAGE value="Updated Process&#10;" />
     <MESSAGE value="Updated AJAX Process&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated AJAX Process&#10;" />
+    <MESSAGE value="Bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1641,20 +1649,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/confirmation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.791666" vertical-offset="671" max-vertical-offset="2985">
-          <caret line="94" column="94" selection-start-line="94" selection-start-column="94" selection-end-line="94" selection-end-column="94" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4568" max-vertical-offset="6135">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5166" max-vertical-offset="6135">
           <caret line="274" column="46" selection-start-line="274" selection-start-column="46" selection-end-line="274" selection-end-column="46" />
           <folding />
         </state>
@@ -1662,9 +1659,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36532506" vertical-offset="3261" max-vertical-offset="4230">
-          <caret line="241" column="35" selection-start-line="241" selection-start-column="35" selection-end-line="241" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2496" max-vertical-offset="3465">
+          <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/confirmation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96868473" vertical-offset="2387" max-vertical-offset="3495">
+          <caret line="221" column="17" selection-start-line="221" selection-start-column="17" selection-end-line="221" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
