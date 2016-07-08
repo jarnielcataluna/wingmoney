@@ -59,21 +59,35 @@
 					<div class="table-wrap">
 						<div class="table-content">
 							<div class="final-step text-center">
+
+								<?php if(isset($_GET['code']) && !empty($_GET['code'])){ ?>
+
 								<div id="verifying" class="spacer">
+									<form class="final-step-form" method="post" action="/exec/validate2.php" >
+										<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
+										<input type="hidden" id="verfication-code" name="verification_code"  value="<?php echo $_GET['code']; ?>" >
+									</form>
+
 									<p>Please wait...</p>
 									<div class="loading-spinner-wrapper" id="app-loader">
-										
 								        <span class="loading-spinner">
 								          <i class="one"></i>
 								          <i class="two"></i>
-								          <i class="three"></i>	
+								          <i class="three"></i>
 								        </span>
-								    </div>
-							    </div>
+									</div>
+								</div>
+
+								<?php } else { ?>
+
 								<div id="email-sent" class="spacer">
 									<h3 class="co-blue">One final step and you are done!</h3>
 									<p>Go to your email to verify your registration.</p>
 								</div>
+
+								<?php } ?>
+
+
 								<div id="verification-failed" class="spacer">
 									<h3 class="co-blue">Go to your email to verify your registration.</h3>
 									<a href="" class="btn btn-orange">Resend</a>
@@ -91,8 +105,8 @@
 								        </span>
 								    </div>
 									<div class="input-wrap">
-										<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
-										<input type="text" id="verfication-code" name="verification_code"  value="" required="required">
+
+
 										<label for="verfication-code">Enter Verification Code</label>
 										<div class="required-tooltip left">
 											<p>This confirmation code is required <span>*</span></p>
@@ -169,6 +183,11 @@
 <script src="js/custom.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/script.js"></script>
+<?php if(isset($_GET['code']) && !empty($_GET['code'])){ ?>
+<script>
+	$('.final-step-form').submit();
+</script>
+<?php } ?>
 
 </body>
 </html>
