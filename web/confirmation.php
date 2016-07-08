@@ -63,7 +63,7 @@
 								<div class="sec-tagline">
 									<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
 								</div>
-								<form class="final-step-form" method="post" action="exec/validate2.php" >
+								<form class="final-step-form" method="post" action="/exec/validate2.php" >
 									<div class="loading-spinner-wrapper" id="app-loader">
 								        <span class="loading-spinner">
 								          <i class="one"></i>
