@@ -186,7 +186,7 @@
 <?php if(isset($_GET['code']) && !empty($_GET['code'])){ ?>
 <script>
 	function submitForm(){
-		if( !$('#verfication-code').val() == '' &&  isvalidate == true) {
+		if( !$('#verfication-code').val() == '') {
 
 			var that = $('.final-step-form'),
 				url = that.attr('action'),

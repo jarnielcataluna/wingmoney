@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="838fe33a-5911-433f-b679-1ed8435db00c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/confirmation.php" afterPath="$PROJECT_DIR$/web/confirmation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script.js" afterPath="$PROJECT_DIR$/web/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WingMoney.iws" />
@@ -90,8 +89,8 @@
       <file leaf-file-name="confirmation.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/confirmation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.96868473" vertical-offset="2387" max-vertical-offset="3495">
-              <caret line="221" column="17" selection-start-line="221" selection-start-column="17" selection-end-line="221" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.2954071" vertical-offset="2537" max-vertical-offset="3495">
+              <caret line="188" column="47" selection-start-line="188" selection-start-column="47" selection-end-line="188" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -863,7 +862,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467962937868</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="confirmation method fixes">
+      <created>1467963412299</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1467963412299</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -921,7 +926,8 @@
     <MESSAGE value="Updated Process&#10;" />
     <MESSAGE value="Updated AJAX Process&#10;" />
     <MESSAGE value="Bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix" />
+    <MESSAGE value="confirmation method fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="confirmation method fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1667,8 +1673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/confirmation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96868473" vertical-offset="2387" max-vertical-offset="3495">
-          <caret line="221" column="17" selection-start-line="221" selection-start-column="17" selection-end-line="221" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.2954071" vertical-offset="2537" max-vertical-offset="3495">
+          <caret line="188" column="47" selection-start-line="188" selection-start-column="47" selection-end-line="188" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
