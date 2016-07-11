@@ -66,7 +66,7 @@
 								<div class="sec-tagline ty-tagline">
 
 									<p>Now you're part of Wing Money. Start exploring Wing Money features and begin your quest to unlock awesome perks!</p>
-									<a href="#" class="btn btn-orange">Wing It Now!</a>
+									<a href="http://www.facebook.com/WINGmoney" target="blank" class="btn btn-orange">Wing It Now!</a>
 								</div>
 								<div class="download-app">
 									<span>Use Wing App Now</span>
