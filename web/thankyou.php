@@ -52,7 +52,7 @@
 <section id="main-container" class="thank-you-page">
 	<header>
 		<div class="container">
-			<div class="logo"><a href="http://wm-searchoptmedia.herokuapp.com/"><img src="images/wing-logo.png" alt=""></a></div>
+			<div class="logo"><a href="http://www.wingmoney.com/" target="_blank"><img src="images/wing-logo.png" alt=""></a></div>
 		</div>
 	</header>
 	<section id="main-wrapper">
@@ -66,7 +66,7 @@
 								<div class="sec-tagline ty-tagline">
 
 									<p>Now you're part of Wing Money. Start exploring Wing Money features and begin your quest to unlock awesome perks!</p>
-									<a href="#" class="btn btn-orange">Just Wing It Now!</a>
+									<a href="#" class="btn btn-orange">Wing It Now!</a>
 								</div>
 								<div class="download-app">
 									<span>Use Wing App Now</span>
