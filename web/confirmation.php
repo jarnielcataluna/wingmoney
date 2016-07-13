@@ -1,4 +1,39 @@
-﻿<?php if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header('Location: /'); } ?>
+﻿<?php
+
+function fnDecrypt($sValue, $sSecretKey)
+{
+	return rtrim(
+		mcrypt_decrypt(
+			MCRYPT_RIJNDAEL_256,
+			$sSecretKey,
+			base64_decode($sValue),
+			MCRYPT_MODE_ECB,
+			mcrypt_create_iv(
+				mcrypt_get_iv_size(
+					MCRYPT_RIJNDAEL_256,
+					MCRYPT_MODE_ECB
+				),
+				MCRYPT_RAND
+			)
+		), "\0"
+	);
+}
+
+if(isset($_GET['secret'])){
+
+
+	$secret = 'cHvp0l5s43v3r';
+
+	$decrypt = fnDecrypt($_GET['secret'], $secret);
+	$data = explode($decrypt, '-');
+	$_POST['id'] = $data[0];
+	$_POST['verification_code'] = $data[1];
+}
+
+
+if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header('Location: /'); }
+
+?>
 
 <!doctype html>
 <html class="no-js" lang="">
