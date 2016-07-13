@@ -8284,7 +8284,7 @@ a.waves-effect .waves-ripple {
   /* hide the placeholder when input has some text typed in */
 }
 
-.input-wrap.mobile-num input[type="text"] {
+.input-wrap.mobile-num input[type="text"], .input-wrap.mobile-num input[type="number"], .input-wrap.mobile-num input[type="tel"] {
   padding-left: 65px;
 }
 
@@ -8305,7 +8305,7 @@ a.waves-effect .waves-ripple {
   margin-bottom: 0;
 }
 
-.input-wrap.error input[type="text"], .input-wrap.error input[type="email"] {
+.input-wrap.error input[type="text"], .input-wrap.error input[type="email"], .input-wrap.error input[type="number"], .input-wrap.error input[type="tel"] {
   border: 1px solid red;
 }
 
@@ -8322,7 +8322,7 @@ a.waves-effect .waves-ripple {
   z-index: 3;
 }
 
-.input-wrap input[type="text"], .input-wrap input[type="email"] {
+.input-wrap input[type="text"], .input-wrap input[type="email"], .input-wrap input[type="number"], .input-wrap input[type="tel"] {
   height: 40px;
   padding: 5px 8px 0px 8px;
   width: 100%;
@@ -8331,7 +8331,7 @@ a.waves-effect .waves-ripple {
   z-index: 1;
 }
 
-.input-wrap input[type="text"]:focus, .input-wrap input[type="email"]:focus {
+.input-wrap input[type="text"]:focus, .input-wrap input[type="email"]:focus, .input-wrap input[type="number"]:focus, .input-wrap input[type="tel"]:focus {
   border-bottom: 1px solid #b0c024;
 }
 
@@ -8365,6 +8365,15 @@ a.waves-effect .waves-ripple {
   visibility: hidden;
   font-size: 10px;
   position: absolute;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 #wing-form-wrap {
@@ -9385,7 +9394,7 @@ a.waves-effect .waves-ripple {
   margin: 0 auto 30px;
 }
 
-.final-step-form .input-wrap input[type="text"] {
+.final-step-form .input-wrap input[type="text"], .final-step-form .input-wrap input[type="number"], .final-step-form .input-wrap input[type="tel"] {
   background: #ffffff;
   border: 3px solid #0098d7;
   padding: 12px 20px;

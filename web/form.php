@@ -17,14 +17,14 @@
     </div>
     <div class="form-row">
         <div class="input-wrap">
-            <input type="text" id="last-name" name="lname" value="" required="required">
+            <input type="text" id="last-name" name="lname" value="" required="required" onkeyup="this.setAttribute('value', this.value);">
             <label for="last-name">Last Name</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
         <div class="input-wrap">
-            <input type="text" id="first-name" name="fname" value="" required="required">
+            <input type="text" id="first-name" name="fname" value="" required="required" onkeyup="this.setAttribute('value', this.value);">
             <label for="first-name">First Name</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
@@ -50,7 +50,7 @@
         <div class="clr"></div>
         <div class="input-wrap mobile-num">
             <span class="input-group-addon">(+855)</span>
-            <input type="text" id="contact-num" name="" value="" minlength="8" maxlength="8" required="required" onkeyup="this.setAttribute('value', this.value);">
+            <input type="number" id="contact-num" name="" value="" minlength="8" max="8" required="required" onkeyup="this.setAttribute('value', this.value);">
             <label for="contact-num">Contact Number</label>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
@@ -69,6 +69,7 @@
                 <option value="ID_NATIONAL" >NATIONAL ID</option>
                 <option value="ID_VOTER">VOTER'S ID</option>
                 <option value="ID_EMPLOYEE">EMPLOYEE ID</option>
+                <option value="ID_PASSPORT">PASSPORT ID</option>
             </select>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
@@ -104,12 +105,12 @@
             </div>
         </div>
         <div class="wing-checkbox">
-            <input type="checkbox" id="wing-checkbox" checked/>
+            <input type="checkbox" id="wing-checkbox"/>
             <label for="wing-checkbox">I want to receive email and sms notification from Wing.</label>
         </div>
         <hr>
         <div class="input-wrap text-center btn-wrapper">
-            <input type="submit" class="btn btn-orange" name="" value="SUBMIT" />
+            <input type="submit" class="btn btn-orange" name="" value="SUBMIT" disabled="disabled" />
         </div>
     </div>
 </form>

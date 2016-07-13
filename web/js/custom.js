@@ -31,7 +31,11 @@ $(document).ready(function() {
             changeMonth: true,
             changeYear: true,
             yearRange: '1945:2009',
-            defaultDate: '01/01/1980'
+            defaultDate: '01/01/1980',
+            onSelect: function(dateText, inst) {
+                $('#birthday').val(dateText);
+                $('.gender select').focus();
+            }
         });
     }
 
@@ -151,7 +155,6 @@ $(document).ready(function() {
         __this.parent().addClass('active');
         scrollToDiv($targetDiv,0);
 
-        
     });
 
     $('.input-wrap input, .input-wrap select').focus(function(){
@@ -162,8 +165,19 @@ $(document).ready(function() {
 
         if($(this).val() !="0") {
             $('.gender').find('.custom-select-display').css({'color' : '#000'});
+
+            $("input[value='']:not(:checkbox,:button):visible:empty:first").focus();
+
+            // if($('#contact-num').val() == '') {
+            //     $('#contact-num').focus();
+            // } else if ($('#account-email').val != '' && $('#contact-num').val != '') {
+            //     $('.id-type select').focus();
+            // } else {
+                
+            //     $('#account-email').focus();
+            // }
+            
         } else {
-            console.log('test');
             $('.gender').find('.custom-select-display').css({'color' : '#8d8d8d'});
         }
     });
@@ -172,9 +186,11 @@ $(document).ready(function() {
 
         if($(this).val() !="0") {
             $('.id-type').find('.custom-select-display').css({'color' : '#000'});
+            $('#id-number').focus();
         } else {
             console.log('test');
             $('.id-type').find('.custom-select-display').css({'color' : '#8d8d8d'});
+            $('#id-number').focus();
         }
     });
 

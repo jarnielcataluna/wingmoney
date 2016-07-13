@@ -942,7 +942,7 @@ a.waves-effect .waves-ripple {
 
 	&.mobile-num {
 
-		input[type="text"] {
+		input[type="text"], input[type="number"], input[type="tel"] {
 			padding-left: 65px;
 		}
 
@@ -970,7 +970,7 @@ a.waves-effect .waves-ripple {
 
 	&.error {
 
-		input[type="text"], input[type="email"] {
+		input[type="text"], input[type="email"], input[type="number"], input[type="tel"] {
 			border: 1px solid red;
 		}
 
@@ -986,7 +986,7 @@ a.waves-effect .waves-ripple {
 	}
 
 
-	input[type="text"], input[type="email"] {
+	input[type="text"], input[type="email"], input[type="number"], input[type="tel"] {
 		height: 40px;
 		padding: 5px 8px 0px 8px;
 		width: 100%;
@@ -1030,6 +1030,16 @@ a.waves-effect .waves-ripple {
 	    position: absolute;
 
 	}
+}
+
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 #wing-form-wrap {
@@ -2067,7 +2077,7 @@ a.waves-effect .waves-ripple {
 		max-width: 300px;
 		margin: 0 auto 30px;
 
-		input[type="text"] {
+		input[type="text"], input[type="number"], input[type="tel"] {
 			background: $bgWhite;
 			border: 3px solid $coBlue;
 			padding: 12px 20px;
