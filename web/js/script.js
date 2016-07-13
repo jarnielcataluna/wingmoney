@@ -1,95 +1,11 @@
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyDx2elBwIOx7X_3YErUUHF9pgXmhXrGSxI",
-    authDomain: "wing-money-propelrr.firebaseapp.com",
-    databaseURL: "https://wing-money-propelrr.firebaseio.com",
-    storageBucket: ""
-};
-firebase.initializeApp(config);
-
-var database = firebase.database();
-
 $(document).ready(function(){
 
-    // Initialize Facebook
-
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '236260280081948',
-            xfbml      : true,
-            version    : 'v2.6'
-        });
-    };
-
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-    $('#useFacebook').click(function(e) {
-        e.preventDefault();
-        FB.getLoginStatus(function(response) {
-            if (response.status === 'connected') {
-                useFacebook();
-            } else {
-                FB.login(function(){
-                    useFacebook();
-                }, {scope: 'publish_actions, email, public_profile, user_birthday, user_location, user_likes, user_education_history, pages_messaging_phone_number'});
-            }
-        });
+    $('input').on('change paste keyup',function(){
+        console.log('working');
+        if($(this).val().length > 0){
+             $(this).closest('.input-wrap').removeClass('error');
+        }
     });
-
-    function useFacebook() {
-        FB.api('/me', {fields: 'id,first_name,last_name,birthday,gender,about,email,education,bio,devices,hometown,location,likes,work,public_key'}, function(fbResponse) {
-
-
-            console.log(fbResponse);
-            var _fbUid = fbResponse.id;
-            var _fname = fbResponse.first_name;
-            var _lname = fbResponse.last_name;
-            var _birthday = fbResponse.birthday;
-            var _email = fbResponse.email;
-            var _gender = fbResponse.gender;
-
-            $('#fb_uid').val(_fbUid);
-            $('#fb_fname').val(_fname);
-            $('#fb_lname').val(_lname);
-            $('#fb_email').val(_email);
-            $('#last-name').val(_lname);
-            $('#first-name').val(_fname);
-            $('#birthday').val(_birthday);
-            $('#account-email').val(_email);
-            if(_gender === 'male'){
-                $('#gender').val('M');
-                $('#gender').siblings('.custom-select-display').html('Male');
-            }else if(_gender === 'female'){
-                $('#gender').val('F');
-                $('#gender').siblings('.custom-select-display').html('Female');
-            }
-            $('#email').val(_email);
-
-
-        });
-
-        FB.api('/me/picture?type=large', function(fbResponse) {
-            $('#fb_profile_pic').val(fbResponse.data.url);
-            console.log(fbResponse.data.url);
-        });
-
-
-    }
-
-
-
-        $('input').on('change paste keyup',function(){
-            console.log('working');
-            if($(this).val().length > 0){
-                $(this).closest('.input-wrap').removeClass('error');
-            }
-        });
 
     function isNumber(number) {
         var numberValid = /^\+(?:[0-9]●?){6,14}[0-9]$/;
@@ -241,75 +157,6 @@ $(document).ready(function(){
         }
     });
 
-    // Verification Field
-    $('.final-step-form').submit(function(e){
-        e.preventDefault();
-        $('.input-wrap').addClass('error');
-        isvalidate = false;
 
-        if( !$('#verfication-code').val() == '') {
-            $('.input-wrap').removeClass('error');
-            isvalidate = true;
-        } else {
-            isvalidate = false;
-        }
-
-        if( !$('#verfication-code').val() == '' &&  isvalidate == true) {
-            $('.final-step-form').addClass('overlay');
-
-            var that = $(this),
-            url = that.attr('action'),
-            type = that.attr('method'),
-            data = {};
-
-            that.find('[name]').each(function (index, value) {
-                var that = $(this),
-                    name = that.attr('name'),
-                    value = that.val();
-                    data[name] = value;
-            });
-
-            $.ajax({
-                url: url,
-                type: type,
-                data: data,
-
-                success: function (response) {
-                    var data = jQuery.parseJSON(response);
-                    if(!data.error){
-                        $('.final-step-form').removeClass('overlay');
-                        database.ref('leads').child(data.id).set(data);
-                        var f = document.createElement("form");
-                        f.setAttribute('method',"post");
-                        f.setAttribute('action',"thankyou.php");
-                        f.setAttribute('id',"redirect-form");
-
-                        var i = document.createElement("input"); //input element, text
-                        i.setAttribute('type',"hidden");
-                        i.setAttribute('name',"id");
-                        i.setAttribute('value', data.id);
-                        f.appendChild(i);
-                        document.getElementsByTagName('body')[0].appendChild(f);
-
-                        $('#redirect-form').submit();
-                    }else{
-                        $('.final-step-form').removeClass('overlay');
-                        var errorOutput = $('#verfication-code').closest('.input-wrap');
-                        errorOutput.find('.required-tooltip p').html(data.error);
-                        errorOutput.addClass('error');
-                    }
-
-                }
-            });
-
-            e.preventDefault();
-            return false;
-
-        } else {
-            e.preventDefault();
-            return false;
-        }
-        
-    });
 });
 
