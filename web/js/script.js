@@ -30,6 +30,15 @@ $(document).ready(function(){
 
     });
 
+    $('input[name=currency]').val('USD');
+
+    $('input[name=currency]').change(function(){
+        var val = $('input[name=currency]:checked').val();
+        $(this).val(val)
+        alert(val);
+    });
+
+
 
     $('.wing-form').submit(function(e){
         $('.input-wrap').addClass('error');
@@ -108,6 +117,7 @@ $(document).ready(function(){
         } else {
             isvalidate = false;
         }
+
 
 
 
