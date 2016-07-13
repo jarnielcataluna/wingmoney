@@ -9392,6 +9392,7 @@ input::-webkit-inner-spin-button {
 .final-step-form .input-wrap {
   max-width: 300px;
   margin: 0 auto 30px;
+  z-index: 100;
 }
 
 .final-step-form .input-wrap input[type="text"], .final-step-form .input-wrap input[type="number"], .final-step-form .input-wrap input[type="tel"] {

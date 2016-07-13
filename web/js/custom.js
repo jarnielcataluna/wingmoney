@@ -33,8 +33,10 @@ $(document).ready(function() {
             yearRange: '1945:2009',
             defaultDate: '01/01/1980',
             onSelect: function(dateText, inst) {
-                $('#birthday').val(dateText);
-                $('.gender select').focus();
+                console.log(dateText);
+                $("input[value='']:not(:checkbox,:button):visible:empty:first").focus();
+
+                this.setAttribute('value', this.value);
             }
         });
     }
@@ -161,12 +163,19 @@ $(document).ready(function() {
         $(this).closest('.input-wrap').removeClass('error');
     });
 
+    $('.wing-form input:not(:checkbox,:button)').bind("keydown", function(e) {    
+        if(e.keyCode == 13) { 
+            $("input[value='']:not(:checkbox,:button):visible:empty:first, select[value='0']:visible:empty:first").focus();
+        }
+   });
+
+
     $('.gender select').change(function(){
 
         if($(this).val() !="0") {
             $('.gender').find('.custom-select-display').css({'color' : '#000'});
 
-            $("input[value='']:not(:checkbox,:button):visible:empty:first").focus();
+            $("input[value='']:not(:checkbox,:button):visible:empty:first, select[value='0']:visible:empty:first").focus();
 
             // if($('#contact-num').val() == '') {
             //     $('#contact-num').focus();
@@ -186,7 +195,7 @@ $(document).ready(function() {
 
         if($(this).val() !="0") {
             $('.id-type').find('.custom-select-display').css({'color' : '#000'});
-            $('#id-number').focus();
+            $("input[value='']:not(:checkbox,:button):visible:empty:first").focus();
         } else {
             console.log('test');
             $('.id-type').find('.custom-select-display').css({'color' : '#8d8d8d'});
@@ -198,6 +207,7 @@ $(document).ready(function() {
 
         if($(this).val() !="0") {
             $('.finding-us').find('.custom-select-display').css({'color' : '#000'});
+            $("input[value='']:not(:checkbox,:button):visible:empty:first").focus();
         } else {
             console.log('test');
             $('.finding-us').find('.custom-select-display').css({'color' : '#8d8d8d'});

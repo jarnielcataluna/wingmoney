@@ -50,7 +50,7 @@
         <div class="clr"></div>
         <div class="input-wrap mobile-num">
             <span class="input-group-addon">(+855)</span>
-            <input type="number" id="contact-num" name="" value="" minlength="8" max="8" required="required" onkeyup="this.setAttribute('value', this.value);">
+            <input type="number" id="contact-num" name="" value="" minLength="8" maxLength="8" required="required" onkeyup="this.setAttribute('value', this.value);"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
             <label for="contact-num">Contact Number</label>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="input-wrap input-half">
-            <input type="text" id="id-number" name="id_number" value="" required="required">
+            <input type="text" id="id-number" name="id_number" value="" required="required" onkeyup="this.setAttribute('value', this.value);">
             <label for="id-number">ID Number</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
