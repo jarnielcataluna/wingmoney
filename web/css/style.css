@@ -10294,6 +10294,18 @@ input::-webkit-inner-spin-button {
   .final-step-wrap {
     height: auto !important;
   }
+  .thank-you-page header .logo a, .inner-page header .logo a {
+    padding: 0;
+  }
+  .thank-you-page header .logo a img, .inner-page header .logo a img {
+    width: 90px !important;
+  }
+  .ty-social-media {
+    margin: 20px 0;
+  }
+  #main-wrapper {
+    padding-bottom: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 640px) {
