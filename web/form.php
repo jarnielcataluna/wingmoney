@@ -17,14 +17,14 @@
     </div>
     <div class="form-row">
         <div class="input-wrap">
-            <input type="text" id="last-name" name="lname" value="" required="required" onkeyup="this.setAttribute('value', this.value);">
+            <input type="text" id="last-name" name="lname" value="" required="required" onchange="this.setAttribute('value', this.value);">
             <label for="last-name">Last Name</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
         <div class="input-wrap">
-            <input type="text" id="first-name" name="fname" value="" required="required" onkeyup="this.setAttribute('value', this.value);">
+            <input type="text" id="first-name" name="fname" value="" required="required" onchange="this.setAttribute('value', this.value);">
             <label for="first-name">First Name</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
@@ -50,14 +50,14 @@
         <div class="clr"></div>
         <div class="input-wrap mobile-num">
             <span class="input-group-addon">(+855)</span>
-            <input type="number" id="contact-num" name="" value="" minLength="8" maxLength="8" required="required" onkeyup="this.setAttribute('value', this.value);"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            <input type="number" id="contact-num" name="" value="" minLength="8" maxLength="8" required="required" onchange="this.setAttribute('value', this.value);"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
             <label for="contact-num">Contact Number</label>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
         <div class="input-wrap">
-            <input type="email" id="account-email" name="email" value="" required="required" onkeyup="this.setAttribute('value', this.value);">
+            <input type="email" id="account-email" name="email" value="" required="required" onchange="this.setAttribute('value', this.value);">
             <label for="account-email">Email</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="input-wrap input-half">
-            <input type="text" id="id-number" name="id_number" value="" required="required" onkeyup="this.setAttribute('value', this.value);">
+            <input type="text" id="id-number" name="id_number" value="" required="required" onchange="this.setAttribute('value', this.value);">
             <label for="id-number">ID Number</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
@@ -86,11 +86,11 @@
         <div class="input-wrap choose-currency">
             <label>Choose Currency:</label>
             <div class="custom-radio">
-                <input type="radio" id="usd" name="currency" checked value="USD">
+                <input type="radio" id="usd" name="currency" checked value="USD" data-value="USD">
                 <label for="usd"><span></span>US Dollar</label>
             </div>
             <div class="custom-radio">
-                <input type="radio" id="Khmer" name="currency" value="KHR">
+                <input type="radio" id="Khmer" name="currency" value="KHR" data-value="KHR">
                 <label for="Khmer"><span></span>Khmer</label>
             </div>
         </div>

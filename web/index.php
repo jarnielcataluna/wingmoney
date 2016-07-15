@@ -580,9 +580,8 @@
 <script src="js/owl.carousel.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/script.js"></script>
-
+<script src="js/facebook-custom.js"></script>
 
 </body>
 </html>
