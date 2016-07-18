@@ -1,11 +1,10 @@
 $(document).ready(function(){
 
-    $('input').on('change paste keyup',function(){
-        console.log('working');
-        if($(this).val().length > 0){
-             $(this).closest('.input-wrap').removeClass('error');
-        }
-    });
+    // $('input').on('change paste keyup',function(){
+    //     if($(this).val().length > 0){
+    //          $(this).closest('.input-wrap').removeClass('error');
+    //     }
+    // });
 
     function isNumber(number) {
         var numberValid = /^\+(?:[0-9]●?){6,14}[0-9]$/;
@@ -34,8 +33,7 @@ $(document).ready(function(){
 
     $('input[name=currency]').change(function(){
         var val = $('input[name=currency]:checked').val();
-        $(this).val(val)
-        alert(val);
+        $(this).val(val);
     });
 
 

@@ -579,6 +579,7 @@
 <script src="js/devices.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/plugins.js"></script>
+<script src="js/select.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/script.js"></script>
 <script src="js/facebook-custom.js"></script>
