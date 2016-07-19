@@ -109,8 +109,18 @@
             <label for="wing-checkbox">I want to receive email and sms notification from Wing.</label>
         </div>
         <hr>
-        <div class="input-wrap">
-            <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK"></div>
+        <div class="input-wrap g-recaptcha-wrap">
+            <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK" data-callback="onSuccess"></div>
+            <script>
+                
+                var onSuccess = function(response) {
+                    var errorDivs = $('.g-recaptcha-wrap');
+                    if (errorDivs.hasClass('error')) {
+                        $('.g-recaptcha-wrap').removeClass('error');
+                    }
+                }
+            </script>
+
             <div class="required-tooltip left">
                 <p>Please verify that you are not a robot.<span>*</span></p>
             </div>
