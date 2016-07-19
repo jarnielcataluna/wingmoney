@@ -110,10 +110,10 @@
         </div>
         <hr>
         <div class="input-wrap g-recaptcha-wrap">
-            <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK" data-callback="onSuccess"></div>
+            <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK" data-callback="onSuccessCaptcha"></div>
             <script>
                 
-                var onSuccess = function(response) {
+                var onSuccessCaptcha = function(response) {
                     var errorDivs = $('.g-recaptcha-wrap');
                     if (errorDivs.hasClass('error')) {
                         $('.g-recaptcha-wrap').removeClass('error');
