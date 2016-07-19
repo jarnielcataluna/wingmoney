@@ -1,8 +1,4 @@
 <?php
-
-    echo '<pre>';
-    var_dump($_POST);
-    exit;
     ini_set('display_errors', 1);
     ini_set('max_execution_time', -1);
     ignore_user_abort(1);

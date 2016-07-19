@@ -109,10 +109,15 @@
             <label for="wing-checkbox">I want to receive email and sms notification from Wing.</label>
         </div>
         <hr>
-        <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK"></div>
+        <div class="input-wrap">
+            <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK"></div>
+            <div class="required-tooltip left">
+                <p>Please verify that you are not a robot.<span>*</span></p>
+            </div>
+        </div>
         <div class="input-wrap text-center btn-wrapper">
             <input type="submit" class="btn btn-orange" name="" value="SUBMIT" disabled="disabled" />
         </div>
     </div>
-    
+
 </form>

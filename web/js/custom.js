@@ -34,9 +34,10 @@ $(document).ready(function() {
             defaultDate: '01/01/1980',
             onSelect: function(dateText, inst) {
                 console.log(dateText);
+                this.setAttribute('value', this.value);
                 $("input[value='']:not(:checkbox,:button):visible:empty:first").focus();
 
-                this.setAttribute('value', this.value);
+                
             }
         });
     }
@@ -44,7 +45,7 @@ $(document).ready(function() {
     // $('.custom-select').focus(function(){    
     //     $(this).closest('.custom-select-wrapper').addClass('focus');
     // });
-    
+
 
     $('.custom-select').focusout(function(){    
         $(this).closest('.custom-select-wrapper').removeClass('focus');
