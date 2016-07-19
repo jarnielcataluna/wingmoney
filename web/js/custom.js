@@ -44,6 +44,7 @@ $(document).ready(function() {
     // $('.custom-select').focus(function(){    
     //     $(this).closest('.custom-select-wrapper').addClass('focus');
     // });
+    
 
     $('.custom-select').focusout(function(){    
         $(this).closest('.custom-select-wrapper').removeClass('focus');

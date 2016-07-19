@@ -36,8 +36,6 @@ $(document).ready(function(){
         $(this).val(val);
     });
 
-
-
     $('.wing-form').submit(function(e){
         $('.input-wrap').addClass('error');
         isvalidate = false;
