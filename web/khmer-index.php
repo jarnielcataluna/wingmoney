@@ -34,7 +34,7 @@
 <script src="js/html5.js"></script>
 <script src="js/lib/modernizr-2.8.3.min.js"></script>
 <script src="js/pace.min.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -78,7 +78,7 @@
 		</div>
 	</header>
 	<section id="main-wrapper">
-		
+
 		<section class="banner-wrap jq-section">
 			<div class="parallax-window" data-parallax="scroll" data-image-src="banner-whitecollar.jpg" data-bleed="10" alt=""></div>
 			<div class="table-wrap">
