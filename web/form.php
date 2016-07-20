@@ -50,7 +50,7 @@
         <div class="clr"></div>
         <div class="input-wrap mobile-num">
             <span class="input-group-addon">(+855)</span>
-            <input type="number" id="contact-num" name="" value="" minLength="8" maxLength="8" required="required" onchange="this.setAttribute('value', this.value);"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            <input type="tel" id="contact-num" name="contact_num" value="" minLength="8" maxLength="8" required="required" onchange="this.setAttribute('value', this.value);">
             <label for="contact-num">Contact Number</label>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
