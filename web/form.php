@@ -50,7 +50,7 @@
         <div class="clr"></div>
         <div class="input-wrap mobile-num">
             <span class="input-group-addon">(+855)</span>
-            <input type="number" id="contact-num" name="" value="" minLength="8" maxLength="8" required="required" onchange="this.setAttribute('value', this.value);"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            <input type="number" id="contact-num" name="contact" value="" minLength="8" maxLength="8" required="required" onchange="this.setAttribute('value', this.value);"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
             <label for="contact-num">Contact Number</label>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
@@ -97,7 +97,13 @@
         <div class="input-wrap finding-us">
             <select class="custom-select" name="feedback">
                 <option value="0">Where did you find us?</option>
+                <option value="Wing Website">Wing Website</option>
+                <option value="Google">Google</option>
                 <option value="Facebook">Facebook</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Television">Television</option>
+                <option value="Magazine">Magazine</option>
+                <option value="Friends">Friends</option>
                 <option value="Others">Others</option>
             </select>
             <div class="required-tooltip left">
@@ -126,7 +132,7 @@
             </div>
         </div>
         <div class="input-wrap text-center btn-wrapper">
-            <input type="submit" class="btn btn-orange" name="" value="SUBMIT" disabled="disabled" />
+            <input type="submit" class="btn btn-orange" value="SUBMIT" disabled="disabled" />
         </div>
     </div>
 
