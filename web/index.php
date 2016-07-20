@@ -570,7 +570,7 @@
 		</div>
 	</div>
 </footer>
-
+<script src="js/operators.js"></script>
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/jquery-ui.min.js"></script>
 <script src="js/materialize.js"></script>
@@ -583,6 +583,5 @@
 <script src="js/custom.js"></script>
 <script src="js/script.js"></script>
 <script src="js/facebook-custom.js"></script>
-
 </body>
 </html>

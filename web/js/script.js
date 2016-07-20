@@ -31,6 +31,46 @@ $(document).ready(function(){
 
     });
 
+
+    var isSeries = false;
+    $('#contact-num').keyup(function(){
+        checkSeries($(this));
+    });
+
+    $('#contact-num').change(function(){
+        checkSeries($(this));
+    });
+
+    $('#contact-num').blur(function(){
+        checkSeries($(this));
+    });
+
+    function checkSeries(elem){
+        elem.closest('.input-wrap').removeClass('error');
+        var val = elem.val();
+        var len = elem.val().length;
+        if(len > 0){
+            if(val.substr(0,1) != '0'){
+                val = '0' + val;
+                elem.val(val);
+            }
+
+            if(len > 4){
+                var series = val.substr(0,5);
+                if(jQuery.inArray( series, operatorNumbers ) != -1){
+                    isSeries = true;
+
+                }else{
+                    var test = elem.closest('.input-wrap').find('.required-tooltip.left').find('p')
+                    test.html('Invalid mobile prefix');
+                    elem.closest('.input-wrap').addClass('error');
+                    console.log('test');
+                    isSeries = false;
+                }
+            }
+        }
+    }
+
     $('input[name=currency]').val('USD');
 
     $('input[name=currency]').change(function(){
@@ -39,6 +79,7 @@ $(document).ready(function(){
     });
 
     $('.wing-form').submit(function(e){
+        e.preventDefault();
         $('.input-wrap').addClass('error');
         isvalidate = false;
 
@@ -79,12 +120,19 @@ $(document).ready(function(){
             isvalidate = false;
         }
 
-        if( $('#contact-num').val() != '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length == 8 ){
-            $('#contact-num').closest('.input-wrap').removeClass('error');
-            isvalidate = true;
-
-        } else {
-            isvalidate = false;
+        if(isSeries){
+            if( $('#contact-num').val() != '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length == 8 ){
+                $('#contact-num').closest('.input-wrap').removeClass('error');
+                isvalidate = true;
+            } else {
+                $('#contact-num').closest('.required-tooltip.left p').html('This field is required <span>*</span>');
+                isvalidate = false;
+            }
+        }else{
+            var cNum =  $('#contact-num');
+            cNum.closest('.input-wrap').addClass('error');
+            cNum.closest('.required-tooltip.left p').html('Invalid mobile prefix');
+            isvalidate = false
         }
 
         if( $('.gender select').val() != '0'){
@@ -119,13 +167,13 @@ $(document).ready(function(){
         if(grecaptcha.getResponse().length === 0) {
             isvalidate = false;
         } else {
-            
+
             $('.g-recaptcha-wrap').removeClass('error');
             isvalidate = true;
         }
 
 
-        if( grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.id-type select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#id-number').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length == 8 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
+        if(isSeries && grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.id-type select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#id-number').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length == 8 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
             $('.wing-form-wrap').addClass('overlay');
             var that = $(this),
                 url = that.attr('action'),

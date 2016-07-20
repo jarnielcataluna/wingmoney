@@ -97,7 +97,13 @@
         <div class="input-wrap finding-us">
             <select class="custom-select" name="feedback">
                 <option value="0">Where did you find us?</option>
+                <option value="Wing Website">Wing Website</option>
+                <option value="Google">Google</option>
                 <option value="Facebook">Facebook</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Television">Television</option>
+                <option value="Magazine">Magazine</option>
+                <option value="Friends">Friends</option>
                 <option value="Others">Others</option>
             </select>
             <div class="required-tooltip left">
