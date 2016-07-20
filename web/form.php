@@ -49,7 +49,7 @@
         </div>
         <div class="clr"></div>
         <div class="input-wrap mobile-num">
-            <span class="input-group-addon">(+855)</span>
+            <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
             <input type="tel" id="contact-num" name="contact_num" value="" minLength="8" maxLength="8" required="required" onchange="this.setAttribute('value', this.value);">
             <label for="contact-num">Contact Number</label>
             <div class="required-tooltip left">
@@ -112,7 +112,6 @@
         <div class="input-wrap g-recaptcha-wrap">
             <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK" data-callback="onSuccessCaptcha"></div>
             <script>
-                
                 var onSuccessCaptcha = function(response) {
                     var errorDivs = $('.g-recaptcha-wrap');
                     if (errorDivs.hasClass('error')) {
@@ -125,8 +124,13 @@
                 <p>Please verify that you are not a robot.<span>*</span></p>
             </div>
         </div>
-        <div class="input-wrap text-center btn-wrapper">
-            <input type="submit" class="btn btn-orange" name="" value="SUBMIT" disabled="disabled" />
+        <div class="text-center">
+            <div class="input-wrap btn-wrapper">
+                <input type="submit" class="btn btn-orange" name="" value="SUBMIT" disabled="disabled" />
+                <div class="required-tooltip left">
+                    <p>Please check the tick box. <span>*</span></p>
+                </div>
+            </div>
         </div>
     </div>
 

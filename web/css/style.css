@@ -8285,11 +8285,18 @@ a.waves-effect .waves-ripple {
 }
 
 .input-wrap.mobile-num input[type="text"], .input-wrap.mobile-num input[type="number"], .input-wrap.mobile-num input[type="tel"] {
-  padding-left: 65px;
+  padding-left: 50px;
 }
 
 .input-wrap.mobile-num input[value=""] + label, .input-wrap.mobile-num input[value=""] + label {
-  left: 67px;
+  left: 52px;
+}
+
+.input-wrap.mobile-num .fa {
+  font-size: 24px;
+  padding: 0px 5px;
+  position: relative;
+  top: 2px;
 }
 
 .input-wrap.input-half {
@@ -8580,7 +8587,7 @@ input::-webkit-inner-spin-button {
 .wing-form input[type="submit"]:disabled {
   opacity: 0.8;
   pointer-events: none;
-  background: rgba(248, 159, 27, 0.6);
+  background: rgba(81, 81, 81, 0.8);
   box-shadow: 0 0px 0px 0 transparent, 0 0px 0px 0 transparent;
 }
 
@@ -8682,6 +8689,18 @@ input::-webkit-inner-spin-button {
 
 .wing-form-wrap .btn-wrapper {
   margin: 5px 0;
+  width: auto;
+  display: inline-block;
+}
+
+.wing-form-wrap .btn-wrapper:hover .required-tooltip.left {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  z-index: 3;
+  opacity: 1;
 }
 
 .wing-form-wrap .btn-orange {
@@ -8716,7 +8735,7 @@ input::-webkit-inner-spin-button {
 
 .required-tooltip {
   position: absolute;
-  top: -4px;
+  top: -3px;
   background: #ffffff;
   border-radius: 8px;
   padding: 8px;
@@ -8733,6 +8752,7 @@ input::-webkit-inner-spin-button {
 .required-tooltip p {
   font-size: 12px;
   color: #8d8d8d;
+  line-height: 14px;
 }
 
 .required-tooltip p span {
