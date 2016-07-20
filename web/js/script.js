@@ -22,9 +22,11 @@ $(document).ready(function(){
 
         if($(this).is(':checked')) {
             $('.wing-form input[type="submit"]').removeAttr('disabled');
-            console.log('checkbox');
+            $('.btn-wrapper').find('.required-tooltip').remove();
+
         } else {
             $('.wing-form input[type="submit"]').attr('disabled', true);
+            $('.btn-wrapper').append('<div class="required-tooltip left"><p>Please check the tick box. <span>*</span></p></div>')
         }
 
     });
