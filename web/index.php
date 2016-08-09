@@ -86,7 +86,7 @@
 					<div class="container">
 						<div class="fl banner-text animated hiding" data-animation="fadeInLeft" data-delay="300">
 							<!-- <div class="logo"><img src="images/wing-logo.png" alt=""></div> -->
-							<h1><span>FAST, SECURE </span><br><span>and convenient</span><br><span>PAYMENTS FROM</span><br><span>YOUR MOBILE PHONE.</span></h1>
+							<h1><span>FAST and SECURE </span><br><span>PAYMENTS FROM</span><br><span>YOUR MOBILE PHONE.</span></h1>
 						</div>
 						<div id="wing-form-wrap"></div>
 					</div>
@@ -115,9 +115,9 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-sm-7 animated hiding" data-animation="fadeInUp" data-delay="300">
-						<h2 class="sec-title">More than a <br>Mobile Wallet</h2>
+						<h2 class="sec-title"> More than just a money transfer service!</h2>
 						<div class="feature-tag">
-							<p>Wing Money's mobile wallet function is just the beginning! There are so many ways Wing makes life easier and faster so you can focus on the things that really matter. Signing up is so simple:</p>
+							<p>Money transfer is just the beginning! There are so many ways a Wing account can make your life easier and faster so you can focus on the things that really matter. Signing up is so simple:</p>
 						</div>
 						<ul class="nolink-a">
 							<li><a href="#">Money Transfer</a></li>
@@ -178,8 +178,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-sm-12 ed-text animated hiding" data-animation="fadeInUp">
-							<h2 class="sec-title">Enjoy Discounts From Our Store Partners</h2>
-							<p>Get exclusive discounts from your favorite stores with your Wing Card. Simply show your Win Card to our partner merchants to enjoy fine dining, shopping sprees, and so much more at discounted prices.</p>
+							<h2 class="sec-title">Use Your Wing Card <br>to Enjoy Discounts <br>From Our Merchant-Partners</h2>
+							<p>Get exclusive discounts from your favorite stores with your Wing account. Simply show your Wing card to our merchant-partners to enjoy fine dining, shopping sprees, and so much more at discounted prices!</p>
 						</div>
 					</div>
 					<img class="dis-model animated hiding" data-animation="fadeInUp" src="images/discount-model.png" alt="">
@@ -258,9 +258,9 @@
 			
 		<section id="pay-online" class="section-pad jq-section">
 			<div class="container">
-				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Always Busy? <br>Make Effortless  Online <br>  Purchases</h2>
+				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Always Busy? <br>Make Effortless  Online <br>  Purchases with Your<br> Wing Account</h2>
 				<div class="sec-tagline text-center animated hiding" data-animation="fadeInUp">
-					<p>Your time is important, so simplify your life by doing your shopping online with your Wing Account. With a few clicks, you can pay for movie tickets or your next travel booking in a short time, all online!</p>
+					<p>Your time is important, so make your life easier by doing your shopping online with your Wing Account. With a few clicks, you can pay for movie tickets or your next travel booking in a short time, all online!</p>
 
 				</div>
 				<div class="pay-online-partners text-center animated hiding" data-animation="fadeInUp">
@@ -291,7 +291,7 @@
 					<div class="col-sm-8">
 						<div class="pay-bill-info animated hiding" data-animation="fadeInRight">
 							<h2 class="sec-title">Pay Bills With Your <br>Wing Money Account</h2>
-							<p>Wing provides bill payment services to allow anyone to pay their bills easily through their mobile phones or via Wing’s agents nationwide. We have partnered with more than 65 billers including Utilities, Microfinance, Phone Distributors and more.</p>
+							<p>Your Wing account provides bills payment services to allow anyone to pay their bills easily through their mobile phones! We have partnered with more than 80 billers including Utilities, Microfinance, Phone Distributors, and more.</p>
 							<a href="WCX-List-by-District-VB.pdf" target="_blank" class="btn btn-orange fr"> View List</a>
 						</div>
 					</div>
@@ -310,8 +310,8 @@
 								<img src="images/step1.png" alt="">
 							</div>
 							<div class="wing-benifits-info">
-								<h3> Register Online</h3>
-								<p>Fill up the form <br> you'll find here.</p>
+								<h3>Register Online</h3>
+								<p>Fill up the form <br>you'll find here.</p>
 							</div>
 						</div>
 						<div class="step">
@@ -320,8 +320,8 @@
 								<img src="images/step2.png" alt="">
 							</div>
 							<div class="wing-benifits-info">
-								<h3>Receive <br>Confirmation Message</h3>
-								<p>Wait for a text or e-mail <br> from us.</p>
+								<h3>Receive <br>SMS Notification</h3>
+								<p>A verification code <br>will be sent to you via SMS</p>
 							</div>
 						</div>
 						<div class="step">
@@ -331,7 +331,7 @@
 							</div>
 							<div class="wing-benifits-info">
 								<h3>Finalize <br> Transaction</h3>
-								<p>Confirm your application with the code in the message.</p>
+								<p>Verify your application with the code in the message</p>
 							</div>
 						</div>
 						<div class="step">
@@ -341,7 +341,7 @@
 							</div>
 							<div class="wing-benifits-info">
 								<h3>Claim <br>Wing Money Kit</h3>
-								<p>Head to a Wing Money Outlet <br> for your kit.</p>
+								<p>Head to a Wing Money Outlet <br> to claim your Kit.</p>
 							</div>
 						</div>
 					</div>
@@ -515,7 +515,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="animated hiding text-center" data-animation="fadeInUp">Wing Money, The Fastest and Easiest Mobile Transaction in Cambodia</h2>
+					<h2 class="animated hiding text-center" data-animation="fadeInUp">Wing is the leading mobile banking services provider in Cambodia!</h2>
 				</div>
 				
 			</div>	
@@ -526,7 +526,7 @@
 	</div>
 	<div class="footer-action">
 		<div class="container">
-			<h4>Call us at +855 23 999 989 or dial *989# to use Wing.</h4>
+			<h4>Call us at +855 23 999 989 for more information! <br>To use your Wing account, dial *989# or download the Wing Money app.</h4>
 		</div>
 	</div>
 

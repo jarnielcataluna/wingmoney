@@ -1632,6 +1632,11 @@ input::-webkit-inner-spin-button {
 		margin-bottom: 40px;
 	}
 
+	.sec-title {
+		font-size: 40px;
+		line-height: 44px;
+	}
+
 	.ed-text {
 		position: relative;
 		z-index: 2;
@@ -1843,6 +1848,10 @@ input::-webkit-inner-spin-button {
 		display: block;
 		float: none;
 		clear: both;
+	}
+
+	p {
+		color: #222;
 	}
 }
 
