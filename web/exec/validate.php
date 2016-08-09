@@ -4008,12 +4008,6 @@
         }
     }
 
-    echo '<pre>';
-    var_dump($_POST);
-    exit;
-
-
-
     $key = $_POST['key'];
     $auth = "Authorization: Basic ". $key;
 
