@@ -385,7 +385,7 @@
 			</div>
 		</section> -->
 
-		<!-- <section id="wing-ket" class="section-pad jq-section bg-green">
+		<section id="wing-ket" class="section-pad jq-section bg-green">
 			<div class="container">
 				<div class="wing-ket-wrap">
 					<div class="row">
@@ -393,13 +393,13 @@
 						<div class="col-sm-7 wing-ket-info fl animated hiding" data-animation="fadeInLeft">
 							<h2 class="sec-title">Wing Ket Luy</h2>
 							<p>Discover Wing Ket Luy. Enjoy the convenience of never needing to bring cash to buy from your favorite shops. All you need to do is swipe or tap your Wing Card on the store's Wing terminal to make an instant, cash-free payment through your Wing Account.</p>
-							<a href="" class="btn btn-orange">Inquire</a> 
+							<!-- <a href="" class="btn btn-orange">Inquire</a>  -->
 						</div>
 						
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 		<section id="wing-mobile" class="section-pad jq-section">
 			<div class="container">
@@ -454,22 +454,32 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="wm-content-text">
+									<h4>How to pay bills via Wing account:</h4>
+									<ul>
+										<li>Dial *989#,press send</li>
+										<li>Enter "Wing account number", press send</li>
+										<li>Enter "5. Bill Payment", press send</li>
+										<li>Select the Company Type (i.e: select 2. Utilities for EDC Bill or Water Bills, Select 3. Finance for AEON bill, First Finance…etc), Press send</li>
+										<li>Choose the Company’s Name (i.e EDC, AEON, first Finance, Manulife, Digi…etc), press send</li>
+										<li>Enter Unique ID (i.e: invoice #, Customer ID, account Number…etc), press send</li>
+										<li>Enter Amount to pay</li>
+										<li>Enter "PIN", press Send</li>
+										<li>Success.</li>
+									</ul>
+									<p><em>You will receive an SMS notification for a successful bill payment.</em></p>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="wm-content-text">
-									<h4>Wing Wei Luy <span>(Account to Non-Account)</span></h4>
-									<p>How to do Wing Wei Luy:</p>
+									<h4>How to pay bills at Wing Cash Xpress:</h4>
 									<ul>
-										<li>Dial *989#</li>
-										<li>Enter your WING number xxxxxxxx</li>
-										<li>Enter 4 [WING WEI LUY]</li>
-										<li>Enter amount xxxx</li>
-										<li>Enter Recipient Phone #</li>
-										<li>Enter PIN xxxx</li>
-										<li>Communicate your passcode to the receiver (by phone/SMS)</li>
+										<li>Bring your bills or invoices to any nearest Wing Cash Xpress (WCX) outlet.</li>
+										<li>Tell WCX that you want to pay the bills</li>
+										<li>Write down your bill numbers/invoice numbers, amount, and your phone number</li>
+										<li>Give money to Wing Cash Xpress (WCX)s</li>
+										<li>Get the receipt from Wing Cash Xpress (WCX)</li>
+										<li>Check your SMS (an SMS will be sent for transaction confirmation)</li>
 									</ul>
-									<p><em>When done, the receiver will instantly be able to withdraw at any Wing Cash Xpress.</em></p>
 								</div>
 							</div>
 						</div>
@@ -478,22 +488,32 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="wm-content-text">
-									<h4>Wing-2-Wing <span>(Account to Account)</span> </h4>
-									<p>How to do Wing-2-Wing via your Phone:</p>
+									<h4>How to do online payment</h4>
 									<ul>
-										<li>Dial *989#, press send</li>
-										<li>Enter "Wing Account Number", press send</li>
-										<li>Enter "2. WING-2-WING", press send</li>
-										<li>Select "1. Enter Wing #", press send</li>
-										<li>Enter "Receiver’s Wing Account #", press send</li>
-										<li>Enter amount (USD/KHR), press send</li>
-										<li>Enter "PIN", press send</li>
+										<li>Enter “Website address” (i.e: www. L192.com, A-Y Collection, i-quick, Legend, shop 168…etc)</li>
+										<li>Register your account on that website if required</li>
+										<li>Buy products/movie tickets that you want</li>
+										<li>Choose “WING” as payment method</li>
+										<li>Choose “Wing” if you use Wing Card</li>
+										<li>Enter “Wing account number” and “Payment Code”</li>
+										<li>Select “Confirm” to make the payment</li>
+										<li>Online payment success</li>
 									</ul>
 									<p><em>When done, both sender and receiver will instantly receive a notification by SMS.</em></p>
 								</div>
 							</div>
 							<div class="col-sm-6">
-								<div class="wm-content-text"></div>
+								<div class="wm-content-text">
+									<h4>How to generate payment code by phone:</h4>
+									<ul>
+										<li>Dial *989#,press send</li>
+										<li>Enter “Wing account number”, press send</li>
+										<li>Enter “8. Payment”, press send</li>
+										<li>Enter “PIN”, press Send</li>
+										<li>6-digit payment code is generated. </li>
+									</ul>
+									<p><em>You can use it for payment online</em></p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -501,25 +521,32 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="wm-content-text">
-									<h4>Wing-2-Wing <span>(Account to Account)</span> </h4>
-									<p>How to do Wing-2-Wing via your Phone:</p>
+
+									<h4>Phone top up through Wing account</span> </h4>
+									<p>How to top up your phone balance via Wing account:</p>
 									<ul>
-										<li>Dial *989#, press send</li>
-										<li>Enter "Wing Account Number", press send</li>
+										<li>Dial *989# ,press send</li>
+										<li>Enter your WING account number: xxxxxxxx ,press send</li>
+										<li>Press 3 to choose Phone Top Up</li>
+										<li>Enter the phone number ,press send</li>
+										<li>Choose the amount ,press send</li>
+										<li>Enter your PIN code: xxxx (SMS notification)</li>
 										
 									</ul>
-									<p><em>When done, both sender and receiver will instantly receive a notification by SMS.</em></p>
+									<p><em>And the top-up is done! The receiver of the top-up will instantly receive a notification by SMS.</em></p>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="wm-content-text">
-									<h4>Wing Wei Luy <span>(Account to Non-Account)</span></h4>
-									<p>How to do Wing Wei Luy:</p>
+									<h4>Other Top Up</h4>
+									<p>Other Services:</p>
 									<ul>
-										<li>Dial *989#</li>
-										<li>Enter your WING number xxxxxxxx</li>
-										<li>Enter 4 [WING WEI LUY]</li>
-										
+										<li>One TV (Cable TV credit)</li>
+										<li>Y5Net (Internet service)</li>
+										<li>Osja game (Credit for playing game)</li>
+										<li>Samnang (buy credit for buying online)</li>
+										<li>MKS (Internet service)</li>
+										<li>I top (internet service)</li>
 									</ul>
 									<p><em>When done, the receiver will instantly be able to withdraw at any Wing Cash Xpress.</em></p>
 								</div>

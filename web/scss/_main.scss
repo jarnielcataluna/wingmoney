@@ -1853,7 +1853,7 @@ input::-webkit-inner-spin-button {
 
 	p {
 		color: #222;
-		text-shadow: 3px 2px 5px rgba(255, 255, 255, 0.8);
+		text-shadow: 1px 1px 5px rgba(255, 255, 255, 1);
 	}
 }
 
@@ -1988,6 +1988,7 @@ input::-webkit-inner-spin-button {
 		li {
 
 			list-style-type: decimal;
+			padding: 3px 0;
 		}
 	}
 

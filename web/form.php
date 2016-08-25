@@ -49,8 +49,8 @@
         </div>
         <div class="clr"></div>
         <div class="input-wrap mobile-num">
-            <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-            <input type="tel" id="contact-num" name="contact_num" value="" minLength="8" maxLength="8" required="required" onchange="this.setAttribute('value', this.value);">
+            <span class="input-group-addon"><!-- <i class="fa fa-phone" aria-hidden="true"></i> -->+855</span>
+            <input type="tel" id="contact-num" name="contact_num" value=""  maxLength="10" required="required" onchange="this.setAttribute('value', this.value);">
             <label for="contact-num">Contact Number</label>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
