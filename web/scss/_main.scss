@@ -1838,6 +1838,7 @@ input::-webkit-inner-spin-button {
 	min-height: 493px;
 	background: $coWhite url('../images/paybills-bg.jpg') no-repeat bottom left;
 	border-bottom: 14px solid $coBlue;
+	background-size: 70%;
 }
 
 .pay-bill-info {
@@ -1852,6 +1853,7 @@ input::-webkit-inner-spin-button {
 
 	p {
 		color: #222;
+		text-shadow: 3px 2px 5px rgba(255, 255, 255, 0.8);
 	}
 }
 
@@ -3045,7 +3047,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	.pay-bills {
-		min-height: 550px;
+		min-height: 500px;
 		background-size: 90% auto;
 	}
 

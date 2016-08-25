@@ -343,9 +343,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="text-center">
-						<a href="#wing-form-wrap" class="btn btn-orange btn-signup animated hiding" data-animation="fadeInUp">Sign Up Now!</a>
-					</div>
+					
 				</div>
 
 				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Activate And Get Your Wing <br>Account Online</h2>
@@ -370,6 +368,9 @@
 							</ul>
 						</div>
 					</div>
+				</div>
+				<div class="text-center">
+					<a href="#wing-form-wrap" class="btn btn-orange btn-signup animated hiding" data-animation="fadeInUp">Sign Up Now!</a>
 				</div>
 			</div>
 		</section>

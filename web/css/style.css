@@ -9169,6 +9169,7 @@ input::-webkit-inner-spin-button {
   min-height: 493px;
   background: #ffffff url("../images/paybills-bg.jpg") no-repeat bottom left;
   border-bottom: 14px solid #0098d7;
+  background-size: 70%;
 }
 
 .pay-bill-info {
@@ -9184,6 +9185,7 @@ input::-webkit-inner-spin-button {
 
 .pay-bill-info p {
   color: #222;
+  text-shadow: 3px 2px 5px rgba(255, 255, 255, 0.8);
 }
 
 .wing-ket-wrap {
@@ -10361,7 +10363,7 @@ input::-webkit-inner-spin-button {
     display: none;
   }
   .pay-bills {
-    min-height: 550px;
+    min-height: 500px;
     background-size: 90% auto;
   }
   .enjoy-discount .ed-text {
