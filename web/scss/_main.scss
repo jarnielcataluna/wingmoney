@@ -579,7 +579,7 @@ footer { position: relative; z-index: 1; background: $bgGreen; }
 		color: $coWhite;
 
 		&:hover {
-			background: rgba($coOrange, 1);
+			background: darken($bgDarkOrange, 5%);
 			color: $coWhite;
 			border: 2px solid transparent;
 
@@ -602,7 +602,7 @@ footer { position: relative; z-index: 1; background: $bgGreen; }
     width: 100%;
     left: 0;
     text-align: center;
-    z-index: 99;
+    z-index: 1000;
     top: 50%;
     margin-top: -6px;
     opacity: 0;
@@ -979,7 +979,7 @@ a.waves-effect .waves-ripple {
 
 	&.error {
 
-		input[type="text"], input[type="email"], input[type="number"], input[type="tel"] {
+		input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"] {
 			border: 1px solid red;
 		}
 
@@ -995,7 +995,7 @@ a.waves-effect .waves-ripple {
 	}
 
 
-	input[type="text"], input[type="email"], input[type="number"], input[type="tel"] {
+	input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"] {
 		height: 40px;
 		padding: 5px 8px 0px 8px;
 		width: 100%;
@@ -1835,13 +1835,13 @@ input::-webkit-inner-spin-button {
 
 .pay-bills {
 	border-top: 2px solid #dedfe0;
-	min-height: 600px;
+	min-height: 493px;
 	background: $coWhite url('../images/paybills-bg.jpg') no-repeat bottom left;
 	border-bottom: 14px solid $coBlue;
 }
 
 .pay-bill-info {
-	margin-top: 200px;
+	margin-top: 50px;
 
 	&:after {
 		content:'';
@@ -2093,10 +2093,11 @@ input::-webkit-inner-spin-button {
 	}
 }
 
-.final-step-form {
+.final-step-form, .create-pin-account {
 
 	&.overlay {
 		position: relative;
+		overflow: hidden;
 
 		&:before {
 			content:'';
@@ -2107,7 +2108,7 @@ input::-webkit-inner-spin-button {
 			width: 100%;
 			height: 100%;
 			background-color: rgba(255, 255, 255, 0.6);
-			z-index: 2;
+			z-index: 999;
 		}
 
 		.loading-spinner-wrapper {
@@ -2117,19 +2118,31 @@ input::-webkit-inner-spin-button {
 
 	.input-wrap {
 		max-width: 300px;
-		margin: 0 auto 30px;
 		z-index: 100;
+		margin-bottom: 30px;
 
-		input[type="text"], input[type="number"], input[type="tel"] {
+		&.no-b-margin {
+			margin-bottom: 0;
+		}
+
+		input[type="text"], input[type="number"], input[type="tel"], input[type="password"] {
 			background: $bgWhite;
 			border: 3px solid $coBlue;
 			padding: 12px 20px;
 			height: auto;
-			color: $coBlue;
+			color: $coBlack;
 			font-size: 18px;
 			font-weight: bold;
 			text-align: center;
 		}
+	}
+
+	p.resend-code {
+		font-style: italic;
+		text-align: left;
+		font-size: 12px;
+		padding-left: 12px;
+		margin-top: 3px;
 	}
 
 	.required-tooltip {
@@ -2150,6 +2163,22 @@ input::-webkit-inner-spin-button {
 	}
 }
 
+.f-sms-wrap {
+	position: relative;
+	max-width: 394px;
+	margin: 0 auto;
+
+}
+
+.btn-verfication-code {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+	z-index: 999;
+	padding: 9px 15px 10px;
+}
+
 .final-step-wrap {
 	min-height: 505px;
 	position: relative;
@@ -2157,6 +2186,25 @@ input::-webkit-inner-spin-button {
 	max-height: 700px;
 }
 
+
+.create-pin-account {
+
+	margin-top: 40px;
+
+	h3 {
+		margin-bottom: 20px;
+	}
+
+	.input-wrap {
+		margin: 0 auto 8px;
+
+		input[type="password"] {
+			text-align: left;
+		}
+
+
+	}
+}
 
 .thank-you-page, .inner-page {
 	background: $bgWhite;
@@ -3291,11 +3339,82 @@ input::-webkit-inner-spin-button {
 			margin: 20px 0;
 		}
 	}
+}
 
+.card-and-app {
+	padding: 0px 55px;
 
+	&:after {
+		content:'';
+		display: block;
+		float: none;
+		clear: both;
+	}
+}
+
+.compare-box {
+	padding: 40px 60px;
+	background: $coBlue;
+	color: $coWhite;
+
+	&.wing-app-box {
+		background: $coGreen;
+	}
+}
+
+.compare-box {
+	width: 100%;
+	float: left;
+	text-align: center;
 }
 
 
+.wing-box-img {
+	width: 416px;
+	float: left;	
+
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.wing-app-info {
+	padding-left: 420px;
+	text-align: left;
+	padding-top: 30px;
+
+	h3 {
+		font-size: 23px;
+		line-height: 32px;
+	}
+
+	ul {
+		margin-top: 40px;
+		
+
+		li {
+			font-size: 17px;
+			line-height: 22px;
+			margin: 8px 0px;
+			padding-left: 15px;
+			position: relative;
+
+			&:before {
+				content:'';
+				width: 5px;
+				height: 5px;
+				position: absolute;
+				left: 0;
+				top: 8px;
+				background-color: $coWhite;
+				display: block;
+				border-radius: 50%;
+			}
+		}
+	}
+}
 
 
 

@@ -94,7 +94,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 					<div class="table-wrap">
 						<div class="table-content">
 							<div class="final-step text-center">
-								<h3 class="co-blue">One final step and you are done!</h3>
+								<h2 class="co-blue">One final step and you are done!</h2>
 								<div class="sec-tagline">
 									<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
 								</div>
@@ -106,17 +106,52 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 								          <i class="three"></i>
 								        </span>
 								    </div>
+								    <div class="f-sms-wrap">
+										<div class="input-wrap no-b-margin">
+											<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
+											<input type="number" id="verfication-code" name="verification_code"  value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required">
+
+											<label for="verfication-code">Enter SMS Code</label>
+
+											<div class="required-tooltip left">
+												<p>This confirmation code is required <span>*</span></p>
+											</div>
+										</div>
+										<p class="resend-code">Haven't receive code yet? <a href="#" >Resend Code</a></p>
+										<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="Submit">
+									</div>
+								</form>
+
+								<form class="create-pin-account" method="post" action="" novalidate>
+
+									<h3 class="co-blue">Set up a Pin</h3>
+									<div class="loading-spinner-wrapper" id="app-loader">
+								        <span class="loading-spinner">
+								          <i class="one"></i>
+								          <i class="two"></i>
+								          <i class="three"></i>
+								        </span>
+								    </div>
 									<div class="input-wrap">
-										<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
-										<input type="number" id="verfication-code" name="verification_code"  value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required">
-										<label for="verfication-code">Enter Verification Code</label>
+										<input type="password" name="" value="" id="pin-id" required="required" autocomplete="new-password"/>
+										<label for="pin-id">PIN</label>
 										<div class="required-tooltip left">
-											<p>This confirmation code is required <span>*</span></p>
+											<p>This field is required <span>*</span></p>
+										</div>
+									</div>
+									<div class="input-wrap">
+										<input type="password" name="" value="" id="confirm-pin-id" required="required" autocomplete="new-password"/>
+										<label for="confirm-pin-id">Confirm PIN</label>
+										<div class="required-tooltip left">
+											<p>Pin Code didn't match<span>*</span></p>
 										</div>
 									</div>
 									<div class="input-wrap">
 										<input type="submit" class="btn btn-orange" name="" value="Submit">
 									</div>
+									<!-- <div class="input-wrap">
+										<input type="submit" class="btn btn-orange" name="" value="Submit">
+									</div> -->
 								</form>
 							</div>
 						</div>

@@ -58,9 +58,7 @@
 					<li><a href="http://www.wingmoney.com/" class="wing-btn" target="_blank"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></a></li>
 					<li><a href="#wing-account">Wing Account</a></li>
 					<li><a href="#enjoy-discount">Enjoy Discounts</a></li>
-					<li><a href="#store-partners">Payment Partners</a></li>
 					<li><a href="#pay-bills">Pay Bills</a></li>
-					<li><a href="#wing-ket">Wing Ket Luy</a></li>
 					<li><a href="#wing-form-wrap">Register Now</a></li>
 					<li><a href="#how-to-sign" class="menu-highlighted">How to Sign Up</a></li>
 				</ul>
@@ -178,8 +176,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-sm-12 ed-text animated hiding" data-animation="fadeInUp">
-							<h2 class="sec-title">Use Your Wing Card <br>to Enjoy Discounts <br>From Our Merchant-Partners</h2>
-							<p>Get exclusive discounts from your favorite stores with your Wing account. Simply show your Wing card to our merchant-partners to enjoy fine dining, shopping sprees, and so much more at discounted prices!</p>
+							<h2 class="sec-title">Enjoy Discounts From <br>Our Store Partners</h2>
+							<p>Get exclusive discounts from your favorite stores with your Wing account. Simply show your Wing account confirmation text to our partner merchants to enjoy fine dining, shopping sprees, and so much more at discounted prices.</p>
 						</div>
 					</div>
 					<img class="dis-model animated hiding" data-animation="fadeInUp" src="images/discount-model.png" alt="">
@@ -187,7 +185,7 @@
 			</div>
 		</section>
 
-		<section id="store-partners" class="section-pad jq-section">
+		<!-- <section id="store-partners" class="section-pad jq-section">
 			<div class="container">
 				<div class="store-partners">
 					<div class="text-center animated hiding" data-animation="fadeInUp">
@@ -249,12 +247,12 @@
 							<div class="itemstore-text"><p>00%-00%</p></div>
 						</div>
 					</div>
-					<!-- <div class="text-center animated hiding" data-animation="fadeInUp">
+					<div class="text-center animated hiding" data-animation="fadeInUp">
 						<a href="" class="btn btn-1e btn-green text-uppercase waves-effect"> View All</a>
-					</div> -->
+					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 			
 		<section id="pay-online" class="section-pad jq-section">
 			<div class="container">
@@ -301,7 +299,7 @@
 
 		<section id="how-to-sign" class="how-to-sign section-pad jq-section">
 			<div class="container">
-				<h2 class="sec-title text-center">How To Sign Up Online</h2>
+				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">How To Sign Up Online</h2>
 				<div class="step-signup">
 					<div class="owl-carousel owl-theme animated hiding" data-animation="fadeInUp">
 						<div class="step">
@@ -337,11 +335,11 @@
 						<div class="step">
 							<span class="ss-num no-border"><i>4</i></span>
 							<div class="ss-wrap">
-								<img src="images/step4.png" alt="">
+								<img src="images/step4.jpg" alt="">
 							</div>
 							<div class="wing-benifits-info">
-								<h3>Claim <br>Wing Money Kit</h3>
-								<p>Head to a Wing Money Outlet <br> to claim your Kit.</p>
+								<h3>Start Using Your <br>Wing Account</h3>
+								<p>Download the Wing App for faster transactions or use USSD.</p>
 							</div>
 						</div>
 					</div>
@@ -349,10 +347,34 @@
 						<a href="#wing-form-wrap" class="btn btn-orange btn-signup animated hiding" data-animation="fadeInUp">Sign Up Now!</a>
 					</div>
 				</div>
+
+				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Activate And Get Your Wing <br>Account Online</h2>
+				<div class="sec-tagline text-center animated hiding" data-animation="fadeInUp">
+					<p>Your Wing Account can be used either as Wing Card or the Wing App. The choice is yours! All the functions, perks and benefits of having a Wing Account is available to both, it’s all a matter of choice.</p>
+				</div>
+				<div class="card-and-app">
+					<div class="wing-app-box compare-box">
+						<div class="wing-box-img">
+							<img src="images/wing-mobile-img.png" alt="">
+						</div>
+						<div class="wing-app-info">
+							<h3>Streamline your banking by simply downloading the Wing App to access all of Wing's features.</h3>
+							<ul>
+								<li> Send money to other Wing users.</li>
+								<li>Top up your mobile phones—or even your friend’s!</li>
+								<li>Pay your utility and internet bills or donate money to your favoirte charities.</li>
+								<li>Generating online payment code.</li>
+								<li>Managing your Wing Accounts.</li>
+								<li>Viewing a Wing Cash Xpress outlet near your current location.</li>
+								<li>Be in full control of your Wing Account!</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
-		<section id="apply-now" class="apply-now-sec section-pad jq-section">
+		<!-- <section id="apply-now" class="apply-now-sec section-pad jq-section">
 			<div class="container">
 				<div class="text-center">
 					<h2 class="sec-title animated hiding" data-animation="fadeInUp">Get Your Wing Money <br>Account Now!</h2>
@@ -360,9 +382,9 @@
 					<img class="apply-img animated hiding" data-animation="fadeIn" src="images/apply-now-model.jpg" alt="">
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section id="wing-ket" class="section-pad jq-section bg-green">
+		<!-- <section id="wing-ket" class="section-pad jq-section bg-green">
 			<div class="container">
 				<div class="wing-ket-wrap">
 					<div class="row">
@@ -370,13 +392,13 @@
 						<div class="col-sm-7 wing-ket-info fl animated hiding" data-animation="fadeInLeft">
 							<h2 class="sec-title">Wing Ket Luy</h2>
 							<p>Discover Wing Ket Luy. Enjoy the convenience of never needing to bring cash to buy from your favorite shops. All you need to do is swipe or tap your Wing Card on the store's Wing terminal to make an instant, cash-free payment through your Wing Account.</p>
-							<!-- <a href="" class="btn btn-orange">Inquire</a> -->
+							<a href="" class="btn btn-orange">Inquire</a> 
 						</div>
 						
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section id="wing-mobile" class="section-pad jq-section">
 			<div class="container">

@@ -7911,7 +7911,7 @@ footer {
 }
 
 .btn.btn-orange:hover {
-  background: #f89f1b;
+  background: #ef4811;
   color: #ffffff;
   border: 2px solid transparent;
 }
@@ -7930,7 +7930,7 @@ footer {
   width: 100%;
   left: 0;
   text-align: center;
-  z-index: 99;
+  z-index: 1000;
   top: 50%;
   margin-top: -6px;
   opacity: 0;
@@ -8312,7 +8312,7 @@ a.waves-effect .waves-ripple {
   margin-bottom: 0;
 }
 
-.input-wrap.error input[type="text"], .input-wrap.error input[type="email"], .input-wrap.error input[type="number"], .input-wrap.error input[type="tel"] {
+.input-wrap.error input[type="text"], .input-wrap.error input[type="email"], .input-wrap.error input[type="number"], .input-wrap.error input[type="tel"], .input-wrap.error input[type="password"] {
   border: 1px solid red;
 }
 
@@ -8329,7 +8329,7 @@ a.waves-effect .waves-ripple {
   z-index: 3;
 }
 
-.input-wrap input[type="text"], .input-wrap input[type="email"], .input-wrap input[type="number"], .input-wrap input[type="tel"] {
+.input-wrap input[type="text"], .input-wrap input[type="email"], .input-wrap input[type="number"], .input-wrap input[type="tel"], .input-wrap input[type="password"] {
   height: 40px;
   padding: 5px 8px 0px 8px;
   width: 100%;
@@ -8338,7 +8338,7 @@ a.waves-effect .waves-ripple {
   z-index: 1;
 }
 
-.input-wrap input[type="text"]:focus, .input-wrap input[type="email"]:focus, .input-wrap input[type="number"]:focus, .input-wrap input[type="tel"]:focus {
+.input-wrap input[type="text"]:focus, .input-wrap input[type="email"]:focus, .input-wrap input[type="number"]:focus, .input-wrap input[type="tel"]:focus, .input-wrap input[type="password"]:focus {
   border-bottom: 1px solid #b0c024;
 }
 
@@ -9166,13 +9166,13 @@ input::-webkit-inner-spin-button {
 
 .pay-bills {
   border-top: 2px solid #dedfe0;
-  min-height: 600px;
+  min-height: 493px;
   background: #ffffff url("../images/paybills-bg.jpg") no-repeat bottom left;
   border-bottom: 14px solid #0098d7;
 }
 
 .pay-bill-info {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .pay-bill-info:after {
@@ -9405,11 +9405,12 @@ input::-webkit-inner-spin-button {
   color: #b0c024;
 }
 
-.final-step-form.overlay {
+.final-step-form.overlay, .create-pin-account.overlay {
   position: relative;
+  overflow: hidden;
 }
 
-.final-step-form.overlay:before {
+.final-step-form.overlay:before, .create-pin-account.overlay:before {
   content: '';
   display: block;
   position: absolute;
@@ -9418,31 +9419,43 @@ input::-webkit-inner-spin-button {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.6);
-  z-index: 2;
+  z-index: 999;
 }
 
-.final-step-form.overlay .loading-spinner-wrapper {
+.final-step-form.overlay .loading-spinner-wrapper, .create-pin-account.overlay .loading-spinner-wrapper {
   opacity: 1;
 }
 
-.final-step-form .input-wrap {
+.final-step-form .input-wrap, .create-pin-account .input-wrap {
   max-width: 300px;
-  margin: 0 auto 30px;
   z-index: 100;
+  margin-bottom: 30px;
 }
 
-.final-step-form .input-wrap input[type="text"], .final-step-form .input-wrap input[type="number"], .final-step-form .input-wrap input[type="tel"] {
+.final-step-form .input-wrap.no-b-margin, .create-pin-account .input-wrap.no-b-margin {
+  margin-bottom: 0;
+}
+
+.final-step-form .input-wrap input[type="text"], .final-step-form .input-wrap input[type="number"], .final-step-form .input-wrap input[type="tel"], .final-step-form .input-wrap input[type="password"], .create-pin-account .input-wrap input[type="text"], .create-pin-account .input-wrap input[type="number"], .create-pin-account .input-wrap input[type="tel"], .create-pin-account .input-wrap input[type="password"] {
   background: #ffffff;
   border: 3px solid #0098d7;
   padding: 12px 20px;
   height: auto;
-  color: #0098d7;
+  color: #000000;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
 }
 
-.final-step-form .required-tooltip {
+.final-step-form p.resend-code, .create-pin-account p.resend-code {
+  font-style: italic;
+  text-align: left;
+  font-size: 12px;
+  padding-left: 12px;
+  margin-top: 3px;
+}
+
+.final-step-form .required-tooltip, .create-pin-account .required-tooltip {
   background: #0098d7;
   color: #ffffff;
   min-width: 170px;
@@ -9450,12 +9463,27 @@ input::-webkit-inner-spin-button {
   right: 97%;
 }
 
-.final-step-form .required-tooltip p {
+.final-step-form .required-tooltip p, .create-pin-account .required-tooltip p {
   color: #ffffff;
 }
 
-.final-step-form .required-tooltip:before {
+.final-step-form .required-tooltip:before, .create-pin-account .required-tooltip:before {
   border-left: 8px solid #0098d7;
+}
+
+.f-sms-wrap {
+  position: relative;
+  max-width: 394px;
+  margin: 0 auto;
+}
+
+.btn-verfication-code {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  z-index: 999;
+  padding: 9px 15px 10px;
 }
 
 .final-step-wrap {
@@ -9467,6 +9495,22 @@ input::-webkit-inner-spin-button {
   -o-transition: all, 0.3s, ease;
   transition: all, 0.3s, ease;
   max-height: 700px;
+}
+
+.create-pin-account {
+  margin-top: 40px;
+}
+
+.create-pin-account h3 {
+  margin-bottom: 20px;
+}
+
+.create-pin-account .input-wrap {
+  margin: 0 auto 8px;
+}
+
+.create-pin-account .input-wrap input[type="password"] {
+  text-align: left;
 }
 
 .thank-you-page, .inner-page {
@@ -10470,6 +10514,79 @@ input::-webkit-inner-spin-button {
   .final-step .sec-tagline {
     margin: 20px 0;
   }
+}
+
+.card-and-app {
+  padding: 0px 55px;
+}
+
+.card-and-app:after {
+  content: '';
+  display: block;
+  float: none;
+  clear: both;
+}
+
+.compare-box {
+  padding: 40px 60px;
+  background: #0098d7;
+  color: #ffffff;
+}
+
+.compare-box.wing-app-box {
+  background: #b0c024;
+}
+
+.compare-box {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.wing-box-img {
+  width: 416px;
+  float: left;
+}
+
+.wing-box-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wing-app-info {
+  padding-left: 420px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.wing-app-info h3 {
+  font-size: 23px;
+  line-height: 32px;
+}
+
+.wing-app-info ul {
+  margin-top: 40px;
+}
+
+.wing-app-info ul li {
+  font-size: 17px;
+  line-height: 22px;
+  margin: 8px 0px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.wing-app-info ul li:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 50%;
 }
 
 /* ==========================================================================

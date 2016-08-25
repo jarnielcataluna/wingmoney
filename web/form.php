@@ -63,7 +63,7 @@
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
-        <div class="input-wrap input-half id-type">
+        <!-- <div class="input-wrap input-half id-type">
             <select class="custom-select" name="id_type">
                 <option value="0">ID type</option>
                 <option value="ID_NATIONAL" >NATIONAL ID</option>
@@ -81,7 +81,7 @@
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
             </div>
-        </div>
+        </div> -->
         <div class="clr"></div>
         <div class="input-wrap choose-currency">
             <label>Choose Currency:</label>
