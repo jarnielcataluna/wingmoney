@@ -109,7 +109,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 								    <div class="f-sms-wrap">
 										<div class="input-wrap no-b-margin">
 											<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
-											<input type="number" id="verfication-code" name="verification_code"  value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required">
+											<input type="number" id="verfication-code" name="verification_code" value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required">
 
 											<label for="verfication-code">Enter SMS Code</label>
 

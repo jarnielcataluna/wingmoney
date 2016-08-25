@@ -9498,6 +9498,7 @@ input::-webkit-inner-spin-button {
 }
 
 .create-pin-account {
+  display: none;
   margin-top: 40px;
 }
 
@@ -9547,6 +9548,106 @@ input::-webkit-inner-spin-button {
   font-size: 60px;
   line-height: 68px;
   margin-bottom: 0px;
+}
+
+.p-m-info {
+  color: #ffffff;
+}
+
+.p-m-info h2 {
+  font-size: 55px;
+  color: #ffffff;
+  line-height: 58px;
+  margin-bottom: 20px;
+}
+
+.p-m-info p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.p-m-info ul {
+  margin-top: 40px;
+}
+
+.p-m-info ul li {
+  font-size: 17px;
+  line-height: 22px;
+  margin: 8px 0px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.p-m-info ul li:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 50%;
+}
+
+.promote-mobileapp {
+  padding: 30px 0;
+  margin-top: 80px;
+}
+
+.big-app-img {
+  margin-top: -120px;
+  margin-bottom: 120px;
+}
+
+.big-app-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.download-app-wrap {
+  padding-top: 30px;
+}
+
+.download-app-wrap h3 {
+  margin-bottom: 20px;
+}
+
+.download-app-wrap ul {
+  margin-top: 10px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.download-app-wrap ul:after {
+  content: '';
+  display: block;
+  float: none;
+  clear: both;
+}
+
+.download-app-wrap ul li {
+  width: 50%;
+  padding: 0px 5px;
+  float: left;
+}
+
+.download-app-wrap ul li:before {
+  display: none;
+}
+
+.download-app-wrap a img {
+  max-width: 100%;
+}
+
+.promote-mobileapp .download-app-wrap {
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.promote-mobileapp .download-app-wrap h3 {
+  text-transform: uppercase;
+  color: #b0c024;
 }
 
 .other-stuff {
@@ -9954,22 +10055,36 @@ input::-webkit-inner-spin-button {
 }
 
 .ty-social-media {
-  margin: 30px 0;
+  padding-top: 28px;
+  border-top: 1px solid #58595b;
+  max-width: 300px;
+  margin: 0px auto 10px;
+}
+
+.ty-social-media h4 {
+  margin-bottom: 15px;
 }
 
 .ty-social-media a {
   font-size: 24px;
-  width: 45px;
-  height: 45px;
+  width: 63px;
+  height: 63px;
   line-height: 45px;
   display: inline-block;
-  background: #0098d7;
+  background: #ffffff;
   color: #ffffff;
   border-radius: 50%;
+  border: 2px solid #848587;
+  margin: 0px 5px;
+}
+
+.ty-social-media a img {
+  max-width: 100%;
+  height: auto;
 }
 
 .ty-social-media a:hover {
-  background: #0bb8ff;
+  opacity: 0.8;
 }
 
 .ty-tagline p {
@@ -9980,6 +10095,79 @@ input::-webkit-inner-spin-button {
 .recaptcha-error-message {
   font-size: 12px;
   color: red;
+}
+
+.card-and-app {
+  padding: 0px 55px;
+}
+
+.card-and-app:after {
+  content: '';
+  display: block;
+  float: none;
+  clear: both;
+}
+
+.compare-box {
+  padding: 40px 60px;
+  background: #0098d7;
+  color: #ffffff;
+}
+
+.compare-box.wing-app-box {
+  background: #b0c024;
+}
+
+.compare-box {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.wing-box-img {
+  width: 50%;
+  float: left;
+}
+
+.wing-box-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wing-app-info {
+  padding-left: 55%;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.wing-app-info h3 {
+  font-size: 23px;
+  line-height: 32px;
+}
+
+.wing-app-info ul {
+  margin-top: 40px;
+}
+
+.wing-app-info ul li {
+  font-size: 17px;
+  line-height: 22px;
+  margin: 8px 0px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.wing-app-info ul li:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 1350px) {
@@ -10045,6 +10233,13 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width: 991px) {
+  .card-and-app {
+    padding: 0px 15px;
+  }
+  .p-m-info h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
   .column {
     width: 100% !important;
     padding: 0px 15px;
@@ -10230,6 +10425,29 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width: 767px) {
+  .app-img-info {
+    display: none;
+  }
+  .ty-social-media {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  .big-app-img {
+    margin-bottom: 30px;
+  }
+  .wing-box-img {
+    float: none;
+    clear: both;
+    text-align: center;
+    width: 100%;
+  }
+  .wing-box-img img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .wing-app-info {
+    padding-left: 0;
+  }
   .h-s-cursor {
     display: none;
   }
@@ -10254,6 +10472,9 @@ input::-webkit-inner-spin-button {
   .sec-title {
     font-size: 40px;
     line-height: 48px;
+  }
+  .sec-title br {
+    display: none;
   }
   .share-this-wrap {
     text-align: center;
@@ -10286,6 +10507,14 @@ input::-webkit-inner-spin-button {
     right: 50%;
     margin-top: -5px;
     margin-right: -8px;
+  }
+  .final-step-wrap .table-wrap {
+    position: relative;
+    height: auto;
+  }
+  .final-step-wrap .table-wrap .table-content {
+    display: block;
+    height: auto;
   }
   .footer-bottom {
     padding: 10px 0;
@@ -10378,6 +10607,7 @@ input::-webkit-inner-spin-button {
   }
   .final-step-wrap {
     height: auto !important;
+    max-height: 100%;
   }
   .thank-you-page header .logo a, .inner-page header .logo a {
     padding: 0;
@@ -10385,11 +10615,11 @@ input::-webkit-inner-spin-button {
   .thank-you-page header .logo a img, .inner-page header .logo a img {
     width: 90px !important;
   }
-  .ty-social-media {
-    margin: 20px 0;
+  #wing-mobile {
+    padding-top: 0;
   }
-  #main-wrapper {
-    padding-bottom: 0 !important;
+  .promote-mobileapp.bottom {
+    margin-top: 20px;
   }
 }
 
@@ -10435,9 +10665,37 @@ input::-webkit-inner-spin-button {
     font-size: 16px;
     line-height: 24px;
   }
+  .card-and-app {
+    padding: 20px 0 0;
+  }
+  .wing-app-info ul {
+    margin-top: 15px;
+  }
+  .wing-app-info ul li {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 6px 0;
+  }
+  .p-m-info h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .p-m-info {
+    font-size: 17px;
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .p-m-info ul {
+    margin-top: 20px;
+  }
+  .download-app-wrap ul {
+    margin-top: 5px;
+  }
+  .f-sms-wrap {
+    max-width: 290px;
+  }
   .ty-tagline {
     margin-top: 20px;
   }
@@ -10470,7 +10728,7 @@ input::-webkit-inner-spin-button {
     margin-bottom: 15px;
   }
   .sec-tagline {
-    padding: 0px;
+    padding: 10px 0px;
   }
   .enjoy-discount h2 {
     margin-bottom: 10px;
@@ -10483,6 +10741,7 @@ input::-webkit-inner-spin-button {
   }
   .final-step-form .input-wrap {
     margin-bottom: 10px;
+    max-width: 196px;
   }
   .ty-text {
     padding-top: 15px;
@@ -10514,79 +10773,13 @@ input::-webkit-inner-spin-button {
   .final-step .sec-tagline {
     margin: 20px 0;
   }
-}
-
-.card-and-app {
-  padding: 0px 55px;
-}
-
-.card-and-app:after {
-  content: '';
-  display: block;
-  float: none;
-  clear: both;
-}
-
-.compare-box {
-  padding: 40px 60px;
-  background: #0098d7;
-  color: #ffffff;
-}
-
-.compare-box.wing-app-box {
-  background: #b0c024;
-}
-
-.compare-box {
-  width: 100%;
-  float: left;
-  text-align: center;
-}
-
-.wing-box-img {
-  width: 416px;
-  float: left;
-}
-
-.wing-box-img img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.wing-app-info {
-  padding-left: 420px;
-  text-align: left;
-  padding-top: 30px;
-}
-
-.wing-app-info h3 {
-  font-size: 23px;
-  line-height: 32px;
-}
-
-.wing-app-info ul {
-  margin-top: 40px;
-}
-
-.wing-app-info ul li {
-  font-size: 17px;
-  line-height: 22px;
-  margin: 8px 0px;
-  padding-left: 15px;
-  position: relative;
-}
-
-.wing-app-info ul li:before {
-  content: '';
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  top: 8px;
-  background-color: #ffffff;
-  display: block;
-  border-radius: 50%;
+  .compare-box {
+    padding: 30px 20px;
+  }
+  .wing-app-info h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 /* ==========================================================================

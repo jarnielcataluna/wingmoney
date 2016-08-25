@@ -58,7 +58,7 @@
 	<section id="main-wrapper">
 		<div class="section-pad">
 			<div class="container">
-				<div class="final-step-wrap">
+				<!-- <div class="final-step-wrap">
 					<div class="table-wrap">
 						<div class="table-content">
 							<div class="ty-text text-center">
@@ -73,10 +73,10 @@
 									<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay"><img src="images/download-android.png" alt=""></a>
 									<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8"><img src="images/download-apple.png"></a>
 								</div>
-								<!-- <div class="sec-tagline">
+								<div class="sec-tagline">
 									<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
-								</div> -->
-								<!-- <a href="http://www.wingmoney.com/" class="btn btn-orange">Back to Wing</a> -->
+								</div>
+								<a href="http://www.wingmoney.com/" class="btn btn-orange">Back to Wing</a>
 								<div class="clr"></div>
 								<div class="ty-social-media">
 									<a href="http://www.facebook.com/WINGmoney" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -88,9 +88,24 @@
 							</div>
 						</div>
 					</div>
+				</div> -->
+
+
+				<div class="ty-text text-center">
+					<h3 class="co-blue">Thank you for activating your Wing account!</h3>
+					<div class="sec-tagline">
+
+						<p>Claim your Wing card from a merchant near you or download the Wing app to start using your Wing account RIGHT NOW!</p>
+						
+					</div>
+					<div class="ty-social-media">
+						<h4>Share!</h4>
+						<a href="http://www.facebook.com/WINGmoney" target="blank"><img src="images/social-facebook.png" alt=""></a>
+						<a href="https://plus.google.com/109000819204361931521" target="blank"><img src="images/social-twitter.png" alt=""></a>
+					</div>
 				</div>
 
-				<div class="other-stuff">
+				<!-- <div class="other-stuff">
 					<h3 class="text-center">Other Stuff You Might Be Interested With:</h3>
 					<div class="stuff-col">
 						<div class="row">
@@ -125,6 +140,64 @@
 									</ul>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+
+			<div class="promote-mobileapp bg-green">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 text-center">
+							<div class="big-app-img">
+								<img src="images/wing-mobile-img.png" alt="">
+							</div>
+							<div class="app-img-info">
+								<img style="max-width: 100%;" src="images/wing-mobile-info.png" alt="">
+							</div>
+						</div>	
+						<div class="col-sm-6">
+							<div class="p-m-info">
+								<h2>No need to wait. You can start using your Wing account NOW!</h2>
+								<p>Manage your Wing account from your smartphone with the Wing mobile app! All of Wing's features at the palm of your hand.</p>
+								<div class="download-app-wrap">
+									<h4>Download the app NOW!</h4>
+									<ul>
+										<li>
+											<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" ><img src="images/app-android.png" alt=""></a>
+										</li>
+										<li>
+											<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8"><img src="images/app-ios.png" alt=""></a>
+										</li>
+									</ul>
+								</div>
+									<ul>
+										<li> Send money to other Wing users.</li>
+										<li>Top up your mobile phones—or even your friend’s!</li>
+										<li>Pay your utility and internet bills or donate money to your favoirte charities.</li>
+										<li>Generating online payment code.</li>
+										<li>Managing your Wing Accounts.</li>
+										<li>Viewing a Wing Cash Xpress outlet near your current location.</li>
+										<li>Be in full control of your Wing Account!</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="promote-mobileapp bottom">
+					<div class="container text-center">
+						<h3 class="sec-title co-blue">Less Hassle, More Features! Start Using Your <br> Wing Account Today!</h3>
+						<div class="download-app-wrap">
+							<h3>GET IT ON:</h3>
+							<ul>
+								<li>
+									<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay"><img src="images/app-android.png" alt=""></a>
+								</li>
+								<li>
+									<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8"><img src="images/app-ios.png" alt=""></a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
