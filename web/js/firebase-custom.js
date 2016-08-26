@@ -72,12 +72,12 @@ $('.final-step-form').submit(function(e){
             url: "/exec/verify-sms.php",
             type: "POST",
             data: {
-                code: $(this).val(),
+                code: $('#verfication-code').val(),
                 id: $('input[name=id]').val()
             },
             success: function(data) {
                 var res = jQuery.parseJSON(data);
-
+                
                 if (!res.error) {
                     $('.final-step-form').slideUp(300);
                     $('.create-pin-account').slideDown(500);
