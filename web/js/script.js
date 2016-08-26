@@ -79,7 +79,7 @@ $(document).ready(function(){
                 contact: phone
             },
             success: function(data) {
-                var res = JSON.parse(data);
+                var res = jQuery.parseJSON(data);
                 console.log(res);
                 return res.error_code;
             }
@@ -203,40 +203,39 @@ $(document).ready(function(){
                 data[name] = value;
             });
 
-            var available = isPhoneAvailable($('#contact-num').val());
-            console.log(available);
+            // var available = isPhoneAvailable($('#contact-num').val());
+            // console.log(available);
 
-            if (available == 'WA500') {
-                isvalidate = true;
+            // if (available == 'WA500') {
+                
+            // } else {
+            //     alert('Wing Account already exists. Please register another phone number.');
+            // }
 
-                $.ajax({
-                    url: url,
-                    type: type,
-                    data: data,
+            $.ajax({
+                url: url,
+                type: type,
+                data: data,
 
-                    success: function (response) {
-                        var data = jQuery.parseJSON(response);
-                        $('.wing-form-wrap').addClass('remove');
+                success: function (response) {
+                    var data = jQuery.parseJSON(response);
+                    $('.wing-form-wrap').addClass('remove');
 
-                        var f = document.createElement("form");
-                        f.setAttribute('method',"post");
-                        f.setAttribute('action',"confirmation.php");
-                        f.setAttribute('id',"redirect-form");
+                    var f = document.createElement("form");
+                    f.setAttribute('method',"post");
+                    f.setAttribute('action',"confirmation.php");
+                    f.setAttribute('id',"redirect-form");
 
-                        var i = document.createElement("input"); //input element, text
-                        i.setAttribute('type',"hidden");
-                        i.setAttribute('name',"id");
-                        i.setAttribute('value', data.id);
-                        f.appendChild(i);
-                        document.getElementsByTagName('body')[0].appendChild(f);
+                    var i = document.createElement("input"); //input element, text
+                    i.setAttribute('type',"hidden");
+                    i.setAttribute('name',"id");
+                    i.setAttribute('value', data.id);
+                    f.appendChild(i);
+                    document.getElementsByTagName('body')[0].appendChild(f);
 
-                        $('#redirect-form').submit();
-                    }
-                });
-            } else {
-                isvalidate = false;
-                alert('Wing Account already exists. Please register another phone number.');
-            }
+                    $('#redirect-form').submit();
+                }
+            });
 
             return false;
         } else {
