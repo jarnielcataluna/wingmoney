@@ -25,7 +25,7 @@ var database = firebase.database();
 //         });
 //     }
 // });
-$('#resendCode').submit(function(e)) {
+$('#resendCode').submit(function(e) {
     e.preventDefault();
     $.ajax({
         url: "/exec/resend-code.php",
