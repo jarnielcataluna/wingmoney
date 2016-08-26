@@ -76,8 +76,17 @@ $('.final-step-form').submit(function(e){
                 id: $('input[name=id]').val()
             },
             success: function(data) {
-                $('.final-step-form').slideUp(300);
-                $('.create-pin-account').slideDown(500);
+                var res = jQuery.parseJSON(data);
+
+                if (!res.error) {
+                    $('.final-step-form').slideUp(300);
+                    $('.create-pin-account').slideDown(500);
+                } else {
+                    $('.final-step-form').removeClass('overlay');
+                    var errorOutput = $('#pin-id').closest('.input-wrap');
+                    errorOutput.find('.required-tooltip p').html(data.error);
+                    errorOutput.addClass('error');
+                }
             }
         });
 
