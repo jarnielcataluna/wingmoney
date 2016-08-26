@@ -9185,7 +9185,7 @@ input::-webkit-inner-spin-button {
 
 .pay-bill-info p {
   color: #222;
-  text-shadow: 1px 1px 5px white;
+  text-shadow: 1px 1px 10px white;
 }
 
 .wing-ket-wrap {
@@ -10059,7 +10059,6 @@ input::-webkit-inner-spin-button {
 
 .ty-social-media {
   padding-top: 28px;
-  border-top: 1px solid #58595b;
   max-width: 300px;
   margin: 0px auto 10px;
 }
@@ -10171,6 +10170,36 @@ input::-webkit-inner-spin-button {
   background-color: #ffffff;
   display: block;
   border-radius: 50%;
+}
+
+#accountNumber {
+  font-size: 28px;
+  color: #0098d7;
+  padding-top: 10px;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+  overflow: hidden;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#accountNumber:before {
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background: #0098d7;
+}
+
+.account-number {
+  padding: 0px 0px 15px 0;
+}
+
+.account-number h4 {
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1350px) {

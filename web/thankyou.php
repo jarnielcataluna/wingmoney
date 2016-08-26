@@ -96,8 +96,13 @@
 					<div class="sec-tagline">
 
 						<p>Claim your Wing card from a merchant near you or download the Wing app to start using your Wing account RIGHT NOW!</p>
-						<p id="accountNumber"><?php echo $_POST['accountNum']; ?></p>
+						
 					</div>
+					<div class="account-number">
+						<h4>Here's you're Wing account number</h4>
+						<p id="accountNumber">asdasdsa<?php echo $_POST['accountNum']; ?></p>
+					</div>
+					
 					<div class="ty-social-media">
 						<h4>Share!</h4>
 						<a href="http://www.facebook.com/WINGmoney" target="blank"><img src="images/social-facebook.png" alt=""></a>
