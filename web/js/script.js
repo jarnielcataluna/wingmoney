@@ -194,8 +194,8 @@ $(document).ready(function(){
                 data: {
                     contact: $('#contact-num').val()
                 },
-                success: function(data) {
-                    var res = jQuery.parseJSON(data);
+                success: function(ajaxResp) {
+                    var res = jQuery.parseJSON(ajaxResp);
 
                     if (res.error_code == "WA500") {
                         $.ajax({
