@@ -3443,7 +3443,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	#wing-mobile {
-		padding-top: 0;
+		padding-top: 15px;
 	}
 	
 	.promote-mobileapp {
@@ -3575,6 +3575,13 @@ input::-webkit-inner-spin-button {
 		}
 	}
 
+	.footer-top {
+		h2 {
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+
 	.banner-wrap {
 		h1 {
 			font-size: 24px;
@@ -3602,6 +3609,19 @@ input::-webkit-inner-spin-button {
 		font-size: 28px;
 		line-height: 36px;
 		margin-bottom: 15px;
+	}
+
+	.enjoy-discount {
+
+		.sec-title {
+			font-size: 28px;
+			line-height: 36px;
+			margin-bottom: 15px;
+		}
+	}
+
+	.how-to-sign .step-signup {
+		padding-bottom: 0;
 	}
 
 	.sec-tagline {
