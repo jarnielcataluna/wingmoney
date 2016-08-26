@@ -1,4 +1,12 @@
 /** font face **/
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url("../fonts/TrebuchetMS.eot");
+  src: url("../fonts/TrebuchetMS.eot") format("embedded-opentype"), url("../fonts/TrebuchetMS.woff2") format("woff2"), url("../fonts/TrebuchetMS.woff") format("woff"), url("../fonts/TrebuchetMS.ttf") format("truetype"), url("../fonts/TrebuchetMS.svg#TrebuchetMS") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
 /** font face **/
 .text-left {
   text-align: left;
@@ -10673,6 +10681,7 @@ input::-webkit-inner-spin-button {
   }
   .banner-wrap h1 span {
     line-height: 38px;
+    letter-spacing: 0;
   }
   .features ul li {
     width: 100%;
