@@ -169,10 +169,10 @@
 									<h4>Download the app NOW!</h4>
 									<ul>
 										<li>
-											<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" ><img src="images/app-android.png" alt=""></a>
+											<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" target="blank"><img src="images/app-android.png" alt=""></a>
 										</li>
 										<li>
-											<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8"><img src="images/app-ios.png" alt=""></a>
+											<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8" target="blank"><img src="images/app-ios.png" alt=""></a>
 										</li>
 									</ul>
 								</div>
@@ -197,10 +197,10 @@
 							<h3>GET IT ON:</h3>
 							<ul>
 								<li>
-									<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay"><img src="images/app-android.png" alt=""></a>
+									<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" target="blank"><img src="images/app-android.png" alt=""></a>
 								</li>
 								<li>
-									<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8"><img src="images/app-ios.png" alt=""></a>
+									<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8" target="blank"><img src="images/app-ios.png" alt=""></a>
 								</li>
 							</ul>
 						</div>
