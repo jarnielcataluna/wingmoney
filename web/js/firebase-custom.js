@@ -77,13 +77,13 @@ $('.final-step-form').submit(function(e){
             },
             success: function(data) {
                 var res = jQuery.parseJSON(data);
-                
+
                 if (!res.error) {
                     $('.final-step-form').slideUp(300);
                     $('.create-pin-account').slideDown(500);
                 } else {
                     $('.final-step-form').removeClass('overlay');
-                    var errorOutput = $('#pin-id').closest('.input-wrap');
+                    var errorOutput = $('#verfication-code').closest('.input-wrap');
                     errorOutput.find('.required-tooltip p').html(data.error);
                     errorOutput.addClass('error');
                 }
@@ -155,7 +155,7 @@ $('.create-pin-account').submit(function(e){
                     $('#redirect-form').submit();
                 }else{
                     $('.create-pin-account').removeClass('overlay');
-                    var errorOutput = $('#verfication-code').closest('.input-wrap');
+                    var errorOutput = $('#pin-id').closest('.input-wrap');
                     errorOutput.find('.required-tooltip p').html(data.error);
                     errorOutput.addClass('error');
                 }
