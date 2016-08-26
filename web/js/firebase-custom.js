@@ -84,7 +84,7 @@ $('.final-step-form').submit(function(e){
                 } else {
                     $('.final-step-form').removeClass('overlay');
                     var errorOutput = $('#verfication-code').closest('.input-wrap');
-                    errorOutput.find('.required-tooltip p').html(data.error);
+                    errorOutput.find('.required-tooltip p').html(res.error);
                     errorOutput.addClass('error');
                 }
             }
