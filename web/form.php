@@ -16,16 +16,17 @@
         </span>
     </div>
     <div class="form-row">
+        
         <div class="input-wrap">
-            <input type="text" id="last-name" name="lname" value="" required="required" onchange="this.setAttribute('value', this.value);">
-            <label for="last-name">Last Name</label>
+            <input type="text" id="first-name" name="fname" value="" required="required" onchange="this.setAttribute('value', this.value);">
+            <label for="first-name">First Name</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
         <div class="input-wrap">
-            <input type="text" id="first-name" name="fname" value="" required="required" onchange="this.setAttribute('value', this.value);">
-            <label for="first-name">First Name</label>
+            <input type="text" id="last-name" name="lname" value="" required="required" onchange="this.setAttribute('value', this.value);">
+            <label for="last-name">Last Name</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
             </div>
