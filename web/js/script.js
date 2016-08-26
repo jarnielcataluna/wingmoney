@@ -71,20 +71,20 @@ $(document).ready(function(){
         }
     }
 
-    function isPhoneAvailable(phone){
-        $.ajax({
-            url: "/exec/verify-phone.php",
-            type: "POST",
-            data: {
-                contact: phone
-            },
-            success: function(data) {
-                var res = jQuery.parseJSON(data);
-                console.log(res);
-                return res.error_code;
-            }
-        });
-    }
+    // function isPhoneAvailable(phone){
+    //     $.ajax({
+    //         url: "/exec/verify-phone.php",
+    //         type: "POST",
+    //         data: {
+    //             contact: phone
+    //         },
+    //         success: function(data) {
+    //             var res = jQuery.parseJSON(data);
+    //             console.log(res);
+    //             return res.error_code;
+    //         }
+    //     });
+    // }
 
     $('input[name=currency]').val('USD');
 
