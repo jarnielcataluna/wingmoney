@@ -121,6 +121,7 @@ $('.create-pin-account').submit(function(e){
             success: function(response) {
                 var data = jQuery.parseJSON(response);
                 if(!data.error){
+                    var accountNum = data.leads_info.contact;
                     $('.create-pin-account').removeClass('overlay');
                     database.ref('leads').child(data.id).set(data);
                     var f = document.createElement("form");
@@ -133,6 +134,13 @@ $('.create-pin-account').submit(function(e){
                     i.setAttribute('name',"id");
                     i.setAttribute('value', data.id);
                     f.appendChild(i);
+
+                    var a = document.createElement("input");
+                    a.setAttribute('type', "hidden");
+                    a.setAttribute('name', "accountNum");
+                    a.setAttribute('value', accountNum);
+                    f.appendChild(a);
+
                     document.getElementsByTagName('body')[0].appendChild(f);
 
                     $('#redirect-form').submit();
