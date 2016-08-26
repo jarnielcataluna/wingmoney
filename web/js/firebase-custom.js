@@ -118,7 +118,7 @@ $('.create-pin-account').submit(function(e){
                 id: $('input[name=id]').val(),
                 pin: $('#pin-id').val()
             },
-            success: function(data) {
+            success: function(response) {
                 var data = jQuery.parseJSON(response);
                 if(!data.error){
                     $('.create-pin-account').removeClass('overlay');
