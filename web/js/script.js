@@ -71,6 +71,21 @@ $(document).ready(function(){
         }
     }
 
+    function isPhoneAvailable(phone){
+        $.ajax({
+            url: "/exec/verify-phone.php",
+            type: "POST",
+            data: {
+                contact: phone
+            },
+            success: function(data) {
+                var res = JSON.parse(data);
+                console.log(res);
+                return res.error_code;
+            }
+        });
+    }
+
     $('input[name=currency]').val('USD');
 
     $('input[name=currency]').change(function(){
@@ -188,30 +203,40 @@ $(document).ready(function(){
                 data[name] = value;
             });
 
-            $.ajax({
-                url: url,
-                type: type,
-                data: data,
+            var available = isPhoneAvailable($('#contact-num').val());
+            console.log(available);
 
-                success: function (response) {
-                    var data = jQuery.parseJSON(response);
-                    $('.wing-form-wrap').addClass('remove');
+            if (available == 'WA500') {
+                isvalidate = true;
 
-                    var f = document.createElement("form");
-                    f.setAttribute('method',"post");
-                    f.setAttribute('action',"confirmation.php");
-                    f.setAttribute('id',"redirect-form");
+                $.ajax({
+                    url: url,
+                    type: type,
+                    data: data,
 
-                    var i = document.createElement("input"); //input element, text
-                    i.setAttribute('type',"hidden");
-                    i.setAttribute('name',"id");
-                    i.setAttribute('value', data.id);
-                    f.appendChild(i);
-                    document.getElementsByTagName('body')[0].appendChild(f);
+                    success: function (response) {
+                        var data = jQuery.parseJSON(response);
+                        $('.wing-form-wrap').addClass('remove');
 
-                    $('#redirect-form').submit();
-                }
-            });
+                        var f = document.createElement("form");
+                        f.setAttribute('method',"post");
+                        f.setAttribute('action',"confirmation.php");
+                        f.setAttribute('id',"redirect-form");
+
+                        var i = document.createElement("input"); //input element, text
+                        i.setAttribute('type',"hidden");
+                        i.setAttribute('name',"id");
+                        i.setAttribute('value', data.id);
+                        f.appendChild(i);
+                        document.getElementsByTagName('body')[0].appendChild(f);
+
+                        $('#redirect-form').submit();
+                    }
+                });
+            } else {
+                isvalidate = false;
+                alert('Wing Account already exists. Please register another phone number.');
+            }
 
             return false;
         } else {
