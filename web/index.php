@@ -59,6 +59,7 @@
 					<li><a href="#wing-account">Wing Account</a></li>
 					<li><a href="#enjoy-discount">Enjoy Discounts</a></li>
 					<li><a href="#pay-bills">Pay Bills</a></li>
+					<li><a href="#wing-ket">Wing Ket Luy</a></li>
 					<li><a href="#wing-form-wrap">Register Now</a></li>
 					<li><a href="#how-to-sign" class="menu-highlighted">How to Sign Up</a></li>
 				</ul>
