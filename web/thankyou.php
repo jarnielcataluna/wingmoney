@@ -100,7 +100,7 @@
 					</div>
 					<div class="account-number">
 						<h4>Here's you're Wing account number</h4>
-						<p id="accountNumber">asdasdsa<?php echo $_POST['accountNum']; ?></p>
+						<p id="accountNumber"><?php echo $_POST['accountNum']; ?></p>
 					</div>
 					
 					<div class="ty-social-media">
