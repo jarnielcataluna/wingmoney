@@ -9,6 +9,36 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
+// $('#verfication-code').change(function() {
+//     if ($(this).val().length == 6) {
+//         $.ajax({
+//             url: "/exec/verify-sms.php",
+//             type: "POST",
+//             data: {
+//                 code: $(this).val(),
+//                 id: $('input[name=id]').val()
+//             },
+//             success: function(data) {
+//                 $('.final-step-form').slideUp(300);
+//                 $('.create-pin-account').slideDown(500);
+//             }
+//         });
+//     }
+// });
+$('#resendCode').submit(function(e)) {
+    e.preventDefault();
+    $.ajax({
+        url: "/exec/resend-code.php",
+        type: "POST",
+        data: {
+            id: $('input[name=id]').val()
+        },
+        success: function(data) {
+            console.log(data);
+        }
+    });
+}
+
 
 // Verification Field
 $('.final-step-form').submit(function(e){
@@ -39,14 +69,59 @@ $('.final-step-form').submit(function(e){
         });
 
         $.ajax({
-            url: url,
-            type: type,
-            data: data,
+            url: "/exec/verify-sms.php",
+            type: "POST",
+            data: {
+                code: $(this).val(),
+                id: $('input[name=id]').val()
+            },
+            success: function(data) {
+                $('.final-step-form').slideUp(300);
+                $('.create-pin-account').slideDown(500);
+            }
+        });
 
-            success: function (response) {
+        e.preventDefault();
+        return false;
+
+    } else {
+        e.preventDefault();
+        return false;
+    }
+
+});
+
+//PIN and CONFIRM PIN
+$('.create-pin-account').submit(function(e){
+    $('#pin-id').closest('.input-wrap').addClass('error');
+    isvalidate = false;
+
+    if( $('#pin-id').val() != '') {
+        $('#pin-id').closest('.input-wrap').removeClass('error');
+
+        if($('#confirm-pin-id').val() == $('#pin-id').val() ) {
+            isvalidate = true;
+            $('#confirm-pin-id').closest('.input-wrap').removeClass('error');
+        } else {
+            $('#confirm-pin-id').closest('.input-wrap').addClass('error');
+            isvalidate = false;
+        }
+    } 
+
+    if(  $('#pin-id').val() != '' && isvalidate == true) {
+        $('.create-pin-account').addClass('overlay');
+
+        $.ajax({
+            url: "/exec/validate2.php",
+            type: "POST",
+            data: {
+                id: $('input[name=id]').val(),
+                pin: $('#pin-id').val()
+            },
+            success: function(data) {
                 var data = jQuery.parseJSON(response);
                 if(!data.error){
-                    $('.final-step-form').removeClass('overlay');
+                    $('.create-pin-account').removeClass('overlay');
                     database.ref('leads').child(data.id).set(data);
                     var f = document.createElement("form");
                     f.setAttribute('method',"post");
@@ -62,21 +137,16 @@ $('.final-step-form').submit(function(e){
 
                     $('#redirect-form').submit();
                 }else{
-                    $('.final-step-form').removeClass('overlay');
+                    $('.create-pin-account').removeClass('overlay');
                     var errorOutput = $('#verfication-code').closest('.input-wrap');
                     errorOutput.find('.required-tooltip p').html(data.error);
                     errorOutput.addClass('error');
                 }
-
             }
         });
 
-        e.preventDefault();
         return false;
-
     } else {
         e.preventDefault();
-        return false;
     }
-
 });

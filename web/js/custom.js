@@ -283,29 +283,29 @@ $(document).ready(function() {
         }
     });
 
-    $('.create-pin-account').submit(function(e){
-        $('#pin-id').closest('.input-wrap').addClass('error');
-        isvalidate = false;
+    // $('.create-pin-account').submit(function(e){
+    //     $('#pin-id').closest('.input-wrap').addClass('error');
+    //     isvalidate = false;
 
-        if( $('#pin-id').val() != '') {
-            $('#pin-id').closest('.input-wrap').removeClass('error');
+    //     if( $('#pin-id').val() != '') {
+    //         $('#pin-id').closest('.input-wrap').removeClass('error');
 
-            if($('#confirm-pin-id').val() == $('#pin-id').val() ) {
-                isvalidate = true;
-                $('#confirm-pin-id').closest('.input-wrap').removeClass('error');
-            } else {
-                $('#confirm-pin-id').closest('.input-wrap').addClass('error');
-                isvalidate = false;
-            }
-        } 
+    //         if($('#confirm-pin-id').val() == $('#pin-id').val() ) {
+    //             isvalidate = true;
+    //             $('#confirm-pin-id').closest('.input-wrap').removeClass('error');
+    //         } else {
+    //             $('#confirm-pin-id').closest('.input-wrap').addClass('error');
+    //             isvalidate = false;
+    //         }
+    //     } 
 
-        if(  $('#pin-id').val() != '' && isvalidate == true) {
-            $('.create-pin-account').addClass('overlay');
-            return false;
-        } else {
-            e.preventDefault();
-        }
-    });
+    //     if(  $('#pin-id').val() != '' && isvalidate == true) {
+    //         $('.create-pin-account').addClass('overlay');
+    //         return false;
+    //     } else {
+    //         e.preventDefault();
+    //     }
+    // });
 
     // $('.wing-form').submit(function(e){
     //     $('.input-wrap').addClass('error');
