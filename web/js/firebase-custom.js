@@ -105,7 +105,7 @@ $('.create-pin-account').submit(function(e){
     $('#pin-id').closest('.input-wrap').addClass('error');
     isvalidate = false;
 
-    if( $('#pin-id').val() != '' && $('#pin-id').val().length() == 4) {
+    if( $('#pin-id').val() != '' && $('#pin-id').val().length == 4) {
         $('#pin-id').closest('.input-wrap').removeClass('error');
 
         if($('#confirm-pin-id').val() == $('#pin-id').val() ) {
