@@ -196,8 +196,6 @@ $(document).ready(function(){
                 },
                 success: function(data) {
                     var res = jQuery.parseJSON(data);
-                    console.log(res);
-                    return res.error_code;
 
                     if (res.error_code == "WA500") {
                         $.ajax({
@@ -225,6 +223,7 @@ $(document).ready(function(){
                             }
                         });
                     } else {
+                        $('.wing-form-wrap').removeClass('overlay');
                         alert('Wing Account already exists. Please register another phone number.');
                     }
                 }
