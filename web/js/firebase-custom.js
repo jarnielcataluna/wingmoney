@@ -37,7 +37,7 @@ $('#resendCode').submit(function(e) {
             console.log(data);
         }
     });
-}
+});
 
 
 // Verification Field
