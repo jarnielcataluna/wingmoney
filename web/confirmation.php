@@ -124,7 +124,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 
 								<form class="create-pin-account" method="post" action="" novalidate>
 
-									<h3 class="co-blue">Set up a Pin</h3>
+									<h3 class="co-blue">Choose your Wing Account PIN</h3>
 									<div class="loading-spinner-wrapper" id="app-loader">
 								        <span class="loading-spinner">
 								          <i class="one"></i>
@@ -143,7 +143,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 										<input type="password" name="" value="" id="confirm-pin-id" required="required" autocomplete="new-password"/>
 										<label for="confirm-pin-id">Confirm PIN</label>
 										<div class="required-tooltip left">
-											<p>Pin Code didn't match<span>*</span></p>
+											<p>Pin Codes didn't match<span>*</span></p>
 										</div>
 									</div>
 									<div class="input-wrap">
