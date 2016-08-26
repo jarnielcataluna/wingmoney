@@ -2201,8 +2201,9 @@ input::-webkit-inner-spin-button {
 	.input-wrap {
 		margin: 0 auto 8px;
 
-		input[type="password"] {
+		input[type="tel"] {
 			text-align: left;
+			-webkit-text-security: disc;
 		}
 
 

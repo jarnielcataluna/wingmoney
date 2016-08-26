@@ -9521,8 +9521,9 @@ input::-webkit-inner-spin-button {
   margin: 0 auto 8px;
 }
 
-.create-pin-account .input-wrap input[type="password"] {
+.create-pin-account .input-wrap input[type="tel"] {
   text-align: left;
+  -webkit-text-security: disc;
 }
 
 .thank-you-page, .inner-page {
