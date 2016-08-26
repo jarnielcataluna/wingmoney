@@ -117,8 +117,8 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 												<p>This confirmation code is required <span>*</span></p>
 											</div>
 										</div>
-										<p class="resend-code">Haven't receive code yet? <a href="#" >Resend Code</a></p>
-										<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="Submit">
+										<p class="resend-code">Haven't receive code yet? <a href="#" id="resendCode">Resend Code</a></p>
+										<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY">
 									</div>
 								</form>
 
