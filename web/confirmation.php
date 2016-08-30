@@ -205,6 +205,8 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 	</div>
 </footer>
 <script src="js/needed-scripts.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<script src="js/firebase-custom.js"></script>
 <script type="text/javascript">
 	function downloadJSAtOnload() {
 		var element = document.createElement("script");
@@ -218,9 +220,5 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 	else window.onload = downloadJSAtOnload;
 
 </script>
-
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<script src="js/firebase-custom.js"></script>
-
 </body>
 </html>
