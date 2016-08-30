@@ -218,16 +218,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 	else window.onload = downloadJSAtOnload;
 
 </script>
-<script type="text/javascript">
-	//preloader once done
-	Pace.on('done', function() {
-		// totally hide the preloader especially for IE
-		setTimeout(function() {
-			$('.pace-inactive').hide();
-	        $('.wing-form-wrap').addClass('scale');
-		}, 500);
-	});
-</script>
+
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/firebase-custom.js"></script>
 

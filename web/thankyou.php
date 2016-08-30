@@ -268,16 +268,6 @@
 	else window.onload = downloadJSAtOnload;
 
 </script>
-<script type="text/javascript">
-	//preloader once done
-	Pace.on('done', function() {
-		// totally hide the preloader especially for IE
-		setTimeout(function() {
-			$('.pace-inactive').hide();
-	        $('.wing-form-wrap').addClass('scale');
-		}, 500);
-	});
-</script>
 
 </body>
 </html>
