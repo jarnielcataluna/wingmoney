@@ -67,7 +67,6 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 <link rel="stylesheet" href="css/style.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
-<script src="js/minified-plugins.js"></script>
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -207,7 +206,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 		</div>
 	</div>
 </footer>
-
+<script src="js/minified-plugins.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/firebase-custom.js"></script>
 
