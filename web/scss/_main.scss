@@ -1269,10 +1269,10 @@ input::-webkit-inner-spin-button {
 	background: rgba($coBlue, 0.8);
 	top: -300px;
 	z-index: 9;
-	opacity: 0;
+	opacity: 1;
 	-webkit-backface-visibility: hidden;
 	@include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
-	@include transform(scale(0));
+	@include transform(scale(1));
 
 	&.scale {
 		opacity: 1;
