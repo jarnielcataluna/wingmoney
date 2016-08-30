@@ -56,6 +56,7 @@
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
 <script src='https://www.google.com/recaptcha/api.js' defer></script>
+<script src='js/pace.min.js' defer></script>
 </head>
 <body>
 <!-- Google Tag Manager -->
