@@ -52,8 +52,6 @@
 	.banner-wrap h1 { color: #ffffff; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); margin-top: 60px; text-transform: uppercase;}
 	.banner-wrap h1 span { display: inline-block; line-height: 54px; padding: 0px 5px; background: rgba(0, 174, 239, 0.4); letter-spacing: -1px; }
 </style>
-<link rel="stylesheet" href="css/font-awesome.css" media="all"/>
-<link rel="stylesheet" href="css/owl.carousel.css" media="all"/>
 <link rel="stylesheet" href="css/style.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->

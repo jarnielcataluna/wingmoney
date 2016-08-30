@@ -29,8 +29,6 @@
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#b0c025">
 
-<link rel="stylesheet" href="css/font-awesome.css" media="all"/>
-<link rel="stylesheet" href="css/owl.carousel.css" media="all"/>
 <link rel="stylesheet" href="css/style.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
@@ -256,7 +254,30 @@
 	</div>
 </footer>
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<script src="js/minified-plugins.js"></script>
+<script src="js/needed-scripts.js"></script>
+<script type="text/javascript">
+	function downloadJSAtOnload() {
+		var element = document.createElement("script");
+		element.src = "js/minified-plugins.js";
+		document.body.appendChild(element);
+	}
+	if (window.addEventListener)
+		window.addEventListener("load", downloadJSAtOnload, false);
+	else if (window.attachEvent)
+		window.attachEvent("onload", downloadJSAtOnload);
+	else window.onload = downloadJSAtOnload;
+
+</script>
+<script type="text/javascript">
+	//preloader once done
+	Pace.on('done', function() {
+		// totally hide the preloader especially for IE
+		setTimeout(function() {
+			$('.pace-inactive').hide();
+	        $('.wing-form-wrap').addClass('scale');
+		}, 500);
+	});
+</script>
 
 </body>
 </html>
