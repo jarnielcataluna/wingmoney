@@ -31,10 +31,10 @@
 <link rel="stylesheet" href="css/style.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
-<script src="js/html5.js"></script>
-<script src="js/lib/modernizr-2.8.3.min.js"></script>
-<script src="js/pace.min.js"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="js/operators.js"></script>
+<script src="js/minified-plugins.js"></script>
+<script src="js/facebook-custom.js"></script>
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -186,75 +186,6 @@
 			</div>
 		</section>
 
-		<!-- <section id="store-partners" class="section-pad jq-section">
-			<div class="container">
-				<div class="store-partners">
-					<div class="text-center animated hiding" data-animation="fadeInUp">
-						<h3>Our Partner Stores</h3>
-					</div>
-					<div class="owl-carousel owl-theme animated hiding" data-animation="fadeInUp">
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-					</div>
-					<div class="text-center animated hiding" data-animation="fadeInUp">
-						<a href="" class="btn btn-1e btn-green text-uppercase waves-effect"> View All</a>
-					</div>
-				</div>
-			</div>
-		</section> -->
-			
 		<section id="pay-online" class="section-pad jq-section">
 			<div class="container">
 				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Always Busy? <br>Make Effortless  Online <br>  Purchases with Your<br> Wing Account</h2>
@@ -621,13 +552,6 @@
 		</div>
 	</div>
 </footer>
-<script src="js/operators.js"></script>
-<script src="js/lib/jquery.min.js"></script>
-<script src="js/lib/jquery-ui.min.js"></script>
-<script src="js/minified-plugins.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/script.js"></script>
-<script src="js/facebook-custom.js"></script>
+
 </body>
 </html>

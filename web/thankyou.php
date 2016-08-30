@@ -34,9 +34,7 @@
 <link rel="stylesheet" href="css/style.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
-<script src="js/html5.js"></script>
-<script src="js/lib/modernizr-2.8.3.min.js"></script>
-<script src="js/pace.min.js"></script>
+<script src="js/minified-plugins.js"></script>
 </head>
 <body>
 
@@ -259,14 +257,7 @@
 	</div>
 </footer>
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<script src="js/lib/jquery.min.js"></script>
-<script src="js/lib/jquery-ui.min.js"></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/devices.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/script.js"></script>
+
 
 </body>
 </html>

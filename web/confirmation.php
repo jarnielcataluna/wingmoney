@@ -67,9 +67,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 <link rel="stylesheet" href="css/style.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
-<script src="js/html5.js"></script>
-<script src="js/lib/modernizr-2.8.3.min.js"></script>
-<script src="js/pace.min.js"></script>
+<script src="js/minified-plugins.js"></script>
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -209,16 +207,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 		</div>
 	</div>
 </footer>
-<script src="js/lib/jquery.min.js"></script>
-<script src="js/lib/jquery-ui.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/parallax.js"></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/devices.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/script.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/firebase-custom.js"></script>
 
