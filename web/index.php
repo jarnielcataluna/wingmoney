@@ -560,9 +560,9 @@
 		</div>
 	</div>
 </footer>
-<script src="js/operators.js"></script>
-<script src="js/needed-scripts.js"></script>
-<script src="js/facebook-custom.js"></script>
+<script src="js/operators.js" defer></script>
+<script src="js/needed-scripts.js" async></script>
+<script src="js/facebook-custom.js" defer></script>
 <script type="text/javascript">
 	//preloader once done
 	Pace.on('done', function() {
