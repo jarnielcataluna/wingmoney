@@ -106,7 +106,7 @@
 				<div class="wing-form-wrap">
 							
 					<h3>Make your Wing Account with only 2 steps:</h3>
-					<p>1. Sign up with Facebook or fill up this form. <br> 2. Wait for the confirmation text to pick up your kit!</p>
+					<p>1. Sign up with Facebook or fill up this form. <br> 2. A verification code will be sent to you via SMS</p>
 					<div class="signup-fb">
 						<a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign-up with Facebook</span></a>
 					</div>
@@ -181,7 +181,7 @@
 							<p>Get exclusive discounts from your favorite stores with your Wing account. Simply show your Wing account confirmation text to our partner merchants to enjoy fine dining, shopping sprees, and so much more at discounted prices.</p>
 						</div>
 					</div>
-					<img class="dis-model animated hiding" data-animation="fadeInUp" src="images/discount-model.png" alt="">
+					<img class="dis-model animated hiding" data-animation="fadeInUp" src="images/discount-model.jpg" alt="">
 				</div>
 			</div>
 		</section>
@@ -624,13 +624,8 @@
 <script src="js/operators.js"></script>
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/jquery-ui.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/parallax.js"></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/devices.js"></script>
-<script src="js/owl.carousel.js"></script>
+<script src="js/minified-plugins.js"></script>
 <script src="js/plugins.js"></script>
-<script src="js/select.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/script.js"></script>
 <script src="js/facebook-custom.js"></script>
