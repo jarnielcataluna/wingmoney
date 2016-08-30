@@ -20,6 +20,10 @@ $(document).ready(function() {
     initCustomForm();
     finalwrapHeight();
 
+    setTimeout(function() {
+        $('.wing-form-wrap').addClass('scale');
+    }, 500);
+
     $('.back-to-top').click(function(e){
         e.preventDefault();
 
@@ -41,10 +45,6 @@ $(document).ready(function() {
             }
         });
     }
-
-    // $('.custom-select').focus(function(){    
-    //     $(this).closest('.custom-select-wrapper').addClass('focus');
-    // });
 
 
     $('.custom-select').focusout(function(){    
@@ -183,11 +183,6 @@ $(document).ready(function() {
                     
                 
                 });
-
-                // if($(".wing-form").find('select').val() == '0') {
-                //     console.log($(".wing-form").find('select'))
-                //     // $(".wing-form").find('select')[0].simulate('mousedown');
-                // }
             }
         }
    });
@@ -214,16 +209,6 @@ $(document).ready(function() {
                 });
             }
 
-            
-
-            // if($('#contact-num').val() == '') {
-            //     $('#contact-num').focus();
-            // } else if ($('#account-email').val != '' && $('#contact-num').val != '') {
-            //     $('.id-type select').focus();
-            // } else {
-                
-            //     $('#account-email').focus();
-            // }
             
         } else {
             $('.gender').find('.custom-select-display').css({'color' : '#8d8d8d'});
@@ -283,121 +268,6 @@ $(document).ready(function() {
         }
     });
 
-    // $('.create-pin-account').submit(function(e){
-    //     $('#pin-id').closest('.input-wrap').addClass('error');
-    //     isvalidate = false;
-
-    //     if( $('#pin-id').val() != '') {
-    //         $('#pin-id').closest('.input-wrap').removeClass('error');
-
-    //         if($('#confirm-pin-id').val() == $('#pin-id').val() ) {
-    //             isvalidate = true;
-    //             $('#confirm-pin-id').closest('.input-wrap').removeClass('error');
-    //         } else {
-    //             $('#confirm-pin-id').closest('.input-wrap').addClass('error');
-    //             isvalidate = false;
-    //         }
-    //     } 
-
-    //     if(  $('#pin-id').val() != '' && isvalidate == true) {
-    //         $('.create-pin-account').addClass('overlay');
-    //         return false;
-    //     } else {
-    //         e.preventDefault();
-    //     }
-    // });
-
-    // $('.wing-form').submit(function(e){
-    //     $('.input-wrap').addClass('error');
-    //     isvalidate = false;
-
-    //     if( IsEmail($('#account-email').val() )) {
-    //         $('#account-email').closest('.input-wrap').removeClass('error');
-    //         isvalidate = true;
-    //     } else {
-    //         isvalidate = false;
-    //     }
-
-    //     if( !$('#last-name').val() == '') {
-    //         $('#last-name').closest('.input-wrap').removeClass('error');
-    //         isvalidate = true;
-    //     } else {
-    //         isvalidate = false;
-    //     }
-
-    //     if( !$('#first-name').val() == '') {
-    //         $('#first-name').closest('.input-wrap').removeClass('error');
-    //         isvalidate = true;
-    //     } else {
-    //         isvalidate = false;
-    //     }
-
-    //     if( !$('#id-number').val() == '') {
-    //         $('#id-number').closest('.input-wrap').removeClass('error');
-    //         isvalidate = true;
-    //     } else {
-    //         isvalidate = false;
-    //     }
-
-    //     if( !$('#birthday').val() == '') {
-    //         $('#birthday').closest('.input-wrap').removeClass('error');
-    //         isvalidate = true;
-    //     } else {
-    //         isvalidate = false;
-    //     }
-
-    //     if( !$('#contact-num').val() == '' && isNumber( $('#contact-num').val() )) {
-    //         $('#contact-num').closest('.input-wrap').removeClass('error');
-    //         isvalidate = true;
-
-    //     } else {
-    //         isvalidate = false;
-    //     }
-
-    //     if( $('.gender select').val() != '0'){
-    //         $('.gender').removeClass('error');
-    //         isvalidate = true;
-
-    //     } else {
-    //         isvalidate = false;
-    //     }
-
-    //     if( $('.select-branch select').val() != '0'){
-    //         $('.select-branch').removeClass('error');
-    //         isvalidate = true;
-    //     } else {
-    //         isvalidate = false;
-    //     }
-
-    //     if( $('.id-type select').val() != '0') {
-    //         $('.id-type').removeClass('error');
-    //         isvalidate = true;
-    //     } else {
-    //         isvalidate = false;
-    //     }
-
-    //     console.log(isvalidate);
-        
-
-    //     if( $('#contact-num').val() != '' && isNumber($('#contact-num').val()) && $('.gender select').val() != '0' && $('.id-type select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#id-number').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isvalidate == true) {
-    //     //if(  && isvalidate == true) {
-    //         //return true;
-    //         console.log(isvalidate);
-    //     } else {
-    //         e.preventDefault();
-    //         console.log(isvalidate);
-    //     }
-    // })
-
-
-
-    // Verification Field
-    // $('.final-step-form').submit(function(e){
-    //     e.preventDefault();
-    //     $('.final-step').hide();
-    //     $('.ty-text').show();
-    // });
-
     $('.header-hamburger').click(function(){
         var _this = $(this);
         $('.menu ul li').removeClass('is-open');
@@ -441,7 +311,6 @@ $(document).ready(function() {
         $(this).find('.wpml-lang-dropdown').css({'display' : 'none'});
     });
 
-    //console.log(isNumber('+85512345678'));
 });
 
 $(window).load(function() {
@@ -449,6 +318,9 @@ $(window).load(function() {
     finalwrapHeight();
 
     $('.wing-form-wrap').show();
+    setTimeout(function() {
+        $('.wing-form-wrap').addClass('scale');
+    }, 500);
 
 });
 
@@ -461,25 +333,6 @@ $(window).on("load resize scroll",function(e){
     scrollParallax();
 });
 
-//preloader once done
-Pace.on('done', function() {
-	// totally hide the preloader especially for IE
-	setTimeout(function() {
-		$('.pace-inactive').hide();
-        $('.wing-form-wrap').addClass('scale');
-	}, 500);
-});
-
-// function isNumber(number) {
-//     var numberValid = /^\+(?:[0-9]●?){6,14}[0-9]$/;
-
-//     return numberValid.test(number);
-// }
-
-// function IsEmail(email) {
-//   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-//   return regex.test(email);
-// }
 
 function scrollParallax() {
 
