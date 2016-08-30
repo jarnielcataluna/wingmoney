@@ -26,7 +26,7 @@
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#b0c025">
 
-<style type="text/css">
+<!--<style type="text/css">
 	header { background: rgba(255, 255, 255, 0.9); width: 100%; position: fixed; z-index: 9999; -webkit-backface-visibility: hidden; height: 60px; -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); background: rgba(176, 192, 36, 0.8) none repeat scroll 0 0; }
 	header .logo { xdisplay: none; width: auto; margin: 0 30px 0 20px; padding: 0;}
 	header .logo a { margin-left: 25px; display: block; padding: 5px 0; height: 50px; line-height: 50px; }
@@ -51,7 +51,7 @@
 	.banner-wrap .parallax-window { height: 650px; background: transparent; position: relative; width: 100%; }
 	.banner-wrap h1 { color: #ffffff; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); margin-top: 60px; text-transform: uppercase;}
 	.banner-wrap h1 span { display: inline-block; line-height: 54px; padding: 0px 5px; background: rgba(0, 174, 239, 0.4); letter-spacing: -1px; }
-</style>
+</style>-->
 <link rel="stylesheet" href="css/style.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
