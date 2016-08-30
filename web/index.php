@@ -560,7 +560,6 @@
 		</div>
 	</div>
 </footer>
-<script src="js/operators.js" defer></script>
 <script src="js/needed-scripts.js" async></script>
 <script type="text/javascript">
 	function downloadJSAtOnload() {
