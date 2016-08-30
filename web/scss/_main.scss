@@ -1279,6 +1279,10 @@ input::-webkit-inner-spin-button {
 		@include transform(scale(1));
 	}
 
+	.loading-spinner-wrapper {
+		visibility: hidden;
+	}
+
 	&:before {
 		content:'';
 		width: 100%;
@@ -1301,6 +1305,7 @@ input::-webkit-inner-spin-button {
 
 		.loading-spinner-wrapper {
 			opacity: 1;
+			visibility: visible;
 		}
 	}
 
