@@ -560,6 +560,7 @@
 		</div>
 	</div>
 </footer>
+
 <script src="js/needed-scripts.js" async></script>
 <script type="text/javascript">
 	function downloadJSAtOnload() {
