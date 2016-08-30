@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="css/style.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src='https://www.google.com/recaptcha/api.js' defer></script>
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -537,7 +537,30 @@
 	</div>
 </footer>
 <script src="js/operators.js"></script>
-<script src="js/minified-plugins.js" defer></script>
-<script src="js/facebook-custom.js"></script>
+<script src="js/needed-scripts.js"></script>
+<script type="text/javascript">
+	function downloadJSAtOnload() {
+		var element = document.createElement("script");
+		element.src = "js/minified-plugins.js";
+		document.body.appendChild(element);
+	}
+	if (window.addEventListener)
+		window.addEventListener("load", downloadJSAtOnload, false);
+	else if (window.attachEvent)
+		window.attachEvent("onload", downloadJSAtOnload);
+	else window.onload = downloadJSAtOnload;
+
+</script>
+<script src="js/facebook-custom.js" defer></script>
+<script type="text/javascript">
+	//preloader once done
+	Pace.on('done', function() {
+		// totally hide the preloader especially for IE
+		setTimeout(function() {
+			$('.pace-inactive').hide();
+	        $('.wing-form-wrap').addClass('scale');
+		}, 500);
+	});
+</script>
 </body>
 </html>

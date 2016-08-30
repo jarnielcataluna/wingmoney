@@ -206,7 +206,30 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 		</div>
 	</div>
 </footer>
-<script src="js/minified-plugins.js"></script>
+<script src="js/needed-scripts.js"></script>
+<script type="text/javascript">
+	function downloadJSAtOnload() {
+		var element = document.createElement("script");
+		element.src = "js/minified-plugins.js";
+		document.body.appendChild(element);
+	}
+	if (window.addEventListener)
+		window.addEventListener("load", downloadJSAtOnload, false);
+	else if (window.attachEvent)
+		window.attachEvent("onload", downloadJSAtOnload);
+	else window.onload = downloadJSAtOnload;
+
+</script>
+<script type="text/javascript">
+	//preloader once done
+	Pace.on('done', function() {
+		// totally hide the preloader especially for IE
+		setTimeout(function() {
+			$('.pace-inactive').hide();
+	        $('.wing-form-wrap').addClass('scale');
+		}, 500);
+	});
+</script>
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/firebase-custom.js"></script>
 
