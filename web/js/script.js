@@ -73,7 +73,7 @@ $(document).ready(function(){
 
     //$('input[name=currency]').val('USD');
 
-    $('input[name=currency]').change(function(){
+    $('input[name=currency]').on('change', function(){
         var val = $('input[name=currency]:checked').val();
         $(this).val(val);
 
