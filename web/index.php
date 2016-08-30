@@ -182,76 +182,6 @@
 				</div>
 			</div>
 		</section>
-
-		<!-- <section id="store-partners" class="section-pad jq-section">
-			<div class="container">
-				<div class="store-partners">
-					<div class="text-center animated hiding" data-animation="fadeInUp">
-						<h3>Our Partner Stores</h3>
-					</div>
-					<div class="owl-carousel owl-theme animated hiding" data-animation="fadeInUp">
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-						<div class="item-store">
-							<div class="itemstore-img">
-								<img src="images/store-placeholder.jpg" alt="">
-							</div>
-							<div class="itemstore-text"><p>00%-00%</p></div>
-						</div>
-					</div>
-					<div class="text-center animated hiding" data-animation="fadeInUp">
-						<a href="" class="btn btn-1e btn-green text-uppercase waves-effect"> View All</a>
-					</div>
-				</div>
-			</div>
-		</section> -->
-			
 		<section id="pay-online" class="section-pad jq-section">
 			<div class="container">
 				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Always Busy? <br>Make Effortless  Online <br>  Purchases with Your<br> Wing Account</h2>
@@ -372,17 +302,6 @@
 				</div>
 			</div>
 		</section>
-
-		<!-- <section id="apply-now" class="apply-now-sec section-pad jq-section">
-			<div class="container">
-				<div class="text-center">
-					<h2 class="sec-title animated hiding" data-animation="fadeInUp">Get Your Wing Money <br>Account Now!</h2>
-					<a href="#wing-form-wrap" class="btn btn-orange btn-apply animated hiding" data-animation="fadeIn" data-delay="300">Apply Now</a>
-					<img class="apply-img animated hiding" data-animation="fadeIn" src="images/apply-now-model.jpg" alt="">
-				</div>
-			</div>
-		</section> -->
-
 		<section id="wing-ket" class="section-pad jq-section bg-green">
 			<div class="container">
 				<div class="wing-ket-wrap">
@@ -398,7 +317,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section id="wing-mobile" class="section-pad jq-section">
 			<div class="container">
 				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Your Wing Mobile <br>Account</h2>
@@ -619,7 +537,7 @@
 	</div>
 </footer>
 <script src="js/operators.js"></script>
-<script src="js/minified-plugins.js"></script>
+<script src="js/minified-plugins.js" defer></script>
 <script src="js/facebook-custom.js"></script>
 </body>
 </html>
