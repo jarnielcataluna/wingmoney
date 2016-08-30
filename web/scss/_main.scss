@@ -1649,6 +1649,7 @@ input::-webkit-inner-spin-button {
 
 	p {
 		color: $coWhite;
+		text-shadow: 1px 1px 5px #0098d7;
 	}
 }
 
@@ -1692,7 +1693,7 @@ input::-webkit-inner-spin-button {
 }
 
 .dis-model {
-	max-width: 100%;
+	width: 40%;
 	height: auto;
 
 }

@@ -9002,6 +9002,7 @@ input::-webkit-inner-spin-button {
 
 .enjoy-discount p {
   color: #ffffff;
+  text-shadow: 1px 1px 5px #0098d7;
 }
 
 .dis-model {
@@ -9039,7 +9040,7 @@ input::-webkit-inner-spin-button {
 }
 
 .dis-model {
-  max-width: 100%;
+  width: 40%;
   height: auto;
 }
 
