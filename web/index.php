@@ -26,6 +26,32 @@
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#b0c025">
 
+<style type="text/css">
+	header { background: rgba(255, 255, 255, 0.9); width: 100%; position: fixed; z-index: 9999; -webkit-backface-visibility: hidden; height: 60px; -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); background: rgba(176, 192, 36, 0.8) none repeat scroll 0 0; }
+	header .logo { xdisplay: none; width: auto; margin: 0 30px 0 20px; padding: 0;}
+	header .logo a { margin-left: 25px; display: block; padding: 5px 0; height: 50px; line-height: 50px; }
+	header .logo a img { max-height: 35px; width: auto !important; }
+	.menu { float: right; text-align: right; }
+	.menu ul { float: left; }
+	.menu ul:after { content: ''; display: block; float: none; clear: both; }
+	.menu ul li { float: left; position: relative;}
+	.menu ul li:first-child { padding-left: 0; }
+	.menu ul li a { display: block; color: #ffffff; position: relative; padding: 20px 15px; font-size: 15px; font-weight: bold; }
+	.menu ul li a .glyphicon { font-size: 13px; }
+	.menu ul li a:hover { color: #0098d7;}
+	.menu ul li a.menu-highlighted { color: #ffffff !important; }
+	.menu ul li a.menu-highlighted:hover { color: #ffffff !important; }
+	.menu ul li a.menu-highlighted:hover:before { background: #f89f1b; }
+	.menu ul li a.menu-highlighted:before { content: ''; display: block; bottom: 0px; width: 100%; left: 0; position: absolute; height: 100%; background: #f15a29; opacity: 1; -webkit-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1); -moz-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1); -ms-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1); -o-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1); transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); z-index: -1; }
+	.menu ul li.active {}
+	.menu ul li.active a { color: #0098d7;}
+	.banner-wrap { height: 650px; position: relative; overflow: visible; width: 100%; z-index: 77; }
+	.banner-wrap.jq-section { background: transparent; }
+	.banner-wrap .container { position: relative; }
+	.banner-wrap .parallax-window { height: 650px; background: transparent; position: relative; width: 100%; }
+	.banner-wrap h1 { color: #ffffff; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); margin-top: 60px; text-transform: uppercase;}
+	.banner-wrap h1 span { display: inline-block; line-height: 54px; padding: 0px 5px; background: rgba(0, 174, 239, 0.4); letter-spacing: -1px; }
+</style>
 <link rel="stylesheet" href="css/font-awesome.css" media="all"/>
 <link rel="stylesheet" href="css/owl.carousel.css" media="all"/>
 <link rel="stylesheet" href="css/style.css" media="all"/>
@@ -80,7 +106,7 @@
 			<div class="table-wrap">
 				<div class="table-content">
 					<div class="container">
-						<div class="fl banner-text animated hiding" data-animation="fadeInLeft" data-delay="300">
+						<div class="fl">
 							<!-- <div class="logo"><img src="images/wing-logo.png" alt=""></div> -->
 							<h1><span>FAST and SECURE </span><br><span>PAYMENTS FROM</span><br><span>YOUR MOBILE PHONE.</span></h1>
 						</div>
@@ -110,7 +136,7 @@
 					<?php include 'form.php' ?>
 				</div>
 				<div class="row">
-					<div class="col-md-8 col-sm-7 animated hiding" data-animation="fadeInUp" data-delay="300">
+					<div class="col-md-8 col-sm-7">
 						<h2 class="sec-title"> More than just a money transfer service!</h2>
 						<div class="feature-tag">
 							<p>Money transfer is just the beginning! There are so many ways a Wing account can make your life easier and faster so you can focus on the things that really matter. Signing up is so simple:</p>
@@ -537,7 +563,18 @@
 	</div>
 </footer>
 <script src="js/operators.js"></script>
-<script src="js/needed-scripts.js"></script>
+<script src="js/needed-scripts.js" async></script>
+<script src="js/facebook-custom.js" defer></script>
+<script type="text/javascript">
+	//preloader once done
+	Pace.on('done', function() {
+		// totally hide the preloader especially for IE
+		setTimeout(function() {
+			$('.pace-inactive').hide();
+	        $('.wing-form-wrap').addClass('scale');
+		}, 500);
+	});
+</script>
 <script type="text/javascript">
 	function downloadJSAtOnload() {
 		var element = document.createElement("script");
@@ -550,17 +587,6 @@
 		window.attachEvent("onload", downloadJSAtOnload);
 	else window.onload = downloadJSAtOnload;
 
-</script>
-<script src="js/facebook-custom.js" defer></script>
-<script type="text/javascript">
-	//preloader once done
-	Pace.on('done', function() {
-		// totally hide the preloader especially for IE
-		setTimeout(function() {
-			$('.pace-inactive').hide();
-	        $('.wing-form-wrap').addClass('scale');
-		}, 500);
-	});
 </script>
 </body>
 </html>
