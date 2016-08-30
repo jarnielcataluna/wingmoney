@@ -562,16 +562,6 @@
 </footer>
 <script src="js/needed-scripts.js" async></script>
 <script type="text/javascript">
-	//preloader once done
-	Pace.on('done', function() {
-		// totally hide the preloader especially for IE
-		setTimeout(function() {
-			$('.pace-inactive').hide();
-	        $('.wing-form-wrap').addClass('scale');
-		}, 500);
-	});
-</script>
-<script type="text/javascript">
 	function downloadJSAtOnload() {
 		var element = document.createElement("script");
 		element.src = "js/minified-plugins.js";
@@ -582,8 +572,6 @@
 	else if (window.attachEvent)
 		window.attachEvent("onload", downloadJSAtOnload);
 	else window.onload = downloadJSAtOnload;
-
 </script>
-<script src="js/script.js" async></script>
 </body>
 </html>
