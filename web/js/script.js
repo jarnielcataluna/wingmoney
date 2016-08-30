@@ -75,8 +75,7 @@ $(document).ready(function(){
 
     $('input[name=currency]').on('change', function(){
         var val = $('input[name=currency]:checked').val();
-        $(this).val(val);
-
+        $(this).val(val)
         console.log(val);
     });
 
