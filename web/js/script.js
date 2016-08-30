@@ -71,11 +71,13 @@ $(document).ready(function(){
         }
     }
 
-    $('input[name=currency]').val('USD');
+    //$('input[name=currency]').val('USD');
 
     $('input[name=currency]').change(function(){
         var val = $('input[name=currency]:checked').val();
         $(this).val(val);
+
+        console.log(val);
     });
 
     $('.wing-form').submit(function(e){
