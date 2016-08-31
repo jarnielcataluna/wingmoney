@@ -16,7 +16,7 @@ html, body { height:100%; min-height:100%; min-width: 1100px; }
 }
 
 body {
-	background: $coGreen;
+	background: $coWhite;
 }
 
 .column {
@@ -1153,6 +1153,7 @@ input::-webkit-inner-spin-button {
 	    }
 	    
 	}
+
 
 	input[type="radio"] + label span,
 	input[type="radio"]:checked + label span {
