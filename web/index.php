@@ -562,7 +562,7 @@
 </footer>
 
 <div class="fill-up-correctly">
-    <p>Please fill up the form correctly</p>
+    <p>Please fill up the form correctly.</p>
 </div>
 
 <script src="js/needed-scripts.js" async></script>
