@@ -228,7 +228,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 
 <?php
 else:
-	$home = 'https://'.$_SERVER['HTTP_HOST'];
+	$home = 'http://'.$_SERVER['HTTP_HOST'];
 	$loc = "Location: ".$home;
 	header($loc);
 endif;
