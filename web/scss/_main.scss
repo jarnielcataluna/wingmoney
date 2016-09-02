@@ -2847,6 +2847,28 @@ input::-webkit-inner-spin-button {
 	}
 }
 
+.fill-up-correctly {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 4px 5px;
+	color: $coWhite;
+	background: #8c0202;
+	font-size: 13px;
+	@include transition(all 0.3s ease);
+	@include transform(translateY(100%));
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1003;
+
+	&.is-open {
+		opacity: 1;
+		visibility: visible;
+		@include transform(translateY(0));
+	}
+}
+
 @media only screen and (max-width: 1350px) {
 	.menu ul li {
 		a {

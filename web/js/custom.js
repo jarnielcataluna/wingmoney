@@ -163,6 +163,7 @@ $(document).ready(function() {
 
     $('.input-wrap input, .input-wrap select').focus(function(){
         $(this).closest('.input-wrap').removeClass('error');
+        $('.fill-up-correctly').removeClass('is-open');
     });
 
     $('.wing-form input:not(:checkbox,:button)').bind("change paste keyup", function(e) {    

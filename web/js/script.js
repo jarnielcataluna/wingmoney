@@ -20,6 +20,8 @@ $(document).ready(function(){
 
     $('#wing-checkbox, #terms-checkbox').change(function(){
 
+        $('.fill-up-correctly').removeClass('is-open');
+
         if($('#wing-checkbox').is(':checked') && $('#terms-checkbox').is(':checked')) {
             $('.wing-form input[type="submit"]').removeAttr('disabled');
             $('.btn-wrapper').find('.required-tooltip').remove();
@@ -84,7 +86,9 @@ $(document).ready(function(){
         $('.input-wrap').addClass('error');
         isvalidate = false;
 
-
+        if($(window).width() < 768) {
+            $('.fill-up-correctly').addClass('is-open');
+        }
 
         if( IsEmail($('#account-email').val() )) {
             $('#account-email').closest('.input-wrap').removeClass('error');
@@ -175,6 +179,7 @@ $(document).ready(function(){
 
 
         if(isSeries && grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
+            $('.fill-up-correctly').removeClass('is-open');
             $('.wing-form-wrap').addClass('overlay');
             var that = $(this),
                 url = that.attr('action'),
