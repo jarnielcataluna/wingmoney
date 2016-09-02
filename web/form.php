@@ -115,6 +115,10 @@
             <input type="checkbox" id="wing-checkbox"/>
             <label for="wing-checkbox">I want to receive email and sms notification from Wing.</label>
         </div>
+        <div class="wing-checkbox">
+            <input type="checkbox" id="terms-checkbox"/>
+            <label for="terms-checkbox">I accept Wing <a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank">Terms &amp; Confitions.</a></label>
+        </div>
         <hr>
         <div class="input-wrap g-recaptcha-wrap">
             <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK" data-callback="onSuccessCaptcha"></div>
@@ -135,7 +139,7 @@
             <div class="input-wrap btn-wrapper">
                 <input type="submit" class="btn btn-orange" name="" value="SUBMIT" disabled="disabled" />
                 <div class="required-tooltip left">
-                    <p>Please check the tick box. <span>*</span></p>
+                    <p>Please check the tick boxes. <span>*</span></p>
                 </div>
             </div>
         </div>

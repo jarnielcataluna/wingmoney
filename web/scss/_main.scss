@@ -254,7 +254,7 @@ header {
 						height: 100%;
 						background: rgba($bgDarkOrange, 1);
 						opacity: 1;
-						@include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
+						@include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
 						@include transform(scale(1));
 						z-index: -1;
 					}
@@ -590,7 +590,7 @@ footer { position: relative; z-index: 1; background: $bgGreen; }
     top: 50%;
     margin-top: -6px;
     opacity: 0;
-    @include transition(all, 0.3s, ease);
+    @include transition(all 0.3s ease);
 }
 
 
@@ -687,7 +687,7 @@ footer { position: relative; z-index: 1; background: $bgGreen; }
   vertical-align: middle;
   z-index: 1;
   will-change: opacity, transform;
-  @include transition(all, 0.2s, cubic-bezier(0.645, 0.045, 0.355, 1));
+  @include transition(all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1));
 }
 
 .waves-effect .waves-ripple {
@@ -845,7 +845,7 @@ a.waves-effect .waves-ripple {
 		padding: 0px 15px 0px 15px;
 		position: relative;
 		top: 2px;
-		@include transition(all, 0.5s, cubic-bezier(0.645, 0.045, 0.355, 1));
+		@include transition(all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1));
 	}
 
 	span {
@@ -856,7 +856,7 @@ a.waves-effect .waves-ripple {
 		border-left: 1px solid #1e2e52;
 		font-size: 18px;
 		color: $coWhite;
-		@include transition(all, 0.5s, cubic-bezier(0.645, 0.045, 0.355, 1));
+		@include transition(all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1));
 	}
 }
 
@@ -1003,7 +1003,7 @@ a.waves-effect .waves-ripple {
 	    opacity: 1;
 	    visibility: visible;
 	    z-index: 3;
-	    @include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
+	    @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
 	}
 
 	input[required] + label:after {
@@ -1138,7 +1138,7 @@ input::-webkit-inner-spin-button {
 	     	margin-top: -5px;
 	     	background-color:$coOrange;
 	     	@include border-radius(50%);
-	     	@include transition(all, 0.3s, linear);
+	     	@include transition(all 0.3s linear);
 	     }
 	}
 
@@ -1235,6 +1235,17 @@ input::-webkit-inner-spin-button {
 	}
 }
 
+.input-wrap {
+	&.wing-checkbox {
+		padding-left: 0;
+		opacity: 1;
+    	visibility: visible;
+
+    	label {
+    		font-size: 11px;
+    	}
+	}
+}
 
 .wing-checkbox {
 	label {
@@ -1242,7 +1253,11 @@ input::-webkit-inner-spin-button {
 	    line-height: 20px;
 	    display: inline-block;
 	    vertical-align: middle;
-	    margin-bottom: 8px;
+	    margin-bottom: 3px;
+	}
+
+	a {
+		color: $coWhite;
 	}
 }
 
@@ -1272,7 +1287,7 @@ input::-webkit-inner-spin-button {
 	z-index: 9;
 	opacity: 0;
 	-webkit-backface-visibility: hidden;
-	@include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
+	@include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
 	@include transform(scale(0));
 
 	&.scale {
@@ -1290,7 +1305,7 @@ input::-webkit-inner-spin-button {
 		height: 100%;
 		background: rgba($coWhite, 0.6);
 		position: absolute;
-		@include transition(all, 0.5s, cubic-bezier(0.645, 0.045, 0.355, 1));
+		@include transition(all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1));
 		opacity: 0;
 		@include transform(scale(0));
 		top: 0;
@@ -1372,7 +1387,7 @@ input::-webkit-inner-spin-button {
 	hr {
 		border: none;
 		border-bottom: 1px solid $coWhite;
-		margin: 0px 5px 8px;
+		margin: 5px 5px 8px;
 	}
 }
 
@@ -1383,7 +1398,7 @@ input::-webkit-inner-spin-button {
 	border-radius: 8px;
 	padding: 8px;
 	min-width: 120px;
-	@include transition(all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1));
+	@include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
 	opacity: 0;
 	z-index: -1;
 	
@@ -1768,7 +1783,7 @@ input::-webkit-inner-spin-button {
 }
 
 .owl-controls {
-	@include transition(all, 0.3s, ease);
+	@include transition(all 0.3s ease);
 
 	.owl-prev {
 		position: absolute;
@@ -1945,7 +1960,7 @@ input::-webkit-inner-spin-button {
 				border-left: 25px solid transparent;
 				border-right: 25px solid transparent;
 				border-top: 25px solid $bgBlue;
-				@include transition(all, 0.4s, cubic-bezier(0.68, -0.55, 0.265, 1.55));
+				@include transition(all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55));
 				z-index: 1;
 				opacity: 0;
 			}
@@ -2147,6 +2162,7 @@ input::-webkit-inner-spin-button {
 			font-size: 18px;
 			font-weight: bold;
 			text-align: center;
+			-webkit-appearance: none;
 		}
 	}
 
@@ -2195,7 +2211,7 @@ input::-webkit-inner-spin-button {
 .final-step-wrap {
 	min-height: 505px;
 	position: relative;
-	@include transition(all, 0.3s, ease);
+	@include transition(all 0.3s ease);
 	max-height: 700px;
 }
 
@@ -2511,10 +2527,10 @@ input::-webkit-inner-spin-button {
 }
 
 .h-s-c-arrow.one { 
-	@include transition( all, 0.5s 1.4s, ease);
+	@include transition( all 0.5s 1.4s ease);
 }
 .h-s-c-arrow.two { 
-	@include transition( all, 0.5s 1.5s, ease);
+	@include transition( all 0.5s 1.5s ease);
 }
 
 .h-s-c-arrow { 
@@ -2596,7 +2612,7 @@ input::-webkit-inner-spin-button {
 	background-color: transparent;
 	margin: 18px 0 18px 15px;
 	right:0; 
-	@include transition(all, 0.4s, cubic-bezier(0.645, 0.045, 0.355, 1));
+	@include transition(all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1));
 }
 
 .header-hamburger span, .header-hamburger span:after, .header-hamburger span:before {
@@ -2607,7 +2623,7 @@ input::-webkit-inner-spin-button {
 	background: $coWhite;
 	position: absolute;
 	display: block;
-	@include transition(all, 0.2s, ease-in-out);
+	@include transition(all 0.2s ease-in-out);
 	@include transform(rotate(0deg));
 }
 
@@ -2918,6 +2934,10 @@ input::-webkit-inner-spin-button {
 		}
 	}
 
+	.wing-form-wrap {
+		top: -340px;
+	}
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -3021,7 +3041,7 @@ input::-webkit-inner-spin-button {
 				clear: both;
 				padding: 15px 0px 15px 0px;
 				opacity: 0;
-				@include transition(all, 0.2s, cubic-bezier(0.645, 0.045, 0.355, 1));
+				@include transition(all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1));
 				@include transform(translateY(-40px) scale(0.9));
 				font-size: 24px;
 

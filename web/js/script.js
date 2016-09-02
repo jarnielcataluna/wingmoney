@@ -18,15 +18,15 @@ $(document).ready(function(){
         return regex.test(email);
     }
 
-    $('#wing-checkbox').change(function(){
+    $('#wing-checkbox, #terms-checkbox').change(function(){
 
-        if($(this).is(':checked')) {
+        if($('#wing-checkbox').is(':checked') && $('#terms-checkbox').is(':checked')) {
             $('.wing-form input[type="submit"]').removeAttr('disabled');
             $('.btn-wrapper').find('.required-tooltip').remove();
 
         } else {
             $('.wing-form input[type="submit"]').attr('disabled', true);
-            $('.btn-wrapper').append('<div class="required-tooltip left"><p>Please check the tick box. <span>*</span></p></div>')
+            $('.btn-wrapper').append('<div class="required-tooltip left"><p>Please check the tick boxes. <span>*</span></p></div>')
         }
 
     });
