@@ -1174,6 +1174,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
+
 }
 
 /* checkbox aspect */
@@ -3580,6 +3581,11 @@ input::-webkit-inner-spin-button {
 	.p-m-info {
 		font-size: 17px;
 		font-size: 24px;
+	}
+
+	.wing-checkbox [type="checkbox"]:not(:checked) + label,
+	.wing-checkbox [type="checkbox"]:checked + label {
+		padding-left: 24px;
 	}
 }
 
