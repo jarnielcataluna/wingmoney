@@ -275,7 +275,7 @@
 </html>
 <?php
 else:
-	$home = 'https://'.$_SERVER['HTTP_HOST'];
+	$home = 'http://'.$_SERVER['HTTP_HOST'];
 	$loc = "Location: ".$home;
 	header($loc);
 endif;
