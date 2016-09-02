@@ -1,4 +1,5 @@
-﻿<?php if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header('Location: /'); } ?>
+﻿<?php session_start(); ?>
+<?php if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header('Location: /'); } ?>
 <?php
 	if (isset($_SESSION['ty'])) :
 ?>
