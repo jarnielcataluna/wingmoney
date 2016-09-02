@@ -117,7 +117,7 @@
         </div>
         <div class="wing-checkbox">
             <input type="checkbox" id="terms-checkbox"/>
-            <label for="terms-checkbox">I accept Wing <a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank">Terms &amp; Confitions.</a></label>
+            <label for="terms-checkbox">I accept Wing <a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank">terms &amp; conditions.</a></label>
         </div>
         <hr>
         <div class="input-wrap g-recaptcha-wrap">
