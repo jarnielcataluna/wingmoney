@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    $_SESSION['ty'] = 1;
 
     $_POST['key'] = base64_encode("CHVP0L$43VEr");
 

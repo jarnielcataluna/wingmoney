@@ -1,5 +1,8 @@
 ﻿<?php
 
+if (isset($_SESSION['confirm'])) :
+
+
 function fnDecrypt($sValue, $sSecretKey)
 {
 	return rtrim(
@@ -222,3 +225,12 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 </script>
 </body>
 </html>
+
+<?php
+else:
+	$home = 'https://'.$_SERVER['HTTP_HOST'];
+	$loc = "Location: ".$home;
+	header($loc);
+endif;
+session_destroy();
+?>
