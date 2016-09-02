@@ -986,6 +986,8 @@ a.waves-effect .waves-ripple {
 		border: 1px solid transparent;
 		position: relative;
 		z-index: 1;
+		-webkit-appearance: none;
+		appearance: none;
 
 		&:focus {
 			border-bottom: 1px solid $coGreen;
@@ -3595,6 +3597,13 @@ input::-webkit-inner-spin-button {
 
 		ul {
 			margin-top: 20px;
+		}
+	}
+
+	.wing-form-wrap {
+
+		p {
+			font-size: 13px;
 		}
 	}
 
