@@ -36,9 +36,6 @@ $(document).ready(function() {
             changeYear: true,
             yearRange: '1945:2009',
             defaultDate: '01/01/1980',
-            beforeShow: function(){
-                $('#birthday').blur()
-            },
             onSelect: function(dateText, inst) {
                 console.log(dateText);
                 this.setAttribute('value', this.value);

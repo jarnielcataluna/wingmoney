@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="input-wrap input-half">
-            <input type="text" id="birthday" name="dob" value="" required="required">
+            <input type="text" id="birthday" name="dob" value="" required="required" readonly>
             <label for="birthday">Birthday</label>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
