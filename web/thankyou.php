@@ -91,8 +91,9 @@
 
 				<div class="ty-text text-center">
 					<h3 class="co-blue">Thank you for activating your Wing account!</h3>
-					<h4>Your account number was sent via SMS.</h4>
+
 					<div class="sec-tagline">
+						<p style="margin-bottom:8px;"><strong>Your account number was sent via SMS.</strong></p>
 						<p>Claim your Wing card from a merchant near you or download the Wing app to start using your Wing account RIGHT NOW!</p>
 					</div>
 					<div class="account-number">
