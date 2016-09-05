@@ -180,10 +180,9 @@ $(document).ready(function(){
 
         if(isSeries && grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
             setTimeout(function(){
-
+                $('.fill-up-correctly').removeClass('is-open');
             }, 150);
 
-             $('.fill-up-correctly').removeClass('is-open');
             $('.wing-form-wrap').addClass('overlay');
             var that = $(this),
                 url = that.attr('action'),
