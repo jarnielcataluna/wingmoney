@@ -127,7 +127,7 @@
 				<div class="wing-form-wrap">
 							
 					<h3>Make your Wing Account with only 2 steps:</h3>
-					<p>1. Sign up with Facebook or fill up this form. <br> 2. A verification code will be sent to you via SMS</p>
+					<p>1. Sign up with Facebook or fill up this form. <br> 2. Your account number will be sent via SMS.</p>
 					<div class="signup-fb">
 						<a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign-up with Facebook</span></a>
 					</div>
