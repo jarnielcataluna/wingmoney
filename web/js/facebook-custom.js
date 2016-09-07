@@ -19,6 +19,8 @@ $('#useFacebook').click(function(e) {
     FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
             useFacebook();
+
+            $('#birthday-label').css({'opacity' : 0});
         } else {
             FB.login(function(){
                 useFacebook();
@@ -55,6 +57,7 @@ function useFacebook() {
             $('#gender').siblings('.custom-select-display').html('Female');
         }
         $('#email').val(_email);
+
 
 
     });
