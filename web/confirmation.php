@@ -116,6 +116,8 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 											</div>
 										</div>
 										<p class="resend-code">Haven't receive code yet? <a href="#" id="resendCode">Resend Code</a></p>
+
+										<p class="resend-info">Your code was successfully resent.</p>
 										<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY">
 									</div>
 								</form>

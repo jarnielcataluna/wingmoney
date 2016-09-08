@@ -35,10 +35,15 @@ $('#resendCode').click(function(e) {
         },
         success: function(data) {
             console.log(data);
+
+            $('.resend-info').css({'visibility' : 'visible'});
         }
     });
 });
 
+$('#verfication-code').focus(function(){
+    $('.resend-info').css({'visibility' : 'visible'});
+});
 
 // Verification Field
 $('.final-step-form').submit(function(e){

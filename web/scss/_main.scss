@@ -2869,6 +2869,11 @@ input::-webkit-inner-spin-button {
 	}
 }
 
+.resend-info {
+	margin: 5px 0;
+	visibility: hidden;
+}
+
 @media only screen and (max-width: 1350px) {
 	.menu ul li {
 		a {
