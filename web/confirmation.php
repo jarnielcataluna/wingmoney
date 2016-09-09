@@ -94,7 +94,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 							<div class="final-step text-center">
 								<h2 class="co-blue">One final step and you are done!</h2>
 								<div class="sec-tagline">
-									<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
+									<p>You will receive a temporary PIN via the contact information you sent us and follow the next steps in activating your account.</p>
 								</div>
 								<form class="final-step-form" method="post" action="/exec/validate2.php" >
 									<div class="loading-spinner-wrapper" id="app-loader">
@@ -104,6 +104,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 								          <i class="three"></i>
 								        </span>
 								    </div>
+								    <p class="resend-info">Your code was successfully resent.</p>
 								    <div class="f-sms-wrap">
 										<div class="input-wrap no-b-margin">
 											<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
@@ -117,7 +118,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 										</div>
 										<p class="resend-code">Haven't receive code yet? <a href="#" id="resendCode">Resend Code</a></p>
 
-										<p class="resend-info">Your code was successfully resent.</p>
+
 										<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY">
 									</div>
 								</form>
