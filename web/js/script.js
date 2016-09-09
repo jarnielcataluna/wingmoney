@@ -1,3 +1,5 @@
+var currencyItem;
+
 $(document).ready(function(){
 
     // $('input').on('change paste keyup',function(){
@@ -79,6 +81,8 @@ $(document).ready(function(){
         var val = $('input[name=currency]:checked').attr('data-value');
         $(this).val(val)
         console.log(val);
+
+        currencyItem = val;
     });
 
     $('.wing-form').submit(function(e){
@@ -190,6 +194,8 @@ $(document).ready(function(){
                 data[name] = value;
 
             });
+            data['currency'] = currencyItem;
+
             console.log(data['currency']);
             $.ajax({
                 url: "/exec/verify-phone.php",
