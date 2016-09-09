@@ -206,8 +206,10 @@ $(document).ready(function(){
                             data: data,
 
                             success: function (response) {
-                                if(data.error_code) {
-                                    alert(data.error)
+                                if(data.error) {
+                                    $('.wing-form-wrap').addClass('remove');
+                                    alert(data.error);
+
                                 } else {
                                     var data = jQuery.parseJSON(response);
                                     $('.wing-form-wrap').addClass('remove');
