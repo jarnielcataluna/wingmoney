@@ -1,4 +1,4 @@
-var currencyItem;
+var currencyItem = 'USD';
 
 $(document).ready(function(){
 
@@ -216,7 +216,7 @@ $(document).ready(function(){
                             success: function (response) {
                                 var data = jQuery.parseJSON(response);
                                 if(data.error) {
-                                    $('.wing-form-wrap').addClass('remove');
+                                    $('.wing-form-wrap').removeClass('remove');
                                     alert(data.error);
 
                                 } else {
