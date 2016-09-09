@@ -36,13 +36,10 @@ $('#resendCode').click(function(e) {
         success: function(data) {
             console.log(data);
 
-            $('.resend-info').css({'visibility' : 'visible'});
+            $('.resend-info').css({'opacity' : '1'});
+            console.log('test');
         }
     });
-});
-
-$('#verfication-code').focus(function(){
-    $('.resend-info').css({'visibility' : 'visible'});
 });
 
 // Verification Field
