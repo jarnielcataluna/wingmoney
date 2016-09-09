@@ -188,8 +188,9 @@ $(document).ready(function(){
                     name = that.attr('name'),
                     value = that.val();
                 data[name] = value;
-            });
 
+            });
+            console.log(data['currency']);
             $.ajax({
                 url: "/exec/verify-phone.php",
                 type: "POST",
@@ -197,6 +198,7 @@ $(document).ready(function(){
                     contact: $('#contact-num').val()
                 },
                 success: function(ajaxResp) {
+
                     var res = jQuery.parseJSON(ajaxResp);
 
                     if (res.error_code == "WA500") {
@@ -206,12 +208,13 @@ $(document).ready(function(){
                             data: data,
 
                             success: function (response) {
+                                var data = jQuery.parseJSON(response);
                                 if(data.error) {
                                     $('.wing-form-wrap').addClass('remove');
                                     alert(data.error);
 
                                 } else {
-                                    var data = jQuery.parseJSON(response);
+                                    
                                     $('.wing-form-wrap').addClass('remove');
 
                                     var f = document.createElement("form");
