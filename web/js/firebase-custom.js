@@ -37,7 +37,7 @@ $('#resendCode').click(function(e) {
             console.log(data);
 
             $('.resend-info').css({'opacity' : '1'});
-            console.log('test');
+            
         }
     });
 });
