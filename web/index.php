@@ -126,8 +126,8 @@
 			<div class="container">
 				<div class="wing-form-wrap">
 							
-					<h3>Make your Wing Account with only 2 steps:</h3>
-					<p>1. Sign up with Facebook or fill up this form. <br> 2. Your account number will be sent via SMS.</p>
+					<h3>Make your Wing Account with only 3 steps:</h3>
+					<p>1. Sign up with Facebook or fill up this form. <br> 2. Enter the temporary PIN provided via SMS and create a PIN of your own. <br> 3. Your account number will be sent via SMS.</p>
 					<div class="signup-fb">
 						<a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign-up with Facebook</span></a>
 					</div>
@@ -271,7 +271,7 @@
 							</div>
 							<div class="wing-benifits-info">
 								<h3>Receive <br>SMS Notification</h3>
-								<p>A verification code <br>will be sent to you via SMS</p>
+								<p>A temporary PIN <br>will be sent to you via SMS</p>
 							</div>
 						</div>
 						<div class="step">

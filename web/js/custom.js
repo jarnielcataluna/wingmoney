@@ -34,7 +34,7 @@ $(document).ready(function() {
         $('#birthday').datepicker({
             changeMonth: true,
             changeYear: true,
-            yearRange: '1945:2009',
+            yearRange: '1945:2003',
             defaultDate: '01/01/1980',
             onSelect: function(dateText, inst) {
                 console.log(dateText);

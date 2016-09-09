@@ -104,19 +104,19 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 								          <i class="three"></i>
 								        </span>
 								    </div>
-								    <p class="resend-info">Your code was successfully resent.</p>
+								    <p class="resend-info">Your PIN was successfully resent.</p>
 								    <div class="f-sms-wrap">
 										<div class="input-wrap no-b-margin">
 											<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
 											<input type="number" id="verfication-code" name="verification_code" value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required">
 
-											<label for="verfication-code">Enter SMS Code</label>
+											<label for="verfication-code">Enter SMS PIN</label>
 
 											<div class="required-tooltip left">
-												<p>This confirmation code is required <span>*</span></p>
+												<p>This temporary PIN is required <span>*</span></p>
 											</div>
 										</div>
-										<p class="resend-code">Haven't receive code yet? <a href="#" id="resendCode">Resend Code</a></p>
+										<p class="resend-code">Haven't receive PIN yet? <a href="#" id="resendCode">Resend PIN</a></p>
 
 
 										<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY">
