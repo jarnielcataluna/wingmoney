@@ -216,7 +216,8 @@ $(document).ready(function(){
                             success: function (response) {
                                 var data = jQuery.parseJSON(response);
                                 if(data.error) {
-                                    $('.wing-form-wrap').removeClass('remove');
+
+                                    $('.wing-form-wrap').removeClass('overlay');
                                     alert(data.error);
 
                                 } else {
