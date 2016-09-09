@@ -206,22 +206,27 @@ $(document).ready(function(){
                             data: data,
 
                             success: function (response) {
-                                var data = jQuery.parseJSON(response);
-                                $('.wing-form-wrap').addClass('remove');
+                                if(data.error_code) {
+                                    alert(data.error)
+                                } else {
+                                    var data = jQuery.parseJSON(response);
+                                    $('.wing-form-wrap').addClass('remove');
 
-                                var f = document.createElement("form");
-                                f.setAttribute('method',"post");
-                                f.setAttribute('action',"confirmation.php");
-                                f.setAttribute('id',"redirect-form");
+                                    var f = document.createElement("form");
+                                    f.setAttribute('method',"post");
+                                    f.setAttribute('action',"confirmation.php");
+                                    f.setAttribute('id',"redirect-form");
 
-                                var i = document.createElement("input"); //input element, text
-                                i.setAttribute('type',"hidden");
-                                i.setAttribute('name',"id");
-                                i.setAttribute('value', data.id);
-                                f.appendChild(i);
-                                document.getElementsByTagName('body')[0].appendChild(f);
+                                    var i = document.createElement("input"); //input element, text
+                                    i.setAttribute('type',"hidden");
+                                    i.setAttribute('name',"id");
+                                    i.setAttribute('value', data.id);
+                                    f.appendChild(i);
+                                    document.getElementsByTagName('body')[0].appendChild(f);
 
-                                $('#redirect-form').submit();
+                                    $('#redirect-form').submit();
+                                }
+                                
                             }
                         });
                     } else {
