@@ -49,7 +49,7 @@ header {
 	.logo {
 		xdisplay: none;
 		width: auto;
-		margin: 0 30px 0 20px;
+		margin: 0 15px 0 0px;
 		padding: 0;
 
 		a {
@@ -198,7 +198,7 @@ header {
 	float: right;
 	text-align: right;
 
-	ul {
+	> ul {
 		float: left;
 
 		&:after {
@@ -208,13 +208,25 @@ header {
 			clear: both;
 		}
 
-		li {
+		> li {
 			
 			float: left;
 			position: relative;
 
 			&:first-child {
 				padding-left: 0;
+			}
+
+			&:hover {
+
+				> ul {
+					opacity: 1;
+					visibility: visible;
+				}
+
+				> a {
+					color: $coBlue;
+				}
 			}
 
 			a {
@@ -261,9 +273,56 @@ header {
 				}
 			}
 
-			&.active {
+			ul {
+				position: absolute;
+				top: 100%;
+				margin-top: -1px;
+				background: rgba($coGreen, 0.8);
+				min-width: 180px;
+				opacity: 0;
+				visibility: hidden;
+				@include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+
+				@include breakpoint(tablet) {
+					position: relative;
+					top: 0;
+					margin-top: 0;
+					background: none;
+					opacity: 1;
+					visibility: visible;
+					padding-top: 0;
+					text-align: center;
+				} 
+
+				li {
+					display: block;
+					float: none;
+					clear: both;
+
+					@include breakpoint(tablet) {
+						text-align: center;
+					}
+				}
 
 				a {
+					padding: 8px 20px;
+					display: block;
+					text-align: left;
+
+					@include breakpoint(tablet) {
+						text-align: center;
+						padding: 15px 0;
+					}
+
+					&:hover {
+						background: rgba($coGreen, 1);
+					}
+				}
+			}
+
+			&.active {
+
+				> a {
 					color: $coBlue;
 				}
 
@@ -283,7 +342,7 @@ header {
     top: 10px;
     z-index: 210;
     margin-right: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     
 	border-width: 1px;
 	border-style: solid;
@@ -533,6 +592,13 @@ footer { position: relative; z-index: 1; background: $bgGreen; }
 	&.btn-green {
 		background: $bgGreen;
 
+		&.btn-small {
+			padding: 8px 24px;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
 
 		&:hover {
 			background: rgba($coGreen, 0.2);
@@ -543,7 +609,8 @@ footer { position: relative; z-index: 1; background: $bgGreen; }
 
 	&.btn-white {
 		background: transparent;
-		border: 2px solid $coWhite;
+		border: 2px solid #0098d7;
+		color: #0098d7;
 
 		&:hover {
 			background: rgba($coWhite, 0.4);
@@ -552,6 +619,13 @@ footer { position: relative; z-index: 1; background: $bgGreen; }
 
 	&.btn-blue {
 		background: $bgBlue;
+
+		&.btn-small {
+			padding: 8px 24px;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
 
 		&:hover {
 			background: rgba($coWhite, 0.4);
@@ -1331,6 +1405,8 @@ input::-webkit-inner-spin-button {
 	h3 {
 		color: $coYellow;
 		margin-bottom: 10px;
+		font-size: 23px;
+		line-height: 33px;
 	}
 
 	p {
@@ -1502,7 +1578,7 @@ input::-webkit-inner-spin-button {
 }
 
 .banner-wrap {
-	height: 650px;
+	height: 720px;
 	position: relative;
 	overflow: visible;
 	width: 100%;
@@ -1517,7 +1593,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	.parallax-window {
-		height: 650px;
+		height: 720px;
 	    background: transparent;
 	    position: relative;
 	    width: 100%;
@@ -1528,16 +1604,46 @@ input::-webkit-inner-spin-button {
 		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 		margin-top: 60px;
 		text-transform: uppercase;
+		font-size: 40px;
+		line-height: 54px;
+
+		@include breakpoint(tablet2) {
+			font-size: 22px;
+			line-height: 40px;
+		}
 
 		span {
 			display: inline-block;
-			line-height: 54px;
+			line-height: 50px;
 			padding: 0px 5px;
-			background: rgba(0, 174, 239, 0.40);
-			letter-spacing: -1px;
+			background: rgba(0, 174, 239, 0.70);
+			letter-spacing: 0px;
+			margin: 2px 0;
+
+			@include breakpoint(tablet2) {
+				line-height: 37px;
+				margin: 0;
+			}
+
+			@include breakpoint(phablet) {
+				line-height: 26px;
+			}
+		}
+
+		br {
+			@include breakpoint(tablet2) {
+			}
 		}
 	}
 
+}
+
+.paybill {
+	padding: 40px 0 0;
+}
+
+#wing-services {
+	padding-top: 20px;
 }
 
 .features {
@@ -1557,10 +1663,23 @@ input::-webkit-inner-spin-button {
 
 	.feature-tag {
 		padding-right: 140px;
+
+		p {
+			padding-bottom: 15px;
+
+			@include breakpoint(tablet2) {
+				padding-bottom: 8px;
+			}
+		}
 	}
 
 	ul {
-		margin: 30px 0;
+		margin: 15px 0 30px;
+
+		@include breakpoint(phablet) {
+			margin-bottom: 15px;
+		}
+
 		&:after {
 			content:'';
 			display: block;
@@ -1570,25 +1689,67 @@ input::-webkit-inner-spin-button {
 		li {
 			width: 50%;
 			float: left;
-			padding-left: 36px;
-			padding-bottom: 8px;
-			position: relative;
+			
 			color: $coBlack;
 
-			&:before {
-				content:'';
-				display: block;
-				width: 26px;
-				height: 24px;
-				position: absolute;
-				top: 2px;
-				left: 0;
-				background: url('../images/icon-wing.png') no-repeat center center;
-			}
-
 			a {
-				color: lighten($coBlack, 20%);
+				color: $coWhite;
 				font-size: 20px;
+				padding-left: 55px;
+				padding-bottom: 25px;
+				position: relative;
+				display: inline-block;
+
+				&:before {
+					content:'';
+					display: block;
+					width: 46px;
+					height: 34px;
+					position: absolute;
+					top: 0px;
+					left: 0;
+					background: url('../images/icon-wing.png') no-repeat center center;
+				}
+
+				&.icon-small-send {
+					
+					&:before { 
+						background: url('../images/icon-small-send-.png') no-repeat center center;
+						background-size: 100%;
+					}
+				}
+
+				&.icon-small-online {
+					
+					&:before { 
+						background: url('../images/icon-small-online-.png') no-repeat center center;
+						background-size: 100%;
+					}
+				}
+
+				&.icon-small-bill {
+					
+					&:before { 
+						background: url('../images/icon-small-bill-.png') no-repeat center center;
+						background-size: 100%;
+					}
+				}
+
+				&.icon-small-top {
+					
+					&:before { 
+						background: url('../images/icon-small-top-.png') no-repeat center center;
+						background-size: 100%;
+					}
+				}
+
+				&.icon-small-cash {
+					
+					&:before { 
+						background: url('../images/icon-small-cashin-.png') no-repeat center center;
+						background-size: 100%;
+					}
+				}
 			}
 		}
 	}
@@ -1652,12 +1813,12 @@ input::-webkit-inner-spin-button {
 	overflow: hidden;
 
 	.container {
-		padding: 110px 0 80px;
+		padding: 60px 0 60px;
 		position: relative;
 	}
 
 	h2 {
-		margin-bottom: 40px;
+		margin-bottom: 25px;
 	}
 
 	.sec-title {
@@ -1675,9 +1836,14 @@ input::-webkit-inner-spin-button {
 		color: $coWhite;
 	}
 
+	.sec-tagline {
+		padding: 20px 15px;
+	}
+
 	p {
 		color: $coWhite;
 		text-shadow: 1px 1px 5px #0098d7;
+		font-size: 22px;
 	}
 }
 
@@ -1690,7 +1856,7 @@ input::-webkit-inner-spin-button {
 }
 
 .sec-tagline {
-	max-width: 580px;
+	max-width: 680px;
 	margin: 0 auto;
 	padding: 30px 15px;
 
@@ -2873,13 +3039,241 @@ input::-webkit-inner-spin-button {
 .resend-info {
 	margin: 5px 0;
 	opacity: 0;
+	color: #000;
 }
 
-@media only screen and (max-width: 1350px) {
+#captcha-wrap {
+	max-width: 220px;
+	float: left;
+	padding: 5px 7px;
+	background: #f9f9f9;
+    border: 1px solid #d3d3d3;
+	border-radius: 3px;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.08);
+
+    label {
+    	font-size: 13px;
+    	color: #000;
+    	text-align: left;
+    	display: block;
+    }
+
+    input[type="text"] {
+    	border: 1px solid #ccc;
+    	height: 26px;
+	    padding-top: 3px;
+	    padding-bottom: 3px;
+
+    	&::-webkit-input-placeholder {
+		  	font-size: 13px;
+		}
+		&::-moz-placeholder { 
+		  	font-size: 13px;
+
+		}
+
+		&:-ms-input-placeholder { 
+		   	font-size: 13px;
+		}
+
+		&:-moz-placeholder { 
+			font-size: 13px;
+		}
+    }
+}
+
+.vtext-content {
+	width: 70%;
+
+	@include breakpoint(phablet) {
+		width: 100%;
+		height: auto;
+		float: none;
+		clear: both;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 60px;
+		line-height: 68px;
+
+		@include breakpoint(tablet) {
+			font-size: 46px;
+			line-height: 52px;
+		}
+
+		@include breakpoint(phablet) {
+			font-size: 28px;
+			line-height: 34px;
+		}
+
+		@include breakpoint(mobile) {
+			font-size: 22px;
+			line-height: 30px;
+		}
+	}
+
+	.sec-tagline {
+		padding: 0 0 15px 0;
+
+		@include breakpoint(phablet) {
+			text-align: center;
+		}
+	}
+
+	.sec-title {
+		@include breakpoint(phablet) {
+			text-align: center;
+		}
+	}
+
+	.text-right, .text-left {
+		@include breakpoint(phablet) {
+			text-align: center;
+		}
+	}
+
+	p {
+		br {
+			@include breakpoint(phablet) {
+				display: none;
+			}
+		}
+	}
+}
+
+.vimg-holder {
+	padding: 10% 10px;
+	width: 30%;
+
+	@include breakpoint(phablet) {
+		width: 40%;
+		padding: 10px;
+		text-align: center;
+		clear: both;
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+#phone-topup, #cash-in-out {
+	.vimg-holder {
+		padding: 0 20px 0 0;
+	}
+
+	.vtext-content {
+		padding-top: 0px;
+	
+		h2 {
+			font-size: 40px;
+			line-height: 54px;
+
+			@include breakpoint(tablet) {
+				line-height: 52px;
+			}
+
+			@include breakpoint(phablet) {
+				font-size: 24px;
+				line-height: 34px;
+			}
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		.sec-tagline {
+			max-width: 100%;
+		}
+	}
+}
+
+#cash-in-out {
+
+	.vtext-content {
+
+		.sec-title {
+			color: $coWhite;
+			font-size: 60px;
+			line-height: 68px;
+
+			@include breakpoint(tablet) {
+				line-height: 52px;
+				font-size: 40px;
+			}
+
+			@include breakpoint(tablet) {
+				line-height: 34px;
+				font-size: 24px;
+			}
+		}
+
+		p {
+			color: $coWhite;
+		}
+	}
+
+	
+}
+
+#pay-online {
+	border-top: 14px solid #0098d7;
+	padding-top: 60px;
+}
+
+#bill-payment-wrap {
+	min-height: 554px;
+	background: #ffffff url(../images/model-girl.jpg) no-repeat bottom left;
+	background-size: 50%;
+
+	@include breakpoint(tablet) {
+		min-height: 356px;
+	}
+
+	@include breakpoint(tablet2) {
+		min-height: auto;
+		background-image: none;
+	}
+
+	.vtext-content {
+		padding-top: 40px;
+
+		@include breakpoint(tablet) {
+			padding-top: 0;
+		}
+	
+		.sec-tagline {
+			max-width: 380px;
+			margin:0;
+			float: right;
+
+			@include breakpoint(tablet2) {
+				max-width: 100%;
+				float: none;
+				clear: both;
+			}
+		}
+	}	
+}
+
+.footer-logo {
+
+	img {
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
 	.menu ul li {
 		a {
-			font-size: 14px;
-			padding: 20px 10px;
+			font-size: 16px;
+			padding: 20px 20px;
 		}
 	}
 }
@@ -2896,8 +3290,8 @@ input::-webkit-inner-spin-button {
 
 	.menu ul li {
 		a {
-			font-size: 14px;
-			padding: 20px 10px;
+			font-size: 16px;
+			padding: 20px 20px;
 		}
 	}
 
@@ -3035,8 +3429,8 @@ input::-webkit-inner-spin-button {
 	.banner-wrap {
 
 		h1 {
-			font-size: 40px;
-			line-height: 62px;
+			font-size: 22px;
+			line-height: 40px;
 		}
 	}
 
@@ -3070,7 +3464,7 @@ input::-webkit-inner-spin-button {
 				display: block;
 				float: none;
 				clear: both;
-				padding: 15px 0px 15px 0px;
+				padding: 0px 0px 0px 0px;
 				opacity: 0;
 				@include transition(all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1));
 				@include transform(translateY(-40px) scale(0.9));
@@ -3088,7 +3482,7 @@ input::-webkit-inner-spin-button {
 
 
 				a {
-					padding: 0;
+					padding: 15px 0;
 					color: $coBlue;
 					font-size: 20px;
 
@@ -3165,7 +3559,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	.enjoy-discount .container {
-		padding: 40px 0;
+		padding: 40px 15px;
 	}
 
 	.wing-mobile-menu ul li a {
@@ -3249,6 +3643,20 @@ input::-webkit-inner-spin-button {
 
 
 @media only screen and (max-width: 767px) {
+
+	.menu ul li a {
+	    padding: 10px 0;
+	    font-size: 18px;
+	}
+
+	.menu > ul > li ul a {
+		padding: 10px 0;
+		font-size: 18px;
+	}
+
+	.menu ul {
+		padding-top: 15px;
+	}
 
 	.app-img-info {
 		display: none;
@@ -3464,10 +3872,6 @@ input::-webkit-inner-spin-button {
 		text-align: center;
 	}
 
-	.enjoy-discount .container {
-		padding: 20px 0;
-	}
-
 	.pay-online-partners {
 		padding: 30px 0 20px;
 	}
@@ -3544,9 +3948,9 @@ input::-webkit-inner-spin-button {
 		}
 
 		h1 {
-			font-size: 28px;
-			line-height: 42px;
-			margin-top: 115px;
+			font-size: 16px;
+			line-height: 40px;
+			margin-top: 60px;
 
 			span {
 				line-height: 38px;
@@ -3702,8 +4106,8 @@ input::-webkit-inner-spin-button {
 	}
 
 	.sec-title {
-		font-size: 28px;
-		line-height: 36px;
+		font-size: 22px;
+		line-height: 30px;
 		margin-bottom: 15px;
 
 		.features & {
@@ -3716,8 +4120,8 @@ input::-webkit-inner-spin-button {
 	.enjoy-discount {
 
 		.sec-title {
-			font-size: 28px;
-			line-height: 36px;
+			font-size: 20px;
+			line-height: 30px;
 			margin-bottom: 15px;
 		}
 	}
@@ -3799,6 +4203,23 @@ input::-webkit-inner-spin-button {
 		h3 {
 			font-size: 20px;
 			line-height: 26px;
+		}
+	}
+
+	.banner-wrap {
+
+		.parallax-window {
+			height: 100%;
+		}
+
+		h1 {
+			font-size: 13px;
+			line-height: 32px;
+			margin-top: 60px;
+
+			span {
+				line-height: 28px;
+			}
 		}
 	}
 }

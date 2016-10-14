@@ -94,7 +94,7 @@
 
 					<div class="sec-tagline">
 						<p style="margin-bottom:8px;"><strong>Your account number was sent via SMS.</strong></p>
-						<p>Claim your Wing card from a merchant near you or download the Wing app to start using your Wing account RIGHT NOW!</p>
+						<p>Dial *989# or download the "Wing Money" mobile app to start using your Wing account right now!</p>
 					</div>
 					<div class="account-number">
 						
@@ -103,8 +103,9 @@
 					
 					<div class="ty-social-media">
 						<h4>Share!</h4>
-						<a href="http://www.facebook.com/WINGmoney" target="blank"><img src="images/social-facebook.png" alt=""></a>
-						<a href="https://plus.google.com/109000819204361931521" target="blank"><img src="images/social-twitter.png" alt=""></a>
+						<a href="http://www.facebook.com/WINGmoney" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/wing_money/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/wingcambodia" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					</div>
 				</div>
 
@@ -161,10 +162,10 @@
 						</div>	
 						<div class="col-sm-6">
 							<div class="p-m-info">
-								<h2>No need to wait. You can start using your Wing account NOW!</h2>
+								<h2>No need to wait. You can start using your Wing account now!</h2>
 								<p>Manage your Wing account from your smartphone with the Wing mobile app! All of Wing's features at the palm of your hand.</p>
 								<div class="download-app-wrap">
-									<h4>Download the app NOW!</h4>
+									<h4>Download the Wing Money mobile app now!</h4>
 									<ul>
 										<li>
 											<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" target="blank"><img src="images/app-android.png" alt=""></a>
@@ -175,13 +176,12 @@
 									</ul>
 								</div>
 									<ul>
-										<li> Send money to other Wing users.</li>
-										<li>Top up your mobile phones—or even your friend’s!</li>
-										<li>Pay your utility and internet bills or donate money to your favoirte charities.</li>
+										<li>Send money to other Wing users.</li>
+										<li>Top up phone credit</li>
+										<li>Pay your bills such as utilities, internet and more</li>
 										<li>Generating online payment code.</li>
-										<li>Managing your Wing Accounts.</li>
-										<li>Viewing a Wing Cash Xpress outlet near your current location.</li>
-										<li>Be in full control of your Wing Account!</li>
+										<li>Managing your Wing accounts.</li>
+										<li>Viewing a Wing Cash Xpress near your current location.</li>
 									</ul>
 								</div>
 							</div>

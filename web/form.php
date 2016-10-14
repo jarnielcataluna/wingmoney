@@ -1,3 +1,4 @@
+
 <form class="wing-form" method="post" action="exec/validate.php" novalidate>
     <input type="hidden" name="fb_uid" id="fb_uid"/>
     <input type="hidden" name="fb_fname" id="fb_fname"/>
@@ -18,29 +19,28 @@
     <div class="form-row">
         
         <div class="input-wrap">
-            <input type="text" id="first-name" name="fname" value="" required="required" onchange="this.setAttribute('value', this.value);">
+            <input type="text" id="first-name" name="fname" value="" maxLength="20" required="required" onchange="this.setAttribute('value', this.value);">
             <label for="first-name">First Name</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
         <div class="input-wrap">
-            <input type="text" id="last-name" name="lname" value="" required="required" onchange="this.setAttribute('value', this.value);">
-            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="lname" value="" maxLength="20" required="required" onchange="this.setAttribute('value', this.value);">
+            <label for="last-name">Family Name</label>
             <div class="required-tooltip right">
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
         <div class="input-wrap input-half">
             <input type="text" id="birthday" name="dob" value="" required="required" readonly>
-            <label for="birthday" id="birthday-label">Birthday</label>
+            <label for="birthday" id="birthday-label">Date of Birth</label>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
         <div class="input-wrap input-half gender">
             <select class="custom-select" name="gender" id="gender">
-                <option value="0">Gender</option>
                 <option value="M">Male</option>
                 <option value="F">Female</option>
             </select>
@@ -52,7 +52,7 @@
         <div class="input-wrap mobile-num">
             <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i> <!-- +855 --></span>
             <input type="tel" id="contact-num" name="contact_num" value=""  maxLength="10" required="required" onchange="this.setAttribute('value', this.value);">
-            <label for="contact-num">Contact Number</label>
+            <label for="contact-num">Mobile Number</label>
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
             </div>
@@ -88,14 +88,14 @@
             <label>Choose Currency:</label>
             <div class="custom-radio">
                 <input type="radio" id="usd" name="currency" checked value="USD" data-value="USD">
-                <label for="usd"><span></span>US Dollar</label>
+                <label for="usd"><span></span>USD</label>
             </div>
             <div class="custom-radio">
                 <input type="radio" id="Khmer" name="currency" value="KHR" data-value="KHR">
-                <label for="Khmer"><span></span>Khmer</label>
+                <label for="Khmer"><span></span>KHR</label>
             </div>
         </div>
-        <div class="input-wrap finding-us">
+        <!-- <div class="input-wrap finding-us">
             <select class="custom-select" name="feedback">
                 <option value="0">Where did you find us?</option>
                 <option value="Wing Website">Wing Website</option>
@@ -106,11 +106,11 @@
             <div class="required-tooltip left">
                 <p>This field is required <span>*</span></p>
             </div>
-        </div>
-        <div class="wing-checkbox">
+        </div> -->
+        <!-- <div class="wing-checkbox">
             <input type="checkbox" id="wing-checkbox"/>
             <label for="wing-checkbox">I want to receive email and sms notification from Wing.</label>
-        </div>
+        </div> -->
         <div class="wing-checkbox">
             <input type="checkbox" id="terms-checkbox"/>
             <label for="terms-checkbox">I accept Wing <a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank">terms &amp; conditions.</a></label>
@@ -120,12 +120,14 @@
             <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK" data-callback="onSuccessCaptcha"></div>
             <script>
                 var onSuccessCaptcha = function(response) {
+
                     var errorDivs = $('.g-recaptcha-wrap');
                     if (errorDivs.hasClass('error')) {
                         $('.g-recaptcha-wrap').removeClass('error');
                     }
                 }
             </script>
+            
 
             <div class="required-tooltip left">
                 <p>Please verify that you are not a robot.<span>*</span></p>
@@ -133,9 +135,9 @@
         </div>
         <div class="text-center">
             <div class="input-wrap btn-wrapper">
-                <input type="submit" class="btn btn-orange" name="" value="SUBMIT" disabled="disabled" />
+                <input type="submit" class="btn btn-orange" name="" value="Register" disabled="disabled" />
                 <div class="required-tooltip left">
-                    <p>Please check the tick boxes. <span>*</span></p>
+                    <p>Please check the terms &amp; conditions. <span>*</span></p>
                 </div>
             </div>
         </div>

@@ -44,18 +44,21 @@
 	.menu ul li a.menu-highlighted:hover:before { background: #f89f1b; }
 	.menu ul li a.menu-highlighted:before { content: ''; display: block; bottom: 0px; width: 100%; left: 0; position: absolute; height: 100%; background: #f15a29; opacity: 1; -webkit-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1); -moz-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1); -ms-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1); -o-transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1); transition: all, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); z-index: -1; }
 	.menu ul li.active {}
-	.menu ul li.active a { color: #0098d7;}
+	.menu ul li.active > a { color: #0098d7;}
 	.banner-wrap { height: 650px; position: relative; overflow: visible; width: 100%; z-index: 77; }
 	.banner-wrap.jq-section { background: transparent; }
 	.banner-wrap .container { position: relative; }
 	.banner-wrap .parallax-window { height: 650px; background: transparent; position: relative; width: 100%; }
 	.banner-wrap h1 { color: #ffffff; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); margin-top: 60px; text-transform: uppercase;}
 	.banner-wrap h1 span { display: inline-block; line-height: 54px; padding: 0px 5px; background: rgba(0, 174, 239, 0.4); letter-spacing: -1px; }
+
+	img#refresh { position: relative; z-index: 999; cursor: pointer; }
 </style>
 <link rel="stylesheet" href="css/style.css" media="all"/>
+<link rel="stylesheet" href="css/jquery.realperson.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
-<script src='https://www.google.com/recaptcha/api.js' defer></script>
+<script src='https://www.google.com/recaptcha/api.js?manual_challenge=false' defer></script> 
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -77,12 +80,20 @@
 			<div class="menu">
 				<ul>
 					<li><a href="http://www.wingmoney.com/" class="wing-btn" target="_blank"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></a></li>
-					<li><a href="#wing-account">Wing Account</a></li>
-					<li><a href="#enjoy-discount">Enjoy Discounts</a></li>
-					<li><a href="#pay-bills">Pay Bills</a></li>
-					<li><a href="#wing-ket">Wing Ket Luy</a></li>
-					<li><a href="#wing-form-wrap">Register Now</a></li>
+					<li><a href="#features">Wing Account</a></li>
+					<li><a href="#wing-services">Wing Services</a>
+						<ul>
+							<li><a href="#money-transfer-wrap">Money Transfer</a></li>
+							<li><a href="#phone-topup">Phone Top Up</a></li>
+							<li><a href="#bill-payment-wrap">Bills Payment</a></li>
+							<li><a href="#pay-online">Online Payment</a></li>
+							<li><a href="#cash-in-out">Cash In &amp; Cash Out</a></li>
+						</ul>
+					</li>
+					
 					<li><a href="#how-to-sign" class="menu-highlighted">How to Sign Up</a></li>
+					<li><a href="#wing-form-wrap">Register Now</a></li>
+					
 				</ul>
 				<div class="wpml-languages enabled">
 					<a class="active tooltip" data-tooltip="No translations available for this page">
@@ -100,13 +111,13 @@
 	<section id="main-wrapper">
 		
 		<section class="banner-wrap jq-section">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="banner-whitecollar.jpg" data-bleed="10" alt=""></div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="images/banner4.jpg" data-bleed="10" alt=""></div>
 			<div class="table-wrap">
 				<div class="table-content">
 					<div class="container">
 						<div class="fl">
 							<!-- <div class="logo"><img src="images/wing-logo.png" alt=""></div> -->
-							<h1><span>FAST and SECURE </span><br><span>PAYMENTS FROM</span><br><span>YOUR MOBILE PHONE.</span></h1>
+							<h1><span>Register for your free Wing</span><br><span>account now to enjoy fast,</span><br><span> secure and convenient</span> <br> <span> mobile money services </span> <br> <span>Cambodia!</span></h1>
 						</div>
 						<div id="wing-form-wrap"></div>
 					</div>
@@ -126,8 +137,8 @@
 			<div class="container">
 				<div class="wing-form-wrap">
 							
-					<h3>Make your Wing Account with only 3 steps:</h3>
-					<p>1. Sign up with Facebook or fill up this form. <br> 2. Enter the temporary PIN provided via SMS and create a PIN of your own. <br> 3. Your account number will be sent via SMS.</p>
+					<h3>Get your Free Wing Account with 3 simple steps:</h3>
+					<p>1. Sign up with Facebook or fill up this form. <br> 2. Enter the verification code sent via SMS. <br> 3. Create your Wing account PIN and you will get your Wing account number via a SMS.</p>
 					<div class="signup-fb">
 						<a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign-up with Facebook</span></a>
 					</div>
@@ -135,25 +146,42 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-sm-7">
-						<h2 class="sec-title"> More than just a money transfer service!</h2>
+						<h2 class="sec-title"> What can I do with my Wing account?</h2>
 						<div class="feature-tag">
-							<p>Money transfer is just the beginning! There are so many ways a Wing account can make your life easier and faster so you can focus on the things that really matter. Signing up is so simple:</p>
+							<p>Send money to your family and friends with a Wing account in a faster, more secure and more convenient way!</p>
+							<p>Easily top up you phone credit anytime, anywhere!</p>
+							<p>Pay the bills at the comfort of your own home! <br> Buy stuff online such as movie tickets, bus tickets clothes, and more with Wing's online partners!</p>
 						</div>
-						<ul class="nolink-a">
-							<li><a href="#">Money Transfer</a></li>
-							<li><a href="#">Discount Store Partners</a></li>
-							<li><a href="#">Bills Payment</a></li>
-							<li><a href="#">Low Transaction Fee</a></li>
-							<li><a href="#">Top Up Phone Credits</a></li>
-						</ul>
+						<div id="wing-services">
+							<ul class="">
+
+								<li><a class="icon-small-send" href="#money-transfer-wrap">Money Transfer</a></li>
+								<li><a class="icon-small-top" href="#phone-topup">Phone Top Up</a></li>
+								<li><a class="icon-small-bill" href="#bill-payment-wrap">Bills Payment</a></li>
+								<li><a class="icon-small-online" href="#pay-online">Online Payment</a></li>
+								<li><a class="icon-small-cash" href="#cash-in-out">Cash In &amp; Cash Out</a></li>
+							</ul>
+						</div>
 					</div>	
 				</div>
 			</div>
 		</section>
-		<section id="wing-account" class="wing-account section-pad jq-section">
+		<section id="money-transfer-wrap" class="wing-account section-pad jq-section">
 			<div class="container">
-				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">What Do I Get With <br>My Wing Account?</h2>
-				<div class="wing-benifits">
+				<div class="vimg-holder fl animated hiding" data-animation="zoomIn">
+					<img src="images/icon-sendmoney.png" alt="">
+				</div>
+				<div class="vtext-content fr">
+					<h2 class="sec-title text-right animated hiding" data-animation="fadeInUp">Send money to your family and friends everywhere in Cambodia!</h2>
+					<div class="sec-tagline text-right animated hiding" data-animation="fadeInUp">
+						<p>Send money to another Wing account <br>and experience the easiest, most secure and cheapest money <br>transfer service in Cambodia! Send and received money real-time!</p>
+					</div>
+					<div class="text-right">
+						<a href="#" target="_blank" class="btn btn-green btn-small"> Learn More</a>
+					</div>
+				</div>
+				
+				<!-- <div class="wing-benifits">
 					<ul>
 						<li class="animated hiding" data-animation="fadeInUp">
 							<div class="wing-benifits-wrap">
@@ -189,20 +217,48 @@
 							</div>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 		</section>
 
-		<section id="enjoy-discount" class="bg-blue jq-section">
+		<section id="phone-topup" class="bg-blue jq-section">
 			<div class="enjoy-discount">
 				<div class="container">
-					<div class="row">
+					<div class="vimg-holder fr animated hiding" data-animation="zoomIn">
+						<img src="images/icon-topup.png" alt="">
+					</div>
+					<div class="vtext-content fl">
+						<h2 class="sec-title text-left animated hiding" data-animation="fadeInUp">Can’t make a call or send<br> SMS? Top up your phone<br> anytime, anywhere!</h2>
+						<div class="sec-tagline text-left animated hiding" data-animation="fadeInUp">
+							<p>You can easily top up your phone credit anytime, anywhere in Cambodia.</p>
+						</div>
+						<div class="text-left">
+							<a href="#" target="_blank" class="btn btn-green btn-small"> Learn More</a>
+						</div>
+					</div>
+					
+					<!-- <div class="row">
 						<div class="col-md-8 col-sm-12 ed-text animated hiding" data-animation="fadeInUp">
 							<h2 class="sec-title">Enjoy Discounts From <br>Our Store Partners</h2>
 							<p>Get exclusive discounts from your favorite stores with your Wing account. Simply show your Wing account confirmation text to our partner merchants to enjoy fine dining, shopping sprees, and so much more at discounted prices.</p>
 						</div>
 					</div>
-					<img class="dis-model animated hiding" data-animation="fadeInUp" src="images/discount-model.jpg" alt="">
+					<img class="dis-model animated hiding" data-animation="fadeInUp" src="images/discount-model.jpg" alt=""> -->
+				</div>
+			</div>
+		</section>
+
+		<section id="bill-payment-wrap" class="paybill jq-section">
+			<div class="container">
+				<div class="vtext-content fr">
+					<h2 class="sec-title text-right animated hiding" data-animation="fadeInUp">Pay your bills from<br> the comfort of your<br> own home!</h2>
+					<div class="sec-tagline text-right animated hiding" data-animation="fadeInUp">
+						<p>Your Wing account provides bills payment services to allow anyone to pay their bills easily through their mobile phones! We have partnered with more than 65 billers including Utilities, Microfinance, Phone Distributors, and more.</p>
+					</div>
+					<div class="clr"></div>
+					<div class="text-right">
+						<a href="#" target="_blank" class="btn btn-green btn-small"> Learn More</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -234,24 +290,23 @@
 			</div>
 		</section>
 
-		<section id="pay-bills" class="pay-bills section-pad jq-section">
+		<section id="cash-in-out" class="section-pad jq-section bg-green">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-4"></div>
-					<div class="col-sm-8">
-						<div class="pay-bill-info animated hiding" data-animation="fadeInRight">
-							<h2 class="sec-title">Pay Bills With Your <br>Wing Money Account</h2>
-							<p>Your Wing account provides bills payment services to allow anyone to pay their bills easily through their mobile phones! We have partnered with more than 80 billers including Utilities, Microfinance, Phone Distributors, and more.</p>
-							<a href="WCX-List-by-District-VB.pdf" target="_blank" class="btn btn-orange fr"> View List</a>
-						</div>
-					</div>
+				<div class="vimg-holder fr animated hiding" data-animation="zoomIn">
+					<img src="images/icon-cashin.png" alt="">
 				</div>
+				<div class="vtext-content fl animated hiding" data-animation="fadeInUp">
+					<h2 class="sec-title">Cash in and cash out easily when needed!</h2>
+					<p>You can cash in and cash out your money easily at any Wing <br>Cash Xpress located in all provinces in Cambodia.</p>
+					<a href="WCX-List-by-District-VB.pdf" target="_blank" class="btn btn-blue btn-small"> LEARN MORE</a>
+				</div>
+				
 			</div>
 		</section>
 
 		<section id="how-to-sign" class="how-to-sign section-pad jq-section">
 			<div class="container">
-				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">How To Sign Up Online</h2>
+				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">How to Sign Up Online</h2>
 				<div class="step-signup">
 					<div class="owl-carousel owl-theme animated hiding" data-animation="fadeInUp">
 						<div class="step">
@@ -281,7 +336,7 @@
 							</div>
 							<div class="wing-benifits-info">
 								<h3>Finalize <br> Transaction</h3>
-								<p>Verify your application with the code in the message</p>
+								<p>Create your own PIN to access your Wing account</p>
 							</div>
 						</div>
 						<div class="step">
@@ -291,7 +346,7 @@
 							</div>
 							<div class="wing-benifits-info">
 								<h3>Start Using Your <br>Wing Account</h3>
-								<p>Download the Wing App for faster transactions or use USSD.</p>
+								<p>Download the "Wing Money" mobile app from the App Store for iOS devices or Google Play Store for Andriod devices or USSD (*989#) to use your Wing account.</p>
 							</div>
 						</div>
 					</div>
@@ -326,21 +381,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="wing-ket" class="section-pad jq-section bg-green">
-			<div class="container">
-				<div class="wing-ket-wrap">
-					<div class="row">
-						<div class="col-sm-5 wing-ket-img null-padding-right fr animated hiding" data-animation="fadeInRight"><img src="images/wing-ket.png" alt=""></div>
-						<div class="col-sm-7 wing-ket-info fl animated hiding" data-animation="fadeInLeft">
-							<h2 class="sec-title">Wing Ket Luy</h2>
-							<p>Discover Wing Ket Luy. Enjoy the convenience of never needing to bring cash to buy from your favorite shops. All you need to do is swipe or tap your Wing Card on the store's Wing terminal to make an instant, cash-free payment through your Wing Account.</p>
-							<!-- <a href="" class="btn btn-orange">Inquire</a>  -->
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</section>
+		
 		<section id="wing-mobile" class="section-pad jq-section">
 			<div class="container">
 				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Your Wing Mobile <br>Account</h2>
@@ -501,19 +542,7 @@
 </section>
 <footer>
 	<a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-	<div class="bg-blue section-pad footer-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="animated hiding text-center" data-animation="fadeInUp">Wing is the leading mobile banking services provider in Cambodia!</h2>
-				</div>
-				
-			</div>	
-			<div class="text-center animated hiding" data-animation="fadeInUp">
-				<a href="#wing-form-wrap" class="btn btn-orange btn-block btn-signup">Sign Up Now!</a>
-			</div>
-		</div>
-	</div>
+	
 	<div class="footer-action">
 		<div class="container">
 			<h4>Call us at +855 23 999 989 for more information! <br>To use your Wing account, dial *989# or download the Wing Money app.</h4>
@@ -566,6 +595,16 @@
 </div>
 
 <script src="js/needed-scripts.js" async></script>
+<!-- <script src="js/operators.js" async></script>
+<script src="js/materialize.js" async></script>
+<script src="js/jquery.appear.js" async></script>
+<script src="js/devices.js" async></script>
+<script src="js/owl.carousel.js" async></script>
+<script src="js/select.js" async></script>
+<script src="js/plugins.js" async></script>
+<script src="js/custom.js" async></script>
+<script src="js/script.js" async></script>
+<script src="js/facebook-custom.js" async></script> -->
 <script type="text/javascript">
 	function downloadJSAtOnload() {
 		var element = document.createElement("script");

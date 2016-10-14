@@ -24,7 +24,7 @@ $(document).ready(function(){
 
         $('.fill-up-correctly').removeClass('is-open');
 
-        if($('#wing-checkbox').is(':checked') && $('#terms-checkbox').is(':checked')) {
+        if( $('#terms-checkbox').is(':checked')) {
             $('.wing-form input[type="submit"]').removeAttr('disabled');
             $('.btn-wrapper').find('.required-tooltip').remove();
 
@@ -89,6 +89,7 @@ $(document).ready(function(){
         e.preventDefault();
         $('.input-wrap').addClass('error');
         isvalidate = false;
+
 
         if( IsEmail($('#account-email').val() )) {
             $('#account-email').closest('.input-wrap').removeClass('error');
@@ -155,12 +156,12 @@ $(document).ready(function(){
             isvalidate = false;
         }
 
-        if( $('.finding-us select').val() != '0'){
-            $('.finding-us').removeClass('error');
-            isvalidate = true;
-        } else {
-            isvalidate = false;
-        }
+        // if( $('.finding-us select').val() != '0'){
+        //     $('.finding-us').removeClass('error');
+        //     isvalidate = true;
+        // } else {
+        //     isvalidate = false;
+        // }
 
         // if( $('.id-type select').val() != '0') {
         //     $('.id-type').removeClass('error');
@@ -169,15 +170,16 @@ $(document).ready(function(){
         //     isvalidate = false;
         // }
 
-        if(grecaptcha.getResponse().length === 0) {
-            isvalidate = false;
-        } else {
+        // if(grecaptcha.getResponse().length === 0) {
+        //     isvalidate = false;
+        // } else {
 
-            $('.g-recaptcha-wrap').removeClass('error');
-            isvalidate = true;
-        }
+        //     $('.g-recaptcha-wrap').removeClass('error');
+        //     isvalidate = true;
+        // }
 
-        if(isSeries && grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
+        //if(isSeries && grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
+        if(isSeries &&  $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9  &&  isvalidate == true) {
             $('.wing-form-wrap').addClass('overlay');
             $('.fill-up-correctly').removeClass('is-open');
         

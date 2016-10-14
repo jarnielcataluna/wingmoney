@@ -92,7 +92,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 					<div class="table-wrap">
 						<div class="table-content">
 							<div class="final-step text-center">
-								<h2 class="co-blue">One final step and you are done!</h2>
+								<h2 class="co-blue">You're almost done!</h2>
 								<div class="sec-tagline">
 									<p>You will receive a temporary PIN via the contact information you sent us and follow the next steps in activating your account.</p>
 								</div>
@@ -125,7 +125,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 
 								<form class="create-pin-account" method="post" action="" novalidate>
 
-									<h3 class="co-blue">Create your Wing Account PIN</h3>
+									<h3 class="co-blue">Create your Wing account PIN</h3>
 									<div class="loading-spinner-wrapper" id="app-loader">
 								        <span class="loading-spinner">
 								          <i class="one"></i>
@@ -144,7 +144,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 										<input type="tel" name="" value="" id="confirm-pin-id" minLength="4" maxLength="4" required="required" autocomplete="new-password"/>
 										<label for="confirm-pin-id">Confirm PIN</label>
 										<div class="required-tooltip left">
-											<p>Pin Codes didn't match<span>*</span></p>
+											<p>Pin doesn't match<span>*</span></p>
 										</div>
 									</div>
 									<div class="input-wrap">

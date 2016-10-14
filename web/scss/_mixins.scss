@@ -137,6 +137,29 @@
   @include optional-at-root(':-ms-input-placeholder') { @content; }
 }
 
+@mixin breakpoint($point) {
+  @if $point == maxwidth {
+    @media (max-width: $maxWidth) { @content; }
+  }
+  @else if $point == desktop {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 991px) { @content; }
+  }
+  @else if $point == tablet2 {
+    @media (max-width: 767px) { @content; }
+  }
+  @else if $point == phablet {
+    @media (max-width: 640px)  { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 480px)  { @content; }
+  }
+  @else if $point == mobile2 {
+    @media (max-width: 400px)  { @content; }
+  }
+}
 
 
 
