@@ -1101,6 +1101,10 @@ a.waves-effect .waves-ripple {
 	}
 }
 
+.input-wrap.email-wrapper input[required] + label:after {
+	display: none;
+}
+
 
 input[type='number'] {
     -moz-appearance:textfield;

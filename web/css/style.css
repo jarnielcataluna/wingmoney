@@ -9062,6 +9062,9 @@ a.waves-effect .waves-ripple {
     font-size: 10px;
     position: absolute; }
 
+.input-wrap.email-wrapper input[required] + label:after {
+  display: none; }
+
 input[type='number'] {
   -moz-appearance: textfield; }
 
