@@ -1706,7 +1706,7 @@ input::-webkit-inner-spin-button {
 					width: 46px;
 					height: 34px;
 					position: absolute;
-					top: 0px;
+					top: -4px;
 					left: 0;
 					background: url('../images/icon-wing.png') no-repeat center center;
 				}
@@ -3621,8 +3621,6 @@ input::-webkit-inner-spin-button {
 		}
 
 		ul li {
-
-			padding-left: 24px;
 
 			a {
 				font-size: 16px;

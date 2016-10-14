@@ -9550,7 +9550,7 @@ input::-webkit-inner-spin-button {
           width: 46px;
           height: 34px;
           position: absolute;
-          top: 0px;
+          top: -4px;
           left: 0;
           background: url("../images/icon-wing.png") no-repeat center center; }
         .features ul li a.icon-small-send:before {
@@ -10918,14 +10918,12 @@ input::-webkit-inner-spin-button {
     border-left: 0; }
   .features .feature-tag {
     padding-right: 0; }
-  .features ul li {
-    padding-left: 24px; }
-    .features ul li a {
-      font-size: 16px; }
-    .features ul li:before {
-      width: 19px;
-      height: 17px;
-      background-size: 17px auto; }
+  .features ul li a {
+    font-size: 16px; }
+  .features ul li:before {
+    width: 19px;
+    height: 17px;
+    background-size: 17px auto; }
   .logo {
     display: none; } }
 

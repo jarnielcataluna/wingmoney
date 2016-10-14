@@ -87,7 +87,7 @@ $(document).ready(function(){
 
     $('.wing-form').submit(function(e){
         e.preventDefault();
-        $('.input-wrap').addClass('error');
+        $('.input-wrap:not(.email-wrapper)').addClass('error');
         isvalidate = false;
 
 
@@ -170,16 +170,16 @@ $(document).ready(function(){
         //     isvalidate = false;
         // }
 
-        // if(grecaptcha.getResponse().length === 0) {
-        //     isvalidate = false;
-        // } else {
+        if(grecaptcha.getResponse().length === 0) {
+            isvalidate = false;
+        } else {
 
-        //     $('.g-recaptcha-wrap').removeClass('error');
-        //     isvalidate = true;
-        // }
+            $('.g-recaptcha-wrap').removeClass('error');
+            isvalidate = true;
+        }
 
         //if(isSeries && grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
-        if(isSeries &&  $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9  &&  isvalidate == true) {
+        if(isSeries &&  grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9  &&  isvalidate == true) {
             $('.wing-form-wrap').addClass('overlay');
             $('.fill-up-correctly').removeClass('is-open');
         

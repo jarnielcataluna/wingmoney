@@ -57,7 +57,7 @@
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
-        <div class="input-wrap">
+        <div class="input-wrap email-wrapper">
             <input type="email" id="account-email" name="email" value="" required="required" onchange="this.setAttribute('value', this.value);">
             <label for="account-email">Email</label>
             <div class="required-tooltip right">
