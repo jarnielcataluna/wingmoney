@@ -1674,7 +1674,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	ul {
-		margin: 15px 0 30px;
+		margin: 15px 0 0px;
 
 		@include breakpoint(phablet) {
 			margin-bottom: 15px;

@@ -9524,7 +9524,7 @@ input::-webkit-inner-spin-button {
         .features .feature-tag p {
           padding-bottom: 8px; } }
   .features ul {
-    margin: 15px 0 30px; }
+    margin: 15px 0 0px; }
     @media (max-width: 640px) {
       .features ul {
         margin-bottom: 15px; } }
