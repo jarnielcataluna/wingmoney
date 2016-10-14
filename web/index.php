@@ -140,7 +140,7 @@
 					<h3>Get your Free Wing Account with 3 simple steps:</h3>
 					<p>1. Sign up with Facebook or fill up this form. <br> 2. Enter the verification code sent via SMS. <br> 3. Create your Wing account PIN and you will get your Wing account number via a SMS.</p>
 					<div class="signup-fb">
-						<a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign-up with Facebook</span></a>
+						<a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Register using Facebook</span></a>
 					</div>
 					<?php include 'form.php' ?>
 				</div>
@@ -177,7 +177,7 @@
 						<p>Send money to another Wing account <br>and experience the easiest, most secure and cheapest money <br>transfer service in Cambodia! Send and received money real-time!</p>
 					</div>
 					<div class="text-right">
-						<a href="#" target="_blank" class="btn btn-green btn-small"> Learn More</a>
+						<a href="https://www.wingmoney.com/personal/transfer-money/" target="_blank" class="btn btn-green btn-small"> Learn More</a>
 					</div>
 				</div>
 				
@@ -233,7 +233,7 @@
 							<p>You can easily top up your phone credit anytime, anywhere in Cambodia.</p>
 						</div>
 						<div class="text-left">
-							<a href="#" target="_blank" class="btn btn-green btn-small"> Learn More</a>
+							<a href="https://www.wingmoney.com/personal/phone-top-up/" target="_blank" class="btn btn-green btn-small"> Learn More</a>
 						</div>
 					</div>
 					
@@ -257,7 +257,7 @@
 					</div>
 					<div class="clr"></div>
 					<div class="text-right">
-						<a href="#" target="_blank" class="btn btn-green btn-small"> Learn More</a>
+						<a href="https://www.wingmoney.com/personal/bill-payment/" target="_blank" class="btn btn-green btn-small"> Learn More</a>
 					</div>
 				</div>
 			</div>
@@ -286,7 +286,9 @@
 						<li><img src="images/pp13.jpg" alt=""></li>
 					</ul>
 				</div>
-				
+				<div class="text-center">
+					<a href="https://www.wingmoney.com/personal/online-payment/" target="_blank" class="btn btn-green btn-small"> Learn More</a>
+				</div>
 			</div>
 		</section>
 
