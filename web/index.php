@@ -1,6 +1,5 @@
 ﻿<?php
 
-ini_set('display_errors',1);
 session_start();
 ?>
 <!doctype html>
@@ -157,7 +156,7 @@ session_start();
 						<div class="feature-tag">
 							<p>Send money to your family and friends with a Wing account in a faster, more secure and more convenient way!</p>
 							<p>Easily top up you phone credit anytime, anywhere!</p>
-							<p>Pay the bills at the comfort of your own home! <br> Buy stuff online such as movie tickets, bus tickets clothes, and more with Wing's online partners!</p>
+							<p>Pay the bills at the comfort of your own home! <br> Buy stuff online such as movie tickets, bus tickets, clothes, and more with Wing's online partners!</p>
 						</div>
 						<div id="wing-services">
 							<ul class="">
@@ -335,7 +334,7 @@ session_start();
 							</div>
 							<div class="wing-benifits-info">
 								<h3>Receive <br>SMS Notification</h3>
-								<p>A temporary PIN <br>will be sent to you via SMS</p>
+								<p>A temporary PIN of your Wing account will be sent to you via SMS</p>
 							</div>
 						</div>
 						<div class="step">
