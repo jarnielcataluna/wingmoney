@@ -1038,7 +1038,7 @@ a.waves-effect .waves-ripple {
 	&.error {
 
 		input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"] {
-			border: 1px solid red;
+			border: 1px solid red !important;
 		}
 
 		.required-tooltip {
@@ -1434,6 +1434,10 @@ input::-webkit-inner-spin-button {
 			    z-index: 3;
 			    opacity: 1;
 			}
+		}
+
+		.required-tooltip {
+			min-width: 140px;
 		}
 	}
 
@@ -3270,6 +3274,48 @@ input::-webkit-inner-spin-button {
 
 	img {
 		max-width: 100%;
+	}
+}
+
+#captchacode {
+	border-top: 1px solid #ccc;
+	padding-top: 0;
+
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: #8d8d8d;
+	  font-size: 16px;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color: #8d8d8d;
+	  font-size: 16px;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  color: #8d8d8d;
+	  font-size: 16px;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  color: #8d8d8d;
+	  font-size: 16px;
+	}
+}
+
+.new-captcha {
+	background: #fff;
+
+}
+
+img#refresh { 
+
+	position: absolute;
+	z-index: 999;
+	cursor: pointer;
+	right: 15px;
+	top: 13px;
+	@include transition(all 0.3s ease);
+	@include transform(rotate(0deg));
+
+	&.active {
+		@include transform(rotate(180deg));
 	}
 }
 

@@ -20,6 +20,8 @@ $(document).ready(function() {
     initCustomForm();
     finalwrapHeight();
 
+    isBusy = false;
+
     setTimeout(function() {
         $('.wing-form-wrap').addClass('scale');
     }, 500);
@@ -312,10 +314,21 @@ $(document).ready(function() {
         $(this).find('.wpml-lang-dropdown').css({'display' : 'none'});
     });
 
-    // refresh captcha
-    $('img#refresh').click(function() {  
-        console.log('test');
-        change_captcha();
+    
+
+     $('img#refresh').click(function() {  
+
+        if( isBusy == false) {
+            isBusy = true;
+            $('img#refresh').addClass('active');
+            setTimeout(function(){
+                $('img#refresh').removeClass('active');
+                isBusy = false;
+            }, 300);
+            change_captcha();
+            
+
+        }
     });
 
 });
@@ -323,6 +336,8 @@ $(document).ready(function() {
 $(window).load(function() {
 	resize();
     finalwrapHeight();
+
+    
 
     $('.wing-form-wrap').show();
     setTimeout(function() {
@@ -334,6 +349,11 @@ $(window).load(function() {
     //     includeNumbers: true,
     //     hashName : {defaultReal}
     // });
+
+    // refresh captcha
+   
+     
+    
 
 });
 

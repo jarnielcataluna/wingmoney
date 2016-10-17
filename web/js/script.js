@@ -30,7 +30,7 @@ $(document).ready(function(){
 
         } else {
             $('.wing-form input[type="submit"]').attr('disabled', true);
-            $('.btn-wrapper').append('<div class="required-tooltip left"><p>Please check the tick boxes. <span>*</span></p></div>')
+            $('.btn-wrapper').append('<div class="required-tooltip left text-left"><p>Please check the terms &amp; conditions. <span>*</span></p></div>')
         }
 
     });
@@ -87,7 +87,7 @@ $(document).ready(function(){
 
     $('.wing-form').submit(function(e){
         e.preventDefault();
-        $('.input-wrap:not(.email-wrapper)').addClass('error');
+        $('.input-wrap:not(.no-error)').addClass('error');
         isvalidate = false;
 
 
@@ -156,6 +156,14 @@ $(document).ready(function(){
             isvalidate = false;
         }
 
+        if( !$('#captchacode').val() == ''){
+            $('#captchacode').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+
         // if( $('.finding-us select').val() != '0'){
         //     $('.finding-us').removeClass('error');
         //     isvalidate = true;
@@ -170,16 +178,18 @@ $(document).ready(function(){
         //     isvalidate = false;
         // }
 
-        if(grecaptcha.getResponse().length === 0) {
-            isvalidate = false;
-        } else {
+        // if(grecaptcha.getResponse().length === 0) {
+        //     isvalidate = false;
+        // } else {
 
-            $('.g-recaptcha-wrap').removeClass('error');
-            isvalidate = true;
-        }
+        //     $('.g-recaptcha-wrap').removeClass('error');
+        //     isvalidate = true;
+        // }
+
+
 
         //if(isSeries && grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
-        if(isSeries &&  grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9  &&  isvalidate == true) {
+        if(isSeries && !$('#captchacode').val() == '' && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9  &&  isvalidate == true) {
             $('.wing-form-wrap').addClass('overlay');
             $('.fill-up-correctly').removeClass('is-open');
         
@@ -200,53 +210,61 @@ $(document).ready(function(){
 
             console.log(data['currency']);
             $.ajax({
-                url: "/exec/verify-phone.php",
+                url: "http://localhost:8888/wingmoney/web/exec/verify-phone.php",
                 type: "POST",
                 data: {
-                    contact: $('#contact-num').val()
+                    contact: $('#contact-num').val(),
+                    captchacode: $('#captchacode').val(),
                 },
                 success: function(ajaxResp) {
 
                     var res = jQuery.parseJSON(ajaxResp);
-
-                    if (res.error_code == "WA500") {
-                        $.ajax({
-                            url: url,
-                            type: type,
-                            data: data,
-
-                            success: function (response) {
-                                var data = jQuery.parseJSON(response);
-                                if(data.error) {
-
-                                    $('.wing-form-wrap').removeClass('overlay');
-                                    alert(data.error);
-
-                                } else {
-                                    
-                                    $('.wing-form-wrap').addClass('remove');
-
-                                    var f = document.createElement("form");
-                                    f.setAttribute('method',"post");
-                                    f.setAttribute('action',"confirmation.php");
-                                    f.setAttribute('id',"redirect-form");
-
-                                    var i = document.createElement("input"); //input element, text
-                                    i.setAttribute('type',"hidden");
-                                    i.setAttribute('name',"id");
-                                    i.setAttribute('value', data.id);
-                                    f.appendChild(i);
-                                    document.getElementsByTagName('body')[0].appendChild(f);
-
-                                    $('#redirect-form').submit();
-                                }
-                                
-                            }
-                        });
-                    } else {
+                    if( res.error == 'captcha') {
                         $('.wing-form-wrap').removeClass('overlay');
-                        alert('Wing Account already exists. Please register another phone number.');
+                        change_captcha();
+                        $('#captchacode').closest('.input-wrap').addClass('error');
+                    } else {
+                        if (res.error_code == "WA500") {
+                            $.ajax({
+                                url: url,
+                                type: type,
+                                data: data,
+
+                                success: function (response) {
+                                    var data = jQuery.parseJSON(response);
+                                    if(data.error) {
+
+                                        $('.wing-form-wrap').removeClass('overlay');
+                                        alert(data.error);
+
+                                    } else {
+                                        
+                                        $('.wing-form-wrap').addClass('remove');
+
+                                        var f = document.createElement("form");
+                                        f.setAttribute('method',"post");
+                                        f.setAttribute('action',"confirmation.php");
+                                        f.setAttribute('id',"redirect-form");
+
+                                        var i = document.createElement("input"); //input element, text
+                                        i.setAttribute('type',"hidden");
+                                        i.setAttribute('name',"id");
+                                        i.setAttribute('value', data.id);
+                                        f.appendChild(i);
+                                        document.getElementsByTagName('body')[0].appendChild(f);
+
+                                        $('#redirect-form').submit();
+                                    }
+                                    
+                                }
+                            });
+                        } else {
+                            $('.wing-form-wrap').removeClass('overlay');
+                            alert('Wing Account already exists. Please register another phone number.');
+                        }
                     }
+
+                    
                 }
             });
 

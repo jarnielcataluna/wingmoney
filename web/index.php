@@ -1,4 +1,7 @@
-﻿<!doctype html>
+﻿<?php
+session_start();
+?>
+<!doctype html>
 <html class="no-js" lang="">
 <head>
 <meta charset="utf-8">
@@ -52,7 +55,9 @@
 	.banner-wrap h1 { color: #ffffff; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); margin-top: 60px; text-transform: uppercase;}
 	.banner-wrap h1 span { display: inline-block; line-height: 54px; padding: 0px 5px; background: rgba(0, 174, 239, 0.4); letter-spacing: -1px; }
 
-	img#refresh { position: relative; z-index: 999; cursor: pointer; }
+	
+
+
 </style>
 <link rel="stylesheet" href="css/style.css" media="all"/>
 <link rel="stylesheet" href="css/jquery.realperson.css" media="all"/>
@@ -596,17 +601,17 @@
     <p>Please fill up the form correctly.</p>
 </div>
 
-<script src="js/needed-scripts.js" async></script>
-<!-- <script src="js/operators.js" async></script>
-<script src="js/materialize.js" async></script>
-<script src="js/jquery.appear.js" async></script>
-<script src="js/devices.js" async></script>
-<script src="js/owl.carousel.js" async></script>
-<script src="js/select.js" async></script>
-<script src="js/plugins.js" async></script>
-<script src="js/custom.js" async></script>
-<script src="js/script.js" async></script>
-<script src="js/facebook-custom.js" async></script> -->
+<script src="js/needed-scripts.js" ></script>
+<!-- <script src="js/operators.js" ></script>
+<script src="js/materialize.js" ></script>
+<script src="js/jquery.appear.js" ></script>
+<script src="js/devices.js" ></script>
+<script src="js/owl.carousel.js" ></script>
+<script src="js/select.js" ></script>
+<script src="js/plugins.js" ></script>
+<script src="js/custom.js" ></script>
+<script src="js/script.js" ></script>
+<script src="js/facebook-custom.js" ></script> -->
 <script type="text/javascript">
 	function downloadJSAtOnload() {
 		var element = document.createElement("script");

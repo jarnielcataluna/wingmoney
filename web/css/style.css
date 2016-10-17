@@ -9014,7 +9014,7 @@ a.waves-effect .waves-ripple {
   .input-wrap.btn-wrapper {
     margin-bottom: 0; }
   .input-wrap.error input[type="text"], .input-wrap.error input[type="email"], .input-wrap.error input[type="number"], .input-wrap.error input[type="tel"], .input-wrap.error input[type="password"] {
-    border: 1px solid red; }
+    border: 1px solid red !important; }
   .input-wrap.error .required-tooltip {
     opacity: 1; }
     .input-wrap.error .required-tooltip.left, .input-wrap.error .required-tooltip.right {
@@ -9352,6 +9352,8 @@ input::-webkit-inner-spin-button {
       transform: translateX(0);
       z-index: 3;
       opacity: 1; }
+    .wing-form-wrap .btn-wrapper .required-tooltip {
+      min-width: 140px; }
   .wing-form-wrap .btn-orange {
     margin: 0px 0;
     margin: 0; }
@@ -10736,6 +10738,52 @@ input::-webkit-inner-spin-button {
 
 .footer-logo img {
   max-width: 100%; }
+
+#captchacode {
+  border-top: 1px solid #ccc;
+  padding-top: 0; }
+  #captchacode::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #8d8d8d;
+    font-size: 16px; }
+  #captchacode::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #8d8d8d;
+    font-size: 16px; }
+  #captchacode:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #8d8d8d;
+    font-size: 16px; }
+  #captchacode:-moz-placeholder {
+    /* Firefox 18- */
+    color: #8d8d8d;
+    font-size: 16px; }
+
+.new-captcha {
+  background: #fff; }
+
+img#refresh {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+  right: 15px;
+  top: 13px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg); }
+  img#refresh.active {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
 
 @media only screen and (max-width: 1500px) {
   .menu ul li a {

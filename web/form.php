@@ -57,7 +57,7 @@
                 <p>This field is required <span>*</span></p>
             </div>
         </div>
-        <div class="input-wrap email-wrapper">
+        <div class="input-wrap email-wrapper no-error">
             <input type="email" id="account-email" name="email" value="" required="required" onchange="this.setAttribute('value', this.value);">
             <label for="account-email">Email</label>
             <div class="required-tooltip right">
@@ -116,8 +116,8 @@
             <label for="terms-checkbox">I accept Wing <a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank">terms &amp; conditions.</a></label>
         </div>
         <hr>
-        <div class="input-wrap g-recaptcha-wrap">
-            <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK" data-callback="onSuccessCaptcha"></div>
+        <div class="input-wrap new-recaptcha-wrap">
+            <!-- <div class="g-recaptcha" data-sitekey="6LdSbCUTAAAAAMlZ8GocqbqeZgtERxt1eH4yyewK" data-callback="onSuccessCaptcha"></div>
             <script>
                 var onSuccessCaptcha = function(response) {
 
@@ -126,7 +126,14 @@
                         $('.g-recaptcha-wrap').removeClass('error');
                     }
                 }
-            </script>
+            </script> -->
+            <div class="new-captcha">
+                <img src="get_captcha.php" alt="" id="captcha" />
+                <img src="images/reload.png" width="25" alt="" id="refresh" />
+                <br clear="all" />
+            </div>
+                <input name="captchacode" type="text" id="captchacode" value="" placeholder="Type the random letter here..">
+            
             
 
             <div class="required-tooltip left">
@@ -136,7 +143,7 @@
         <div class="text-center">
             <div class="input-wrap btn-wrapper">
                 <input type="submit" class="btn btn-orange" name="" value="Register" disabled="disabled" />
-                <div class="required-tooltip left">
+                <div class="required-tooltip left text-left">
                     <p>Please check the terms &amp; conditions. <span>*</span></p>
                 </div>
             </div>

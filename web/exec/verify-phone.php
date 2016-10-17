@@ -1,5 +1,16 @@
 <?php
 
+    session_start();
+
+    $captcha = strtolower($_POST['captchacode']);
+    $storeCaptcha = $_SESSION['random_number'];
+
+    if( $captcha != $storeCaptcha ) {
+        echo json_encode(array('error' => 'captcha', 'storeCaptcha' => $storeCaptcha, 'captcha' => $captcha));
+
+        exit;
+    }
+
     $_POST['key'] = base64_encode("CHVP0L$43VEr");
 
     $key = $_POST['key'];
