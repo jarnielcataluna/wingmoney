@@ -1,5 +1,4 @@
 <?php
-ini_set('display_errors',1);
 session_start();
 
 
@@ -16,7 +15,7 @@ for ($i = 0; $i < 5; $i++) {
 
 $_SESSION['random_number'] = $string;
 
-$dir = 'fonts/';
+$dir = '/fonts/';
 
 
 
