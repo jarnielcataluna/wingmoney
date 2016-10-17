@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+echo '21313213213';
 
 $string = '';
 
@@ -10,7 +11,7 @@ for ($i = 0; $i < 5; $i++) {
 
 $_SESSION['random_number'] = $string;
 
-$dir = '/fonts/';
+$dir = 'fonts/';
 
 
 
