@@ -128,7 +128,7 @@
                 }
             </script> -->
             <div class="new-captcha">
-                <img src="get_captcha.php" alt="" id="captcha" />
+                <img src="http://devcard.wingmoney.com/get_captcha.php" alt="" id="captcha" />
                 <img src="images/reload.png" width="25" alt="" id="refresh" />
                 <br clear="all" />
             </div>
