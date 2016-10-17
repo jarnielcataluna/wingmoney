@@ -602,7 +602,7 @@ session_start();
 </div>
 
 <script src="js/needed-scripts.js" ></script>
-<!-- <script src="js/operators.js" ></script>
+<script src="js/operators.js" ></script>
 <script src="js/materialize.js" ></script>
 <script src="js/jquery.appear.js" ></script>
 <script src="js/devices.js" ></script>
@@ -611,8 +611,8 @@ session_start();
 <script src="js/plugins.js" ></script>
 <script src="js/custom.js" ></script>
 <script src="js/script.js" ></script>
-<script src="js/facebook-custom.js" ></script> -->
-<script type="text/javascript">
+<script src="js/facebook-custom.js" ></script>
+<!--<script type="text/javascript">
 	function downloadJSAtOnload() {
 		var element = document.createElement("script");
 		element.src = "js/minified-plugins.js";
@@ -623,6 +623,6 @@ session_start();
 	else if (window.attachEvent)
 		window.attachEvent("onload", downloadJSAtOnload);
 	else window.onload = downloadJSAtOnload;
-</script>
+</script>-->
 </body>
 </html>

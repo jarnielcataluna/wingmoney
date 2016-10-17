@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+echo 'eqweqwewqeq';
+
 $string = '';
 
 for ($i = 0; $i < 5; $i++) {
