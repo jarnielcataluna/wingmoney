@@ -3,7 +3,10 @@ ini_set('display_errors',1);
 session_start();
 
 
-echo '21313213213';
+
+$testGD = get_extension_funcs("gd"); // Grab function list 
+if (!$testGD){ echo "GD not even installed."; exit; }
+echo"<pre>".print_r($testGD,true)."</pre>";
 
 $string = '';
 
