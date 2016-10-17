@@ -63,7 +63,7 @@ session_start();
 <link rel="stylesheet" href="css/jquery.realperson.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
-<script src='https://www.google.com/recaptcha/api.js?manual_challenge=false' defer></script> 
+<!-- <script src='https://www.google.com/recaptcha/api.js?manual_challenge=false' defer></script>  -->
 </head>
 <body>
 <!-- Google Tag Manager -->
