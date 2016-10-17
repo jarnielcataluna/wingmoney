@@ -367,7 +367,7 @@ $(window).on("load resize scroll",function(e){
 });
 
 function change_captcha() {
-    document.getElementById('captcha').src="../get_captcha.php?rnd=" + Math.random();
+    document.getElementById('captcha').src="/get_captcha.php?rnd=" + Math.random();
 }
 
 
