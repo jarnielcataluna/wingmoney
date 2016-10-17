@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-echo 'eqweqwewqeq';
-
 $string = '';
 
 for ($i = 0; $i < 5; $i++) {
@@ -45,6 +43,8 @@ imagefilledrectangle($image,0,0,399,99,$white);
 imagettftext ($image, 30, 0, 10, 40, $color, $dir.$font, $_SESSION['random_number']);
 
 header("Content-type: image/png");
-imagepng($image);
+/**imagepng($image);**/
 
+
+return imagepng($image);
 ?>
