@@ -9,7 +9,7 @@ for ($i = 0; $i < 5; $i++) {
 
 $_SESSION['random_number'] = $string;
 
-$dir = 'fonts/';
+$dir = '/fonts/';
 
 
 
