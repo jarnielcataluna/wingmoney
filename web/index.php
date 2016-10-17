@@ -361,7 +361,7 @@ session_start();
 					
 				</div>
 
-				<h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Activate And Get Your Wing <br>Account Online</h2>
+				<!-- <h2 class="sec-title text-center animated hiding" data-animation="fadeInUp">Activate And Get Your Wing <br>Account Online</h2>
 				<div class="sec-tagline text-center animated hiding" data-animation="fadeInUp">
 					<p>Your Wing Account can be used either as Wing Card or the Wing App. The choice is yours! All the functions, perks and benefits of having a Wing Account is available to both, it’s all a matter of choice.</p>
 				</div>
@@ -383,7 +383,7 @@ session_start();
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="text-center">
 					<a href="#wing-form-wrap" class="btn btn-orange btn-signup animated hiding" data-animation="fadeInUp">Sign Up Now!</a>
 				</div>
