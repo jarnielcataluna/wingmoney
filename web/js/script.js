@@ -210,7 +210,7 @@ $(document).ready(function(){
 
             console.log(data['currency']);
             $.ajax({
-                url: "http://localhost:8888/wingmoney/web/exec/verify-phone.php",
+                url: "/exec/verify-phone.php",
                 type: "POST",
                 data: {
                     contact: $('#contact-num').val(),
