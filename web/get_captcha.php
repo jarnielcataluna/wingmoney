@@ -1,11 +1,6 @@
 <?php
+ini_set('display_errors',1);
 session_start();
-
-
-
-$testGD = get_extension_funcs("gd"); // Grab function list 
-if (!$testGD){ echo "GD not even installed."; exit; }
-echo"<pre>".print_r($testGD,true)."</pre>";
 
 $string = '';
 
@@ -15,7 +10,7 @@ for ($i = 0; $i < 5; $i++) {
 
 $_SESSION['random_number'] = $string;
 
-$dir = '/fonts/';
+$dir = 'fonts/';
 
 
 
@@ -51,5 +46,5 @@ imagettftext ($image, 30, 0, 10, 40, $color, $dir.$font, $_SESSION['random_numbe
 header("Content-type: image/png");
 imagepng($image);
 
-
+var_dump(imagepng($image));
 ?>
