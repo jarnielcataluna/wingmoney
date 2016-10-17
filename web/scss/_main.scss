@@ -3173,6 +3173,10 @@ input::-webkit-inner-spin-button {
 #phone-topup, #cash-in-out {
 	.vimg-holder {
 		padding: 0 20px 0 0;
+
+		@include breakpoint(tablet2) {
+			padding-right: 0;
+		}
 	}
 
 	.vtext-content {

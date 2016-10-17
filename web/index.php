@@ -307,7 +307,7 @@ session_start();
 				<div class="vtext-content fl animated hiding" data-animation="fadeInUp">
 					<h2 class="sec-title">Cash in and cash out easily when needed!</h2>
 					<p>You can cash in and cash out your money easily at any Wing <br>Cash Xpress located in all provinces in Cambodia.</p>
-					<a href="WCX-List-by-District-VB.pdf" target="_blank" class="btn btn-blue btn-small"> LEARN MORE</a>
+					<a href="https://www.wingmoney.com/personal/deposit-withdrawal/" target="_blank" class="btn btn-blue btn-small"> LEARN MORE</a>
 				</div>
 				
 			</div>
