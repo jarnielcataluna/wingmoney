@@ -2524,6 +2524,10 @@ input::-webkit-inner-spin-button {
 .download-app-wrap {
 	padding-top: 30px;
 
+	h4 {
+		font-size: 22px;
+	}
+
 	h3 {
 		margin-bottom: 20px;
 	}
@@ -2879,13 +2883,13 @@ input::-webkit-inner-spin-button {
 	}
 
 	a {
-		font-size: 24px;
+		font-size: 30px;
 		width: 63px;
 		height: 63px;
-		line-height: 45px;
+		line-height: 63px;
 		display: inline-block;
 		background: $coWhite;
-		color: $coWhite;
+		color: #848587;
 		border-radius: 50%;
 		border: 2px solid #848587;
 		margin: 0px 5px;
@@ -2897,6 +2901,11 @@ input::-webkit-inner-spin-button {
 
 		&:hover {
 			opacity: 0.8;
+		}
+
+		.fa {
+			position: relative;
+			top: -2px;
 		}
 	}
 }

@@ -10090,6 +10090,8 @@ input::-webkit-inner-spin-button {
 
 .download-app-wrap {
   padding-top: 30px; }
+  .download-app-wrap h4 {
+    font-size: 22px; }
   .download-app-wrap h3 {
     margin-bottom: 20px; }
   .download-app-wrap ul {
@@ -10450,13 +10452,13 @@ input::-webkit-inner-spin-button {
   .ty-social-media h4 {
     margin-bottom: 15px; }
   .ty-social-media a {
-    font-size: 24px;
+    font-size: 30px;
     width: 63px;
     height: 63px;
-    line-height: 45px;
+    line-height: 63px;
     display: inline-block;
     background: #ffffff;
-    color: #ffffff;
+    color: #848587;
     border-radius: 50%;
     border: 2px solid #848587;
     margin: 0px 5px; }
@@ -10465,6 +10467,9 @@ input::-webkit-inner-spin-button {
       height: auto; }
     .ty-social-media a:hover {
       opacity: 0.8; }
+    .ty-social-media a .fa {
+      position: relative;
+      top: -2px; }
 
 .ty-tagline p {
   line-height: 32px;
@@ -10672,6 +10677,9 @@ input::-webkit-inner-spin-button {
 
 #phone-topup .vimg-holder, #cash-in-out .vimg-holder {
   padding: 0 20px 0 0; }
+  @media (max-width: 767px) {
+    #phone-topup .vimg-holder, #cash-in-out .vimg-holder {
+      padding-right: 0; } }
 
 #phone-topup .vtext-content, #cash-in-out .vtext-content {
   padding-top: 0px; }
@@ -10764,7 +10772,7 @@ input::-webkit-inner-spin-button {
 
 img#refresh {
   position: absolute;
-  z-index: 999;
+  z-index: 1;
   cursor: pointer;
   right: 15px;
   top: 13px;
