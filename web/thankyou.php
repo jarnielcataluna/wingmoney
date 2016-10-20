@@ -103,9 +103,9 @@
 					
 					<div class="ty-social-media">
 						<h4>Share!</h4>
-						<a href="http://www.facebook.com/WINGmoney" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="http://www.facebook.com/sharer.php?u=http://devcard.wingmoney.com/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						<a href="https://www.instagram.com/wing_money/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						<a href="https://twitter.com/wingcambodia" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://devcard.wingmoney.com/" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					</div>
 				</div>
 
