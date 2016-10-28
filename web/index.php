@@ -144,7 +144,7 @@ session_start();
 				<div class="wing-form-wrap">
 							
 					<h3>Get your Free Wing Account with 3 simple steps:</h3>
-					<p>1. Sign up with Facebook or fill up this form. <br> 2. Enter the verification code sent via SMS. <br> 3. Create your Wing account PIN and you will get your Wing account number via a SMS.</p>
+					<p>1. Register with Facebook or fill up this form. <br> 2. Enter the verification code sent via SMS. <br> 3. Create your Wing account PIN and you will get your Wing account number via a SMS.</p>
 					<div class="signup-fb">
 						<a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Register using Facebook</span></a>
 					</div>

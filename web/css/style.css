@@ -9952,7 +9952,7 @@ input::-webkit-inner-spin-button {
     opacity: 1; }
 
 .final-step-form .input-wrap, .create-pin-account .input-wrap {
-  max-width: 300px;
+  xmax-width: 300px;
   z-index: 100;
   margin-bottom: 30px; }
   .final-step-form .input-wrap.no-b-margin, .create-pin-account .input-wrap.no-b-margin {
@@ -9968,12 +9968,21 @@ input::-webkit-inner-spin-button {
     text-align: center;
     -webkit-appearance: none; }
 
+.final-step-form p, .create-pin-account p {
+  padding-left: 5px;
+  padding-right: 5px; }
+
 .final-step-form p.resend-code, .create-pin-account p.resend-code {
-  font-style: italic;
   text-align: left;
-  font-size: 12px;
-  padding-left: 12px;
+  font-size: 14px;
   margin-top: 3px; }
+  .final-step-form p.resend-code:after, .create-pin-account p.resend-code:after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both; }
+  .final-step-form p.resend-code a, .create-pin-account p.resend-code a {
+    float: right; }
 
 .final-step-form .required-tooltip, .create-pin-account .required-tooltip {
   background: #0098d7;
@@ -9985,6 +9994,12 @@ input::-webkit-inner-spin-button {
     color: #ffffff; }
   .final-step-form .required-tooltip:before, .create-pin-account .required-tooltip:before {
     border-left: 8px solid #0098d7; }
+
+.final-step .sec-tagline {
+  max-width: 384px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 30px 5px; }
 
 .f-sms-wrap {
   position: relative;
@@ -10008,10 +10023,17 @@ input::-webkit-inner-spin-button {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   max-height: 700px; }
+  .final-step-wrap .sec-tagline .st-c-number {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    display: block;
+    text-align: center; }
 
 .create-pin-account {
-  display: none;
-  margin-top: 40px; }
+  xdisplay: none;
+  margin-top: 40px;
+  margin-bottom: 30px; }
   .create-pin-account h3 {
     margin-bottom: 20px; }
   .create-pin-account .input-wrap {
@@ -10019,6 +10041,10 @@ input::-webkit-inner-spin-button {
     .create-pin-account .input-wrap input[type="tel"] {
       text-align: left;
       -webkit-text-security: disc; }
+    .create-pin-account .input-wrap input[type="submit"] {
+      width: 100%;
+      display: block;
+      text-transform: uppercase; }
 
 .thank-you-page, .inner-page {
   background: #ffffff; }
@@ -10591,7 +10617,8 @@ input::-webkit-inner-spin-button {
 .resend-info {
   margin: 5px 0;
   opacity: 0;
-  color: #000; }
+  color: #d80541;
+  text-align: center; }
 
 #captcha-wrap {
   max-width: 220px;
@@ -10792,6 +10819,11 @@ img#refresh {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg); }
+
+.final-step-form {
+  max-width: 384px;
+  margin: 0 auto;
+  text-align: left; }
 
 @media only screen and (max-width: 1500px) {
   .menu ul li a {
@@ -11248,7 +11280,7 @@ img#refresh {
     padding: 20px 0; }
   .final-step-form .input-wrap {
     margin-bottom: 10px;
-    max-width: 196px; }
+    xmax-width: 196px; }
   .ty-text {
     padding-top: 15px; }
   .apply-now-sec {
@@ -11268,7 +11300,9 @@ img#refresh {
   .final-step-form {
     margin-top: 20px; }
   .final-step .sec-tagline {
-    margin: 20px 0; }
+    margin: 20px 0;
+    padding-bottom: 0;
+    padding-top: 10px; }
   .compare-box {
     padding: 30px 20px; }
   .wing-app-info h3 {
