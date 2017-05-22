@@ -188,6 +188,7 @@ $(document).ready(function(){
         //if(isSeries && grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
         if(isSeries && !$('#captchacode').val() == '' && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9  &&  isvalidate == true) {
             $('.wing-form-wrap').addClass('overlay');
+            $('.btn-wrapper').css({'opacity' : '0'});
             $('.fill-up-correctly').removeClass('is-open');
             console.log('testtt');
         
@@ -219,6 +220,7 @@ $(document).ready(function(){
                     var res = jQuery.parseJSON(ajaxResp);
                     if( res.error == 'captcha') {
                         $('.wing-form-wrap').removeClass('overlay');
+                        $('.btn-wrapper').css({'opacity' : '1'});
                         change_captcha();
                         $('#captchacode').closest('.input-wrap').addClass('error');
                     } else {
@@ -257,6 +259,7 @@ $(document).ready(function(){
                             });
                         } else {
                             $('.wing-form-wrap').removeClass('overlay');
+                            $('.btn-wrapper').css({'opacity' : '1'});
                             alert('Wing Account already exists. Please register another phone number.');
                         }
                     }

@@ -11558,7 +11558,7 @@ input::-webkit-inner-spin-button {
     font-size: 16px; }
 
 .new-captcha {
-  background: #00adef; }
+  background: #b2c224; }
 
 img#refresh {
   position: absolute;
@@ -11705,6 +11705,7 @@ img#refresh {
 }
 .wing-form-wrap.overlay:before, .final-step.overlay:before {
   opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
