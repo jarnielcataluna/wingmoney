@@ -1,7 +1,7 @@
 ﻿<?php session_start(); ?>
 <?php if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header('Location: /'); } ?>
 <?php
-	if (isset($_SESSION['ty'])) :
+	//if (isset($_SESSION['ty'])) :
 ?>
 
 
@@ -47,238 +47,108 @@
 		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-MPRR96');</script>
 <!-- End Google Tag Manager -->
-<section id="main-container" class="thank-you-page">
-	<header>
-		<div class="container">
-			<div class="logo"><a href="http://www.wingmoney.com/" target="_blank"><img src="images/wing-logo.png" alt=""></a></div>
-		</div>
-	</header>
-	<section id="main-wrapper">
-		<div class="section-pad">
+<section id="main-container">
+
+	<section id="main-wrapper" class="thank-bg">
+
+		<header>
+			<div class="s-top">
+				<h2>You’ve Just Winged It!</h2>
+				<h4>Thank you for activating your Wing account!</h4>
+			</div>
+		</header>
+
+		<section class="main-wrapper">
 			<div class="container">
-				<!-- <div class="final-step-wrap">
-					<div class="table-wrap">
-						<div class="table-content">
-							<div class="ty-text text-center">
-								<h2>Thank you for applying!</h2>
-								<div class="sec-tagline ty-tagline">
-
-									<p>Now you're part of Wing Money. Start exploring Wing Money features and begin your quest to unlock awesome perks!</p>
-									<a href="http://www.facebook.com/WINGmoney" target="blank" class="btn btn-orange">Wing It Now!</a>
-								</div>
-								<div class="download-app">
-									<span>Use Wing App Now</span>
-									<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay"><img src="images/download-android.png" alt=""></a>
-									<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8"><img src="images/download-apple.png"></a>
-								</div>
-								<div class="sec-tagline">
-									<p>You will receive a confirmation via the contact information you sent us and follow the next steps in activating your account.</p>
-								</div>
-								<a href="http://www.wingmoney.com/" class="btn btn-orange">Back to Wing</a>
-								<div class="clr"></div>
-								<div class="ty-social-media">
-									<a href="http://www.facebook.com/WINGmoney" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-									<a href="https://plus.google.com/109000819204361931521" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-									<a href="https://twitter.com/wingcambodia" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									<a href="https://www.youtube.com/user/WingCambodia" target="blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div> -->
-
-
-				<div class="ty-text text-center">
-					<h3 class="co-blue">Thank you for activating your Wing account!</h3>
-
-					<div class="sec-tagline">
-						<p style="margin-bottom:8px;"><strong>Your account number was sent via SMS.</strong></p>
+				<div class="e-step-box">
+					<div class="sec-tagline text-center">
+						<h4 style="margin-bottom:8px;"><strong>Your account number was sent via SMS.</strong></h4>
 						<p>Dial *989# or download the "Wing Money" mobile app to start using your Wing account right now!</p>
 					</div>
-					<div class="account-number">
-						
-						<!-- <p id="accountNumber"><?php echo $_POST['accountNum']; ?></p> -->
-					</div>
-					
-					<div class="ty-social-media">
-						<h4>Share!</h4>
-						<a href="http://www.facebook.com/sharer.php?u=http://devcard.wingmoney.com/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="https://www.instagram.com/wing_money/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						<a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://devcard.wingmoney.com/" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					</div>
 				</div>
-
-				<!-- <div class="other-stuff">
-					<h3 class="text-center">Other Stuff You Might Be Interested With:</h3>
-					<div class="stuff-col">
-						<div class="row">
-							<div class="col-md-4 col-xs-6">
-								<div class="stuff-wrap">
-									<div class="left fl">
-										<h5 class="co-blue">Wing Ket Luy</h5>
-										<p>Learn more on how you can avail the Wing Ket Luy card</p>
-									</div>
-									<div class="right fr">
-										<div class="s-card-holder">
-											<img src="images/wing-ket.png" alt="">
-										</div>
-										<a href="#" class="btn btn-blue fr">Read More</a>
-									</div>
-									
-								</div>	
-							</div>
-							<div class="col-md-4 col-xs-6 middle-user">
-								<div class="stuff-wrap">
-									<img src="images/cell-user-img.jpg" alt="">
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-12">
-								<div class="stuff-wrap">
-									<p>Read More About:</p>
-									<ul class="mainsite-links">
-										<li><a href="#">Discount Programs</a></li>
-										<li><a href="#">Be an Agent</a></li>
-										<li><a href="#">Wing Account Fees</a></li>
-										<li><a href="#">Cashing In and Cashing Out</a></li>
-									</ul>
-								</div>
-							</div>
+				
+				<section class="other-offer">
+					<h4>KNOW MORE ABOUT WING’S <br>AMAZING SERVICES  </h4>
+					<div class="text-center">
+						<span class="arrow-link"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+					</div>
+					<div class="dl-app-wrap">
+						<div class="dl-opt-item">
+							<div class="dl-img-wrap"><img src="images/page_template/dl-img1.png" alt=""></div>
+							<h3>The WING MOBILE APP</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+							<a href="#" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
+							<a href="#" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
+							
 						</div>
 					</div>
-				</div> -->
+				</section>
 			</div>
 
-			<div class="promote-mobileapp bg-green">
+			<section class="latest-promo">
 				<div class="container">
-					<div class="row">
-						<div class="col-sm-6 text-center">
-							<div class="big-app-img">
-								<img src="images/wing-mobile-img.png" alt="">
-							</div>
-							<div class="app-img-info">
-								<img style="max-width: 100%;" src="images/wing-mobile-info.png" alt="">
-							</div>
-						</div>	
-						<div class="col-sm-6">
-							<div class="p-m-info">
-								<h2>No need to wait. You can start using your Wing account now!</h2>
-								<p>Manage your Wing account from your smartphone with the Wing mobile app! All of Wing's features at the palm of your hand.</p>
-								<div class="download-app-wrap">
-									<h4>Download the Wing Money mobile app now!</h4>
-									<ul>
-										<li>
-											<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" target="blank"><img src="images/app-android.png" alt=""></a>
-										</li>
-										<li>
-											<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8" target="blank"><img src="images/app-ios.png" alt=""></a>
-										</li>
-									</ul>
+					<!-- <h2>Wing Latest News &amp; Promos</h2>
+					<div class="news-item-wrap">
+						<ul>
+							<li>
+								<div class="news-item">
+									<div class="news-item-wrap"><img src="images/page_template/promo1.jpg" alt=""></div>
+									<div class="news-text">
+										<h3>Win Bus Ticket Fee to Hometown!</h3>
+										<p>Happy Khmer New Year! Now you can win Bus ticket fee to hometown in total 1,000 prize by just transferring money at any Wing Agent nationwide from 01st to 11th April, 2017.</p>
+										<a href="#" class="learn-more">Learn More</a>
+									</div>
 								</div>
-									<ul>
-										<li>Send money to other Wing users.</li>
-										<li>Top up phone credit</li>
-										<li>Pay your bills such as utilities, internet and more</li>
-										<li>Generating online payment code.</li>
-										<li>Managing your Wing accounts.</li>
-										<li>Viewing a Wing Cash Xpress near your current location.</li>
-									</ul>
+							</li>
+							<li>
+								<div class="news-item">
+									<div class="news-item-wrap"><img src="images/page_template/promo1.jpg" alt=""></div>
+									<div class="news-text">
+										<h3>No fee charge when paying EDC bills with Wing accounts!</h3>
+										<p>Phnom Penh: With the commitment to improve the lives of our people through fast, secure and convenient services, </p>
+										<a href="#"  class="learn-more">Learn More</a>
+									</div>
 								</div>
+							</li>
+						</ul>
+					</div> -->
+					<div class="ty-footer">
+						<a href="#">
+							<h2>Visit our website</h2>
+							<div class="ty-logo">
+								<img src="images/page_template/logo.png" alt="">
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
-				<div class="promote-mobileapp bottom">
-					<div class="container text-center">
-						<h3 class="sec-title co-blue">Less Hassle, More Features! Start Using Your <br> Wing Account Today!</h3>
-						<div class="download-app-wrap">
-							<h3>GET IT ON:</h3>
-							<ul>
-								<li>
-									<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" target="blank"><img src="images/app-android.png" alt=""></a>
-								</li>
-								<li>
-									<a href="https://itunes.apple.com/gb/app/wing-money/id1113286385?mt=8" target="blank"><img src="images/app-ios.png" alt=""></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+			</section>
+		</section>
+		
 	</section>
 </section>
 <footer>
-	
-	<div class="footer-action">
-		<div class="container">
-			<h4>Call us at +855 23 999 989 or dial *989# to use Wing.</h4>
-		</div>
-	</div>
-
-	<div class="widgets_wrapper">
-		<div class="container">
-			<div class="col-sm-4">
-				<h4>Our Company</h4>
-				<ul class="menu-company-info">
-					<li><a href="https://www.wingmoney.com/about-wing/" target="_blank">About Us</a></li>
-					<li><a href="https://www.wingmoney.com/about-wing/work-at-wing/" target="_blank">Careers at Wing</a></li>
-					<li><a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a></li>
-					<li><a href="https://www.wingmoney.com/contact-us/" target="_blank">Contact Us</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-4">
-				<h4>Contact Us</h4>
-				<div class="textwidget">
-					<p>Call us on +855 23 999 989</p>
-					<p><a href="mailto:care.centre@wingmoney.com">care.centre@wingmoney.com</a></p>
-					<p><a href="http://www.wingmoney.com">www.wingmoney.com</a></p>
-					<p><a href="http://www.facebook.com/WINGmoney">www.facebook.com/WINGmoney</a></p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="footer-logo"><a href="#"><img src="images/footer-logo.png" alt=""></a></div>
-				<div class="social-media-item">
-					<h4>
-						<a href="http://www.facebook.com/WINGmoney" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="https://plus.google.com/109000819204361931521" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-						<a href="https://twitter.com/wingcambodia" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						<a href="https://www.youtube.com/user/WingCambodia" target="blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-					</h4>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="footer_copy">
-		<div class="container">
-				<div class="copyright text-center">&copy; 2016 Wing (Cambodia) Limited Specialised Bank.</div>	
-		</div>
-	</div>
 </footer>
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<script src="js/needed-scripts.js"></script>
-<script type="text/javascript">
-	function downloadJSAtOnload() {
-		var element = document.createElement("script");
-		element.src = "js/minified-plugins.js";
-		document.body.appendChild(element);
-	}
-	if (window.addEventListener)
-		window.addEventListener("load", downloadJSAtOnload, false);
-	else if (window.attachEvent)
-		window.attachEvent("onload", downloadJSAtOnload);
-	else window.onload = downloadJSAtOnload;
-
-</script>
+<script src="js/needed-scripts.js" ></script>
+<script src="js/pace.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/ScrollToPlugin.min.js"></script>
+<script src="js/operators.js" ></script>
+<script src="js/materialize.js" ></script>
+<script src="js/jquery.appear.js" ></script>
+<script src="js/devices.js" ></script>
+<script src="js/owl.carousel.js" ></script>
+<script src="js/select.js" ></script>
+<script src="js/plugins.js" ></script>
+<script src="js/custom.js" ></script>
 
 </body>
 </html>
 <?php
-else:
-	$home = 'http://'.$_SERVER['HTTP_HOST'];
-	$loc = "Location: ".$home;
-	header($loc);
-endif;
-session_destroy();
+// else:
+// 	$home = 'http://'.$_SERVER['HTTP_HOST'];
+// 	$loc = "Location: ".$home;
+// 	header($loc);
+// endif;
+// session_destroy();
 ?>

@@ -79,91 +79,91 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-MPRR96');</script>
 <!-- End Google Tag Manager -->
-<section id="main-container" class="thank-you-page">
-	<header>
-		<div class="container">
-			<div class="logo"><a href="http://www.wingmoney.com/" target="_blank"><img src="images/wing-logo.png" alt=""></a></div>
-		</div>
-	</header>
-	<section id="main-wrapper">
-		<div class="section-pad">
+<section id="main-container">
+
+	<section id="main-wrapper" class="thank-bg">
+
+		<header>
+			<div class="s-top">
+				<h2>You're almost done!</h2>
+				<h4>A temporary PIN has been sent to the number <span class="st-c-number">078703977</span></h4>
+			</div>
+		</header>
+
+		<section class="main-wrapper">
 			<div class="container">
-				<div class="final-step-wrap">
-					<div class="table-wrap">
-						<div class="table-content">
+				<div class="e-step-box">
+					<div class="final-step text-center">
+						<form class="final-step-form" method="post" novalidate action="/exec/validate2.php" >
 							
-							<div class="final-step text-center">
-								<h2 class="co-blue">You're almost done!</h2>
-								<div class="sec-tagline">
-									<p>A temporary PIN has been sent to the number <span class="st-c-number">078703977</span></p>
+						    <p>Please enter the verification code the we've sent to you by SMS to [number] below:</p>
+						    <p class="resend-info">Your PIN was successfully resent.</p>
+						    <div class="f-sms-wrap">
+								<div class="input-wrap no-b-margin">
+									<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
+									<input type="tel" id="verfication-code" name="verification_code" maxLength="4" value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required">
+
+									<label for="verfication-code">Enter Verification PIN</label>
+
+									<div class="required-tooltip left">
+										<p>This temporary PIN is required <span>*</span></p>
+									</d	iv>
 								</div>
-								<form class="create-pin-account" method="post" novalidate action="/exec/validate2.php" >
-									<div class="loading-spinner-wrapper" id="app-loader">
-								        <span class="loading-spinner">
-								          <i class="one"></i>
-								          <i class="two"></i>
-								          <i class="three"></i>
-								        </span>
-								    </div>
-								    <p>Please enter the verification code the we've sent to you by SMS to [number] below:</p>
-								    <p class="resend-info">Your PIN was successfully resent.</p>
-								    <div class="f-sms-wrap">
-										<div class="input-wrap no-b-margin">
-											<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
-											<input type="tel" id="verfication-code" name="verification_code" maxLength="4" value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required">
-
-											<label for="verfication-code">Enter Verification PIN</label>
-
-											<div class="required-tooltip left">
-												<p>This temporary PIN is required <span>*</span></p>
-											</d	iv>
-										</div>
-										<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY">
-									</div>
-
-									<div class="create-pin-account" style="">
-
-										<!-- <h3 class="co-blue">Create your Wing account PIN</h3> -->
-										<!-- <div class="loading-spinner-wrapper" id="app-loader">
-									        <span class="loading-spinner">
-									          <i class="one"></i>
-									          <i class="two"></i>
-									          <i class="three"></i>
-									        </span>
-									    </div> -->
-										<div class="input-wrap">
-											<input type="tel" name="" value="" id="pin-id" minLength="4" maxLength="4" required="required" autocomplete="new-password"/>
-											<label for="pin-id">Choose your 4-digit PIN code</label>
-											<div class="required-tooltip left">
-												<p>This field is required <span>*</span></p>
-											</div>
-										</div>
-										<div class="input-wrap">
-											<input type="tel" name="" value="" id="confirm-pin-id" minLength="4" maxLength="4" required="required" autocomplete="new-password"/>
-											<label for="confirm-pin-id">Confirm your 4-digit PIN code</label>
-											<div class="required-tooltip left">
-												<p>Pin doesn't match<span>*</span></p>
-											</div>
-										</div>
-										<div class="input-wrap">
-											<input type="submit" class="btn btn-green" name="" value="Create my account">
-										</div>
-										<p class="resend-code">Haven't receive PIN yet? <a href="#" id="resendCode">Resend PIN</a></p>
-										<!-- <div class="input-wrap">
-											<input type="submit" class="btn btn-orange" name="" value="Submit">
-										</div> -->
-									</div>
-								</form>
+								<!-- <input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY"> -->
 							</div>
-						</div>
+
+							<div class="create-pin-account" style="display: none;">
+
+								<!-- <h3 class="co-blue">Create your Wing account PIN</h3> -->
+								<!-- <div class="loading-spinner-wrapper" id="app-loader">
+							        <span class="loading-spinner">
+							          <i class="one"></i>
+							          <i class="two"></i>
+							          <i class="three"></i>
+							        </span>
+							    </div> -->
+								<div class="input-wrap">
+									<input type="tel" name="" value="" id="pin-id" minLength="4" maxLength="4" required="required" autocomplete="new-password"/>
+									<label for="pin-id">Choose your 4-digit PIN code</label>
+									<div class="required-tooltip left">
+										<p>This field is required <span>*</span></p>
+									</div>
+								</div>
+								<div class="input-wrap">
+									<input type="tel" name="" value="" id="confirm-pin-id" minLength="4" maxLength="4" required="required" autocomplete="new-password"/>
+									<label for="confirm-pin-id">Confirm your 4-digit PIN code</label>
+									<div class="required-tooltip left">
+										<p>Pin doesn't match<span>*</span></p>
+									</div>
+								</div>
+								<div class="input-wrap btn-wrapper">
+									<input type="submit" class="btn btn-green" name="" value="Create my account">
+								</div>
+								<div class="loading-spinner-wrapper" id="app-loader">
+							        <span class="loading-spinner">
+							          <i class="one"></i>
+							          <i class="two"></i>
+							          <i class="three"></i>
+							        </span>
+							    </div>
+								
+								<!-- <div class="input-wrap">
+									<input type="submit" class="btn btn-orange" name="" value="Submit">
+								</div> -->
+							</div>
+							<p class="resend-code">Haven't receive PIN yet? <a href="#" id="resendCode">Resend PIN</a></p>
+						</form>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</section>
 </section>
+
+
+
 <footer>
-	
+	<!-- 
 	<div class="footer-action">
 		<div class="container">
 			<h4>Call us at +855 23 999 989 or dial *989# to use Wing.</h4>
@@ -208,12 +208,26 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 		<div class="container">
 				<div class="copyright text-center">&copy; 2016 Wing (Cambodia) Limited Specialised Bank.</div>	
 		</div>
-	</div>
+	</div> -->
 </footer>
-<script src="js/needed-scripts.js"></script>
+<!-- <script src="js/needed-scripts.js"></script> -->
+
+<script src="js/needed-scripts.js" ></script>
+<script src="js/pace.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/ScrollToPlugin.min.js"></script>
+<script src="js/operators.js" ></script>
+<script src="js/materialize.js" ></script>
+<script src="js/jquery.appear.js" ></script>
+<script src="js/devices.js" ></script>
+<script src="js/owl.carousel.js" ></script>
+<script src="js/select.js" ></script>
+<script src="js/plugins.js" ></script>
+<script src="js/custom.js" ></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script src="js/firebase-custom.js"></script>
-<script type="text/javascript">
+
+<!-- <script type="text/javascript">
 	function downloadJSAtOnload() {
 		var element = document.createElement("script");
 		element.src = "js/minified-plugins.js";
@@ -225,7 +239,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 		window.attachEvent("onload", downloadJSAtOnload);
 	else window.onload = downloadJSAtOnload;
 
-</script>
+</script> -->
 </body>
 </html>
 

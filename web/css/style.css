@@ -10354,6 +10354,7 @@ strong {
   margin-bottom: 10px;
   padding: 0px 5px;
   width: 100%;
+  z-index: 8;
   /* show the placeholder when input has no content (no content = invalid) */
   /* hide the placeholder when input has some text typed in */
 }
@@ -11236,7 +11237,8 @@ input::-webkit-inner-spin-button {
 }
 
 .thank-bg .e-step-box {
-  padding: 14px;
+  max-width: 480px;
+  margin: 0 auto 50px;
 }
 
 .claiming-box-menu ul:after {
@@ -11337,7 +11339,6 @@ input::-webkit-inner-spin-button {
 }
 
 .other-offer {
-  padding-top: 50px;
   position: relative;
   z-index: 10;
   padding-bottom: 50px;
@@ -11557,7 +11558,7 @@ input::-webkit-inner-spin-button {
     font-size: 16px; }
 
 .new-captcha {
-  background: #fff; }
+  background: #00adef; }
 
 img#refresh {
   position: absolute;
@@ -11581,3 +11582,150 @@ img#refresh {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg); }
+
+
+.f-sms-wrap {
+  max-width: 320px;
+  margin: 30px auto;
+}
+
+.resend-info {
+  opacity: 0;
+  color: #f89f1b;
+}
+
+.create-pin-account {
+  margin-top: 50px;
+  max-width: 440px;
+  margin: 0px auto 0;
+}
+
+.resend-code {
+  margin-top: 15px;
+}
+
+.f-sms-wrap .create-pin-account {
+  margin-top: 30px;
+}
+
+.resend-code a {
+  color: #00adef;
+  display: inline-block;
+  
+}
+
+.loading-spinner-wrapper {
+  position: relative;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  z-index: 1000;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.loading-spinner {
+  position: relative;
+  vertical-align: middle;
+  width: 50px;
+  height: 12px;
+  text-align: center;
+  margin: 0 auto;
+  display: block; }
+
+.loading-spinner i {
+  position: absolute;
+  top: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #f89f1b;
+  -webkit-animation: pulse 1s infinite ease-in-out;
+  -moz-animation: pulse 1s infinite ease-in-out;
+  animation: pulse 1s infinite ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.loading-spinner i.one {
+  left: 0;
+  -webkit-animation-delay: -.32s;
+  -moz-animation-delay: -.32s;
+  animation-delay: -.32s; }
+
+.loading-spinner i.two {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation-delay: -.16s;
+  -moz-animation-delay: -.16s;
+  animation-delay: -.16s; }
+
+.loading-spinner i.three {
+  right: 0; }
+
+.loading-spinner i {
+  background: #f89f1b; }
+
+.wing-form-wrap {
+  position: relative;
+}
+
+.wing-form-wrap:before, .final-step:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.wing-form-wrap.overlay .loading-spinner-wrapper, .final-step.overlay .loading-spinner-wrapper {
+  opacity: 1;
+}
+.wing-form-wrap.overlay:before, .final-step.overlay:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+@-webkit-keyframes pulse {
+  0%, 100%, 80% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+
+@-moz-keyframes pulse {
+  0%, 100%, 80% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+
+@keyframes pulse {
+  0%, 100%, 80% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }

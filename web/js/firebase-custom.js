@@ -56,7 +56,7 @@ $('.final-step-form').submit(function(e){
     }
 
     if( !$('#verfication-code').val() == '' &&  isvalidate == true) {
-        $('.final-step-form').addClass('overlay');
+        $('.final-step').addClass('overlay');
 
         var that = $(this),
             url = that.attr('action'),
@@ -84,7 +84,7 @@ $('.final-step-form').submit(function(e){
                     $('.final-step-form').slideUp(300);
                     $('.create-pin-account').slideDown(500);
                 } else {
-                    $('.final-step-form').removeClass('overlay');
+                    $('.final-step').removeClass('overlay');
                     var errorOutput = $('#verfication-code').closest('.input-wrap');
                     errorOutput.find('.required-tooltip p').html(res.error);
                     errorOutput.addClass('error');

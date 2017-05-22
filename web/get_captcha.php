@@ -31,14 +31,14 @@ else
 $num2 = rand(1,2);
 if($num2==1)
 {
-	$color = imagecolorallocate($image, 113, 193, 217);// color
+	$color = imagecolorallocate($image, 255, 255, 255);// color
 }
 else
 {
-	$color = imagecolorallocate($image, 163, 197, 82);// color
+	$color = imagecolorallocate($image, 255, 255, 255);// color
 }
 
-$white = imagecolorallocate($image, 255, 255, 255); // background color white
+$white = imagecolorallocate($image, 0, 173, 239); // background color white
 imagefilledrectangle($image,0,0,399,99,$white);
 
 imagettftext ($image, 30, 0, 10, 40, $color, $dir.$font, $_SESSION['random_number']);

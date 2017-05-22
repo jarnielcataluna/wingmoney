@@ -66,125 +66,121 @@ session_start();
                 </div>
                 <div class="account-app-wrap">
                     <h2 class="sec-title text-center">Account Application</h2>
-                    <form class="wing-form" method="post" action="exec/validate.php" novalidate>
-                        <div class="signup-fb">
-                            <a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Apply Now Using Facebook</span></a>
-                        </div>
-                        <p class="form-text">Or fill up this form</p>
-                        <div class="loading-spinner-wrapper" id="app-loader">
-                            <span class="loading-spinner">
-                              <i class="one"></i>
-                              <i class="two"></i>
-                              <i class="three"></i>
-                            </span>
-                        </div>
+                    <div class="wing-form-wrap">
+                        <form class="wing-form" method="post" action="exec/validate.php" novalidate>
+                            <div class="signup-fb">
+                                <a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Apply Now Using Facebook</span></a>
+                            </div>
+                            <p class="form-text">Or fill up this form</p>
 
-                        <input type="hidden" name="fb_uid" id="fb_uid"/>
-                        <input type="hidden" name="fb_fname" id="fb_fname"/>
-                        <input type="hidden" name="fb_lname" id="fb_lname"/>
-                        <input type="hidden" name="fb_email" id="fb_email"/>
-                        <input type="hidden" name="fb_profile_pic" id="fb_profile_pic"/>
-                        <input type="hidden" name="client_ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>" />
-                        <input type="hidden" name="client_id" value="<?php echo $_COOKIE['_ga']; ?>" />
-
-                        <div class="loading-spinner-wrapper" id="app-loader">
-                            <span class="loading-spinner">
-                              <i class="one"></i>
-                              <i class="two"></i>
-                              <i class="three"></i>
-                            </span>
-                        </div>
-                        <div class="form-row">
-                            
-                            <div class="input-wrap">
-                                <input type="text" id="first-name" name="fname" value="" maxLength="20" required="required" onchange="this.setAttribute('value', this.value);">
-                                <label for="first-name">First Name</label>
-                                <div class="required-tooltip right">
-                                    <p>This field is required <span>*</span></p>
+                            <input type="hidden" name="fb_uid" id="fb_uid"/>
+                            <input type="hidden" name="fb_fname" id="fb_fname"/>
+                            <input type="hidden" name="fb_lname" id="fb_lname"/>
+                            <input type="hidden" name="fb_email" id="fb_email"/>
+                            <input type="hidden" name="fb_profile_pic" id="fb_profile_pic"/>
+                            <input type="hidden" name="client_ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>" />
+                            <input type="hidden" name="client_id" value="<?php echo $_COOKIE['_ga']; ?>" />
+                            <div class="form-row">
+                                
+                                <div class="input-wrap">
+                                    <input type="text" id="first-name" name="fname" value="" maxLength="20" required="required" onchange="this.setAttribute('value', this.value);">
+                                    <label for="first-name">First Name</label>
+                                    <div class="required-tooltip right">
+                                        <p>This field is required <span>*</span></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="input-wrap">
-                                <input type="text" id="last-name" name="lname" value="" maxLength="20" required="required" onchange="this.setAttribute('value', this.value);">
-                                <label for="last-name">Family Name</label>
-                                <div class="required-tooltip right">
-                                    <p>This field is required <span>*</span></p>
+                                <div class="input-wrap">
+                                    <input type="text" id="last-name" name="lname" value="" maxLength="20" required="required" onchange="this.setAttribute('value', this.value);">
+                                    <label for="last-name">Family Name</label>
+                                    <div class="required-tooltip right">
+                                        <p>This field is required <span>*</span></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="input-wrap input-half">
-                                <input type="text" id="birthday" name="dob" value="" required="required" readonly>
-                                <label for="birthday" id="birthday-label">Date of Birth</label>
-                                <div class="required-tooltip left">
-                                    <p>This field is required <span>*</span></p>
+                                <div class="input-wrap input-half">
+                                    <input type="text" id="birthday" name="dob" value="" required="required" readonly>
+                                    <label for="birthday" id="birthday-label">Date of Birth</label>
+                                    <div class="required-tooltip left">
+                                        <p>This field is required <span>*</span></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="input-wrap input-half gender">
-                                <select class="custom-select" name="gender" id="gender">
-                                    <option value="M">Male</option>
-                                    <option value="F">Female</option>
-                                </select>
-                                <div class="required-tooltip right">
-                                    <p>This field is required <span>*</span></p>
+                                <div class="input-wrap input-half gender">
+                                    <select class="custom-select" name="gender" id="gender">
+                                        <option value="M">Male</option>
+                                        <option value="F">Female</option>
+                                    </select>
+                                    <div class="required-tooltip right">
+                                        <p>This field is required <span>*</span></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="clr"></div>
-                            <div class="input-wrap mobile-num">
-                                <input type="tel" id="contact-num" name="contact_num" value=""  maxLength="10" required="required" onchange="this.setAttribute('value', this.value);">
-                                <label for="contact-num">Mobile Number</label>
-                                <div class="required-tooltip left">
-                                    <p>This field is required <span>*</span></p>
+                                <div class="clr"></div>
+                                <div class="input-wrap mobile-num">
+                                    <input type="tel" id="contact-num" name="contact_num" value=""  maxLength="10" required="required" onchange="this.setAttribute('value', this.value);">
+                                    <label for="contact-num">Mobile Number</label>
+                                    <div class="required-tooltip left">
+                                        <p>This field is required <span>*</span></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="input-wrap email-wrapper no-error">
-                                <input type="email" id="account-email" name="email" value="" required="required" onchange="this.setAttribute('value', this.value);">
-                                <label for="account-email">Email</label>
-                                <div class="required-tooltip right">
-                                    <p>This field is required <span>*</span></p>
-                                </div>
-                            </div>
-                            
-                            <div class="clr"></div>
-                            <div class="input-wrap choose-currency">
-                                <label>Choose Currency:</label>
-                                <div class="custom-radio">
-                                    <input type="radio" id="Khmer" name="currency" value="KHR" data-value="KHR">
-                                    <label for="Khmer"><span>KHR</span></label>
-                                </div>
-                                <div class="custom-radio khmer">
-                                    <input type="radio" id="usd" name="currency" checked value="USD" data-value="USD">
-                                    <label for="usd"><span>USD</span></label>
+                                <div class="input-wrap email-wrapper no-error">
+                                    <input type="email" id="account-email" name="email" value="" required="required" onchange="this.setAttribute('value', this.value);">
+                                    <label for="account-email">Email</label>
+                                    <div class="required-tooltip right">
+                                        <p>This field is required <span>*</span></p>
+                                    </div>
                                 </div>
                                 
-                            </div>
-                            
-                            <div class="wing-checkbox terms-condi-wrap">
-                                <input type="checkbox" id="terms-checkbox"/>
-                                <label for="terms-checkbox">I accept Wing <a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank">terms &amp; conditions.</a></label>
-                            </div>
-                            <div class="input-wrap new-recaptcha-wrap">
-                                
-                                <div class="new-captcha">
-                                    <img src="get_captcha.php" alt="" id="captcha" />
-                                    <img src="images/reload.png" width="25" alt="" id="refresh" />
-                                    <br clear="all" />
-                                </div>
-                                    <input name="captchacode" type="text" id="captchacode" value="" placeholder="Type the random letter here..">
-                                
-                                
-
-                                <div class="required-tooltip left">
-                                    <p>Please verify that you are not a robot.<span>*</span></p>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <div class="input-wrap btn-wrapper">
-                                    <input type="submit" class="btn btn-orange" name="" value="SUBMIT MY APPLICATION" />
+                                <div class="clr"></div>
+                                <div class="input-wrap choose-currency">
+                                    <label>Choose Currency:</label>
+                                    <div class="custom-radio khmer">
+                                        <input type="radio" id="Khmer" name="currency" value="KHR" data-value="KHR">
+                                        <label for="Khmer"><span>KHR</span></label>
+                                    </div>
+                                    <div class="custom-radio khmer">
+                                        <input type="radio" id="usd" name="currency" checked value="USD" data-value="USD">
+                                        <label for="usd"><span>USD</span></label>
+                                    </div>
                                     
                                 </div>
+
+                                <div class="input-wrap new-recaptcha-wrap">
+                                    
+                                    <div class="new-captcha">
+                                        <img src="get_captcha.php" alt="" id="captcha" />
+                                        <img src="images/reload.png" width="25" alt="" id="refresh" />
+                                        <br clear="all" />
+                                    </div>
+                                        <input name="captchacode" type="text" id="captchacode" value="" placeholder="Type the random letter here..">
+                                    
+                                    
+
+                                    <div class="required-tooltip left">
+                                        <p>Please verify that you are not a robot.<span>*</span></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="wing-checkbox terms-condi-wrap">
+                                    <input type="checkbox" id="terms-checkbox"/>
+                                    <label for="terms-checkbox">I accept Wing <a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank">terms &amp; conditions.</a></label>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <div class="input-wrap btn-wrapper">
+                                        <input type="submit" class="btn btn-orange" name="" value="SUBMIT MY APPLICATION" />
+                                    </div>
+                                </div>
+
+                                <div class="loading-spinner-wrapper" id="app-loader">
+                                    <span class="loading-spinner">
+                                      <i class="one"></i>
+                                      <i class="two"></i>
+                                      <i class="three"></i>
+                                    </span>
+                                </div>
+
                             </div>
 
-                        </div>
-
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
