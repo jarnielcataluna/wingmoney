@@ -14,7 +14,7 @@
 
     $ch = curl_init();
 
-    curl_setopt($ch, CURLOPT_URL, "http://tools.propelrr.com.local/listener/wing/form/verification");
+    curl_setopt($ch, CURLOPT_URL, "http://tools.propelrr.com/listener/wing/form/verification");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
     curl_setopt($ch, CURLOPT_HEADER, FALSE);
     curl_setopt($ch, CURLOPT_POST, TRUE);
