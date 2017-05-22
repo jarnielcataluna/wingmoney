@@ -96,21 +96,23 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 					<div class="final-step text-center">
 						<form class="final-step-form" method="post" novalidate action="/exec/validate2.php" >
 							
-						    <p>Please enter the verification code the we've sent to you by SMS to [number] below:</p>
-						    <p class="resend-info">Your PIN was successfully resent.</p>
-						    <div class="f-sms-wrap">
-								<div class="input-wrap no-b-margin">
-									<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
-									<input type="tel" id="verfication-code" name="verification_code" maxLength="4" value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required">
+						    <div class="verification">
+						    	<p>Please enter the verification code the we've sent to you by SMS to [number] below:</p>
+							    <p class="resend-info">Your PIN was successfully resent.</p>
+							    <div class="f-sms-wrap">
+									<div class="input-wrap no-b-margin">
+										<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
+										<input type="tel" id="verfication-code" name="verification_code" maxLength="4" value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required">
 
-									<label for="verfication-code">Enter Verification PIN</label>
+										<label for="verfication-code">Enter Verification PIN</label>
 
-									<div class="required-tooltip left">
-										<p>This temporary PIN is required <span>*</span></p>
-									</d	iv>
+										<div class="required-tooltip left">
+											<p>This temporary PIN is required <span>*</span></p>
+										</div>
+									</div>
+									<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY" id="verifySms" style="margin-top: 15px;">
 								</div>
-								<!-- <input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY"> -->
-							</div>
+						    </div>
 
 							<div class="create-pin-account" style="display: none;">
 
@@ -123,34 +125,35 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 							        </span>
 							    </div> -->
 								<div class="input-wrap">
-									<input type="tel" name="" value="" id="pin-id" minLength="4" maxLength="4" required="required" autocomplete="new-password"/>
+									<input type="password" name="" value="" id="pin-id" minLength="4" maxLength="4" required="required" autocomplete="new-password"/>
 									<label for="pin-id">Choose your 4-digit PIN code</label>
 									<div class="required-tooltip left">
 										<p>This field is required <span>*</span></p>
 									</div>
 								</div>
 								<div class="input-wrap">
-									<input type="tel" name="" value="" id="confirm-pin-id" minLength="4" maxLength="4" required="required" autocomplete="new-password"/>
+									<input type="password" name="" value="" id="confirm-pin-id" minLength="4" maxLength="4" required="required" autocomplete="new-password"/>
 									<label for="confirm-pin-id">Confirm your 4-digit PIN code</label>
 									<div class="required-tooltip left">
 										<p>Pin doesn't match<span>*</span></p>
 									</div>
 								</div>
 								<div class="input-wrap btn-wrapper">
-									<input type="submit" class="btn btn-green" name="" value="Create my account">
+									<input type="submit" class="btn btn-green" name="" value="Create my account" id="createAccount">
 								</div>
-								<div class="loading-spinner-wrapper" id="app-loader">
-							        <span class="loading-spinner">
-							          <i class="one"></i>
-							          <i class="two"></i>
-							          <i class="three"></i>
-							        </span>
-							    </div>
 								
 								<!-- <div class="input-wrap">
 									<input type="submit" class="btn btn-orange" name="" value="Submit">
 								</div> -->
 							</div>
+
+							<div class="loading-spinner-wrapper" id="app-loader">
+                                <span class="loading-spinner">
+                                  <i class="one"></i>
+                                  <i class="two"></i>
+                                  <i class="three"></i>
+                                </span>
+                            </div>
 							<p class="resend-code">Haven't receive PIN yet? <a href="#" id="resendCode">Resend PIN</a></p>
 						</form>
 					</div>
