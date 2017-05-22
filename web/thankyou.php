@@ -1,7 +1,13 @@
-﻿<?php session_start(); ?>
+﻿<?php 
+
+// if (session_status() == PHP_SESSION_ACTIVE) {
+// 	session_start();
+// }
+
+?>
 <?php if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header('Location: /'); } ?>
 <?php
-	//if (isset($_SESSION['ty'])) :
+	// if (isset($_SESSION['ty'])) :
 ?>
 
 
@@ -148,7 +154,13 @@
 // else:
 // 	$home = 'http://'.$_SERVER['HTTP_HOST'];
 // 	$loc = "Location: ".$home;
-// 	header($loc);
+
+// 	if (headers_sent()) {
+// 	    die('If you are not redirected after a few seconds, please click on <a href="'.$home.'">this link</a>.');
+// 	}
+// 	else{
+// 	    exit(header($loc));
+// 	}
 // endif;
 // session_destroy();
 ?>

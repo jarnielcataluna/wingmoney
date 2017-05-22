@@ -1,6 +1,11 @@
 ﻿<?php
-// session_start();
-/*if (isset($_SESSION['confirm'])) :*/
+// ini_set('display_errors', 1);
+
+// if (session_status() == PHP_SESSION_ACTIVE) {
+// 	session_start();
+// }
+
+// if (isset($_SESSION['confirm'])) :
 
 
 function fnDecrypt($sValue, $sSecretKey)
@@ -23,8 +28,6 @@ function fnDecrypt($sValue, $sSecretKey)
 }
 
 if(isset($_GET['secret'])){
-
-
 	$secret = 'cHvp0l5s43v3r';
 
 	$decrypt = fnDecrypt($_GET['secret'], $secret);
@@ -86,7 +89,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 		<header>
 			<div class="s-top">
 				<h2>You're almost done!</h2>
-				<h4>A temporary PIN has been sent to the number <span class="st-c-number">078703977</span></h4>
+				<h4>A temporary PIN has been sent to your mobile number.</h4>
 			</div>
 		</header>
 
@@ -97,12 +100,12 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 						<form class="final-step-form" method="post" novalidate action="/exec/validate2.php" >
 							
 						    <div class="verification">
-						    	<p>Please enter the verification code the we've sent to you by SMS to [number] below:</p>
+						    	<p>Please enter below the verification code that we've sent to your mobile number:</p>
 							    <p class="resend-info">Your PIN was successfully resent.</p>
 							    <div class="f-sms-wrap">
 									<div class="input-wrap no-b-margin">
 										<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
-										<input type="tel" id="verfication-code" name="verification_code" maxLength="4" value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required">
+										<input type="password" id="verfication-code" name="verification_code" maxLength="4" value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 
 										<label for="verfication-code">Enter Verification PIN</label>
 
@@ -247,10 +250,16 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 </html>
 
 <?php
-/*else:
-	$home = 'http://'.$_SERVER['HTTP_HOST'];
-	$loc = "Location: ".$home;
-	header($loc);
-endif;
-session_destroy();*/
+// else :
+// 	$home = 'http://'.$_SERVER['HTTP_HOST'];
+// 	$loc = "Location: ".$home;
+
+// 	if (headers_sent()) {
+// 	    die('If you are not redirected after a few seconds, please click on <a href="'.$home.'">this link</a>.');
+// 	}
+// 	else{
+// 	    exit(header($loc));
+// 	}
+// endif;
+// session_destroy();
 ?>
