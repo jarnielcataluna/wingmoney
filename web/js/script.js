@@ -89,14 +89,12 @@ $(document).ready(function(){
         e.preventDefault();
         $('.input-wrap:not(.no-error)').addClass('error');
         isvalidate = false;
-
-
-        if( IsEmail($('#account-email').val() )) {
-            $('#account-email').closest('.input-wrap').removeClass('error');
-            isvalidate = true;
-        } else {
-            isvalidate = false;
-        }
+        // if( IsEmail($('#account-email').val() )) {
+        //     $('#account-email').closest('.input-wrap').removeClass('error');
+        //     isvalidate = true;
+        // } else {
+        //     isvalidate = false;
+        // }
 
         if( !$('#last-name').val() == '') {
             $('#last-name').closest('.input-wrap').removeClass('error');
@@ -187,11 +185,11 @@ $(document).ready(function(){
         // }
 
 
-
         //if(isSeries && grecaptcha.getResponse().length !== 0 && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && IsEmail($('#account-email').val()) && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9 && $('.finding-us select').val() != '0' &&  isvalidate == true) {
         if(isSeries && !$('#captchacode').val() == '' && $('.gender select').val() != '0' && $('.gender select').val() != '0' &&  !$('#contact-num').val() == '' && !$('#birthday').val() == '' && !$('#first-name').val() == '' &&  !$('#last-name').val() == '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9  &&  isvalidate == true) {
             $('.wing-form-wrap').addClass('overlay');
             $('.fill-up-correctly').removeClass('is-open');
+            console.log('testtt');
         
             var that = $(this),
                 url = that.attr('action'),
@@ -255,7 +253,6 @@ $(document).ready(function(){
 
                                         $('#redirect-form').submit();
                                     }
-                                    
                                 }
                             });
                         } else {
@@ -263,15 +260,13 @@ $(document).ready(function(){
                             alert('Wing Account already exists. Please register another phone number.');
                         }
                     }
-
-                    
                 }
             });
 
             return false;
         } else {
             e.preventDefault();
-
+            return false;
              if( $(window).width() < 768 ) {
                 $('.fill-up-correctly').addClass('is-open');
              }

