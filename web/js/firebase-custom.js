@@ -1,30 +1,30 @@
 //Initialize Firebase
-var config = {
-    apiKey: "AIzaSyDx2elBwIOx7X_3YErUUHF9pgXmhXrGSxI",
-    authDomain: "wing-money-propelrr.firebaseapp.com",
-    databaseURL: "https://wing-money-propelrr.firebaseio.com",
-    storageBucket: ""
-};
-firebase.initializeApp(config);
+// var config = {
+//     apiKey: "AIzaSyDx2elBwIOx7X_3YErUUHF9pgXmhXrGSxI",
+//     authDomain: "wing-money-propelrr.firebaseapp.com",
+//     databaseURL: "https://wing-money-propelrr.firebaseio.com",
+//     storageBucket: ""
+// };
+// firebase.initializeApp(config);
 
-var database = firebase.database();
+// var database = firebase.database();
 
-// $('#verfication-code').change(function() {
-//     if ($(this).val().length == 6) {
-//         $.ajax({
-//             url: "/exec/verify-sms.php",
-//             type: "POST",
-//             data: {
-//                 code: $(this).val(),
-//                 id: $('input[name=id]').val()
-//             },
-//             success: function(data) {
-//                 $('.final-step-form').slideUp(300);
-//                 $('.create-pin-account').slideDown(500);
-//             }
-//         });
-//     }
-// });
+$('#verfication-code').change(function() {
+    if ($(this).val().length == 6) {
+        $.ajax({
+            url: "/exec/verify-sms.php",
+            type: "POST",
+            data: {
+                code: $(this).val(),
+                id: $('input[name=id]').val()
+            },
+            success: function(data) {
+                $('.final-step-form').slideUp(300);
+                $('.create-pin-account').slideDown(500);
+            }
+        });
+    }
+});
 $('#resendCode').click(function(e) {
     e.preventDefault();
     $.ajax({
@@ -134,7 +134,8 @@ $('.create-pin-account').submit(function(e){
                 if(!data.error){
                     var accountNum = data.leads_info.contact;
                     $('.create-pin-account').removeClass('overlay');
-                    database.ref('leads').child(data.id).set(data);
+                    // database.ref('leads').child(data.id).set(data);
+                    
                     var f = document.createElement("form");
                     f.setAttribute('method',"post");
                     f.setAttribute('action',"thankyou.php");

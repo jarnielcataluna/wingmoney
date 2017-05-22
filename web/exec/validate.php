@@ -4001,7 +4001,7 @@
     );
 
 
-    $prefix = substr($_POST['contact'], 0, 5);
+    $prefix = substr($_POST['contact_num'], 0, 5);
     $_POST['operator'] = '';
     $_POST['prefix'] = $prefix;
     foreach($operators as $operator){
@@ -4020,7 +4020,7 @@
 
     $ch = curl_init();
 
-    curl_setopt($ch, CURLOPT_URL, "http://propelrrtools.ap-southeast-1.elasticbeanstalk.com/listener/wing/form/data");
+    curl_setopt($ch, CURLOPT_URL, "http://tools.propelrr.com.local/listener/wing/form/data");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
     curl_setopt($ch, CURLOPT_HEADER, FALSE);
     curl_setopt($ch, CURLOPT_POST, TRUE);
