@@ -77,16 +77,17 @@ session_start();
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>Get your FREE Wing <br>Account NOW!</h3>
+						<h3>Get your FREE Wing <br>Account Rohas NOW </h3>
+						<h3><strong>to WIN MORE, WING IT!</strong></h3>
 						<p>Enjoy fast, secure and convenient mobile money services in Cambodia!</p>
 						<a href="form.php" class="btn click-apply">CLICK HERE TO APPLY</a>
 						<p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img src="images/page_template/h-graphic1.png" alt="">
-						<div class="cc-circle">
+						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -97,10 +98,11 @@ session_start();
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
-						<h3>HERE’S EVERYTHING <br>YOU CAN DO WITH</h3>
-						<div class="logo-inverted">
+						<h3>HERE’S EVERYTHING <br>YOU CAN DO!</h3>
+						<h3><strong>WIN MORE, WING IT!</strong></h3>
+						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
-						</div>
+						</div> -->
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img src="images/page_template/h-graphic2.png" alt="">
@@ -110,7 +112,7 @@ session_start();
 							<ul class="slides">
 								<li>
 									<div class="flex-item">
-										<h2>WING SERVICES </h2>
+										<h2>WING SERVICES</h2>
 										<p>Access all the Wing services using your mobile phone via USSD.</p>
 										<p><strong>Just dial *000# and follow the menu.</strong></p>
 										<ul>
@@ -162,6 +164,7 @@ session_start();
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<h5>Why wait?</h5>
 						<h3>Get your own Wing Account NOW!</h3>
+						<h3><strong>WIN MORE, WING IT!</strong></h3>
 						<a href="form.php" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
@@ -191,7 +194,7 @@ session_start();
 <script src="js/materialize.js" ></script>
 <script src="js/jquery.appear.js" ></script>
 <script src="js/devices.js" ></script>
-<script src="js/owl.carousel.js" ></script>
+<script src="js/jquery.flexslider.js" ></script>
 <script src="js/select.js" ></script>
 <script src="js/plugins.js" ></script>
 <script src="js/custom.js" ></script>

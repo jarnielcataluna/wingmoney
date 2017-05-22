@@ -369,6 +369,13 @@ $(window).load(function() {
 
             });
 
+            $('.flexslider').flexslider({
+                animation: "slide",
+                directionNav: true,
+                prevText: "&nbsp;",           //String: Set the text for the "previous" directionNav item
+                nextText: "&nbsp;",   
+            });
+
             $('.find-out-more, .btn-knowmore').click(function(e){
                 e.preventDefault();
                 var __this = $(this),
