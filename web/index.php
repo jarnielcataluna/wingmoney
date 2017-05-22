@@ -182,7 +182,7 @@ session_start();
 </section>
 <footer>
 	<div class="terms-wrap">
-		<p class=><a href="#">READ TERMS &amp; CONDITIONS</a></p>
+		<p class=""><a>&copy; 2017 Wing (Cambodia) Limited Specialised Bank.</a></p>
 	</div>
 </footer>
 
@@ -198,6 +198,14 @@ session_start();
 <script src="js/select.js" ></script>
 <script src="js/plugins.js" ></script>
 <script src="js/custom.js" ></script>
+<script>
+	$('.flexslider').flexslider({
+        animation: "slide",
+        directionNav: true,
+        prevText: "&nbsp;",           //String: Set the text for the "previous" directionNav item
+        nextText: "&nbsp;",   
+    });
+</script>
 <!-- <script type="text/javascript">
 	function downloadJSAtOnload() {
 		var element = document.createElement("script");
