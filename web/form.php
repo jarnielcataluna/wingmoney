@@ -57,22 +57,20 @@ session_start();
         <section class="main-wrapper">
             <div class="container">
                 <div class="e-step-box">
-                    <h4>Get A Wing Account Now <span>In Just 3 Easy Steps!</span></h4>
+                    <h4>Get A Wing Account Rohas In 3 Steps!</span></h4>
                     <ol>
-                        <li>Sign up with Facebook or fill up this form. </li>
-                        <li>Enter the verification code sent via SMS. </li>
-                        <li>Create your Wing account PIN and you will get your Wing account number via a SMS.</li>
+                        <li><span>Sign up with Facebook or fill up this form. </span></li>
+                        <li><span>Enter the verification code sent via SMS. </span></li>
+                        <li><span>Create your Wing account PIN and you will get your Wing account number via a SMS.</span></li>
                     </ol>
                 </div>
                 <div class="account-app-wrap">
-                    <h2 class="sec-title text-center">Account Application</h2>
                     <div class="wing-form-wrap">
                         <form class="wing-form" method="post" action="exec/validate.php" novalidate>
                             <div class="signup-fb">
-                                <a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Apply Now Using Facebook</span></a>
+                                <a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign up with Facebook</span></a>
                             </div>
-                            <p class="form-text">Or fill up this form</p>
-
+                            <p class="form-text">Or fill up the form</p>
                             <input type="hidden" name="fb_uid" id="fb_uid"/>
                             <input type="hidden" name="fb_fname" id="fb_fname"/>
                             <input type="hidden" name="fb_lname" id="fb_lname"/>

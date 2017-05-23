@@ -8515,6 +8515,9 @@ html, body {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .loader {
@@ -8552,13 +8555,13 @@ header {
 
 @media (min-width: 768px) {
   header {
-    padding-top: 42px;
+    padding-top: 32px;
   }
 }
 
 header:before {
   content: '';
-  height: 200px;
+  height: 90px;
   background: #b2c224;
   position: absolute;
   top: 100%;
@@ -8569,7 +8572,7 @@ header:before {
 
 @media (min-width: 480px) {
   header:before {
-    height: 140px;
+    height: 110px;
   }
 }
 
@@ -10250,15 +10253,14 @@ strong {
 }
 
 .signup-fb a {
-  display: block;
-  width: 100%;
+  display: inline-block;
   border: none;
   background: #39579b;
   padding: 5px 5px;
   height: 50px;
   line-height: 38px;
   vertical-align: middle;
-  min-width: 290px;
+  min-width: 270px;
   color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
@@ -10273,7 +10275,7 @@ strong {
 }
 
 .signup-fb .fa {
-  color: #1e2e52;
+  color: #fff;
   font-size: 34px;
   vertical-align: middle;
   padding: 0 16px 0 10px;
@@ -10290,10 +10292,11 @@ strong {
   display: inline-block;
   vertical-align: middle;
   line-height: 40px;
-  padding: 0px 26px;
-  border-left: 1px solid #1e2e52;
-  font-size: 14px;
+  padding: 0px 16px;
+  border-left: 1px solid #fff;
+  font-size: 16px;
   color: #ffffff;
+  font-weight: bold;
   -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   -moz-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   -ms-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -10403,7 +10406,7 @@ strong {
   -webkit-appearance: none;
   appearance: none;
   outline: none;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -10624,7 +10627,8 @@ input::-webkit-inner-spin-button {
 .custom-radio input[type="radio"] + label span {
   display: block;
   position: relative;
-  z-index: 3;
+  z-index: 10;
+  color: #000;
 }
 
 .custom-radio input[type="radio"]:checked + label:before {
@@ -10859,6 +10863,9 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   text-transform: uppercase;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 @media (min-width: 768px) {
@@ -10931,7 +10938,7 @@ input::-webkit-inner-spin-button {
 
 .e-step-box {
   border-top: 5px solid #00adef;
-  padding: 25px 10px;
+  padding: 15px 10px;
   margin: 0 auto 15px;
   max-width: 618px;
   background: #ffffff;
@@ -10940,7 +10947,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   width: 100%;
   z-index: 2;
-  min-height: 237px;
+  min-height: 135px;
 }
 
 @media (min-width: 768px) {
@@ -10951,7 +10958,7 @@ input::-webkit-inner-spin-button {
 }
 
 .e-step-box h4 {
-  font-size: 20px;
+  font-size: 14px;
   margin-bottom: 10px;
   color: #00adef;
 }
@@ -10972,7 +10979,7 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 768px) {
   .e-step-box ol {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
@@ -10980,12 +10987,27 @@ input::-webkit-inner-spin-button {
   list-style-type: decimal;
   padding-bottom: 7px;
   font-size: 14px;
+  font-weight: bold;
+}
+
+.e-step-box ol li span {
+  display: inline-block;
+  font-weight: normal;
+  vertical-align: top;
+  font-size: 13px;
 }
 
 @media (min-width: 768px) {
   .e-step-box ol li {
-    padding-bottom: 15px;
-    font-size: 16px;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .e-step-box ol li span {
+    display: inline-block;
+    font-weight: normal;
+    vertical-align: top;
+    font-size: 14px;
   }
 }
 
