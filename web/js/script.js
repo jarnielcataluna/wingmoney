@@ -263,6 +263,8 @@ $(document).ready(function(){
                             alert('Wing Account already exists. Please register another phone number.');
                         }
                     }
+
+                    $('.btn-wrapper').css({'opacity' : '1'});
                 }
             });
 
