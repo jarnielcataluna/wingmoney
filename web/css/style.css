@@ -10963,6 +10963,18 @@ input::-webkit-inner-spin-button {
   color: #00adef;
 }
 
+@media (min-width: 375px) {
+  .e-step-box h4 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 414px) {
+  .e-step-box h4 {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .e-step-box h4 {
     text-align: center;
