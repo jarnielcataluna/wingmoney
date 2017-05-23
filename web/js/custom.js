@@ -242,7 +242,7 @@ $(document).ready(function() {
             $('.gender').find('.custom-select-display').css({'color' : '#000'});
 
             if($("input[value='']:not(:checkbox,:button):visible:empty:first").length > 0) {
-                $("input[value='']:not(:checkbox,:button):visible:empty:first").focus();
+                //$("input[value='']:not(:checkbox,:button):visible:empty:first").focus();
             } else {
                 $(".wing-form select").each(function(){
                     var  lengthEmpty = $(this).val();
