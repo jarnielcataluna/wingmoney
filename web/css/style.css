@@ -10645,7 +10645,6 @@ input::-webkit-inner-spin-button {
   opacity: 1;
 }
 
-.custom-radio input[type="radio"] + label span,
 .custom-radio input[type="radio"]:checked + label:before span {
   color: #ffffff !important;
 }
