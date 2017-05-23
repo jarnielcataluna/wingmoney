@@ -10647,7 +10647,7 @@ input::-webkit-inner-spin-button {
 
 .custom-radio input[type="radio"] + label span,
 .custom-radio input[type="radio"]:checked + label:before span {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 /* Base for label styling */
