@@ -99,7 +99,7 @@ session_start();
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
-						<h3>HERE’S EVERYTHING <br>YOU CAN DO!</h3>
+						<h3>THERE ARE SO MANY <br>WAYS TO WING IT!</h3>
 						<h3><strong>#WingIt <i style="font-weight:400;">to</i> Wing MORE!</strong></h3>
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
@@ -113,41 +113,45 @@ session_start();
 							<ul class="slides">
 								<li>
 									<div class="flex-item">
-										<h2>WING SERVICES </h2>
-										<p>Access all the Wing services using your mobile phone via USSD.</p>
-										<p><strong>Just dial *000# and follow the menu.</strong></p>
-										<ul>
-											<li>Pay Online</li>
-											<li>Send &amp; Transfer Noney</li>
-											<li>Phone top up &amp; buy a voucher</li>
-											<li>Blls Payment</li>
-										</ul>
+										<h2>Send Money </h2>
+										<p>&nbsp;</p>
+										<p><strong>Send Money to friends and family around Cambodia and beyond!</strong></p>
+										<p>No matter where you are, you'll be able to send money quickly and safely when you WING IT!</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>WING <br>Card</h2>
-										<p>Access all the Wing services using your mobile phone via USSD.</p>
-										<p><strong>Just dial *000# and follow the menu.</strong></p>
-										<ul>
-											<li>Pay with Wing</li>
-											<li>Discount Program</li>
-										</ul>
+										<h2>Phone<br> Top Up</h2>
+										<p><strong>Recharge your phone's credits super quick.</strong></p>
+										<p>You can load up with your Wing account</p>
+										<p><strong>Or</strong></p>
+										<p>Through any Wing agent!</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>WING Account </h2>
-										<p>Access all the Wing services using your mobile phone via USSD.</p>
-										<p><strong>Just dial *000# and follow the menu.</strong></p>
-										<ul>
-											<li>Opening a Wing Account</li>
-											<li>Wing Account Fees</li>
-											<li>Cashing In and Cashing Out</li>
-										</ul>
+										<h2>Bills Payment</h2>
+										<p><strong>You can make your Bills Payment anywhere using your phone.</strong></p>
+										<p>Pay bills with your Wing account</p>
+										<p><strong>Or</strong></p>
+										<p>With Wing Cash Xpress</p>
 									</div>
 								</li>
-								
+								<li>
+									<div class="flex-item">
+										<h2>Pay with wing</h2>
+										<p><strong>Pay with Wing at restaurants, cinemas, clothes shops, and so much more without cash!</strong></p>
+										<p>All you need is a swipe or a tap!</p>
+										<p>Instantly pay with Wing at your favorite sellers.</p>
+									</div>
+								</li>
+								<li>
+									<div class="flex-item">
+										<h2>Online Payment</h2>
+										<p><strong>Online Payment lets you conveniently buy a wide variety of products without even leaving your home.</strong></p>
+										<p>Wing card holders can use their Wing accounts to buy things online with local companies.</p>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
