@@ -114,7 +114,7 @@ session_start();
 									<div class="flex-item">
 										<h2>WING SERVICES</h2>
 										<p>Access all the Wing services using your mobile phone via USSD.</p>
-										<p><strong>Just dial *000# and follow the menu.</strong></p>
+										<p><strong>Just dial *989# and follow the menu.</strong></p>
 										<ul>
 											<li>pay online</li>
 											<li>send &amp; transfer money</li>
@@ -127,7 +127,7 @@ session_start();
 									<div class="flex-item">
 										<h2>WING SERVICES </h2>
 										<p>Access all the Wing services using your mobile phone via USSD.</p>
-										<p><strong>Just dial *000# and follow the menu.</strong></p>
+										<p><strong>Just dial *989# and follow the menu.</strong></p>
 										<ul>
 											<li>pay online</li>
 											<li>send &amp; transfer money</li>
@@ -140,7 +140,7 @@ session_start();
 									<div class="flex-item">
 										<h2>WING SERVICES </h2>
 										<p>Access all the Wing services using your mobile phone via USSD.</p>
-										<p><strong>Just dial *000# and follow the menu.</strong></p>
+										<p><strong>Just dial *989# and follow the menu.</strong></p>
 										<ul>
 											<li>pay online</li>
 											<li>send &amp; transfer money</li>
