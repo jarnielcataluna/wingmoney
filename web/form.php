@@ -59,7 +59,7 @@ session_start();
                 <div class="e-step-box">
                     <h4>Get A Wing Account Rohas In 3 Steps!</span></h4>
                     <ol>
-                        <li><span>Sign up with Facebook or fill up this form. </span></li>
+                        <li><span>Sign up with Facebook or fill up the form. </span></li>
                         <li><span>Enter the verification code sent via SMS. </span></li>
                         <li><span>Create your Wing account PIN and you will get your Wing account number via a SMS.</span></li>
                     </ol>
