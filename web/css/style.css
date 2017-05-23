@@ -10407,6 +10407,7 @@ strong {
   appearance: none;
   outline: none;
   font-size: 14px;
+  border-radius: 0;
 }
 
 @media (min-width: 768px) {
@@ -10938,7 +10939,7 @@ input::-webkit-inner-spin-button {
 
 .e-step-box {
   border-top: 5px solid #00adef;
-  padding: 15px 15px;
+  padding: 15px 15px 5px;
   margin: 0 auto 15px;
   max-width: 618px;
   background: #ffffff;
