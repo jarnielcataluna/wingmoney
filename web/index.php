@@ -102,7 +102,7 @@ session_start();
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
 						<h3>THERE ARE SO MANY <br>WAYS TO WING IT!</h3>
-						<h3><strong>#WingIt <i style="font-weight:400;">to</i> Wing MORE!</strong></h3>
+						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Win MORE!</strong></h3>
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->
