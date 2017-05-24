@@ -68,7 +68,12 @@ session_start();
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
 								<!-- <a href="#layout-1" class="find-out-more animated hiding" data-animation="fadeInUp" data-delay="500">Find out how <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a> -->
-								<a href="form.php" class="btn click-apply apply-now-button">Apply now</a>
+								<!-- <a href="form.php" class="btn click-apply apply-now-button">Apply now</a> -->
+								<div class="text-center">
+									<a href="form.php" class="btn click-apply apply-now-button">Apply now</a>
+								</div>
+
+								<a href="#layout-1" class="find-out-more animated hiding" data-animation="fadeInUp" data-delay="500"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
 							</div>
 						</div>
 					</div>
