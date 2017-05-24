@@ -63,7 +63,7 @@ session_start();
 						<div class="table-cell">
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIt <i>to</i> Wing MORE!</h1>
+								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIT <i>to</i> Win MORE!</h1>
 								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register to Wing Account Rojas and <br> get 15% discount in any of our partner merchants.</p>
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
@@ -81,7 +81,7 @@ session_start();
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<h3>Get your FREE Wing <br>Account Rohas NOW </h3>
-						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Wing MORE!</strong></h3>
+						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Win MORE!</strong></h3>
 						<p>Enjoy fast, secure and convenient mobile money services in Cambodia!</p>
 						<a href="form.php" class="btn click-apply">CLICK HERE TO APPLY</a>
 						<p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
@@ -168,7 +168,7 @@ session_start();
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<h5>Why wait?</h5>
 						<h3>Get your own Wing Account NOW!</h3>
-						<h3><strong>#WingIt <i style="font-weight:400;">to</i> Wing MORE!</strong></h3>
+						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Win MORE!</strong></h3>
 						<a href="form.php" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
