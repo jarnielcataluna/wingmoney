@@ -67,13 +67,11 @@ session_start();
 								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register to Wing Account Rohas and <br> get 15% discount in any of our partner merchants.</p>
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
-								<!-- <a href="#layout-1" class="find-out-more animated hiding" data-animation="fadeInUp" data-delay="500">Find out how <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a> -->
-								<!-- <a href="form.php" class="btn click-apply apply-now-button">Apply now</a> -->
 								<div class="text-center">
 									<a href="form.php" class="btn click-apply apply-now-button">Apply now</a>
 								</div>
 
-								<a href="#layout-1" class="find-out-more animated hiding" data-animation="fadeInUp" data-delay="500"><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+								<a href="#layout-1" class="find-out-more animated hiding" data-animation="fadeInUp" data-delay="500">WAIT, I WANT TO KNOW MORE <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
 							</div>
 						</div>
 					</div>
@@ -81,6 +79,7 @@ session_start();
 			</div>
 		</section>
 
+		<?php /*
 		<section id="layout-1" class="sec-pad null-top">
 			<div class="layout-1">
 				<div class="container">
@@ -100,6 +99,7 @@ session_start();
 				</div>
 			</div>
 		</section>
+		*/ ?>
 
 		<section id="layout-2" class="sec-pad">
 			<div class="layout-2">
