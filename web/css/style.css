@@ -9732,12 +9732,27 @@ strong {
     margin-top: 30px;
     margin-bottom: 20px;
   }
+  .apply-now-button {
+    font-size: 18px;
+    border: none;
+    padding: 10px 37px;
+    border-radius: 30px;
+    margin-top: 8px;
+  }
 }
 
 @media (min-width: 768px) {
   .click-apply {
     font-size: 18px;
     padding: 12px 30px;
+  }
+
+  .apply-now-button {
+    font-size: 21px;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 30px;
+    margin-top: 8px;
   }
 }
 
@@ -9747,6 +9762,14 @@ strong {
     padding: 12px 60px;
     border-radius: 60px;
     margin-bottom: 40px;
+  }
+
+  .apply-now-button {
+    font-size: 21px;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 30px;
+    margin-top: 8px;
   }
 }
 
