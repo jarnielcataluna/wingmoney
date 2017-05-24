@@ -81,7 +81,7 @@ session_start();
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<h3>Get your FREE Wing <br>Account Rohas NOW </h3>
-						<h3><strong>#WingIt <i style="font-weight:400;">to</i> Wing MORE!</strong></h3>
+						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Wing MORE!</strong></h3>
 						<p>Enjoy fast, secure and convenient mobile money services in Cambodia!</p>
 						<a href="form.php" class="btn click-apply">CLICK HERE TO APPLY</a>
 						<p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
