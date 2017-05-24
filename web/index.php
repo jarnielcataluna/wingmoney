@@ -51,7 +51,7 @@ session_start();
 		<div class="home-header">
 			<div class="container">
 				<div class="w-logo fl"><img src="images/page_template/logo.png" alt=""></div>
-				<a href="form.php" class="apply-now fr">Apply now</a>
+				<!-- <a href="form.php" class="apply-now fr">Apply now</a> -->
 				<div class="clr"></div>
 			</div>
 		</div>
@@ -66,7 +66,9 @@ session_start();
 								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIt <i>to</i> Wing MORE!</h1>
 								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register to Wing Account Rojas and <br> get 15% discount in any of our partner merchants.</p>
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
-								<a href="#layout-1" class="find-out-more animated hiding" data-animation="fadeInUp" data-delay="500">Find out how <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+
+								<!-- <a href="#layout-1" class="find-out-more animated hiding" data-animation="fadeInUp" data-delay="500">Find out how <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a> -->
+								<a href="form.php" class="apply-now">Apply now</a>
 							</div>
 						</div>
 					</div>
