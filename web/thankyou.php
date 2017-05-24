@@ -83,8 +83,8 @@
 							<div class="dl-img-wrap"><img src="images/page_template/dl-img1.png" alt=""></div>
 							<h3>The WING MOBILE APP</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-							<a href="#" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
-							<a href="#" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
+							<a href="https://itunes.apple.com/us/app/wing-money/id1113286385?mt=8" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
+							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
 							
 						</div>
 					</div>
