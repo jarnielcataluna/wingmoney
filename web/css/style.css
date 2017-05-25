@@ -9324,8 +9324,8 @@ strong {
 }
 
 .banner-wrap .logo {
-  margin-bottom: 75px;
-  margin-top: 40px;
+  margin-bottom: 55px;
+  margin-top: 25px;
 }
 
 @media (min-width: 768px) {
@@ -9336,7 +9336,7 @@ strong {
 
 @media (min-width: 991px) {
   .banner-wrap .logo {
-    margin-bottom: 70px;
+    margin-bottom: 55px;
   }
 }
 
@@ -9761,7 +9761,7 @@ strong {
     font-size: 18px;
     padding: 12px 60px;
     border-radius: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .apply-now-button {
