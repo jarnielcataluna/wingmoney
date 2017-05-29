@@ -11788,6 +11788,60 @@ img#refresh {
   transform: scale(1);
 }
 
+.wpml-languages {
+  display: inline-block;
+  padding: 3px 8px;
+  background: #fff;
+  border-radius: 10px;
+  float: right;
+  margin-top: 15px;
+}
+
+.wpml-languages ul {
+  display: none;
+}
+
+.wpml-languages a {
+  padding-right: 14px;
+  position: relative;
+  display: block;
+}
+
+.wpml-languages a i {
+  position: absolute;
+  right: -2px;
+  top: 2px;
+}
+
+.btn-ghost {
+  border: none;
+  background: transparent;
+  margin-top: 10px;
+}
+
+.btn-ghost i {
+  padding: 5px;
+  background: transparent;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: #00adef;
+  position: relative;
+  top: 0;
+  font-size: 14px;
+  border: 2px solid #fff;
+}
+
+.btn-ghost i:before {
+
+  content: "\f04b";
+  position: relative;
+  top: -2px;
+  left: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+
 @-webkit-keyframes pulse {
   0%, 100%, 80% {
     opacity: 0; }

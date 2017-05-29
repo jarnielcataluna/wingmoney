@@ -54,11 +54,11 @@ session_start();
 				<!-- <a href="form.php" class="apply-now fr">Watch Video</a> -->
 				<div class="wpml-languages enabled">
 					<a class="active tooltip" data-tooltip="No translations available for this page">
-						<img src="images/en.png" alt="" width="18" height="12">
+						<img src="images/km.png" alt="" width="18" height="12">
 						<i class="fa fa-angle-down" aria-hidden="true"></i>
 					</a>
 					<ul class="wpml-lang-dropdown">
-						<li><a href="khmer-home.php"><img src="images/km.png" alt="" width="18" height="12"></a></li>
+						<li><a href="index.php"><img src="images/en.png" alt="" width="18" height="12"></a></li>
 					</ul>
 				</div>
 
@@ -73,16 +73,15 @@ session_start();
 						<div class="table-cell">
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIT <i>to</i> Win MORE!</h1>
+								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">ប្រើប្រាស់វីងមានឱកាសឈ្នះរង្វាន់ជាច្រើន!</h1>
 								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register a Wing Account Rohas and <br> get 15% discount in any of our partner merchants.</p>
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
-									<a href="form.php" class="btn click-apply apply-now-button">Apply now</a><br>
-									<a href="#" class="btn btn-ghost">See how it works <i class="fa fa-play" aria-hidden="true"></i></a>
+									<a href="form.php" class="btn click-apply apply-now-button">Apply now</a>
 								</div>
 
-								<!-- <a href="#layout-2" class="find-out-more">WAIT, I WANT TO KNOW MORE <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a> -->
+								<a href="#layout-2" class="find-out-more">WAIT, I WANT TO KNOW MORE <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
 							</div>
 						</div>
 					</div>
