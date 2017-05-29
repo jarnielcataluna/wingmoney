@@ -9307,7 +9307,7 @@ strong {
     left: 0;
     width: 100%;
     height: 100%;
-    padding-top: 25px;
+    padding-top: 60px;
   }
 }
 
@@ -9324,13 +9324,14 @@ strong {
 }
 
 .banner-wrap .logo {
-  margin-bottom: 55px;
+  margin-bottom: 25px;
   margin-top: 25px;
 }
 
 @media (min-width: 768px) {
   .banner-wrap .logo {
     max-width: 480px;
+    margin-bottom: 45px;
   }
 }
 
@@ -9377,6 +9378,11 @@ strong {
   margin-bottom: 20px;
 }
 
+.khmer-lang .banner-text h1 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
 .banner-text h1 i {
   font-weight: 400;
 }
@@ -9385,6 +9391,11 @@ strong {
   .banner-text h1 {
     font-size: 45px;
     line-height: 52px;
+  }
+
+  .khmer-lang .banner-text h1 {
+    font-size: 38px;
+    line-height: 44px;
   }
 }
 
@@ -9395,12 +9406,20 @@ strong {
     margin-top: 10px;
     xmargin-bottom: 90px;
   }
+
+  .khmer-lang .banner-text h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
   .banner-text h1 br {
     display: none;
   }
 
   .banner-text p  {
     font-size: 24px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
@@ -9781,7 +9800,7 @@ strong {
 
 @media (min-width: 1025px) {
   .layout-2 {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 }
 
@@ -9810,6 +9829,7 @@ strong {
   .layout-2 .text-content h3 {
     font-size: 45px;
     line-height: 55px;
+    max-width: 550px;
   }
 }
 
@@ -9823,7 +9843,7 @@ strong {
 .layout-2 .graphic-wrap {
   margin: 0 auto;
   right: -40%;
-  top: -60px;
+  top: -50px;
   position: relative;
 }
 
@@ -10024,7 +10044,7 @@ strong {
 
 @media (min-width: 768px) {
   .layout-3 {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
 }
@@ -11603,14 +11623,25 @@ input::-webkit-inner-spin-button {
   padding: 0px 15px;
 }
 
+.hide-mobile {
+  display: none;
+}
+
 @media (min-width: 640px) {
   .claiming-num {
     padding: 0px 45px;
+  }
+
+  .hide-mobile {
+    display: table-cell;
   }
 }
 .new-recaptcha-wrap {
   margin-top: 20px;
 }
+
+
+
 
 #captchacode {
   border-top: 1px solid #ccc;
@@ -11794,7 +11825,7 @@ img#refresh {
   background: #fff;
   border-radius: 10px;
   float: right;
-  margin-top: 15px;
+  margin-top: 3px;
 }
 
 .wpml-languages ul {
@@ -11840,6 +11871,89 @@ img#refresh {
   left: 2px;
   font-size: 14px;
   color: #fff;
+}
+
+table {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+
+  table { 
+    font-size: 14px; 
+  } 
+
+  .wpml-languages {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  table { 
+    font-size: 16px; 
+  } 
+}
+
+#layout-4 {
+  position: relative;
+  top: -140px;
+}
+
+#layout-4 h3 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 18px;
+  font-weight: 300;
+  font-family: "roboto", "Helvetica", "Arial", "sans-serif";
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  #layout-4 h3 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: 991px) {
+  #layout-4 h3 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  #layout-4 {
+    position: relative;
+    top: 0px;
+  }
+}
+
+
+
+table th, table td {
+  padding: 5px 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  vertical-align: middle;
+}
+
+table th {
+  font-weight: 700;
+  padding: 8px 10px;
+}
+
+@media (min-width: 768px) {
+  table th, table td {
+    padding: 5px 10px;
+    border: 2px solid #fff;
+  }
 }
 
 @-webkit-keyframes pulse {

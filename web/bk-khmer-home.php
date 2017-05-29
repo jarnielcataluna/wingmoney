@@ -47,7 +47,7 @@ session_start();
 <!-- End Google Tag Manager -->
 <section id="main-container">
 
-	<section id="main-wrapper" class="home-bg khmer-lang">
+	<section id="main-wrapper" class="home-bg">
 		<div class="home-header">
 			<div class="container">
 				<div class="w-logo fl"><img src="images/page_template/logo.png" alt=""></div>
@@ -74,15 +74,14 @@ session_start();
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
 								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">ប្រើប្រាស់វីងមានឱកាសឈ្នះរង្វាន់ជាច្រើន!</h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">ចុះឈ្មោះគណនីរហ័សរបស់វីង និងទទួលបានការបញ្ចុះតម្លៃ 15% ពីដៃគូសហការ។</p>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register a Wing Account Rohas and <br> get 15% discount in any of our partner merchants.</p>
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
-									<a href="form.php" class="btn click-apply apply-now-button">ស្នើសុំឥឡូវនេះ</a><br>
-									<a href="#" class="btn btn-ghost">See how it works <i class="fa fa-play" aria-hidden="true"></i></a>
+									<a href="form.php" class="btn click-apply apply-now-button">Apply now</a>
 								</div>
 
-								<!-- <a href="#layout-2" class="find-out-more">WAIT, I WANT TO KNOW MORE <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a> -->
+								<a href="#layout-2" class="find-out-more">WAIT, I WANT TO KNOW MORE <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
 							</div>
 						</div>
 					</div>
@@ -117,8 +116,8 @@ session_start();
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
-						<h3>ប្រើប្រាស់វីងដើម្បីទទួលបានអត្ថប្រយោជន៍ជាច្រើន!</h3>
-						<h3><strong>ប្រើប្រាស់វីងមានឱកាសឈ្នះរង្វាន់ជាច្រើន!</strong></h3>
+						<h3>THERE ARE SO MANY <br>WAYS TO WING IT!</h3>
+						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Win MORE!</strong></h3>
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->
@@ -131,43 +130,43 @@ session_start();
 							<ul class="slides">
 								<li>
 									<div class="flex-item">
-										<h2>វេរលុយ</h2>
+										<h2>Send Money </h2>
 										<p>&nbsp;</p>
-										<p><strong>វេរលុុយឲ្យមិត្តភក្តិ និងគ្រួសារក្នុងប្រទេសកម្ពុជា និងទៅក្រៅប្រទេស!</strong></p>
-										<p>មិនថាអ្នកនៅកន្លែងណា អ្នកអាចវេរលុយបានលឿន និងសុវត្ថិភាពពេលប្រើប្រាស់វីង!</p>
+										<p><strong>Send Money to friends and family around Cambodia and beyond!</strong></p>
+										<p>No matter where you are, you'll be able to send money quickly and safely when you WING IT!</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>បញ្ចូលទឹកប្រាក់ទូរស័ព្ទ</h2>
-										<p><strong>បញ្ចូលទឹកប្រាក់ទូរស័ព្ទបានរហ័ស។</strong></p>
-										<p>អ្នកអាចបញ្ចូលទឹកប្រាក់ទូរស័ព្ទតាមគណនីវីង</p>
-										<p><strong>ឬ</strong></p>
-										<p>តាមភ្នាក់ងារវីង!</p>
+										<h2>Phone<br> Top Up</h2>
+										<p><strong>Recharge your phone's credits super quick.</strong></p>
+										<p>You can load up with your Wing account</p>
+										<p><strong>Or</strong></p>
+										<p>Through any Wing agent!</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>ទូទាត់វិក្កយបត្រ</h2>
-										<p><strong>ទូទាត់វិក្កយបត្រគ្រប់ទីកន្លែងតាមរយៈទូរស័ព្ទដៃរបស់អ្នក។</strong></p>
-										<p>ទូទាត់វិក្កយបត្រតាមរយៈគណនីវីងរបស់អ្នក</p>
-										<p><strong>ឬ</strong></p>
-										<p>With Wing Cash Xpressជាមួយភ្នាក់ងារវីង</p>
+										<h2>Bills Payment</h2>
+										<p><strong>You can make your Bills Payment anywhere using your phone.</strong></p>
+										<p>Pay bills with your Wing account</p>
+										<p><strong>Or</strong></p>
+										<p>With Wing Cash Xpress</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>វីងគិតលុយ</h2>
-										<p><strong>បង់ប្រាក់ជាមួយវីងគិតលុយនៅតាមភោជនីយដ្ឋាន រោងភាពយន្ត ហាងលក់សំលៀកបំពាក់ ។ល។ ដោយមិនចាំបាច់មានសាច់ប្រាក់សុទ្ធ!</strong></p>
-										<p>អតិថិជនគ្រាន់តែមានកាតរឹង ឬទូរស័ព្ទដៃតែប៉ុណ្ណោះ!</p>
-										<p>បង់ប្រាក់ភ្លាមៗជាមួយវីងគិតលុយនៅហាងដែលអ្នកពេញចិត្ត។</p>
+										<h2>Pay with wing</h2>
+										<p><strong>Pay with Wing at restaurants, cinemas, clothes shops, and so much more without cash!</strong></p>
+										<p>All you need is a swipe or a tap!</p>
+										<p>Instantly pay with Wing at your favorite sellers.</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>ទូទាត់ប្រាក់តាមអ៊ីនធឺណិត</h2>
-										<p><strong>សេវាកម្មទូទាត់ប្រាក់តាមអ៊ីនធឺណិតអនុញ្ញាតឲ្យអ្នកទិញទំនិញច្រើនប្រភេទដោយមិនចាំបាច់ចេញទៅក្រៅ។</strong></p>
-										<p>អតិថិជនដែលមានកាតវីងទាំងអស់អាចប្រើគណនីវីងរបស់ខ្លួនដើម្បីទិញទំនិញតាមអ៊ីនធឺណិតជាមួយក្រុមហ៊ុនជាច្រើនកន្លែងក្នុងស្រុក។</p>
+										<h2>Online Payment</h2>
+										<p><strong>Online Payment lets you conveniently buy a wide variety of products without even leaving your home.</strong></p>
+										<p>Wing card holders can use their Wing accounts to buy things online with local companies.</p>
 									</div>
 								</li>
 							</ul>
@@ -177,80 +176,15 @@ session_start();
 			</div>
 		</section>
 
-
-		<section id="layout-4" class="sec-pad">
-			<div class="layout-2">
-				<div class="container">
-					<h3>Account Limit <br>&amp; Services Fee</h3>
-					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-						<tr>
-							<th style="width:48px;" class="hide-mobile">លេខរៀង</th>
-							<th>ប្រភេទសេវា</th>
-							<th>ឈ្មោះសេវា</th>
-							<th>ចំនួនកំណត់ក្នុងមួយប្រតិបត្តិការ</th>
-							<th>កម្រៃសេវា</th>
-						</tr>
-						<tr>
-							<td rowspan="2" class="text-center hide-mobile"><strong>1</strong></td>
-							<td rowspan="2"><strong>ផ្ទេរប្រាក់</strong></td>
-							<td>វីងទៅវីង</td>
-							<td>៣០០​ ដុល្លារ</td>
-							<td rowspan="8" class="text-center">អនុវត្តតាមកម្រៃសេវាស្តង់ដា</td>
-						</tr>
-						<tr>
-							<td>វីងវេរលុយ</td>
-							<td>១០០ ដុល្លារ/ថ្ងៃ</td>
-						</tr>
-						<tr>
-							<td class="text-center hide-mobile"><strong>2</strong></td>
-							<td><strong>បញ្ចូលលុយទូរស័ព្ទ</strong></td>
-							<td>បញ្ចូលលុយទូរស័ព្ទ</td>
-							<td>៥០០​ ដុល្លារ</td>
-						</tr>
-						
-						<tr>
-							<td rowspan="3" class="text-center hide-mobile"><strong>3</strong></td>
-							<td rowspan="3"><strong>ទូទាត់ចំណាយ</strong></td>
-							<td>ទូទាត់វិក្កយបត្រ</td>
-							<td>៥០០​ ដុល្លារ</td>
-						</tr>
-						<tr>
-							<td>ទូទាត់វិក្កយបត្រតាមអនឡាញ</td>
-							<td>៥០០​ ដុល្លារ</td>
-						</tr>
-						<tr>
-							<td>វីងគិតលុយ</td>
-							<td>៥០០​ ដុល្លារ</td>
-						</tr>
-						<tr>
-							<td rowspan="2" class="text-center hide-mobile"><strong>4</strong></td>
-							<td rowspan="2"><strong>ដាក់ ឬ ដកប្រាក់</strong></td>
-							<td>ដាក់ប្រាក់</td>
-							<td>ឥតកំណត់</td>
-						</tr>
-						<tr>
-							<td>ដកប្រាក់</td>
-							<td>១០០ ដុល្លារ/ថ្ងៃUSD 100/day</td>
-						</tr>
-						<tr>
-							<td class="text-center hide-mobile"><strong>5</strong></td>
-							<td colspan="2" ><strong>ចំនួនទឹកប្រាក់តម្កល់ទុកក្នុងគណនី</strong></td>
-							<td colspan="2" class="text-center">ឥតកំណត់</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</section>
-
 		<section class="sec-pad null-top null-bot">
 			<div class="layout-3">
 				<div class="layout-3-bg"></div>
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h5>ចាំអីទៀត?</h5>
-						<h3>បើកគណនីវីងរបស់អ្នកឥឡូវនេះ!</h3>
-						<h3><strong>ប្រើប្រាស់វីងមានឱកាសឈ្នះរង្វាន់ជាច្រើន!</strong></h3>
-						<a href="form.php" class="btn click-apply btn-desktop">ស្នើសុំឥតគិតថ្លៃ</a>
+						<h5>Why wait?</h5>
+						<h3>Get your own Wing Account NOW!</h3>
+						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Win MORE!</strong></h3>
+						<a href="form.php" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img src="images/page_template/h-graphic3.png" alt="">
@@ -258,7 +192,7 @@ session_start();
 					
 					<div class="clr"></div>
 					<div class="text-center">
-						<a href="form.php" class="btn click-apply btn-mobile">ស្នើសុំឥតគិតថ្លៃ</a>
+						<a href="form.php" class="btn click-apply btn-mobile">APPLY FOR FREE!</a>
 					</div>
 				</div>
 			</div>

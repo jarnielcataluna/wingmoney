@@ -177,6 +177,71 @@ session_start();
 			</div>
 		</section>
 
+
+		<section id="layout-4" class="sec-pad">
+			<div class="layout-2">
+				<div class="container">
+					<h3>Account Limit <br>&amp; Services Fee</h3>
+					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+						<tr>
+							<th style="width:48px;" class="hide-mobile">No.</th>
+							<th>Service Type</th>
+							<th>Service Name</th>
+							<th>Limit/TXN</th>
+							<th>Service Fee</th>
+						</tr>
+						<tr>
+							<td rowspan="2" class="text-center hide-mobile"><strong>1</strong></td>
+							<td rowspan="2"><strong>Money Transfer</strong></td>
+							<td>Wing to Wing</td>
+							<td>USD 300</td>
+							<td rowspan="8" class="text-center">Follow Standard Fee Charge</td>
+						</tr>
+						<tr>
+							<td>Wing WeiLuy</td>
+							<td>USD 100/day</td>
+						</tr>
+						<tr>
+							<td class="text-center hide-mobile"><strong>2</strong></td>
+							<td><strong>Airtime Recharge</strong></td>
+							<td>Phone Top Up</td>
+							<td>USD 500</td>
+						</tr>
+						
+						<tr>
+							<td rowspan="3" class="text-center hide-mobile"><strong>3</strong></td>
+							<td rowspan="3"><strong>Payments</strong></td>
+							<td>Bill Payment</td>
+							<td>USD 500</td>
+						</tr>
+						<tr>
+							<td>Online Payment</td>
+							<td>USD 500</td>
+						</tr>
+						<tr>
+							<td>Retail Payment</td>
+							<td>USD 500</td>
+						</tr>
+						<tr>
+							<td rowspan="2" class="text-center hide-mobile"><strong>4</strong></td>
+							<td rowspan="2"><strong>Cash In/Out</strong></td>
+							<td>Cash In</td>
+							<td>Unlimited</td>
+						</tr>
+						<tr>
+							<td>Cash Out</td>
+							<td>USD 100/day</td>
+						</tr>
+						<tr>
+							<td class="text-center hide-mobile"><strong>5</strong></td>
+							<td colspan="2" ><strong>mWAC Wallet Storage</strong></td>
+							<td colspan="2" class="text-center">Unlimited</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
 		<section class="sec-pad null-top null-bot">
 			<div class="layout-3">
 				<div class="layout-3-bg"></div>
