@@ -3,7 +3,7 @@
 session_start();
 ?>
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="km">
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex,nofollow" />
@@ -78,7 +78,7 @@ session_start();
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
-									<a href="form.php" class="btn click-apply apply-now-button">ស្នើសុំឥឡូវនេះ</a><br>
+									<a href="khmer-form.php" class="btn click-apply apply-now-button">ស្នើសុំឥឡូវនេះ</a><br>
 									<a href="#" class="btn btn-ghost">See how it works <i class="fa fa-play" aria-hidden="true"></i></a>
 								</div>
 
@@ -181,7 +181,7 @@ session_start();
 		<section id="layout-4" class="sec-pad">
 			<div class="layout-2">
 				<div class="container">
-					<h3>Account Limit <br>&amp; Services Fee</h3>
+					<h3>ការកំណត់នៃគណនី និងតម្លៃសេវា</h3>
 					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
 						<tr>
 							<th style="width:48px;" class="hide-mobile">លេខរៀង</th>
@@ -250,7 +250,7 @@ session_start();
 						<h5>ចាំអីទៀត?</h5>
 						<h3>បើកគណនីវីងរបស់អ្នកឥឡូវនេះ!</h3>
 						<h3><strong>ប្រើប្រាស់វីងមានឱកាសឈ្នះរង្វាន់ជាច្រើន!</strong></h3>
-						<a href="form.php" class="btn click-apply btn-desktop">ស្នើសុំឥតគិតថ្លៃ</a>
+						<a href="khmer-form.php" class="btn click-apply btn-desktop">ស្នើសុំឥតគិតថ្លៃ</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img src="images/page_template/h-graphic3.png" alt="">
@@ -258,7 +258,7 @@ session_start();
 					
 					<div class="clr"></div>
 					<div class="text-center">
-						<a href="form.php" class="btn click-apply btn-mobile">ស្នើសុំឥតគិតថ្លៃ</a>
+						<a href="khmer-form.php" class="btn click-apply btn-mobile">ស្នើសុំឥតគិតថ្លៃ</a>
 					</div>
 				</div>
 			</div>
@@ -267,7 +267,7 @@ session_start();
 </section>
 <footer>
 	<div class="terms-wrap">
-		<p class=""><a>&copy; 2017 Wing (Cambodia) Limited Specialised Bank.</a></p>
+		<p class=""><a>&copy; ធនាគារឯកទេសវីង (ខេមបូឌា) លីមីតធីត 2017</a></p>
 	</div>
 </footer>
 

@@ -3,7 +3,7 @@
 session_start();
 ?>
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="km">
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex,nofollow" />
@@ -57,20 +57,20 @@ session_start();
         <section class="main-wrapper">
             <div class="container">
                 <div class="e-step-box">
-                    <h4>Get A Wing Account Rohas In 3 Steps!</span></h4>
+                    <h4>បើកគណនីវីងរហ័សតែ 3 ដំណាក់កាលប៉ុណ្ណោះ!</span></h4>
                     <ol>
-                        <li><span>Sign up with Facebook or fill up the form. </span></li>
-                        <li><span>Enter the verification code sent via SMS. </span></li>
-                        <li><span>Create your Wing account PIN and you will get your Wing account number via a SMS.</span></li>
+                        <li><span>ចុះឈ្មោះជាមួយ Facebook ឬបំពេញបែបបទ </span></li>
+                        <li><span>បញ្ចូលលេខកូដដើម្បីបញ្ជាក់ដែលទទួលបានពីសារ </span></li>
+                        <li><span>បង្កើតលេខ PIN គណនីវីងរបស់អ្នក រួចអ្នកនឹងទទួលបានសារពីលេខគណនីវីងរបស់អ្នក</span></li>
                     </ol>
                 </div>
                 <div class="account-app-wrap">
                     <div class="wing-form-wrap">
                         <form class="wing-form" method="post" action="exec/validate.php" novalidate>
                             <div class="signup-fb">
-                                <a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign up with Facebook</span></a>
+                                <a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>ចុះឈ្មោះជាមួយ Facebook</span></a>
                             </div>
-                            <p class="form-text">Or fill up the form</p>
+                            <p class="form-text">ឬបំពេញបែបបទ</p>
                             <input type="hidden" name="fb_uid" id="fb_uid"/>
                             <input type="hidden" name="fb_fname" id="fb_fname"/>
                             <input type="hidden" name="fb_lname" id="fb_lname"/>
@@ -82,53 +82,53 @@ session_start();
                                 
                                 <div class="input-wrap">
                                     <input type="text" id="first-name" name="fname" value="" maxLength="20" required="required" onchange="this.setAttribute('value', this.value);">
-                                    <label for="first-name">First Name</label>
+                                    <label for="first-name">នាម</label>
                                     <div class="required-tooltip right">
-                                        <p>This field is required <span>*</span></p>
+                                        <p>តម្រូវឲ្យបំពេញនៅកន្លែងនេះ <span>*</span></p>
                                     </div>
                                 </div>
                                 <div class="input-wrap">
                                     <input type="text" id="last-name" name="lname" value="" maxLength="20" required="required" onchange="this.setAttribute('value', this.value);">
-                                    <label for="last-name">Family Name</label>
+                                    <label for="last-name">គោត្តនាម</label>
                                     <div class="required-tooltip right">
-                                        <p>This field is required <span>*</span></p>
+                                        <p>តម្រូវឲ្យបំពេញនៅកន្លែងនេះ <span>*</span></p>
                                     </div>
                                 </div>
                                 <div class="input-wrap input-half">
                                     <input type="text" id="birthday" name="dob" value="" required="required" readonly>
-                                    <label for="birthday" id="birthday-label">Date of Birth</label>
+                                    <label for="birthday" id="birthday-label">ថ្ងៃខែឆ្នាំកំណើត</label>
                                     <div class="required-tooltip left">
-                                        <p>This field is required <span>*</span></p>
+                                        <p>តម្រូវឲ្យបំពេញនៅកន្លែងនេះ <span>*</span></p>
                                     </div>
                                 </div>
                                 <div class="input-wrap input-half gender">
                                     <select class="custom-select" name="gender" id="gender">
-                                        <option value="M">Male</option>
-                                        <option value="F">Female</option>
+                                        <option value="M">ប្រុស</option>
+                                        <option value="F">ស្រី</option>
                                     </select>
                                     <div class="required-tooltip right">
-                                        <p>This field is required <span>*</span></p>
+                                        <p>តម្រូវឲ្យបំពេញនៅកន្លែងនេះ <span>*</span></p>
                                     </div>
                                 </div>
                                 <div class="clr"></div>
                                 <div class="input-wrap mobile-num">
                                     <input type="tel" id="contact-num" name="contact_num" value=""  maxLength="10" required="required" onchange="this.setAttribute('value', this.value);">
-                                    <label for="contact-num">Mobile Number</label>
+                                    <label for="contact-num">លេខទូរស័ព្ទ</label>
                                     <div class="required-tooltip left">
-                                        <p>This field is required <span>*</span></p>
+                                        <p>តម្រូវឲ្យបំពេញនៅកន្លែងនេះ <span>*</span></p>
                                     </div>
                                 </div>
                                 <div class="input-wrap email-wrapper no-error">
                                     <input type="email" id="account-email" name="email" value="" required="required" onchange="this.setAttribute('value', this.value);">
-                                    <label for="account-email">Email</label>
+                                    <label for="account-email">អ៊ីម៉ែល</label>
                                     <div class="required-tooltip right">
-                                        <p>This field is required <span>*</span></p>
+                                        <p>តម្រូវឲ្យបំពេញនៅកន្លែងនេះ <span>*</span></p>
                                     </div>
                                 </div>
                                 
                                 <div class="clr"></div>
                                 <div class="input-wrap choose-currency">
-                                    <label>Choose Currency:</label>
+                                    <label>ជ្រើសរើសរូបីយប័ណ្ណ:</label>
                                     <div class="custom-radio khmer">
                                         <input type="radio" id="Khmer" name="currency" value="KHR" data-value="KHR">
                                         <label for="Khmer"><span>KHR</span></label>
@@ -147,23 +147,21 @@ session_start();
                                         <img src="images/reload.png" width="25" alt="" id="refresh" />
                                         <br clear="all" />
                                     </div>
-                                        <input name="captchacode" type="text" id="captchacode" value="" placeholder="Type the random letter here..">
-                                    
-                                    
+                                        <input name="captchacode" type="text" id="captchacode" value="" placeholder="វាយអក្សរដែលបានបង្ហាញទីនេះ">
 
                                     <div class="required-tooltip left">
-                                        <p>Please verify that you are not a robot.<span>*</span></p>
+                                        <p>សូមបញ្ជាក់ថាអ្នកមិនមែនជារ៉ូបូត.<span>*</span></p>
                                     </div>
                                 </div>
                                 
                                 <div class="wing-checkbox terms-condi-wrap">
                                     <input type="checkbox" id="terms-checkbox"/>
-                                    <label for="terms-checkbox">I accept Wing <a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank" style="color: #00adef;">terms &amp; conditions.</a></label>
+                                    <label for="terms-checkbox">ខ្ញុំយល់ព្រមចំពោះ <a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank" style="color: #00adef;">ខចែង និងលក្ខខណ្ឌ</a></label>
                                 </div>
                                 
                                 <div class="text-center">
                                     <div class="input-wrap btn-wrapper">
-                                        <input type="submit" class="btn btn-orange" name="" value="SUBMIT MY APPLICATION" />
+                                        <input type="submit" class="btn btn-orange" name="" value="ដាក់ពាក្យស្នើសុំ" />
                                     </div>
                                 </div>
 
