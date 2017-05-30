@@ -288,7 +288,7 @@ $(document).ready(function(){
 
                             setTimeout(function(){
                                 $('.number-exist-wrap').removeClass('active');
-                            }, 4000);
+                            }, 6000);
                         }
                     }
 
