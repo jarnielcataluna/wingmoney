@@ -139,7 +139,7 @@ $(document).ready(function() {
             changeMonth: true,
             changeYear: true,
             yearRange: '-80:-13',
-            defaultDate: '01/01/1940',
+            defaultDate: '01/01/1980',
             onSelect: function(dateText, inst) {
                 console.log(dateText);
                 this.setAttribute('value', this.value);
