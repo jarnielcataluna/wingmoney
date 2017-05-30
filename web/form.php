@@ -78,6 +78,7 @@ session_start();
                             <input type="hidden" name="fb_profile_pic" id="fb_profile_pic"/>
                             <input type="hidden" name="client_ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>" />
                             <input type="hidden" name="client_id" value="<?php echo $_COOKIE['_ga']; ?>" />
+                            <input type="hidden" name="language" id="language" value="en" />
                             <div class="form-row">
                                 
                                 <div class="input-wrap">
