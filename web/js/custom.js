@@ -135,7 +135,7 @@ $(document).ready(function() {
 
     if($('#birthday').length > 0 ){
         $('#birthday').datepicker({
-            minDate: new Date(1980,1-1,1), maxDate:'-13Y',
+            minDate: new Date(1940,1-1,1), maxDate:'-13Y',
             changeMonth: true,
             changeYear: true,
             yearRange: '-80:-13',
