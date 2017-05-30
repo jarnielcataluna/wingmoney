@@ -47,7 +47,11 @@ session_start();
     })(window,document,'script','dataLayer','GTM-MPRR96');</script>
 <!-- End Google Tag Manager -->
 <section id="main-container">
-
+        <div class="number-exist-wrap">
+            <div class="container">
+                <p><strong>Wing Account already exists.</strong> Please register another phone number.</p>
+            </div>
+        </div>
     <section id="main-wrapper" class="form-bg">
 
         <header>

@@ -47,7 +47,11 @@ session_start();
     })(window,document,'script','dataLayer','GTM-MPRR96');</script>
 <!-- End Google Tag Manager -->
 <section id="main-container">
-
+<div class="number-exist-wrap">
+            <div class="container">
+                <p><strong>គណនីវីងមានរួចហើយ។</strong> សូមចុះឈ្មោះជាមួយលេខទូរស័ព្ទផ្សេង។</p>
+            </div>
+        </div>
     <section id="main-wrapper" class="form-bg">
 
         <header>

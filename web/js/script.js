@@ -85,6 +85,10 @@ $(document).ready(function(){
         currencyItem = val;
     });
 
+    $('#contact-num').focus(function(){
+        $('.number-exist-wrap').removeClass('active');
+    });
+
     $('.wing-form').submit(function(e){
         e.preventDefault();
         $('.input-wrap:not(.no-error)').addClass('error');
@@ -277,7 +281,14 @@ $(document).ready(function(){
                         } else {
                             $('.wing-form-wrap').removeClass('overlay');
                             $('.btn-wrapper').css({'opacity' : '1'});
-                            alert('Wing Account already exists. Please register another phone number.');
+                            // alert('Wing Account already exists. Please register another phone number.');
+
+                            $('.number-exist-wrap').addClass('active');
+
+
+                            setTimeout(function(){
+                                $('.number-exist-wrap').removeClass('active');
+                            }, 4000);
                         }
                     }
 

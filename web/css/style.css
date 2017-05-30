@@ -11100,7 +11100,7 @@ input::-webkit-inner-spin-button {
 .account-app-wrap {
   max-width: 530px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   background: #ffffff;
   padding-bottom: 25px;
 }
@@ -11912,11 +11912,41 @@ table {
   text-transform: uppercase;
 }
 
+.number-exist-wrap {
+  position: fixed;
+  bottom: -30px;
+  width: 100%;
+  z-index: 2001;
+  background: #F2DEDE;
+  font-size: 10px;
+  padding: 10px 0;
+  color: #B25047;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  height: auto;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.number-exist-wrap.active {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
 @media (min-width: 768px) {
   #layout-4 h3 {
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 18px;
+  }
+
+  .number-exist-wrap {
+    font-size: 14px;
+    padding: 10px 0;
   }
 }
 
