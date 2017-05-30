@@ -105,6 +105,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 							    <div class="f-sms-wrap">
 									<div class="input-wrap no-b-margin">
 										<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
+										<input type="hidden" name="language" id="language" value="kh" />
 										<input type="password" id="verfication-code" name="verification_code" maxLength="4" value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 
 										<label for="verfication-code">បញ្ចូលលេខ PIN ដើម្បីបញ្ជាក់</label>
@@ -113,7 +114,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 											<p>តម្រូវឲ្យបំពេញលេខកូដ PIN ជាបណ្តោះអាសន្ន <span>*</span></p>
 										</div>
 									</div>
-									<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="VERIFY" id="verifySms" style="margin-top: 15px;">
+									<input type="submit" class="btn btn-orange btn-verfication-code" name="" value="ផ្ទៀង​ផ្ទាត់" id="verifySms" style="margin-top: 15px;">
 								</div>
 						    </div>
 
@@ -142,7 +143,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 									</div>
 								</div>
 								<div class="input-wrap btn-wrapper">
-									<input type="submit" class="btn btn-green" name="" value="Create my account" id="createAccount">
+									<input type="submit" class="btn btn-green" name="" value="បង្កើតគណនី" id="createAccount">
 								</div>
 								
 								<!-- <div class="input-wrap">

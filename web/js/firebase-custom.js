@@ -163,23 +163,45 @@ $(window).load(function(){
                         var accountNum = data.leads_info.contact;
                         $('.final-step').removeClass('overlay');
                         // database.ref('leads').child(data.id).set(data);
-                        
-                        var f = document.createElement("form");
-                        f.setAttribute('method',"post");
-                        f.setAttribute('action',"thankyou.php");
-                        f.setAttribute('id',"redirect-form");
 
-                        var i = document.createElement("input"); //input element, text
-                        i.setAttribute('type',"hidden");
-                        i.setAttribute('name',"id");
-                        i.setAttribute('value', data.id);
-                        f.appendChild(i);
+                        var language = $('#language').val();
+                        if (language == "kh") {
 
-                        var a = document.createElement("input");
-                        a.setAttribute('type', "hidden");
-                        a.setAttribute('name', "accountNum");
-                        a.setAttribute('value', accountNum);
-                        f.appendChild(a);
+                            var f = document.createElement("form");
+                            f.setAttribute('method',"post");
+                            f.setAttribute('action',"khmer-thankyou.php");
+                            f.setAttribute('id',"redirect-form");
+
+                            var i = document.createElement("input"); //input element, text
+                            i.setAttribute('type',"hidden");
+                            i.setAttribute('name',"id");
+                            i.setAttribute('value', data.id);
+                            f.appendChild(i);
+
+                            var a = document.createElement("input");
+                            a.setAttribute('type', "hidden");
+                            a.setAttribute('name', "accountNum");
+                            a.setAttribute('value', accountNum);
+                            f.appendChild(a);
+
+                        } else {
+                            var f = document.createElement("form");
+                            f.setAttribute('method',"post");
+                            f.setAttribute('action',"thankyou.php");
+                            f.setAttribute('id',"redirect-form");
+
+                            var i = document.createElement("input"); //input element, text
+                            i.setAttribute('type',"hidden");
+                            i.setAttribute('name',"id");
+                            i.setAttribute('value', data.id);
+                            f.appendChild(i);
+
+                            var a = document.createElement("input");
+                            a.setAttribute('type', "hidden");
+                            a.setAttribute('name', "accountNum");
+                            a.setAttribute('value', accountNum);
+                            f.appendChild(a);
+                        }
 
                         document.getElementsByTagName('body')[0].appendChild(f);
 

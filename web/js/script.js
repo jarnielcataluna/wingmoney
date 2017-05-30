@@ -240,18 +240,35 @@ $(document).ready(function(){
                                     } else {
                                         
                                         $('.wing-form-wrap').addClass('remove');
+                                        var language = $('#language').val();
 
-                                        var f = document.createElement("form");
-                                        f.setAttribute('method',"post");
-                                        f.setAttribute('action',"confirmation.php");
-                                        f.setAttribute('id',"redirect-form");
+                                        if (language == "kh") {
 
-                                        var i = document.createElement("input"); //input element, text
-                                        i.setAttribute('type',"hidden");
-                                        i.setAttribute('name',"id");
-                                        i.setAttribute('value', data.id);
-                                        f.appendChild(i);
-                                        document.getElementsByTagName('body')[0].appendChild(f);
+                                            var f = document.createElement("form");
+                                            f.setAttribute('method',"post");
+                                            f.setAttribute('action',"khmer-confirmation.php");
+                                            f.setAttribute('id',"redirect-form");
+
+                                            var i = document.createElement("input"); //input element, text
+                                            i.setAttribute('type',"hidden");
+                                            i.setAttribute('name',"id");
+                                            i.setAttribute('value', data.id);
+                                            f.appendChild(i);
+                                            document.getElementsByTagName('body')[0].appendChild(f);
+
+                                        } else {
+                                            var f = document.createElement("form");
+                                            f.setAttribute('method',"post");
+                                            f.setAttribute('action',"confirmation.php");
+                                            f.setAttribute('id',"redirect-form");
+
+                                            var i = document.createElement("input"); //input element, text
+                                            i.setAttribute('type',"hidden");
+                                            i.setAttribute('name',"id");
+                                            i.setAttribute('value', data.id);
+                                            f.appendChild(i);
+                                            document.getElementsByTagName('body')[0].appendChild(f);
+                                        }                                        
 
                                         $('#redirect-form').submit();
                                     }
