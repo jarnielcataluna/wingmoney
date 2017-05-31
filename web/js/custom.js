@@ -344,7 +344,6 @@ $(document).ready(function() {
 
 $(window).load(function() {
 	resize();
-    timer();
 
     $('.wing-form-wrap').show();
     setTimeout(function() {
