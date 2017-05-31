@@ -93,6 +93,12 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 			</div>
 		</header>
 
+		<div class="number-exist-wrap">
+            <div class="container">
+                <p>You have reached the maximum number of attempts to request for resending of PIN.</p>
+            </div>
+        </div>
+
 		<section class="main-wrapper">
 			<div class="container">
 				<div class="e-step-box">
@@ -105,7 +111,6 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 							    <div class="f-sms-wrap">
 									<div class="input-wrap no-b-margin">
 										<input type="hidden" name="id" value="<?php echo $_POST['id']; ?>" />
-										<input type="hidden" name="language" id="language" value="en" />
 										<input type="password" id="verfication-code" name="verification_code" maxLength="4" value="<?php if(isset($_POST['verification_code'])) echo $_POST['verification_code']; ?>" required="required" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 
 										<label for="verfication-code">Enter Verification PIN</label>
@@ -128,6 +133,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
 							          <i class="three"></i>
 							        </span>
 							    </div> -->
+								<input type="hidden" name="language" id="language" value="en" />
 								<div class="input-wrap">
 									<input type="password" name="" value="" id="pin-id" minLength="4" maxLength="4" required="required" autocomplete="new-password"/>
 									<label for="pin-id">Choose your 4-digit PIN code</label>
