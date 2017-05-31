@@ -254,6 +254,6 @@ function timer() {
         
     }
 
-  document.getElementById("timer").innerHTML= "Wait for "+ count + " seconds to resend the code"; // watch for spelling
+  document.getElementById("timer").innerHTML= "Wait for <span style='color: #00adef;'>"+ count + " seconds</span> to resend the code"; // watch for spelling
 
 }

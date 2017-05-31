@@ -165,6 +165,7 @@ if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header
                                 </span>
                             </div>
 							<p class="resend-code">មិនទាន់ទទួលបានលេខកូដ PIN មែនទេ? <a href="#" id="resendCode">ផ្ញើលេខកូដ PIN ម្តងទៀត</a></p>
+							<p id="timer"></p>
 						</form>
 					</div>
 				</div>

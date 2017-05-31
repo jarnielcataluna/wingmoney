@@ -74,7 +74,7 @@ session_start();
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
 								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIT <i>to</i> Win MORE!</h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register a Wing Account Rohas and <br> get 15% discount in any of our partner merchants. <span id="timer"></span></p>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register a Wing Account Rohas and <br> get 15% discount in any of our partner merchants.</p>
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
