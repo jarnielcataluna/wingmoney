@@ -51,6 +51,8 @@ $(window).load(function(){
 
     $('#resendCode').click(function(e) {
         e.preventDefault();
+
+        $('.final-step').addClass('overlay');
         $.ajax({
             url: "/exec/resend-code.php",
             type: "POST",
@@ -58,10 +60,19 @@ $(window).load(function(){
                 id: $('input[name=id]').val()
             },
             success: function(data) {
+                $('.final-step').removeClass('overlay');
                 console.log(data);
 
-                $('.resend-info').css({'opacity' : '1'});
-                
+                var _data = jQuery.parseJSON(data);
+
+                if (_data.error == 1) {
+                    $('.number-exist-wrap').addClass('active');
+                    setTimeout(function(){
+                        $('.number-exist-wrap').removeClass('active');
+                    }, 6000);
+                } else {
+                    $('.resend-info').css({'opacity' : '1'});
+                }            
             }
         });
     });
@@ -146,7 +157,7 @@ $(window).load(function(){
                 $('.final-step').removeClass('overlay');
                 isvalidate = false;
             }
-        } 
+        }
 
         if(  $('#pin-id').val() != '' && isvalidate == true ) {
 
@@ -164,8 +175,9 @@ $(window).load(function(){
                         $('.final-step').removeClass('overlay');
                         // database.ref('leads').child(data.id).set(data);
 
-                        var language = $('#language').val();
-                        if (language == "kh") {
+                        var confLang = $('.create-pin-account #language').val();
+
+                        if (confLang == "kh") {
 
                             var f = document.createElement("form");
                             f.setAttribute('method',"post");

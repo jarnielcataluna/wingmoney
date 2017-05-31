@@ -239,7 +239,14 @@ $(document).ready(function(){
                                     if(data.error) {
 
                                         $('.wing-form-wrap').removeClass('overlay');
-                                        alert(data.error);
+                                        // alert(data.error);
+
+                                        $('.number-exist-wrap .container').html('<p><strong>'+data.error+'</p>');
+                                        $('.number-exist-wrap').addClass('active');
+
+                                        setTimeout(function(){
+                                            $('.number-exist-wrap').removeClass('active');
+                                        }, 6000);
 
                                     } else {
                                         
