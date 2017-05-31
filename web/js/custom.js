@@ -344,6 +344,7 @@ $(document).ready(function() {
 
 $(window).load(function() {
 	resize();
+    timer();
 
     $('.wing-form-wrap').show();
     setTimeout(function() {
@@ -401,5 +402,24 @@ function addParameterToURL(param){
     _url = location.href;
     _url += (_url.split('?')[1] ? '&':'?') + param;
     return _url;
+}
+
+var count=30;
+var counter=setInterval(timer, 1000)
+
+function timer() {
+  count=count-1;
+
+    if (count <= 0) {
+        $('#timer').hide();
+        clearInterval(counter);
+        return;
+
+    } else {
+        
+    }
+
+  document.getElementById("timer").innerHTML=count + " secs"; // watch for spelling
+
 }
 

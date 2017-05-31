@@ -62,6 +62,8 @@ $(window).load(function(){
             success: function(data) {
                 $('.final-step').removeClass('overlay');
                 console.log(data);
+                $('.resend-code').hide();
+                timer();
 
                 var _data = jQuery.parseJSON(data);
 
@@ -234,3 +236,24 @@ $(window).load(function(){
         }
     });
 });
+
+
+var count=30;
+var counter=setInterval(timer, 1000)
+
+function timer() {
+  count=count-1;
+
+    if (count <= 0) {
+        $('#timer').hide();
+        $('.resend-code').show();
+        clearInterval(counter);
+        return;
+
+    } else {
+        
+    }
+
+  document.getElementById("timer").innerHTML= "Wait for "+ count + " seconds to resend the code"; // watch for spelling
+
+}
