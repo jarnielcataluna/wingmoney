@@ -404,22 +404,5 @@ function addParameterToURL(param){
     return _url;
 }
 
-var count=30;
-var counter=setInterval(timer, 1000)
 
-function timer() {
-  count=count-1;
-
-    if (count <= 0) {
-        $('#timer').hide();
-        clearInterval(counter);
-        return;
-
-    } else {
-        
-    }
-
-  document.getElementById("timer").innerHTML=count + " secs"; // watch for spelling
-
-}
 
