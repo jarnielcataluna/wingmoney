@@ -63,7 +63,7 @@ $(window).load(function(){
                 $('.final-step').removeClass('overlay');
                 console.log(data);
                 $('.resend-code').hide();
-                timer();
+                var counter=setInterval(timer, 1000);
 
                 var _data = jQuery.parseJSON(data);
 
@@ -239,7 +239,7 @@ $(window).load(function(){
 
 
 var count=30;
-var counter=setInterval(timer, 1000)
+
 
 function timer() {
   count=count-1;
