@@ -122,7 +122,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                                 <div class="clr"></div>
                                 <div class="input-wrap mobile-num">
-                                    <input type="tel" id="contact-num" name="contact_num" value=""  maxLength="11" required="required" onchange="this.setAttribute('value', this.value);">
+                                    <input type="tel" id="contact-num" name="contact_num" value=""  maxLength="10" required="required" onchange="this.setAttribute('value', this.value);">
                                     <label for="contact-num">Mobile Number</label>
                                     <div class="required-tooltip left">
                                         <p>This field is required <span>*</span></p>
