@@ -121,7 +121,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                                 <div class="clr"></div>
                                 <div class="input-wrap mobile-num">
-                                    <input type="tel" id="contact-num" name="contact_num" value=""  maxLength="11" required="required" onchange="this.setAttribute('value', this.value);">
+                                    <input type="tel" id="contact-num" name="contact_num" value=""  maxLength="10" required="required" onchange="this.setAttribute('value', this.value);">
                                     <label for="contact-num">លេខទូរស័ព្ទ</label>
                                     <div class="required-tooltip left">
                                         <p>តម្រូវឲ្យបំពេញនៅកន្លែងនេះ <span>*</span></p>
