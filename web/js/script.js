@@ -129,7 +129,7 @@ $(document).ready(function(){
         }
 
         if(isSeries){
-            if( $('#contact-num').val() != '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 10 ){
+            if( $('#contact-num').val() != '' && isNumber( '+855' + $('#contact-num').val() ) && $('#contact-num').val().length >= 9 ){
                 $('#contact-num').closest('.input-wrap').removeClass('error');
                 isvalidate = true;
             } else {
