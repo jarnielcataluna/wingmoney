@@ -10512,7 +10512,7 @@ strong {
   margin-left: 5px;
 }
 
-.input-wrap input[required]:valid + label, .input-wrap input[required]:focus + label, .input-wrap input:not([value=""]) + label {
+.input-wrap input[required]:valid + label, .input-wrap input[required]:focus + label, .input-wrap input:not([value=""]) + label, .input-wrap input[required]:active + label, .input-wrap input[required]:visited + label {
   opacity: 0;
   visibility: hidden;
   font-size: 10px;
