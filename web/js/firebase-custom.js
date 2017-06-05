@@ -9,7 +9,7 @@
 
 // var database = firebase.database();
 
-var counter = 0;
+var counter;
 
 $(window).load(function(){
 
