@@ -278,8 +278,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script src="js/needed-scripts.js" ></script>
 <script src="js/pace.min.js"></script>
-<script src="js/TweenMax.min.js"></script>
-<script src="js/ScrollToPlugin.min.js"></script>
+<!-- <script src="js/TweenMax.min.js"></script>
+<script src="js/ScrollToPlugin.min.js"></script> -->
 <script src="js/operators.js" ></script>
 <script src="js/materialize.js" ></script>
 <script src="js/jquery.appear.js" ></script>
