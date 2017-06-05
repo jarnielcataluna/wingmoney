@@ -245,18 +245,19 @@ var count=30;
 
 
 function timer() {
-  count=count-1;
+    count=count-1;
 
     if (count <= 0) {
         $('#timer').hide();
         $('.resend-code').show();
         clearInterval(counter);
+        count = 30;
         return;
 
     } else {
         
     }
 
-  document.getElementById("timer").innerHTML= "Wait for <span style='color: #00adef;'>"+ count + " seconds</span> to resend the code"; // watch for spelling
+    document.getElementById("timer").innerHTML= "Wait for <span style='color: #00adef;'>"+ count + " seconds</span> to resend the code"; // watch for spelling
 
 }
