@@ -9,6 +9,8 @@
 
 // var database = firebase.database();
 
+var counter = 0;
+
 $(window).load(function(){
 
     $('#verifySms').click(function(e) {
@@ -63,7 +65,7 @@ $(window).load(function(){
                 $('.final-step').removeClass('overlay');
                 console.log(data);
                 $('.resend-code').hide();
-                var counter=setInterval(timer, 1000);
+                counter=setInterval(timer, 1000);
 
                 var _data = jQuery.parseJSON(data);
 
