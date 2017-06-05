@@ -41,6 +41,7 @@ $(window).load(function(){
                             $('.final-step').removeClass('overlay');
                             $('.verification').hide();
                             $('.create-pin-account').slideDown(500);
+                            $('.resend-code').hide(300);
                         } else {
                             alert('Invalid code. Please input the correct verification code sent to your mobile.');
                             $('.final-step').removeClass('overlay');
@@ -122,7 +123,6 @@ $(window).load(function(){
                     if (!res.error) {
                         $('.final-step-form').slideUp(300);
                         $('.create-pin-account').slideDown(500);
-                        $('.resend-code').hide(300);
                     } else {
                         $('.final-step').removeClass('overlay');
                         var errorOutput = $('#verfication-code').closest('.input-wrap');
