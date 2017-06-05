@@ -105,7 +105,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </div>
                                 </div>
                                 <div class="input-wrap input-half">
-                                    <input type="text" id="birthday" name="dob" value="" required="required" onchange="this.setAttribute('value', this.value);" readonly>
+                                    <input type="text" id="birthday" name="dob" value="" required="required" readonly>
                                     <label for="birthday" id="birthday-label">Date of Birth</label>
                                     <div class="required-tooltip left">
                                         <p>This field is required <span>*</span></p>
