@@ -1,4 +1,4 @@
-var isScrollingAllowed = true;
+//var isScrollingAllowed = true;
 var win = $(window);
 var doc = $(document);
 
@@ -89,29 +89,29 @@ function scrollToDiv(element){
 }
 
 // SMOOTH SCROLL
-function smoothScroll() {
-    var scrollTime = 1;
-    var scrollDistance = 150;
+// function smoothScroll() {
+//     var scrollTime = 1;
+//     var scrollDistance = 150;
 
-    $(window).on("mousewheel DOMMouseScroll", function(event) {
-        event.preventDefault();
-        if (isScrollingAllowed) {
+//     $(window).on("mousewheel DOMMouseScroll", function(event) {
+//         event.preventDefault();
+//         if (isScrollingAllowed) {
 
-            // var delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
-            var delta = ( Math.abs(event.originalEvent.wheelDelta) < 120 ? event.originalEvent.wheelDelta / 6 : event.originalEvent.wheelDelta / 120 ) || -event.originalEvent.detail;
-            var scrollTop = win.scrollTop();
-            var finalScroll = scrollTop - parseInt(delta * scrollDistance);
+//             // var delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
+//             var delta = ( Math.abs(event.originalEvent.wheelDelta) < 120 ? event.originalEvent.wheelDelta / 6 : event.originalEvent.wheelDelta / 120 ) || -event.originalEvent.detail;
+//             var scrollTop = win.scrollTop();
+//             var finalScroll = scrollTop - parseInt(delta * scrollDistance);
 
-            TweenMax.to(win, scrollTime, {
-                scrollTo: { y: finalScroll, autoKill: true },
-                ease: Power1.easeOut,
-                autoKill: true,
-                overwrite: 5
-            });
-        }
-    });
+//             TweenMax.to(win, scrollTime, {
+//                 scrollTo: { y: finalScroll, autoKill: true },
+//                 ease: Power1.easeOut,
+//                 autoKill: true,
+//                 overwrite: 5
+//             });
+//         }
+//     });
 
-}
+// }
 
 
 $(window).resize(function() {
@@ -356,7 +356,7 @@ $(window).load(function() {
         setTimeout(function() {
             $('.pace-inactive').hide();
             pageInitAnim();
-            smoothScroll();
+            //smoothScroll();
             initCustomForm();
             
 
