@@ -122,6 +122,7 @@ $(window).load(function(){
                     if (!res.error) {
                         $('.final-step-form').slideUp(300);
                         $('.create-pin-account').slideDown(500);
+                        $('.resend-code').hide(300);
                     } else {
                         $('.final-step').removeClass('overlay');
                         var errorOutput = $('#verfication-code').closest('.input-wrap');
