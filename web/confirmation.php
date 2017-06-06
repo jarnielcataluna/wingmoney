@@ -241,7 +241,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="js/select.js" ></script>
 <script src="js/plugins.js" ></script>
 <script src="js/custom.js" ></script>
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
 <script src="js/firebase-custom.js"></script>
 
 <!-- <script type="text/javascript">
