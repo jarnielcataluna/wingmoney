@@ -62,7 +62,8 @@ session_start();
 		right: 100%;
 		width: 100%;
 		height: 4px;
-		background: #00adef;}
+		background: #00adef;
+	}
 
 	@media (max-width: 767px) {
 		.pace .pace-progress {
