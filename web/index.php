@@ -179,14 +179,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li>
 									<div class="flex-item">
 										<h2>Send Money </h2>
-										<p>&nbsp;</p>
 										<p><strong>Send Money to friends and family around Cambodia and beyond!</strong></p>
 										<p>No matter where you are, you'll be able to send money quickly and safely when you WING IT!</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Phone<br> Top Up</h2>
+										<h2>Phone Top Up</h2>
 										<p><strong>Recharge your phone's credits super quick.</strong></p>
 										<p>You can load up with your Wing account</p>
 										<p><strong>Or</strong></p>
