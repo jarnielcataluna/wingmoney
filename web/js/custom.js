@@ -54,20 +54,24 @@ function initCustomForm() {
 function pageInitAnim() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    $('.animated').appear(function() {
-        var element = $(this);
-        var animation = element.data('animation');
-        var animationDelay = element.data('delay');
-        if(animationDelay) {
-          setTimeout(function(){
+    if($(window).width() < 992) {
+        $('.hiding').css({'opacity' : 1});
+    } else {
+        $('.animated').appear(function() {
+            var element = $(this);
+            var animation = element.data('animation');
+            var animationDelay = element.data('delay');
+            if(animationDelay) {
+              setTimeout(function(){
+                  element.addClass( animation + " visible" );
+                  element.removeClass('hiding');
+              }, animationDelay);
+            } else {
               element.addClass( animation + " visible" );
               element.removeClass('hiding');
-          }, animationDelay);
-        } else {
-          element.addClass( animation + " visible" );
-          element.removeClass('hiding');
-        }               
-    }, {accY: -90});
+            }               
+        }, {accY: -90});
+    }
 }
 
 function scrollToDiv(element){
