@@ -63,6 +63,7 @@ session_start();
 		width: 100%;
 		height: 4px;
 		background: #00adef;
+		
 	}
 
 	@media (max-width: 767px) {
