@@ -126,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
 									<a href="form.php" class="btn click-apply apply-now-button">Apply now</a><br>
-									<a href="#" class="btn btn-ghost">See how it works <i class="fa fa-play" aria-hidden="true"></i></a>
+									<!-- <a href="#" class="btn btn-ghost">See how it works <i class="fa fa-play" aria-hidden="true"></i></a> -->
 								</div>
 
 								<!-- <a href="#layout-2" class="find-out-more">WAIT, I WANT TO KNOW MORE <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a> -->
