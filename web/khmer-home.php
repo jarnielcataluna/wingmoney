@@ -253,22 +253,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td class="text-center hide-mobile"><strong>2</strong></td>
 							<td><strong>បញ្ចូលលុយទូរស័ព្ទ</strong></td>
 							<td>បញ្ចូលលុយទូរស័ព្ទ</td>
-							<td>៥០០​ ដុល្លារ</td>
+							<td>៣០០០ ដុល្លារ</td>
 						</tr>
 						
 						<tr>
 							<td rowspan="3" class="text-center hide-mobile"><strong>3</strong></td>
 							<td rowspan="3"><strong>ទូទាត់ចំណាយ</strong></td>
 							<td>ទូទាត់វិក្កយបត្រ</td>
-							<td>៥០០​ ដុល្លារ</td>
+							<td>៣០០០ ដុល្លារ</td>
 						</tr>
 						<tr>
 							<td>ទូទាត់វិក្កយបត្រតាមអនឡាញ</td>
-							<td>៥០០​ ដុល្លារ</td>
+							<td>៣០០០ ដុល្លារ</td>
 						</tr>
 						<tr>
 							<td>វីងគិតលុយ</td>
-							<td>៥០០​ ដុល្លារ</td>
+							<td>៣០០០ ដុល្លារ</td>
 						</tr>
 						<tr>
 							<td rowspan="2" class="text-center hide-mobile"><strong>4</strong></td>

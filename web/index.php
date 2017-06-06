@@ -252,22 +252,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td class="text-center hide-mobile"><strong>2</strong></td>
 							<td><strong>Airtime Recharge</strong></td>
 							<td>Phone Top Up</td>
-							<td>USD 500</td>
+							<td>USD 3,000</td>
 						</tr>
 						
 						<tr>
 							<td rowspan="3" class="text-center hide-mobile"><strong>3</strong></td>
 							<td rowspan="3"><strong>Payments</strong></td>
 							<td>Bill Payment</td>
-							<td>USD 500</td>
+							<td>USD 3,000</td>
 						</tr>
 						<tr>
 							<td>Online Payment</td>
-							<td>USD 500</td>
+							<td>USD 3,000</td>
 						</tr>
 						<tr>
 							<td>Retail Payment</td>
-							<td>USD 500</td>
+							<td>USD 3,000</td>
 						</tr>
 						<tr>
 							<td rowspan="2" class="text-center hide-mobile"><strong>4</strong></td>
