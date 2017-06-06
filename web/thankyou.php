@@ -122,7 +122,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</ul>
 					</div> -->
 					<div class="ty-footer">
-						<a href="http://wing.searchoptmedia.com">
+						<a href="https://www.wingmoney.com/">
 							<h2>Visit our website</h2>
 							<div class="ty-logo">
 								<img src="images/page_template/logo.png" alt="">
