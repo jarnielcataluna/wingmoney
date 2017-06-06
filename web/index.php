@@ -32,6 +32,49 @@ session_start();
 
 <link rel="stylesheet" href="css/style.css" media="all"/>
 
+<style type="text/css">
+	.pace {
+		-webkit-pointer-events: none;
+		-moz-pointer-events: none;
+		-ms-pointer-events: none;
+		pointer-events: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		background: #ffffff;
+	}
+
+	.pace-inactive {
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+
+	.pace .pace-progress {
+		z-index: 2000;
+		position: fixed;
+		top: 0;
+		right: 100%;
+		width: 100%;
+		height: 2px;
+		background: rgba(255, 255, 255, 0.8);
+	}
+
+	@media (max-width: 767px) {
+		.pace .pace-progress {
+		display: none;
+		opacity: 0;
+		visibility: hidden; }
+	}
+
+	.pace-done #main-container { opacity: 1; }
+</style>
+
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
 <!-- <script src='https://www.google.com/recaptcha/api.js?manual_challenge=false' defer></script>  -->
 <!-- Google Tag Manager -->
@@ -276,8 +319,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script src="js/needed-scripts.js" ></script>
 <script src="js/pace.min.js"></script>
-<!-- <script src="js/TweenMax.min.js"></script>
-<script src="js/ScrollToPlugin.min.js"></script> -->
+<script src="js/TweenMax.min.js"></script>
+<!--<script src="js/ScrollToPlugin.min.js"></script> -->
 <script src="js/operators.js" ></script>
 <script src="js/materialize.js" ></script>
 <script src="js/jquery.appear.js" ></script>
