@@ -1,13 +1,15 @@
 //Initialize Firebase
-// var config = {
-//     apiKey: "AIzaSyDx2elBwIOx7X_3YErUUHF9pgXmhXrGSxI",
-//     authDomain: "wing-money-propelrr.firebaseapp.com",
-//     databaseURL: "https://wing-money-propelrr.firebaseio.com",
-//     storageBucket: ""
-// };
-// firebase.initializeApp(config);
+var config = {
+    apiKey: "AIzaSyCGlkjuXIbRKSb5GHsi8JUZP6YGAxTUAsI",
+    authDomain: "propelrr-wing-money.firebaseapp.com",
+    databaseURL: "https://propelrr-wing-money.firebaseio.com",
+    projectId: "propelrr-wing-money",
+    storageBucket: "propelrr-wing-money.appspot.com",
+    messagingSenderId: "446104765404"
+};
+firebase.initializeApp(config);
 
-// var database = firebase.database();
+var database = firebase.database();
 
 var counter;
 
@@ -178,7 +180,7 @@ $(window).load(function(){
                     if(!data.error){
                         var accountNum = data.leads_info.contact;
                         $('.final-step').removeClass('overlay');
-                        // database.ref('leads').child(data.id).set(data);
+                        database.ref('leads').child(data.id).set(data);
 
                         var confLang = $('.create-pin-account #language').val();
 
