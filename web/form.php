@@ -66,7 +66,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <section class="main-wrapper">
             <div class="container">
                 <div class="e-step-box">
-                    <h4>Get A Wing Account Rohas In 3 Steps!</span></h4>
+                    <h4>Get A Wing Account In 3 Steps!</span></h4>
                     <ol>
                         <li><span>Sign up with Facebook or fill up the form. </span></li>
                         <li><span>Enter the verification code sent via SMS. </span></li>

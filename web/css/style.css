@@ -10228,7 +10228,7 @@ strong {
 
 @media (min-width: 374px) {
   .flex-item h2 {
-    font-size: 45px;
+    font-size: 42px;
     line-height: 1.4;
   }
 }
@@ -10237,7 +10237,7 @@ strong {
   .flex-item h2 {
     text-align: center;
     width: 100%;
-    font-size: 63px;
+    font-size: 42px;
     line-height: 1.4;
   }
 }
