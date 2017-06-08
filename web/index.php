@@ -96,6 +96,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<section id="main-wrapper" class="home-bg">
 		<div class="maintenance-mode text-center" style="height: 100vh;">
+		
 			<div class="maintenance-content">
 				<div class="ty-footer" >
 					<a href="https://www.wingmoney.com/">
