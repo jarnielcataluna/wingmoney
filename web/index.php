@@ -97,7 +97,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<section id="main-wrapper" class="home-bg">
 		<div class="maintenance-mode text-center" style="height: 100vh;">
 			<div class="maintenance-content">
-				<h1>Maintenance mode</h1>
 				<div class="ty-footer" >
 					<a href="https://www.wingmoney.com/">
 						<h2>Visit our website</h2>
