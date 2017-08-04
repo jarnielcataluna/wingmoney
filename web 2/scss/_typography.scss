@@ -1,0 +1,19 @@
+// includes all tags for paragraphs and titles such header, p, span
+h1 { font-size: 55px; line-height:63px; }
+h2 { font-size: 40px; line-height:48px; }
+h3 { font-size: 26px; line-height:36px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 0.67em; }
+.par p { padding:10px 0px; }
+.par2 p { padding:5px 0px; }
+
+
+@media only screen and (max-width: 767px) {
+
+
+	h1 { font-size: 32px; line-height:40px; }
+	h2 { font-size: 30px; line-height:38px; }
+	h3 { font-size: 24px; line-height:30px; }
+	h4 { font-size: 22px; }
+}
