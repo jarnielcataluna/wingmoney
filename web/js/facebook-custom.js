@@ -24,13 +24,18 @@ $(document).on('click', '#useFacebook', function(e) {
             //$('#birthday-label').css({'opacity' : 0});
         } else if (response.status === 'not_authorized') {
             console.log('not_authorized');
-        } else {
-            console.log('test else');
             FB.login(function(){
                 useFacebook();
                 console.log('test by case 2');
                // $('#birthday-label').css({'opacity' : 0});
             }, {scope: 'publish_actions, email, public_profile, user_birthday, user_location, user_likes, user_education_history, pages_messaging_phone_number'});
+        } else {
+            console.log('test else');
+            
+
+            FB.getLoginStatus(function(response) {
+                statusChangeCallback(response);
+            });
         }
     });
 });
