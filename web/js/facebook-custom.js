@@ -22,11 +22,11 @@ $(document).on('click', '#useFacebook', function(e) {
         if (response.status === 'connected') {
             useFacebook();
 
-            $('#birthday-label').css({'opacity' : 0});
+            //$('#birthday-label').css({'opacity' : 0});
         } else {
             FB.login(function(){
                 useFacebook();
-                $('#birthday-label').css({'opacity' : 0});
+               // $('#birthday-label').css({'opacity' : 0});
             }, {scope: 'publish_actions, email, public_profile, user_birthday, user_location, user_likes, user_education_history, pages_messaging_phone_number'});
         }
     });
