@@ -21,11 +21,12 @@ $(document).on('click', '#useFacebook', function(e) {
         console.log('two');
         if (response.status === 'connected') {
             useFacebook();
-
+            console.log('test by dasdasd case 1');
             //$('#birthday-label').css({'opacity' : 0});
         } else {
             FB.login(function(){
                 useFacebook();
+                console.log('test by case 2');
                // $('#birthday-label').css({'opacity' : 0});
             }, {scope: 'publish_actions, email, public_profile, user_birthday, user_location, user_likes, user_education_history, pages_messaging_phone_number'});
         }
