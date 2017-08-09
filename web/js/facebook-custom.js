@@ -14,25 +14,18 @@ window.fbAsyncInit = function() {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-$(document).on('click', '#useFacebook', function(e) {
+$('#useFacebook').click(function(e) {
     e.preventDefault();
-    console.log('test by elwin');
     FB.getLoginStatus(function(response) {
-        console.log('two');
         if (response.status === 'connected') {
             useFacebook();
-            //$('#birthday-label').css({'opacity' : 0});
-        } else if (response.status === 'not_authorized') {
-            console.log('not_authorized');
+
+            $('#birthday-label').css({'opacity' : 0});
         } else {
-            console.log('test else');
             FB.login(function(){
                 useFacebook();
-                console.log('test by case 2');
-               // $('#birthday-label').css({'opacity' : 0});
-            }, {scope: 'publish_actions, email, public_profile, user_birthday, user_location, user_likes, user_education_history, pages_messaging_phone_number', force: true});
-
-
+                $('#birthday-label').css({'opacity' : 0});
+            }, {scope: 'publish_actions, email, public_profile, user_birthday, user_location, user_likes, user_education_history, pages_messaging_phone_number'});
         }
     });
 });
