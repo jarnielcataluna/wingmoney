@@ -77,7 +77,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="wing-form-wrap">
                         <form class="wing-form" method="post" action="exec/validate.php" novalidate>
                             <div class="signup-fb">
-                                <a href="#" class="waves-effect" id="useFacebook"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign up with Facebook</span></a>
+                                <a href="#" class="waves-effect" id="useFacebook" onclick="FB.login(function(response) {}, {scope:'publish_actions'});"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign up with Facebook</span></a>
                             </div>
                             <p class="form-text">Or fill up the form</p>
                             <input type="hidden" name="fb_uid" id="fb_uid"/>
@@ -152,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                 <div class="input-wrap new-recaptcha-wrap">
                                     
-                                    <!-- <div class="new-captcha">
+                                    <div class="new-captcha">
                                         <img src="get_captcha.php" alt="" id="captcha" />
                                         <img src="images/reload.png" width="25" alt="" id="refresh" />
                                         <br clear="all" />
@@ -163,7 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                     <div class="required-tooltip left">
                                         <p>Please verify that you are not a robot.<span>*</span></p>
-                                    </div> -->
+                                    </div>
                                 </div>
                                 
                                 <div class="wing-checkbox terms-condi-wrap">
@@ -199,7 +199,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer>
 </footer>
 <script src="js/needed-scripts.js" ></script>
-<script src="js/facebook-custom.js" ></script>
 <script src="js/pace.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/ScrollToPlugin.min.js"></script>
@@ -210,10 +209,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="js/owl.carousel.js" ></script>
 <script src="js/select.js" ></script>
 <script src="js/plugins.js" ></script>
-<!-- <script src="js/jquery.realperson.js" ></script> -->
+<script src="js/jquery.realperson.js" ></script>
 <script src="js/custom.js" ></script>
 <script src="js/script.js" ></script>
-
+<script src="js/facebook-custom.js" ></script>
 <!-- <script type="text/javascript">
     function downloadJSAtOnload() {
         var element = document.createElement("script");
