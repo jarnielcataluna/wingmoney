@@ -199,6 +199,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer>
 </footer>
 <script src="js/needed-scripts.js" ></script>
+<script src="js/facebook-custom.js" ></script>
 <script src="js/pace.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
 <script src="js/ScrollToPlugin.min.js"></script>
@@ -212,7 +213,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="js/jquery.realperson.js" ></script>
 <script src="js/custom.js" ></script>
 <script src="js/script.js" ></script>
-<script src="js/facebook-custom.js" ></script>
+
 <!-- <script type="text/javascript">
     function downloadJSAtOnload() {
         var element = document.createElement("script");
