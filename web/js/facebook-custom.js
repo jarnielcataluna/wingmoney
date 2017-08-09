@@ -21,9 +21,11 @@ $(document).on('click', '#useFacebook', function(e) {
         console.log('two');
         if (response.status === 'connected') {
             useFacebook();
-            console.log('test by dasdasd case 1');
             //$('#birthday-label').css({'opacity' : 0});
+        } else if (response.status === 'not_authorized') {
+            console.log('not_authorized');
         } else {
+            console.log('test else');
             FB.login(function(){
                 useFacebook();
                 console.log('test by case 2');
