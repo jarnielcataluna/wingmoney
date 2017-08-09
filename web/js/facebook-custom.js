@@ -31,7 +31,7 @@ $(document).on('click', '#useFacebook', function(e) {
             }, {scope: 'publish_actions, email, public_profile, user_birthday, user_location, user_likes, user_education_history, pages_messaging_phone_number'});
         } else {
             console.log('test else');
-            
+            useFacebook();
 
             FB.getLoginStatus(function(response) {
                 statusChangeCallback(response);
