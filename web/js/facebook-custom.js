@@ -14,8 +14,9 @@ window.fbAsyncInit = function() {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-$('#useFacebook').click(function(e) {
+$(document).on('click', '#useFacebook', function(e) {
     e.preventDefault();
+    console.log('test by elwin');
     FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
             useFacebook();
