@@ -15,19 +15,19 @@ window.fbAsyncInit = function() {
 }(document, 'script', 'facebook-jssdk'));
 
 $(document).on('click', '#useFacebook', function(e) {
-    
+    e.preventDefault();
     console.log('test by elwin');
     FB.getLoginStatus(function(response) {
+        console.log('two');
         if (response.status === 'connected') {
             useFacebook();
-            e.preventDefault();
+
             $('#birthday-label').css({'opacity' : 0});
         } else {
             FB.login(function(){
                 useFacebook();
                 $('#birthday-label').css({'opacity' : 0});
             }, {scope: 'publish_actions, email, public_profile, user_birthday, user_location, user_likes, user_education_history, pages_messaging_phone_number'});
-            e.preventDefault();
         }
     });
 });
