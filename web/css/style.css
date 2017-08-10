@@ -11994,6 +11994,13 @@ table {
 .back-to-home a .fa {
   margin-right: 5px;
 }
+@media (max-width: 767px) {
+  .back-to-home {
+    margin: 0px 5px;
+    font-size: 13px;
+  }
+}
+
 
 @media (min-width: 768px) {
   #layout-4 h3 {
