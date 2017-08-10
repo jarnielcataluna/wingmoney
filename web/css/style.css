@@ -10924,6 +10924,11 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.btn-wrapper input[type="submit"] {
+  background: #f39710;
 }
 
 @media (min-width: 768px) {
@@ -11971,6 +11976,23 @@ table {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.back-to-home {
+  padding-top: 10px;
+}
+
+.back-to-home a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.back-to-home a:hover {
+  color: #00adef;
+}
+
+.back-to-home a .fa {
+  margin-right: 5px;
 }
 
 @media (min-width: 768px) {

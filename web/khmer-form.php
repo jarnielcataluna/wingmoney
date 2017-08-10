@@ -59,7 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section id="main-wrapper" class="form-bg">
 
         <header>
-            <div class="logo"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
+            <div class="logo"><a href="khmer-home.php" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
         </header>
 
         <section class="main-wrapper">
@@ -173,6 +173,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <input type="submit" class="btn btn-orange" name="" value="ដាក់ពាក្យស្នើសុំ" />
                                     </div>
                                 </div>
+
+                                <p class="back-to-home fr"><a href="khmer-home.php"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back to Home</a></p>
 
                                 <div class="loading-spinner-wrapper" id="app-loader">
                                     <span class="loading-spinner">

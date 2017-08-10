@@ -60,12 +60,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section id="main-wrapper" class="form-bg">
 
         <header>
-            <div class="logo"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
+            <div class="logo"><a href="index.php" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
         </header>
 
         <section class="main-wrapper">
             <div class="container">
                 <div class="e-step-box">
+
                     <h4>Get A Wing Account In 3 Steps!</span></h4>
                     <ol>
                         <li><span>Sign up with Facebook or fill up the form. </span></li>
@@ -177,6 +178,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <input type="submit" class="btn btn-orange" name="" value="SUBMIT MY APPLICATION" />
                                     </div>
                                 </div>
+
+                                <p class="back-to-home fr"><a href="index.php"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back to Home</a></p>
 
                                 <div class="loading-spinner-wrapper" id="app-loader">
                                     <span class="loading-spinner">
