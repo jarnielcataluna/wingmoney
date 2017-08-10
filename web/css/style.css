@@ -10643,7 +10643,7 @@ input::-webkit-inner-spin-button {
 .custom-radio input[type="radio"] + label {
   color: #4d4d4f;
   font-weight: bold;
-  width: 70px;
+  width: 68px;
   display: block;
   vertical-align: middle;
   visibility: visible;
