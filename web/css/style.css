@@ -11109,7 +11109,7 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 768px) {
   .account-app-wrap {
-    padding: 30px 35px;
+    padding: 30px 35px 5px;
     border: 1px solid #00adef;
     border-top: none;
   }
@@ -11980,10 +11980,11 @@ table {
 
 .back-to-home {
   padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .back-to-home a {
-  color: #ccc;
+  color: #dcdcdc;
   text-decoration: none;
 }
 

@@ -179,7 +179,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </div>
                                 </div>
 
-                                <p class="back-to-home fr"><a href="index.php"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back to Home</a></p>
+                                
 
                                 <div class="loading-spinner-wrapper" id="app-loader">
                                     <span class="loading-spinner">
@@ -192,11 +192,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
 
                         </form>
+
+
                     </div>
                 </div>
             </div>
         </section>
-        
+        <div class="text-center">
+            <p class="back-to-home"><a href="index.php"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back to Home</a></p>
+        </div>
     </section>
 </section>
 
