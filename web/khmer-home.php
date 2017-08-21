@@ -73,6 +73,10 @@ session_start();
 	}
 
 	.pace-done #main-container { opacity: 1; }
+
+	body, p, i, li, a, b, strong, div, span {
+   word-wrap: break-word;
+}
 </style>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
