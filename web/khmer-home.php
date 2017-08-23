@@ -126,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
 								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">ប្រើប្រាស់វីងមានឱកាសឈ្នះរង្វាន់ជាច្រើន!</h1>
-								<!-- <p class="animated hiding" data-animation="fadeInUp" data-delay="300">ចុះឈ្មោះគណនីរហ័សរបស់វីង និងទទួលបានការបញ្ចុះតម្លៃ 15% ពីដៃគូសហការ។</p> -->
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">ចុះឈ្មោះគណនីវីងថ្ងៃនេះដើម្បី<br />ចាប់ផ្តើមរីករាយក្នុងការប្រើប្រាស់ទឹកប្រាក់របស់អ្នកកាន់តែងាយស្រួល</p>
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
