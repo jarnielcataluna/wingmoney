@@ -107,7 +107,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="e-step-box">
 					<div class="final-step text-center">
 						<form class="final-step-form" method="post" novalidate action="/exec/validate2.php" >
-							
+							<input type="hidden" name="client_id" value="<?php echo $_COOKIE['_ga']; ?>" />
 						    <div class="verification">
 						    	<p>សូមបញ្ចូលលេខកូដដែលបានផ្ញើទៅទូរស័ព្ទរបស់អ្នកដើម្បីបញ្ជាក់៖</p>
 							    <p class="resend-info">លេខ PIN បានបញ្ជូលម្តងទៀតដោយជោគជ័យ។</p>
