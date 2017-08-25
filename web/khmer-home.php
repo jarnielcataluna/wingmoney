@@ -245,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<section id="layout-4" class="sec-pad">
 			<div class="layout-2">
 				<div class="container">
-					<h3>ការកំណត់នៃគណនី និងតម្លៃសេវា</h3>
+					<h3>ការកំណត់នៃគណនី</h3>
 					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
 						<tr>
 							<th style="width:48px;" class="hide-mobile">លេខរៀង</th>
@@ -309,6 +309,143 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td class="text-center hide-mobile"><strong>5</strong></td>
 							<td colspan="2" ><strong>ចំនួនទឹកប្រាក់តម្កល់ទុកក្នុងគណនី</strong></td>
 							<td colspan="3" class="text-center">ឥតកំណត់</td>
+						</tr>
+					</table>
+
+					<h3 style="margin-top: 20px;">តម្លៃសេវាកម្មថេរ</h3>
+					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;margin-top: 20px;">
+						<tr>
+							<th>សេវាកម្ម</th>
+							<th style="width: 120px;">តម្លៃសេវាកម្មជាប្រាក់រៀល</th>
+							<th style="width: 120px;">តម្លៃសេវាកម្មជាប្រាក់ដុល្លារ</th>
+						</tr>
+						<tr>
+							<td>ការទូទាត់តាមអ៊ីនធឺណិត ឬ តាមម៉ាស៊ីនវីង</td>
+							<td class="bg-white valign" rowspan="4" valign="center">ឥតគិតថ្លៃ</td>
+							<td class="bg-white valign" rowspan="4" valign="center">ឥតគិតថ្លៃ</td>
+						</tr>
+						<tr>
+							<td>ដាក់ប្រាក់</td>
+						</tr>
+						<tr>
+							<td>បញ្ចូលលុយទូរស័ព្ទ</td>
+						</tr>
+						<tr>
+							<td>បង់វិក្កយបត្រ(DIGI, First Finance, KLD, OneTV, PPP, KTH, PPCTV, Manulife, Cambodian Life ...)</td>
+						</tr>
+						<tr>
+							<td>បង់វិក្កយបត្រ (AEON, Active People's MFI, Mega Leasing Plc, Piphup Thmey MFI)</td>
+							<td class="valign">2,000</td>
+							<td class="valign">0.5</td>
+						</tr>
+						<tr>
+							<td>ពិនិត្យទឹកប្រាក់នៅសល់</td>
+							<td class="valign">100</td>
+							<td class="valign">0.02</td>
+						</tr>
+						<tr>
+							<td>ផ្លាស់ប្តូរលេខទូរស័ព្ទ</td>
+							<td class="valign">1,000</td>
+							<td class="valign">0.25</td>
+						</tr>
+						<tr>
+							<td>ផ្លាស់ប្តូរប្រភេទគណនី (ខ្មែរ&lt;=&gt;ដុល្លារ)</td>
+							<td class="valign">5,000</td>
+							<td class="valign">1.25</td>
+						</tr>
+					</table>
+
+					<h3 style="margin-top: 20px;">តម្លៃសេវាកម្មប្រែប្រួល</h3>
+					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;margin-top: 20px;">
+						<tr>
+							<th>សេវាកម្ម</th>
+							<th style="width: 200px;">ចំនួនទឹកប្រាក់ជាប្រាក់រៀល</th>
+							<th style="width: 120px;">តម្លៃសេវាកម្មជាប្រាក់រៀល</th>
+							<th style="width: 180px;">ចំនួនទឹកប្រាក់ជាប្រាក់ដុល្លារ</th>
+							<th style="width: 120px;">តម្លៃសេវាកម្មជាប្រាក់ដុល្លារ</th>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="3">ដកប្រាក់</td>
+							<td>0 - 401,999</td>
+							<td>1,000</td>
+							<td>0 - 100.49</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td>402,000 - 2,001,999</td>
+							<td>2,000</td>
+							<td>100.50 - 500.49</td>
+							<td>0.50</td>
+						</tr>
+						<tr>
+							<td>2,001,999 ឡើងទៅ</td>
+							<td>3,000</td>
+							<td>500.49 ឡើងទៅ</td>
+							<td>0.75</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="2">វិក្កយបត្រភ្លើង (ភ្នំពេញ សៀមរាប សីហនុ បាត់ដំបង)</td>
+							<td>0 - 100,000</td>
+							<td>ឥតគិតថ្លៃ</td>
+							<td>0 - 25</td>
+							<td>ឥតគិតថ្លៃ</td>
+						</tr>
+						<tr>
+							<td>100,001 ឡើងទៅ</td>
+							<td>1,000</td>
+							<td>25.01 ឡើងទៅ</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+						<td class="text-left valign" rowspan="2">វិក្កយបត្រទឹក</td>
+							<td>0 - 100,000</td>
+							<td>ឥតគិតថ្លៃ</td>
+							<td>0 - 25</td>
+							<td>ឥតគិតថ្លៃ</td>
+						</tr>
+						<tr>
+							<td>100,001 ឡើងទៅ</td>
+							<td>1,000</td>
+							<td>25.01 ឡើងទៅ</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="3">វេរលុយពីគណនីវីង ទៅគណនីវីង</td>
+							<td>0 - 401,999</td>
+							<td>1,000</td>
+							<td>0 - 100.49</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td>402,000 - 2,001,999</td>
+							<td>2,000</td>
+							<td>100.50 - 500.49</td>
+							<td>0.50</td>
+						</tr>
+						<tr>
+							<td>2,001,999 ឡើងទៅ</td>
+							<td>3,000</td>
+							<td>500.49 ឡើងទៅ</td>
+							<td>0.75</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="3">វីងវេរលុយ</td>
+							<td>0 - 401,999</td>
+							<td>2,400</td>
+							<td>0 - 100.49</td>
+							<td>0.60</td>
+						</tr>
+						<tr>
+							<td>402,000 - 2,001,999</td>
+							<td>4,800</td>
+							<td>100.50 - 500.49</td>
+							<td>1.20</td>
+						</tr>
+						<tr>
+							<td>2,001,999 ឡើងទៅ</td>
+							<td>9,000</td>
+							<td>500.49 ឡើងទៅ</td>
+							<td>2.25</td>
 						</tr>
 					</table>
 				</div>

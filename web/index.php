@@ -223,7 +223,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<section id="layout-4" class="sec-pad">
 			<div class="layout-2">
 				<div class="container">
-					<h3>Account Limit <br>&amp; Services Fee</h3>
+					<h3>Account Limit <!-- <br>&amp; Services Fee --></h3>
 					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
 						<tr>
 							<th style="width:48px;" class="hide-mobile">No.</th>
@@ -231,7 +231,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<th>Service Name</th>
 							<th>Limit per time</th>
 							<th>Limit per day</th>
-							<th>Service Fee</th>
+							<!-- <th>Service Fee</th> -->
 						</tr>
 						<tr>
 							<td rowspan="2" class="text-center hide-mobile"><strong>1</strong></td>
@@ -239,7 +239,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>Wing to Wing</td>
 							<td>USD 300</td>
 							<td>USD 300</td>
-							<td rowspan="8" class="text-center"><a href="https://www.wingmoney.com/fees/" target="_blank" style="color:#FFFFFF;text-decoration:underline;">Follow Standard Fee Charge</a></td>
+							<!-- <td rowspan="8" class="text-center"><a href="https://www.wingmoney.com/fees/" target="_blank" style="color:#FFFFFF;text-decoration:underline;">Follow Standard Fee Charge</a></td> -->
 						</tr>
 						<tr>
 							<td>Wing WeiLuy</td>
@@ -286,7 +286,144 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<tr>
 							<td class="text-center hide-mobile"><strong>5</strong></td>
 							<td colspan="2" ><strong>Wallet Storage</strong></td>
-							<td colspan="3" class="text-center">Unlimited</td>
+							<td colspan="2" class="text-center">Unlimited</td>
+						</tr>
+					</table>
+
+					<h3 style="margin-top: 20px;">Fixed Transaction Fees</h3>
+					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;margin-top: 20px;">
+						<tr>
+							<th>Service</th>
+							<th>Fee (KHR)</th>
+							<th>Fee (USD)</th>
+						</tr>
+						<tr>
+							<td>Online Payment &amp; Retail Payment</td>
+							<td class="bg-white valign" rowspan="4" valign="center">FREE</td>
+							<td class="bg-white valign" rowspan="4" valign="center">FREE</td>
+						</tr>
+						<tr>
+							<td>Cash In</td>
+						</tr>
+						<tr>
+							<td>Phone Top Up</td>
+						</tr>
+						<tr>
+							<td>Bill Payment (DIGI, First Finance, KLD, OneTV, PPP, KTH, PPCTV, Manulife, Cambodian Life ...)</td>
+						</tr>
+						<tr>
+							<td>Bill Payment (AEON, Active People's MFI, Mega Leasing Plc, Piphup Thmey MFI)</td>
+							<td class="valign">2,000</td>
+							<td class="valign">0.5</td>
+						</tr>
+						<tr>
+						<td>Check Balance</td>
+							<td class="valign">100</td>
+							<td class="valign">0.02</td>
+						</tr>
+						<tr>
+						<td>Change Phone Number</td>
+							<td class="valign">1,000</td>
+							<td class="valign">0.25</td>
+						</tr>
+						<tr>
+						<td>Change Wallet Currency</td>
+							<td class="valign">5,000</td>
+							<td class="valign">1.25</td>
+						</tr>
+					</table>
+
+					<h3 style="margin-top: 20px;">Variable Transaction Fees</h3>
+					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;margin-top: 20px;">
+						<tr>
+							<th>Service</th>
+							<th style="width: 200px;">Amount (KHR)</th>
+							<th style="width: 120px; text-align: left;">Fee (KHR)</th>
+							<th style="width: 180px;">Amount (USD)</th>
+							<th style="width: 120px; text-align: left;">Fee (USD)</th>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="3">Cash Out</td>
+							<td>0 - 401,999</td>
+							<td>1,000</td>
+							<td>0 - 100.49</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td>402,000 - 2,001,999</td>
+							<td>2,000</td>
+							<td>100.50 - 500.49</td>
+							<td>0.50</td>
+						</tr>
+						<tr>
+							<td>Above 2,001,999</td>
+							<td>3,000</td>
+							<td>Above 500.49</td>
+							<td>0.75</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="2">EDC Bill Payment (Phnom Penh, Siem Reap, Preah Sihanouk, Battambang)</td>
+							<td>0 - 100,000</td>
+							<td>Free</td>
+							<td>0 - 25</td>
+							<td>Free</td>
+						</tr>
+						<tr>
+							<td>From 100,001</td>
+							<td>1,000</td>
+							<td>From 25.01</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="2">PPWSA Bill Payment</td>
+							<td>0 - 100,000</td>
+							<td>Free</td>
+							<td>0 - 25</td>
+							<td>Free</td>
+						</tr>
+						<tr>
+							<td>From 100,001</td>
+							<td>1,000</td>
+							<td>From 25.01</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="3">WING-2-WING</td>
+							<td>0 - 401,999</td>
+							<td>1,000</td>
+							<td>0 - 100.49</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td>402,000 - 2,001,999</td>
+							<td>2,000</td>
+							<td>100.50 - 500.49</td>
+							<td>0.50</td>
+						</tr>
+						<tr>
+							<td>Above 2,001,999</td>
+							<td>3,000</td>
+							<td>Above 500.49</td>
+							<td>0.75</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="3">Wing Wei Luy</td>
+							<td>0 - 401,999</td>
+							<td>2,400</td>
+							<td>0 - 100.49</td>
+							<td>0.60</td>
+						</tr>
+						<tr>
+							<td>402,000 - 2,001,999</td>
+							<td>4,800</td>
+							<td>100.50 - 500.49</td>
+							<td>1.20</td>
+						</tr>
+						<tr>
+							<td>Above 2,001,999</td>
+							<td>9,000</td>
+							<td>Above 500.49</td>
+							<td>2.25</td>
 						</tr>
 					</table>
 				</div>
