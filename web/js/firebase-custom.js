@@ -116,6 +116,7 @@ $(window).load(function(){
                 url: "/exec/verify-sms.php",
                 type: "POST",
                 data: {
+                    client_id: $('#client_id-code').val(),
                     code: $('#verfication-code').val(),
                     id: $('input[name=id]').val()
                 },
@@ -172,6 +173,7 @@ $(window).load(function(){
                 url: "/exec/validate2.php",
                 type: "POST",
                 data: {
+                    client_id: $('#client_id-code').val(),
                     id: $('input[name=id]').val(),
                     pin: $('#pin-id').val()
                 },
