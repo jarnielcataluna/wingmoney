@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 
     function IsEmail(email) {
-        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var regex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return regex.test(email);
     }
 
@@ -93,12 +93,16 @@ $(document).ready(function(){
         e.preventDefault();
         $('.input-wrap:not(.no-error)').addClass('error');
         isvalidate = false;
-        // if( IsEmail($('#account-email').val() )) {
-        //     $('#account-email').closest('.input-wrap').removeClass('error');
-        //     isvalidate = true;
-        // } else {
-        //     isvalidate = false;
-        // }
+
+        if ($('#account-email').val() == "") {
+            $('#account-email').parent().find('.required-tooltip p').text('This field is required *');
+        } else if( IsEmail($('#account-email').val() )) {
+            $('#account-email').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            $('#account-email').parent().find('.required-tooltip p').text('Invalid Email Address');
+            isvalidate = false;
+        }
 
         if( !$('#last-name').val() == '') {
             $('#last-name').closest('.input-wrap').removeClass('error');
