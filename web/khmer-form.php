@@ -165,7 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 
                                 <div class="wing-checkbox terms-condi-wrap">
                                     <input type="checkbox" id="terms-checkbox"/>
-                                    <label for="terms-checkbox">ខ្ញុំយល់ព្រមចំពោះ <a href="https://www.wingmoney.com/about-wing/terms-and-conditions/" target="_blank" style="color: #00adef;">ខចែង និងលក្ខខណ្ឌ</a></label>
+                                    <label for="terms-checkbox">ខ្ញុំយល់ព្រមចំពោះ <a href="https://www.wingmoney.com/km/about-wing/terms-and-conditions/" target="_blank" style="color: #00adef;">ខ្ញុំយល់ព្រមចំពោះលក្ខខណ្ឌផ្សេងៗដែលបានចែង</a></label>
                                 </div>
                                 
                                 <div class="text-center">
