@@ -323,7 +323,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<h5>ចាំអីទៀត?</h5>
 						<h3>បើកគណនីវីងរបស់អ្នកឥឡូវនេះ!</h3>
 						<h3><strong>ប្រើប្រាស់វីង ដើម្បីទទួលបានអត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3>
-						<a href="khmer-form.php" class="btn click-apply btn-desktop">ស្នើសុំឥតគិតថ្លៃ</a>
+						<a href="khmer-form.php" class="btn click-apply btn-desktop">ស្នើបើកគណនីវីងដោយឥតគិតថ្លៃ</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img src="images/page_template/h-graphic3.png" alt="">
