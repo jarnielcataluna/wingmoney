@@ -239,7 +239,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>Wing to Wing</td>
 							<td>USD 300</td>
 							<td>USD 300</td>
-							<td rowspan="8" class="text-center"><a href="https://www.wingmoney.com/fees/" target="_blank">Follow Standard Fee Charge</a></td>
+							<td rowspan="8" class="text-center"><a href="https://www.wingmoney.com/fees/" target="_blank" style="color:#FFFFFF;text-decoration:underline;">Follow Standard Fee Charge</a></td>
 						</tr>
 						<tr>
 							<td>Wing WeiLuy</td>

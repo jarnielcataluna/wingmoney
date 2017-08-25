@@ -261,7 +261,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>វីងទៅវីង</td>
 							<td>៣០០​ ដុល្លារ</td>
 							<td>៣០០​ ដុល្លារ</td>
-							<td rowspan="8" class="text-center">អនុវត្តតាមកម្រៃសេវាស្តង់ដា</td>
+							<td rowspan="8" class="text-center"><a href="https://www.wingmoney.com/km/fees/" target="_blank" style="color:#FFFFFF;text-decoration:underline;">អនុវត្តតាមកម្រៃសេវាស្តង់ដា</a></td>
 						</tr>
 						<tr>
 							<td>វីងវេរលុយ</td>
