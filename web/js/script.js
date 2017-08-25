@@ -235,6 +235,7 @@ $(document).ready(function(){
                                 data: data,
 
                                 success: function (response) {
+                                    console.log(response);
                                     var data = jQuery.parseJSON(response);
                                     if(data.error) {
 
