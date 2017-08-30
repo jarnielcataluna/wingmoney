@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coockie Checker</title>
+</head>
+<body>
+
+<script>
+
+    function getCookie(name) {
+        var re = new RegExp(name + "=([^;]+)");
+        var value = re.exec(document.cookie);
+        return (value != null) ? unescape(value[1]) : null;
+    }
+
+    var m = getCookie("wingMoneyDefferedLink");
+
+    console.log(m);
+
+    if(m){
+        location.href = m;
+    } else {
+        document.writeln("No Cookies...");
+    }
+
+</script>
+
+</body>
+</html>
