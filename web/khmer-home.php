@@ -130,7 +130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
-									<a href="khmer-form.php" class="btn click-apply apply-now-button">បើកគណនីវីងដោយឥតគិតថ</a><br>
+									<a href="khmer-form.php" class="btn click-apply apply-now-button">បើកគណនីវីងដោយឥតគិតថ្លៃ</a><br>
 									<!-- <a href="#" class="btn btn-ghost">មើលពីរបៀបចុះឈ្មោះ<i class="fa fa-play" aria-hidden="true"></i></a> -->
 								</div>
 
