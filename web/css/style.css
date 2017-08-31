@@ -12,6 +12,14 @@
   font-style: normal;
 }
 
+@font-face {
+   font-family: 'nida_odormeancheyregular';
+   src: url('../fonts/nidaodormeanchey-webfont.woff2') format('woff2'),
+        url('../fonts/nidaodormeanchey-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -12041,6 +12049,13 @@ table {
   }
 }
 
+.home-bg.khmer-lang {
+  font-family: 'nida_odormeancheyregular', sans-serif;
+}
+
+.home-bg.khmer-lang h1, .home-bg.khmer-lang h2, .home-bg.khmer-lang h3, .home-bg.khmer-lang h4, .home-bg.khmer-lang h5, .home-bg.khmer-lang h6, .home-bg.khmer-lang p, .home-bg.khmer-lang span, .home-bg.khmer-lang ul li, .home-bg.khmer-lang div {
+  font-family: 'nida_odormeancheyregular', sans-serif;
+}
 
 
 table th, table td {
