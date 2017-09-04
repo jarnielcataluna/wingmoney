@@ -125,12 +125,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="table-cell">
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">ប្រើប្រាស់វីង ដើម្បីទទួលបានអត្ថប្រយោជន៍កាន់តែច្រើន!</h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">បើកគណនីវីងថ្ងៃនេះដើម្បីទទួលបានភាព<br />ងាយស្រួលមួយកំរិតទៀតក្នុងការគ្រប់គ្រងសាច់ប្រាក់។​</p>
+								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">ប្រើប្រាស់វីង<br style="display: block;" />ដើម្បីទទួលបានអត្ថប្រយោជន៏<br style="display: block;" />កាន់តែច្រើន!</h1>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">បើកគណនីវីងថ្ងៃនេះដើម្បីទទួលបានភាព<br />ងាយស្រួលមួយកំរិតទៀតក្នុងការគ្រប់គ្រងសាច់ប្រាក់​</p>
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
-									<a href="khmer-form.php" class="btn click-apply apply-now-button">ស្នើបើកគណនីវីងដោយឥតគិតថ្លៃ</a><br>
+									<a href="khmer-form.php" class="btn click-apply apply-now-button">បើកគណនីវីងដោយឥតគិតថ្លៃ</a><br>
 									<!-- <a href="#" class="btn btn-ghost">មើលពីរបៀបចុះឈ្មោះ<i class="fa fa-play" aria-hidden="true"></i></a> -->
 								</div>
 
@@ -170,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
 						<!-- <h3>ប្រើប្រាស់វីងដើម្បីទទួលបានអត្ថប្រយោជន៍ជាច្រើន!</h3> -->
-						<h3><strong>ប្រើប្រាស់វីង ដើម្បីទទួលបានអត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3>
+						<h3><strong>ប្រើប្រាស់វីងដើម្បីទទួលបាន<br />អត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3>
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->
@@ -186,15 +186,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="flex-item">
 										<h2>វេរលុយ</h2>
 										<p>&nbsp;</p>
-										<p><strong>វេរលុុយឲ្យមិត្តភក្តិ និងគ្រួសារក្នុងប្រទេសកម្ពុជា!</strong></p>
-										<p>មិនថាអ្នកនៅកន្លែងណា អ្នកអាចវេរលុយបានលឿន និងសុវត្ថិភាពពេលប្រើប្រាស់វីង!</p>
+										<p><strong>វេរលុយឲ្យមិត្តភក្តិ និងក្រុមគ្រួសារ<br />គ្រប់ទីកន្លែងទូទាំងប្រទេស!</strong>
+										<p>មិនថាអ្នកនៅកន្លែងណា​ អ្នកអាចវេរលុយបានយ៉ាង<br />រហ័សនិងមានសុវត្ថិភាព</p>
 									</div>
 								</li>
 
 								<!-- <li>
 									<div class="flex-item">
 										<h2>បញ្ចូលទឹកប្រាក់ទូរស័ព្ទ</h2>
-										<p><strong>បញ្ចូលទឹកប្រាក់ទូរស័ព្ទបានរហ័ស។</strong></p>
+										<p><strong>បញ្ចូលទឹកប្រាក់ទូរស័ព្ទបានរហ័ស</strong></p>
 										<p>អ្នកអាចបញ្ចូលទឹកប្រាក់ទូរស័ព្ទតាមគណនីវីង</p>
 										<p><strong>ឬ</strong></p>
 										<p>តាមភ្នាក់ងារវីង!</p>
@@ -204,34 +204,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="flex-item">
 										<h2>បញ្ចូលលុយទូរស័ព្ទ</h2>
 										<p><strong>បញ្ចូលលុយទូរស័ព្ទ</strong></p>
-										<p>អ្នកអាចបញ្ចូលទឹកប្រាក់ទូរស័ព្ទតាមគណនីវីង</p>
+										<p>អ្នកអាចបញ្ចូលលុយទូរស័ព្ទតាមគណនីវីង</p>
 										<p><strong>ឬ</strong></p>
 										<p>តាមភ្នាក់ងារវីង!</p>
 									</div>
 								</li>
-								Change to: “ទូទាត់វិក្កយបត្រតាមគណនីវីងលើទូរស័ព្ទដៃរបស់អ្នក”
 								<li>
 									<div class="flex-item">
 										<h2>ការទូទាត់វិក្កយបត្រ</h2>
-										<p><strong>ទូទាត់វិក្កយបត្រគ្រប់ទីកន្លែងតាមរយៈទូរស័ព្ទដៃរបស់អ្នក។</strong></p>
+										<p><strong>ទូទាត់វិក្កយបត្រគ្រប់ទីកន្លែងតាមរយៈទូរស័ព្ទដៃរបស់អ្នក</strong></p>
 										<p>ទូទាត់វិក្កយបត្រតាមគណនីវីងលើទូរស័ព្ទដៃរបស់អ្នក</p>
 										<p><strong>ឬ</strong></p>
-										<p>With any WING’s agent nationwide.</p>
+										<p>ន ក់ រវងី !</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
 										<h2>វីងគិតលុយ</h2>
-										<p><strong>គណនីវីង ផ្តល់ឲ្យអ្នកនូវភាពងាយស្រួលក្នុងការទូទាត់ជាមួយសេវាកម្មវីងគិតលុយនៅតាមភោជនីយដ្ឋាន រោងភាពយន្ត ហាងលក់សំលៀកបំពាក់ ។ល។ ដោយមិនចាំបាច់មានសាច់ប្រាក់!</strong></p>
+										<p><strong>គណនីវីង ផ្តល់ឲ្យអ្នកនូវភាពងាយស្រួលក្នុងការទូទាត់ជាមួយសេវាកម្មវីងគិតលុយនៅតាមភោជនីយដ្ឋាន រោងភាពយន្ត ហាងលក់សំលៀកបំពាក់ ល ដោយមិនចាំបាច់មានសាច់ប្រាក់!</strong></p>
 										<p>អតិថិជនគ្រាន់តែមានកាតវីង​ ឬទូរស័ព្ទដៃដែលភ្ជាប់ជាមួយគណនីវីងតែប៉ុណ្ណោះ</p>
-										<p>បង់ប្រាក់ភ្លាមៗជាមួយវីងគិតលុយនៅហាងណាមួយដែលអ្នកពេញចិត្ត។</p>
+										<p>បង់ប្រាក់ភ្លាមៗជាមួយវីងគិតលុយនៅហាងណាមួយដែលអ្នកពេញចិត្ត</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
 										<h2>ការទូទាត់តាមអ៊ីនធឺណិត</h2>
-										<p><strong>សេវាកម្មទូទាត់តាមអ៊ីនធឺណិតអនុញ្ញាតឲ្យអ្នកទិញទំនិញជាច្រើនប្រភេទដោយមិនចំាបាច់ធ្វើដំណើរទៅក្រៅ។</strong></p>
-										<p>អតិថិជនវីងទំាងអស់ អាចប្រើប្រាស់គណនីវីង​ដើម្បីធ្វើការទូទាត់តាមអ៊ីនធឺណិតជាមួយក្រុមហ៊ុនក្នុងស្រុកជាច្រើន ប្រកបដោយភាពងាយស្រួល រហ័ស និងមានសុវត្ថិភាព។</p>
+										<p><strong>សេវាកម្មទូទាត់តាមអ៊ីនធឺណិតអនុញ្ញាតឲ្យអ្នកទិញទំនិញជាច្រើនប្រភេទដោយមិនចំាបាច់ធ្វើដំណើរទៅក្រៅ</strong></p>
+										<p>អតិថិជនវីងទាំងអស់អាចប្រើប្រាស់គណនីវីង<br />ដើម្បីទូទាត់តាមអ៊ីនធឺណិតជាមួយក្រុមហ៊ុនក្នុងស្រុក<br />ជាច្រើនប្រកបដោយភាពងាយស្រួល រហ័ស និងមានសុវត្ថិភាព។</p>
 									</div>
 								</li>
 							</ul>
@@ -253,7 +252,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<th>ឈ្មោះសេវា</th>
 							<th>ចំនួនកំណត់ក្នុងមួយប្រតិបត្តិការ</th>
 							<th>ចំនួនកំណត់ក្នុងមួយថ្ងៃ</th>
-							<th>កម្រៃសេវា</th>
 						</tr>
 						<tr>
 							<td rowspan="2" class="text-center hide-mobile"><strong>1</strong></td>
@@ -261,7 +259,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>វីងទៅវីង</td>
 							<td>៣០០​ ដុល្លារ</td>
 							<td>៣០០​ ដុល្លារ</td>
-							<td rowspan="8" class="text-center"><a href="https://www.wingmoney.com/km/fees/" target="_blank" style="color:#FFFFFF;text-decoration:underline;">អនុវត្តតាមកម្រៃសេវាស្តង់ដា</a></td>
 						</tr>
 						<tr>
 							<td>វីងវេរលុយ</td>
@@ -307,8 +304,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</tr>
 						<tr>
 							<td class="text-center hide-mobile"><strong>5</strong></td>
-							<td colspan="2" ><strong>ចំនួនទឹកប្រាក់តម្កល់ទុកក្នុងគណនី</strong></td>
-							<td colspan="3" class="text-center">ឥតកំណត់</td>
+							<td colspan="2" >ចំនួនទឹកប្រាក់តម្កល់ទុកក្នុងគណនី</td>
+							<td colspan="2" class="text-center">ឥតកំណត់</td>
 						</tr>
 					</table>
 
@@ -458,8 +455,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<h5>ចាំអីទៀត?</h5>
-						<h3>បើកគណនីវីងរបស់អ្នកឥឡូវនេះ!</h3>
-						<h3><strong>ប្រើប្រាស់វីង ដើម្បីទទួលបានអត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3>
+						<h3>បើកគណនីវីងរបស់អ្នកឥឡូវនេះ​</h3>
+						<h3><strong>ដើម្បីទទួលបានអត្ថប្រយោជន៏<br />កាន់តែច្រើន!</strong></h3>
+
 						<a href="khmer-form.php" class="btn click-apply btn-desktop">ស្នើបើកគណនីវីងដោយឥតគិតថ្លៃ</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
