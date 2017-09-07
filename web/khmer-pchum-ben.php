@@ -3,7 +3,7 @@
 session_start();
 ?>
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="km">
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex,nofollow" />
