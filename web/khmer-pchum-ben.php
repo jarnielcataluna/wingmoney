@@ -65,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<i class="fa fa-angle-down" aria-hidden="true"></i>
 						</a>
 						<ul class="wpml-lang-dropdown">
-							<li><a href="pchum-ben.html"><img src="images/en.png" alt="" width="18" height="12"></a></li>
+							<li><a href="pchum-ben.php"><img src="images/en.png" alt="" width="18" height="12"></a></li>
 						</ul>
 					</div>
 					<div class="clr"></div>
