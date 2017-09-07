@@ -6,7 +6,7 @@ session_start();
 <html class="no-js" lang="km">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow" />
+<meta name="robots" content="noindex,follow" />
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Wing Money | Pchum Ben</title>
 <meta name="description" content="">
