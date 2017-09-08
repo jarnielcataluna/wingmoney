@@ -89,9 +89,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <section id="main-container">
 
-	<section id="main-wrapper" class="home-bg">
+	<section id="main-wrapper" class="home-bg" >
 		
-		<section class="sec-pad null-top null-bot">
+		<section class="sec-pad null-top null-bot" style="height:100vh;">
 			<div class="container">
 				<div class="banner-wrap">
 					<div class="table-wrap">
