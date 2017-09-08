@@ -83,8 +83,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="pl-row">
                     <div class="pl-content">
                         <article>
-                            <h2>Pchum Ben Promo!</h2>
-                            <p>WING, the leading mobile banking company in Cambodia, will be offering FREE bus tickets from Phnom Penh Sorya  to any 25 provinces and a free box of Aruna pure water to WING Account customers who make any transactions from $5 up for Pchum Ben this year.</p>
+                            <h2>Promotion for Pchum Ben Festival</h2>
+                            <p>WING, the leading mobile banking company in Cambodia, will be offering FREE bus tickets from Phnom Penh Sorya to any 25 provinces and a free box of Aruna pure water to WING Account customers who make any transactions from $5 up for Pchum Ben this year.</p>
                             <p>In order to receive this special offer, the customers who have WING Account can simply follow 3 easy instructions below:</p>
                             <ul>
                                 <li class="lower-latin-wrap"><span class="lower-latin-text">1)</span> <span>Perform any transactions with WING accounts from $5 up starting from 1 September until 18 September 2017</span></li>
@@ -107,8 +107,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </ul>
                     </div>
                     <div class="clr"></div>
-                    <p><em>Note: Customers can get the ticket from 8:00 am until 5:00pm, starting from 09 to 18 September 2017</em></p>
-                    <p>For any online payment, customers who have Wing Account will get 10% discount from Bus Companies such as Larryta, Vireak Buntham, PSD, Moonlight Kiss, BookMeBus and get 1 US dollar from Mekong Express.  </p>
+                    <p><em>Note: Customers can redeem the ticket from 8:00 am until 5:00pm, starting from 09 to 18 September 2017</em></p>
+                    <p>For any online payment, customers who have Wing Account will get 10% discount from Bus Companies such as Larryta, Vireak Buntham, PSD, Moonlight Kiss, BookMeBus and get 1 US dollar from Mekong Express.</p>
                 </div>
                 
             </div>
@@ -121,7 +121,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
         <div class="wing-app-detail">
             <h3>The WING MOBILE APP</h3>
-            <p>Install the Wing Money mobile app on your smartphone and access your Wing Account and all Wing Services instantly, anytime and anywhere</p>
+            <p>Install Wing App on your phone, use your Wing Account and enjoy all Wing services instantly anytime, anywhere!</p>
+            <p></p>
             <a href="https://itunes.apple.com/app/apple-store/id1113286385?pt=118405355&ct=pchumben_promotion&mt=8" target="_blank" class="dl-app dl-app-ios"><img src="images/promo/final-ios-store.png"></a>
             <a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay&referrer=utm_source%3Dmicrosite%26utm_medium%3Dcta%26utm_campaign%3Dpchumben_promotion" target="_blank" class="dl-app dl-app-android"><img src="images/promo/final-google-store.png"></a>
         </div>

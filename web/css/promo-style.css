@@ -14,6 +14,7 @@ em {
 .promo-layout header {
 	padding-top: 80px;
 	background: #afc036;
+	z-index: 3000;
 }
 
 .promo-layout .container {
@@ -87,6 +88,7 @@ em {
 	height: auto;
 	position: relative;
 	z-index: 101;
+	margin-top: -1px;
 }
 
 .promo-layout .box-wrap h4 {
