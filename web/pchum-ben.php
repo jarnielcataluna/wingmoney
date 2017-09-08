@@ -75,8 +75,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <section class="main-wrapper">
             <div class="pl-banner-wrap">
-                <img class="pl-desktop animated hiding" data-animation="fadeIn" data-delay="300" src="images/promo/english-banner.jpg" alt="">
-                <img class="pl-mobile animated hiding" data-animation="fadeIn" data-delay="300" src="images/promo/mobile-english.jpg" alt="">
+                <img class="animated hiding" data-animation="fadeIn" data-delay="300" src="images/promo/english-banner.jpg" alt="">
+                <!-- <img class="pl-mobile animated hiding" data-animation="fadeIn" data-delay="300" src="images/promo/mobile-english.jpg" alt=""> -->
             </div>
             <div class="container">
                 
@@ -89,7 +89,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <ul>
                                 <li class="lower-latin-wrap"><span class="lower-latin-text">1)</span> <span>Perform any transactions with WING accounts from $5 up starting from 1 September until 18 September 2017</span></li>
                                 <li class="lower-latin-wrap"><span class="lower-latin-text">2)</span> <span>Visit WING booth located at Central Market Sorya Ticket Counter and show your history of any transactions with WING account.</span></li>
-                                <li class="lower-latin-wrap"><span class="lower-latin-text">3)</span> <span>Get the ticket and book the bus tickets at least two days before your trip by calling or visiting bus ticket counters directly.</span></li>
+                                <li class="lower-latin-wrap"><span class="lower-latin-text">3)</span> <span>Get the ticket and book the bus tickets at least 2 or 4 days before your trip by calling or visiting bus ticket counters directly.</span></li>
                             </ul>
                             
                         </article>
