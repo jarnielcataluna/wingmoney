@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 ?>
 <!doctype html>
@@ -49,12 +48,10 @@ session_start();
 		transition: all 0.5s ease;
 		background: #ffffff;
 	}
-
 	.pace-inactive {
 		opacity: 0;
 		filter: alpha(opacity=0);
 	}
-
 	.pace .pace-progress {
 		z-index: 2000;
 		position: fixed;
@@ -65,14 +62,12 @@ session_start();
 		background: #00adef;
 		
 	}
-
 	@media (max-width: 767px) {
 		.pace .pace-progress {
 		display: none;
 		opacity: 0;
 		visibility: hidden; }
 	}
-
 	.pace-done #main-container { opacity: 1; }
 </style>
 
@@ -83,13 +78,13 @@ session_start();
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WSF9495');</script>
+})(window,document,'script','dataLayer','GTM-KHPB6M2');</script>
 <!-- End Google Tag Manager -->
 </head>
 <body>
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSF9495"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHPB6M2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <section id="main-container">
@@ -120,8 +115,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="table-cell">
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIT <i>to</i> Win MORE!</h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register for Wing Account and <br> get 15% discount in any of our partner merchants.</p>
+								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIT <i>to</i> get MORE!</h1>
+								<!-- <p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register a Wing Account and <br> get 15% discount in any of our partner merchants.</p> -->
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register for a WING Account today to <br>start enjoying a new level of convenience!</p>
 								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
@@ -159,12 +155,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</section>
 		*/ ?>
 
-		<!-- <section id="layout-2" class="sec-pad">
+		<section id="layout-2" class="sec-pad">
 			<div class="layout-2">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
+						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
 						<h3>THERE ARE SO MANY <br>WAYS TO WING IT!</h3>
-						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Win MORE!</strong></h3>
+						<h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3>
+						<!-- <div class="logo-inverted">
+							<img src="images/page_template/logo-inverted.png" alt="">
+						</div> -->
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img src="images/page_template/h-graphic2.png" alt="">
@@ -175,7 +175,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li>
 									<div class="flex-item">
 										<h2>Send Money </h2>
-										<p><strong>Send Money to friends and family around Cambodia and beyond!</strong></p>
+										<p><strong>Send Money to friends and family around Cambodia!</strong></p>
 										<p>No matter where you are, you'll be able to send money quickly and safely when you WING IT!</p>
 									</div>
 								</li>
@@ -183,33 +183,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="flex-item">
 										<h2>Phone Top Up</h2>
 										<p><strong>Recharge your phone's credits super quick.</strong></p>
-										<p>You can load up with your Wing account</p>
+										<p>You can instantly top-up with your Wing account</p>
 										<p><strong>Or</strong></p>
 										<p>Through any Wing agent!</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Bills Payment</h2>
-										<p><strong>You can make your Bills Payment anywhere using your phone.</strong></p>
+										<h2>Bill Payment</h2>
+										<p><strong>You can make your bills payment anytime, anywhere using your mobile phone.</strong></p>
 										<p>Pay bills with your Wing account</p>
 										<p><strong>Or</strong></p>
-										<p>With Wing Cash Xpress</p>
+										<p>With any Wing agent!</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
 										<h2>Pay with wing</h2>
-										<p><strong>Pay with Wing at restaurants, cinemas, clothes shops, and so much more without cash!</strong></p>
+										<p><strong>Wing account lets you conveniently pay with restaurants, cinemas, clothes shop and much more without the need to bring cash or worry about change.</strong></p>
 										<p>All you need is a swipe or a tap!</p>
-										<p>Instantly pay with Wing at your favorite sellers.</p>
+										<p>Instantly pay with Wing at your favorite merchants.</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
 										<h2>Online Payment</h2>
 										<p><strong>Online Payment lets you conveniently buy a wide variety of products without even leaving your home.</strong></p>
-										<p>Wing card holders can use their Wing accounts to buy things online with local companies.</p>
+										<p>Purchase with online local companies is just a click away. From movie ticket to license payment you can do it all with Wing Account.</p>
 									</div>
 								</li>
 							</ul>
@@ -217,36 +217,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 
-		<!-- <section id="layout-4" class="sec-pad">
+		<section id="layout-4" class="sec-pad">
 			<div class="layout-2">
 				<div class="container">
-					<h3>Account Limit <br>&amp; Services Fee</h3>
+					<h3>Account Limit <!-- <br>&amp; Services Fee --></h3>
 					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
 						<tr>
 							<th style="width:48px;" class="hide-mobile">No.</th>
 							<th>Service Type</th>
 							<th>Service Name</th>
-							<th>Limit/TXN</th>
-							<th>Service Fee</th>
+							<th>Limit per time</th>
+							<th>Limit per day</th>
+							<!-- <th>Service Fee</th> -->
 						</tr>
 						<tr>
 							<td rowspan="2" class="text-center hide-mobile"><strong>1</strong></td>
 							<td rowspan="2"><strong>Money Transfer</strong></td>
 							<td>Wing to Wing</td>
 							<td>USD 300</td>
-							<td rowspan="8" class="text-center">Follow Standard Fee Charge</td>
+							<td>USD 300</td>
+							<!-- <td rowspan="8" class="text-center"><a href="https://www.wingmoney.com/fees/" target="_blank" style="color:#FFFFFF;text-decoration:underline;">Follow Standard Fee Charge</a></td> -->
 						</tr>
 						<tr>
 							<td>Wing WeiLuy</td>
-							<td>USD 100/day</td>
+							<td>USD 100</td>
+							<td>USD 100</td>
 						</tr>
 						<tr>
 							<td class="text-center hide-mobile"><strong>2</strong></td>
 							<td><strong>Airtime Recharge</strong></td>
 							<td>Phone Top Up</td>
+							<td>USD 50</td>
 							<td>USD 3,000</td>
 						</tr>
 						
@@ -255,43 +259,185 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td rowspan="3"><strong>Payments</strong></td>
 							<td>Bill Payment</td>
 							<td>USD 3,000</td>
+							<td>USD 3,000</td>
 						</tr>
 						<tr>
 							<td>Online Payment</td>
 							<td>USD 3,000</td>
+							<td>USD 3,000</td>
 						</tr>
 						<tr>
 							<td>Retail Payment</td>
+							<td>USD 3,000</td>
 							<td>USD 3,000</td>
 						</tr>
 						<tr>
 							<td rowspan="2" class="text-center hide-mobile"><strong>4</strong></td>
 							<td rowspan="2"><strong>Cash In/Out</strong></td>
 							<td>Cash In</td>
+							<td>USD 6,000</td>
 							<td>Unlimited</td>
 						</tr>
 						<tr>
 							<td>Cash Out</td>
-							<td>USD 100/day</td>
+							<td>USD 100</td>
+							<td>USD 100</td>
 						</tr>
 						<tr>
 							<td class="text-center hide-mobile"><strong>5</strong></td>
-							<td colspan="2" ><strong>mWAC Wallet Storage</strong></td>
+							<td colspan="2" ><strong>Wallet Storage</strong></td>
 							<td colspan="2" class="text-center">Unlimited</td>
+						</tr>
+					</table>
+
+					<h3 style="margin-top: 20px;">Fixed Transaction Fees</h3>
+					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;margin-top: 20px;">
+						<tr>
+							<th>Service</th>
+							<th>Fee (KHR)</th>
+							<th>Fee (USD)</th>
+						</tr>
+						<tr>
+							<td>Online Payment &amp; Retail Payment</td>
+							<td class="bg-white valign" rowspan="4" valign="center">FREE</td>
+							<td class="bg-white valign" rowspan="4" valign="center">FREE</td>
+						</tr>
+						<tr>
+							<td>Cash In</td>
+						</tr>
+						<tr>
+							<td>Phone Top Up</td>
+						</tr>
+						<tr>
+							<td>Bill Payment (DIGI, First Finance, KLD, OneTV, PPP, KTH, PPCTV, Manulife, Cambodian Life ...)</td>
+						</tr>
+						<tr>
+							<td>Bill Payment (AEON, Active People's MFI, Mega Leasing Plc, Piphup Thmey MFI)</td>
+							<td class="valign">2,000</td>
+							<td class="valign">0.5</td>
+						</tr>
+						<tr>
+						<td>Check Balance</td>
+							<td class="valign">100</td>
+							<td class="valign">0.02</td>
+						</tr>
+						<tr>
+						<td>Change Phone Number</td>
+							<td class="valign">1,000</td>
+							<td class="valign">0.25</td>
+						</tr>
+						<tr>
+						<td>Change Wallet Currency</td>
+							<td class="valign">5,000</td>
+							<td class="valign">1.25</td>
+						</tr>
+					</table>
+
+					<h3 style="margin-top: 20px;">Variable Transaction Fees</h3>
+					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;margin-top: 20px;">
+						<tr>
+							<th>Service</th>
+							<th style="width: 200px;">Amount (KHR)</th>
+							<th style="width: 120px; text-align: left;">Fee (KHR)</th>
+							<th style="width: 180px;">Amount (USD)</th>
+							<th style="width: 120px; text-align: left;">Fee (USD)</th>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="3">Cash Out</td>
+							<td>0 - 401,999</td>
+							<td>1,000</td>
+							<td>0 - 100.49</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td>402,000 - 2,001,999</td>
+							<td>2,000</td>
+							<td>100.50 - 500.49</td>
+							<td>0.50</td>
+						</tr>
+						<tr>
+							<td>Above 2,001,999</td>
+							<td>3,000</td>
+							<td>Above 500.49</td>
+							<td>0.75</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="2">EDC Bill Payment (Phnom Penh, Siem Reap, Preah Sihanouk, Battambang)</td>
+							<td>0 - 100,000</td>
+							<td>Free</td>
+							<td>0 - 25</td>
+							<td>Free</td>
+						</tr>
+						<tr>
+							<td>From 100,001</td>
+							<td>1,000</td>
+							<td>From 25.01</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="2">PPWSA Bill Payment</td>
+							<td>0 - 100,000</td>
+							<td>Free</td>
+							<td>0 - 25</td>
+							<td>Free</td>
+						</tr>
+						<tr>
+							<td>From 100,001</td>
+							<td>1,000</td>
+							<td>From 25.01</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="3">WING-2-WING</td>
+							<td>0 - 401,999</td>
+							<td>1,000</td>
+							<td>0 - 100.49</td>
+							<td>0.25</td>
+						</tr>
+						<tr>
+							<td>402,000 - 2,001,999</td>
+							<td>2,000</td>
+							<td>100.50 - 500.49</td>
+							<td>0.50</td>
+						</tr>
+						<tr>
+							<td>Above 2,001,999</td>
+							<td>3,000</td>
+							<td>Above 500.49</td>
+							<td>0.75</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="3">Wing Wei Luy</td>
+							<td>0 - 401,999</td>
+							<td>2,400</td>
+							<td>0 - 100.49</td>
+							<td>0.60</td>
+						</tr>
+						<tr>
+							<td>402,000 - 2,001,999</td>
+							<td>4,800</td>
+							<td>100.50 - 500.49</td>
+							<td>1.20</td>
+						</tr>
+						<tr>
+							<td>Above 2,001,999</td>
+							<td>9,000</td>
+							<td>Above 500.49</td>
+							<td>2.25</td>
 						</tr>
 					</table>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
-		<!-- <section class="sec-pad null-top null-bot">
+		<section class="sec-pad null-top null-bot">
 			<div class="layout-3">
 				<div class="layout-3-bg"></div>
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<h5>Why wait?</h5>
 						<h3>Get your own Wing Account NOW!</h3>
-						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Win MORE!</strong></h3>
+						<h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3>
 						<a href="form.php" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
@@ -304,7 +450,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 	</section>
 </section>
 <footer>

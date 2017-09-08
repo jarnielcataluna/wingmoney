@@ -5,6 +5,15 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
+RedirectMatch 301 /khmer-confirmation.php http://account.wingmoney.com/
+RedirectMatch 301 /confirmation.php http://account.wingmoney.com/
+RedirectMatch 301 /khmer-thankyou.php http://account.wingmoney.com/
+RedirectMatch 301 /thankyou.php http://account.wingmoney.com/
+RedirectMatch 301 /khmer-home.php http://account.wingmoney.com/
+RedirectMatch 301 /khmer-form.php http://account.wingmoney.com/
+RedirectMatch 301 /form.php http://account.wingmoney.com/
+RedirectMatch 301 /bk-index.php http://account.wingmoney.com/
+
 <ifModule mod_gzip.c>
   mod_gzip_on Yes
   mod_gzip_dechunk Yes
