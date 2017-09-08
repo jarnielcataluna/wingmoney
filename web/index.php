@@ -5,7 +5,7 @@ session_start();
 <html class="no-js" lang="">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow" />
+<meta name="robots" content="noindex,follow" />
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Wing Money</title>
 <meta name="description" content="">
