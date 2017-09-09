@@ -170,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         sendGaEvent($(this), function() {
             // window.location.href = _href;
-            window.open(_href);
+            // window.open(_href);
         });
     });
 
@@ -181,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         sendGaEvent($(this), function() {
             // window.location.href = _href;
-            window.open(_href);
+            // window.open(_href);
         });
     });
 
@@ -190,6 +190,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var _eventCategory = element.attr('data-attr-event-category');
         var _eventAction = element.attr('data-attr-event-action');
         var _eventLabel = element.attr('data-attr-event-label');
+
+        console.log(_eventCategory);
+        console.log(_eventAction);
+        console.log(_eventLabel);
 
         dataLayer.push({
             'event': 'gaEvent',
