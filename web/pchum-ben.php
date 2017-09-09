@@ -153,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     else window.onload = downloadJSAtOnload;
 </script> -->
 <script>
-$('#getWACbtn').click(function(e) {
+    $('#getWACbtn').click(function(e) {
         e.preventDefault();
 
         var _href = $(this).attr('href');
@@ -172,13 +172,13 @@ $('#getWACbtn').click(function(e) {
         });
     });
 
-    function sendGaEvent(eventCategory, eventAction, eventLabel) {
+    function sendGaEvent(element, callback) {
         // ga('send', 'event', eventCategory, eventAction, eventLabel);
 
         var _eventCategory = element.attr('data-attr-event-category');
         var _eventAction = element.attr('data-attr-event-action');
         var _eventLabel = element.attr('data-attr-event-label');
-        
+
         dataLayer.push({
             'event': 'GAEvent',
             'eventCategory': eventCategory,
@@ -192,6 +192,7 @@ $('#getWACbtn').click(function(e) {
         });
     }
 </script>
+
 </body>
 </html>
 
