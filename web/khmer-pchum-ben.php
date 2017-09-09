@@ -179,12 +179,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var _eventCategory = element.attr('data-attr-event-category');
         var _eventAction = element.attr('data-attr-event-action');
         var _eventLabel = element.attr('data-attr-event-label');
-        
+
         dataLayer.push({
             'event': 'GAEvent',
-            'eventCategory': eventCategory,
-            'eventAction': eventAction,
-            'eventLabel': eventLabel,
+            'eventCategory': _eventCategory,
+            'eventAction': _eventAction,
+            'eventLabel': _eventLabel,
             'eventCallback': function() {
                 if (typeof callback == 'function') {
                     callback();
