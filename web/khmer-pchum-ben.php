@@ -111,7 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p>សម្រាប់ការធ្វើប្រតិបត្តិការតាមអនឡាញវិញ អតិថិជនដែលមានគណនីវីងក៏នឹងទទួលបានការបញ្ចុះតម្លៃពិសេសចំនួន១០% ពីក្រុមហ៊ុនឡានក្រុងដូចជា ឡារីតា វីរៈប៊ុនថាំ ភីអេសឌី ម៉ូនឡាយឃីស ប៊ុកមីបាស និងការបញ្ចុះតម្លៃចំនួន១ដុល្លារពីក្រុមហ៊ុនមេគង្គអិចប្រេស៕</p>
                     <div class="clr"></div>
                     <div class="text-center">
-                        <a class="btn click-apply apply-now-button" href="/khmer-form.php?utm_source=google&utm_medium=cpc&utm_campaign=adwords_pchumben">GET WING ACCOUNT NOW</a>
+                        <a class="btn click-apply apply-now-button" href="/khmer-form.php" id="getWACbtn" data-attr-event-category="Pchum Ben" data-attr-event-action="mWAC Link Click" data-attr-event-label="LP Khmer">GET WING ACCOUNT NOW</a>
                     </div>
                 </div>
                 
@@ -152,6 +152,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         window.attachEvent("onload", downloadJSAtOnload);
     else window.onload = downloadJSAtOnload;
 </script> -->
+<script>
+    $('#getWACbtn').click(function(e) {
+        e.preventDefault();
+
+        var _href = $(this).attr('href');
+        var _ecat = $(this).attr('data-attr-event-category');
+        var _eact = $(this).attr('data-attr-event-action');
+        var _elab = $(this).attr('data-attr-event-label');
+
+        sendGaEvent(_ecat, _eact, _elab);
+        window.location.href = _href;
+    });
+
+    function sendGaEvent(eventCategory, eventAction, eventLabel) {
+        ga('send', 'event', eventCategory, eventAction, eventLabel);
+    }
+</script>
 </body>
 </html>
 
