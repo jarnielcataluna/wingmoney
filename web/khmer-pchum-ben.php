@@ -127,8 +127,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <h3>កម្មវិធីស្មាតហ្វូនវីង</h3>
             <p>ដំឡើងកម្មវិធីស្មាតហ្វូនវីងលើទូរស័ព្ទរបស់អ្នក ប្រើប្រាស់គណនីវីងរបស់អ្នក និងសេវាកម្មវីងទាំងអស់ភ្លាមៗ គ្រប់ពេលវេលា និងគ្រប់ទីកន្លែង</p>
-            <a href="https://itunes.apple.com/app/apple-store/id1113286385?pt=118405355&ct=pchumben_promotion&mt=8" target="_blank" class="dl-app dl-app-ios" id="downloadWingiOS" data-attr-event-category="Pchum Ben" data-attr-event-action="iOS Button Click" data-attr-event-label="LP Khmer"><img src="images/promo/final-ios-store.png"></a>
-            <a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay&referrer=utm_source%3Dmicrosite%26utm_medium%3Dcta%26utm_campaign%3Dpchumben_promotion" target="_blank" class="dl-app dl-app-android" id="downloadWingAndroid" data-attr-event-category="Pchum Ben" data-attr-event-action="Android Button Click" data-attr-event-label="LP Khmer"><img src="images/promo/final-google-store.png"></a>
+            <a href="https://itunes.apple.com/app/apple-store/id1113286385?pt=118405355&ct=pchumben_promotion&mt=8" class="dl-app dl-app-ios" id="downloadWingiOS" data-attr-event-category="Pchum Ben" data-attr-event-action="iOS Button Click" data-attr-event-label="LP Khmer"><img src="images/promo/final-ios-store.png"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay&referrer=utm_source%3Dmicrosite%26utm_medium%3Dcta%26utm_campaign%3Dpchumben_promotion" class="dl-app dl-app-android" id="downloadWingAndroid" data-attr-event-category="Pchum Ben" data-attr-event-action="Android Button Click" data-attr-event-label="LP Khmer"><img src="images/promo/final-google-store.png"></a>
         </div>
         <div class="wing-app-img"><img src="images/promo/wing-mobile-img.png" alt=""></div>
     </div>
@@ -160,7 +160,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var _href = $(this).attr('href');
 
         sendGaEvent($(this), function() {
-            window.location.href = _href;
+            // window.location.href = _href;
         });
     });
 
