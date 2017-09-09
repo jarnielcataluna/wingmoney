@@ -163,7 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var _elab = $(this).attr('data-attr-event-label');
 
         sendGaEvent(_ecat, _eact, _elab);
-        window.location.href = _href;
+        //window.location.href = _href;
     });
 
     function sendGaEvent(eventCategory, eventAction, eventLabel) {
