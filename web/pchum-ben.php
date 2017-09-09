@@ -158,7 +158,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         e.preventDefault();
 
         var _href = $(this).attr('href');
-        sendGaEvent($(this), function() {
+
+        sendGaEvent($(this), 'mWAC', function() {
             window.location.href = _href;
         });
     });
@@ -168,7 +169,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         var _href = $(this).attr('href');
 
-        sendGaEvent($(this), function() {
+        sendGaEvent($(this), 'iOS', function() {
             window.open(_href);
         });
     });
@@ -178,24 +179,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         var _href = $(this).attr('href');
 
-        sendGaEvent($(this), function() {
+        sendGaEvent($(this), 'Android', function() {
             window.open(_href);
         });
     });
 
-    function sendGaEvent(element, callback) {
+    function sendGaEvent(element, eventTrigger, callback) {
         var _eventCategory = element.attr('data-attr-event-category');
         var _eventAction = element.attr('data-attr-event-action');
         var _eventLabel = element.attr('data-attr-event-label');
 
         dataLayer.push({
-            'event': 'gaEvent',
+            'event': 'gaEvent_'+eventTrigger,
             'eventCategory': _eventCategory,
             'eventAction': _eventAction,
             'eventLabel': _eventLabel,
-	    'gtm': {
-	        'elementId': element.attr('id'),
-	    },
             'eventCallback': function() {
                 if (typeof callback == 'function') {
                     callback();
