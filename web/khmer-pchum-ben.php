@@ -173,7 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
     });
 
-    function sendGaEvent(eventCategory, eventAction, eventLabel) {
+    function sendGaEvent(element, callback) {
         // ga('send', 'event', eventCategory, eventAction, eventLabel);
 
         var _eventCategory = element.attr('data-attr-event-category');
