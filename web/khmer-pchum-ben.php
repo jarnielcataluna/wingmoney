@@ -196,6 +196,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             'eventCategory': _eventCategory,
             'eventAction': _eventAction,
             'eventLabel': _eventLabel,
+	    'gtm': {
+	        'elementId': element.attr('id'),
+	    },
             'eventCallback': function() {
                 if (typeof callback == 'function') {
                     callback();
