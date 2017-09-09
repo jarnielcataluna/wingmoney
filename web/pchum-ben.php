@@ -180,7 +180,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var _eventLabel = element.attr('data-attr-event-label');
 
         dataLayer.push({
-            'event': 'GAEvent',
+            'event': 'gaEvent',
             'eventCategory': _eventCategory,
             'eventAction': _eventAction,
             'eventLabel': _eventLabel,
