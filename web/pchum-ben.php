@@ -200,7 +200,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             'eventCategory': _eventCategory,
             'eventAction': _eventAction,
             'eventLabel': _eventLabel,
-	    'elementId': element.attr('id');
+	    'elementId': element.attr('id'),
             'eventCallback': function() {
                 if (typeof callback == 'function') {
                     callback();
