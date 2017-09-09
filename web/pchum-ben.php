@@ -109,6 +109,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="clr"></div>
                     <p><em>Note: Customers can redeem the ticket from 8:00 am until 5:00pm, starting from 09 to 18 September 2017</em></p>
                     <p>For any online payment, customers who have Wing Account will get 10% discount from Bus Companies such as Larryta, Vireak Buntham, PSD, Moonlight Kiss, BookMeBus and get 1 US dollar from Mekong Express.</p>
+		    <div class="clr"></div>
+                    <div class="text-center">
+                        <a class="btn click-apply apply-now-button" href="/form.php" id="getWACbtn" data-attr-event-category="Pchum Ben" data-attr-event-action="mWAC Link Click" data-attr-event-label="LP English">GET WING ACCOUNT NOW</a>
+                    </div>
                 </div>
                 
             </div>
@@ -148,6 +152,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         window.attachEvent("onload", downloadJSAtOnload);
     else window.onload = downloadJSAtOnload;
 </script> -->
+
+<script>
+    $('#getWACbtn').click(function(e) {
+        e.preventDefault();
+
+        var _href = $(this).attr('href');
+        // var _ecat = $(this).attr('data-attr-event-category');
+        // var _eact = $(this).attr('data-attr-event-action');
+        // var _elab = $(this).attr('data-attr-event-label');
+
+        // sendGaEvent(_ecat, _eact, _elab);
+        // console.log(_ecat);
+        // console.log(_eact);
+        // console.log(_elab);
+        // window.location.href = _href;
+
+        sendGaEvent($(this), function() {
+            window.location.href = _href;
+        });
+    });
+
+    function sendGaEvent(element, callback) {
+        // ga('send', 'event', eventCategory, eventAction, eventLabel);
+
+        var _eventCategory = element.attr('data-attr-event-category');
+        var _eventAction = element.attr('data-attr-event-action');
+        var _eventLabel = element.attr('data-attr-event-label');
+
+        dataLayer.push({
+            'event': 'gaEvent',
+            'eventCategory': _eventCategory,
+            'eventAction': _eventAction,
+            'eventLabel': _eventLabel,
+            'eventCallback': function() {
+                if (typeof callback == 'function') {
+                    callback();
+                }
+            }
+        });
+    }
+</script>
 </body>
 </html>
 
