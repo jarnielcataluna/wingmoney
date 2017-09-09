@@ -127,9 +127,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h3>The WING MOBILE APP</h3>
             <p>Install Wing App on your phone, use your Wing Account and enjoy all Wing services instantly anytime, anywhere!</p>
             <p></p>
-            <a href="https://itunes.apple.com/app/apple-store/id1113286385?pt=118405355&ct=pchumben_promotion&mt=8" target="_blank" class="dl-app dl-app-ios"><img src="images/promo/final-ios-store.png"></a>
-            <a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay&referrer=utm_source%3Dmicrosite%26utm_medium%3Dcta%26utm_campaign%3Dpchumben_promotion" target="_blank" class="dl-app dl-app-android"><img src="images/promo/final-google-store.png"></a>
-        </div>
+            <a href="https://itunes.apple.com/app/apple-store/id1113286385?pt=118405355&ct=pchumben_promotion&mt=8" target="_blank" class="dl-app dl-app-ios" id="downloadWingiOS" data-attr-event-category="Pchum Ben" data-attr-event-action="iOS Button Click" data-attr-event-label="LP English"><img src="images/promo/final-ios-store.png"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay&referrer=utm_source%3Dmicrosite%26utm_medium%3Dcta%26utm_campaign%3Dpchumben_promotion" target="_blank" class="dl-app dl-app-android" id="downloadWingAndroid" data-attr-event-category="Pchum Ben" data-attr-event-action="Android Button Click" data-attr-event-label="LP English"><img src="images/promo/final-google-store.png"></a>
+	</div>
         <div class="wing-app-img"><img src="images/promo/wing-mobile-img.png" alt=""></div>
     </div>
 </footer>
@@ -157,23 +157,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         e.preventDefault();
 
         var _href = $(this).attr('href');
-        // var _ecat = $(this).attr('data-attr-event-category');
-        // var _eact = $(this).attr('data-attr-event-action');
-        // var _elab = $(this).attr('data-attr-event-label');
-
-        // sendGaEvent(_ecat, _eact, _elab);
-        // console.log(_ecat);
-        // console.log(_eact);
-        // console.log(_elab);
-        // window.location.href = _href;
 
         sendGaEvent($(this), function() {
-            //window.location.href = _href;
+            window.location.href = _href;
+        });
+    });
+
+    $('#downloadWingiOS').click(function(e) {
+        e.preventDefault();
+
+        var _href = $(this).attr('href');
+
+        sendGaEvent($(this), function() {
+            // window.location.href = _href;
+            window.open(_href);
+        });
+    });
+
+    $('#downloadWingAndroid').click(function(e) {
+        e.preventDefault();
+
+        var _href = $(this).attr('href');
+
+        sendGaEvent($(this), function() {
+            // window.location.href = _href;
+            window.open(_href);
         });
     });
 
     function sendGaEvent(element, callback) {
-        // ga('send', 'event', eventCategory, eventAction, eventLabel);
 
         var _eventCategory = element.attr('data-attr-event-category');
         var _eventAction = element.attr('data-attr-event-action');
