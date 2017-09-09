@@ -109,6 +109,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="clr"></div>
                      <p>ចំណាំ៖ អតិថិជនអាចទៅយកសំបុត្រចាប់ពីថ្ងៃទី ៩ ដល់ ថ្ងៃទី ១៨ ខែកញ្ញាឆ្នាំ ២០១៧ ពីម៉ោង ៨​ : ០០ នាទីព្រឹក ដល់ ម៉ោង ៥ : ០០ នាទីល្ងាច។</p>
                     <p>សម្រាប់ការធ្វើប្រតិបត្តិការតាមអនឡាញវិញ អតិថិជនដែលមានគណនីវីងក៏នឹងទទួលបានការបញ្ចុះតម្លៃពិសេសចំនួន១០% ពីក្រុមហ៊ុនឡានក្រុងដូចជា ឡារីតា វីរៈប៊ុនថាំ ភីអេសឌី ម៉ូនឡាយឃីស ប៊ុកមីបាស និងការបញ្ចុះតម្លៃចំនួន១ដុល្លារពីក្រុមហ៊ុនមេគង្គអិចប្រេស៕</p>
+		    
+                    <div class="clr"></div>
+                    <div class="text-center">
+                        <a class="btn click-apply apply-now-button" href="/khmer-form.php" id="getWACbtn" data-attr-event-category="Pchum Ben" data-attr-event-action="mWAC Link Click" data-attr-event-label="LP Khmer">បើកគណនីវីងឥឡូវនេះ</a>
+                    </div>
                 </div>
                 
             </div>
@@ -148,6 +153,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         window.attachEvent("onload", downloadJSAtOnload);
     else window.onload = downloadJSAtOnload;
 </script> -->
+	
+<script>
+    $('#getWACbtn').click(function(e) {
+        e.preventDefault();
+
+        var _href = $(this).attr('href');
+        var _ecat = $(this).attr('data-attr-event-category');
+        var _eact = $(this).attr('data-attr-event-action');
+        var _elab = $(this).attr('data-attr-event-label');
+
+        sendGaEvent(_ecat, _eact, _elab);
+        window.location.href = _href;
+    });
+
+    function sendGaEvent(eventCategory, eventAction, eventLabel) {
+        ga('send', 'event', eventCategory, eventAction, eventLabel);
+    }
+</script>
 </body>
 </html>
 
