@@ -152,21 +152,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         window.attachEvent("onload", downloadJSAtOnload);
     else window.onload = downloadJSAtOnload;
 </script> -->
+
 <script>
     $('#getWACbtn').click(function(e) {
         e.preventDefault();
 
         var _href = $(this).attr('href');
-        var _ecat = $(this).attr('data-attr-event-category');
-        var _eact = $(this).attr('data-attr-event-action');
-        var _elab = $(this).attr('data-attr-event-label');
+        // var _ecat = $(this).attr('data-attr-event-category');
+        // var _eact = $(this).attr('data-attr-event-action');
+        // var _elab = $(this).attr('data-attr-event-label');
 
-        sendGaEvent(_ecat, _eact, _elab);
-        window.location.href = _href;
+        // sendGaEvent(_ecat, _eact, _elab);
+        // console.log(_ecat);
+        // console.log(_eact);
+        // console.log(_elab);
+        // window.location.href = _href;
+
+        sendGaEvent($(this), function() {
+            window.location.href = _href;
+        });
     });
 
     function sendGaEvent(eventCategory, eventAction, eventLabel) {
-        ga('send', 'event', eventCategory, eventAction, eventLabel);
+        // ga('send', 'event', eventCategory, eventAction, eventLabel);
+
+        var _eventCategory = element.attr('data-attr-event-category');
+        var _eventAction = element.attr('data-attr-event-action');
+        var _eventLabel = element.attr('data-attr-event-label');
+        
+        dataLayer.push({
+            'event': 'GAEvent',
+            'eventCategory': eventCategory,
+            'eventAction': eventAction,
+            'eventLabel': eventLabel,
+            'eventCallback': function() {
+                if (typeof callback == 'function') {
+                    callback();
+                }
+            }
+        });
     }
 </script>
 </body>
