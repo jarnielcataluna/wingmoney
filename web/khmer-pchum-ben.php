@@ -169,7 +169,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         // window.location.href = _href;
 
         sendGaEvent($(this), function() {
-            window.location.href = _href;
+            //window.location.href = _href;
         });
     });
 
