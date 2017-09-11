@@ -14,7 +14,7 @@ session_start();
 	
 <meta property="og:title" content="Wing Money | Pchum Ben" />
 <meta property="og:description" content="" />
-<meta property="og:url" content="account.wingmoney.com/pchum-ben" />
+<meta property="og:url" content="http://account.wingmoney.com/pchum-ben" />
 <meta property="og:site_name" content="Pchum Ben promotion landing page" />
 <meta property="og:image" content="http://account.wingmoney.com/images/pchumben-og.jpg" />
 
