@@ -14,7 +14,7 @@
     var time = now.getTime();
     var expireTime = time + 1000*3600;
     now.setTime(expireTime);
-    document.cookie = 'wingMoneyDefferedLink=' + custom + ';expires='+now.toGMTString()+';domain=wing-deffered-deeplink.herokuapp.com';
+    document.cookie = 'wingMoneyDefferedLink=' + custom + ';expires='+now.toGMTString()+';domain=http://account.wingmoney.com';
     alert(custom);
     window.location = "https://itunes.apple.com/kh/app/wing-money/id1113286385?mt=8";
 </script>
