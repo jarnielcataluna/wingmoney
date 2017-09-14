@@ -343,23 +343,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<th style="width: 120px; text-align: left;">Fee (USD)</th>
 						</tr>
 						<tr>
-							<td class="text-left valign" rowspan="3">Cash Out</td>
-							<td>0 - 401,999</td>
-							<td>1,000</td>
-							<td>0 - 100.49</td>
-							<td>0.25</td>
+							<td class="text-left valign" rowspan="5">Cash Out</td>
+							<td>0 - 100,000</td>
+							<td>1,600</td>
+							<td>0 - 25</td>
+							<td>0.40</td>
 						</tr>
 						<tr>
-							<td>402,000 - 2,001,999</td>
-							<td>2,000</td>
-							<td>100.50 - 500.49</td>
-							<td>0.50</td>
+							<td>100,100 - 200,000</td>
+							<td>2,600</td>
+							<td>25.01 - 50</td>
+							<td>0.65</td>
 						</tr>
 						<tr>
-							<td>Above 2,001,999</td>
-							<td>3,000</td>
-							<td>Above 500.49</td>
-							<td>0.75</td>
+							<td>200,100 - 400,000</td>
+							<td>3,600</td>
+							<td>50.01 - 100</td>
+							<td>0.90</td>
+						</tr>
+						<tr>
+							<td>400,100 - 2,000,000</td>
+							<td>5,200</td>
+							<td>100.01 - 500</td>
+							<td>1.30</td>
+						</tr>
+						<tr>
+							<td>2,000,100 - 4,000,000</td>
+							<td>6,000</td>
+							<td>500.01 - 1,000</td>
+							<td>1.50</td>
 						</tr>
 						<tr>
 							<td class="text-left valign" rowspan="2">EDC Bill Payment (Phnom Penh, Siem Reap, Preah Sihanouk, Battambang)</td>
@@ -389,41 +401,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</tr>
 						<tr>
 							<td class="text-left valign" rowspan="3">WING-2-WING</td>
-							<td>0 - 401,999</td>
-							<td>1,000</td>
-							<td>0 - 100.49</td>
-							<td>0.25</td>
+							<td>0 - 400,000</td>
+							<td>400</td>
+							<td>0 - 100</td>
+							<td>0.10</td>
 						</tr>
 						<tr>
-							<td>402,000 - 2,001,999</td>
+							<td>400,100 - 2,000,000</td>
+							<td>800</td>
+							<td>100.01 - 500</td>
+							<td>0.20</td>
+						</tr>
+						<tr>
+							<td>2,000,100 - 4,000,000</td>
+							<td>1,200</td>
+							<td>500.01 - 1,000</td>
+							<td>0.30</td>
+						</tr>
+						<tr>
+							<td class="text-left valign" rowspan="5">Wing Wei Luy</td>
+							<td>0 - 100,000</td>
 							<td>2,000</td>
-							<td>100.50 - 500.49</td>
+							<td>0 - 25</td>
 							<td>0.50</td>
 						</tr>
 						<tr>
-							<td>Above 2,001,999</td>
+							<td>100,100 - 200,000</td>
 							<td>3,000</td>
-							<td>Above 500.49</td>
+							<td>25.01- 50</td>
 							<td>0.75</td>
 						</tr>
 						<tr>
-							<td class="text-left valign" rowspan="3">Wing Wei Luy</td>
-							<td>0 - 401,999</td>
-							<td>2,400</td>
-							<td>0 - 100.49</td>
-							<td>0.60</td>
+							<td>200,100 - 400,000</td>
+							<td>4,000</td>
+							<td>50.01 - 100</td>
+							<td>1.00</td>
 						</tr>
 						<tr>
-							<td>402,000 - 2,001,999</td>
-							<td>4,800</td>
-							<td>100.50 - 500.49</td>
-							<td>1.20</td>
+							<td>400,100 - 2,000,000</td>
+							<td>6,000</td>
+							<td>100.01 - 500</td>
+							<td>1.50</td>
 						</tr>
 						<tr>
-							<td>Above 2,001,999</td>
-							<td>9,000</td>
-							<td>Above 500.49</td>
-							<td>2.25</td>
+							<td>2,000,100 - 4,000,000</td>
+							<td>8,000</td>
+							<td>500.01 - 1,000</td>
+							<td>2.00</td>
 						</tr>
 					</table>
 				</div>
