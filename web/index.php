@@ -115,10 +115,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="table-cell">
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIT <i>to</i> get MORE!</h1>
+								<!-- <h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIT <i>to</i> get MORE!</h1> -->
+								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">Get your Wing Account in a Snap!</h1>
 								<!-- <p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register a Wing Account and <br> get 15% discount in any of our partner merchants.</p> -->
 								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register for a WING Account today to <br>start enjoying a new level of convenience!</p>
-								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
+								<!-- <div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div> -->
+								<br>
+								<br>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
 									<a href="form.php" class="btn click-apply apply-now-button">Apply now</a><br>
@@ -160,8 +163,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
-						<h3>THERE ARE SO MANY <br>WAYS TO WING IT!</h3>
-						<h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3>
+						<h3 style="text-transform: uppercase;">Use your Wing Account to send money, pay bills, shop online, and many more!</h3>
+						<!-- <h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3> -->
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->
@@ -176,7 +179,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="flex-item">
 										<h2>Send Money </h2>
 										<p><strong>Send Money to friends and family around Cambodia!</strong></p>
-										<p>No matter where you are, you'll be able to send money quickly and safely when you WING IT!</p>
+										<p>No matter where you are, you'll be able to send money quickly and safely using your Wing Account</p>
 									</div>
 								</li>
 								<li>
@@ -461,7 +464,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<h5>Why wait?</h5>
 						<h3>Get your own Wing Account NOW!</h3>
-						<h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3>
+						<!-- <h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3> -->
 						<a href="form.php" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">

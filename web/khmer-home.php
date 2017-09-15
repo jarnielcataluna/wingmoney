@@ -125,9 +125,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="table-cell">
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">ប្រើប្រាស់វីង<br style="display: block;" />ដើម្បីទទួលបានអត្ថប្រយោជន៏<br style="display: block;" />កាន់តែច្រើន!</h1>
+								<!-- <h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">ប្រើប្រាស់វីង<br style="display: block;" />ដើម្បីទទួលបានអត្ថប្រយោជន៏<br style="display: block;" />កាន់តែច្រើន!</h1> -->
+								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">បើកគណនីវីងបានភ្លាមៗ!</h1>
 								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">បើកគណនីវីងថ្ងៃនេះដើម្បីទទួលបានភាព<br />ងាយស្រួលមួយកំរិតទៀតក្នុងការគ្រប់គ្រងសាច់ប្រាក់​</p>
-								<div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
+								<!-- <div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div> -->
+								<br>
+								<br>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
 									<a href="khmer-form.php" class="btn click-apply apply-now-button">បើកគណនីវីងដោយឥតគិតថ្លៃ</a><br>
@@ -170,7 +173,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
 						<!-- <h3>ប្រើប្រាស់វីងដើម្បីទទួលបានអត្ថប្រយោជន៍ជាច្រើន!</h3> -->
-						<h3><strong>ប្រើប្រាស់វីងដើម្បីទទួលបាន<br />អត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3>
+						<!-- <h3><strong>ប្រើប្រាស់វីងដើម្បីទទួលបាន<br />អត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3> -->
+						<h3>ប្រើគណនីវីងដើម្បីផ្ញើប្រាក់ បង់វិក្កយបត្រ ទិញទំនិញអ៊នឡាញ ។ល។</h3>
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->
@@ -187,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<h2>វេរលុយ</h2>
 										<p>&nbsp;</p>
 										<p><strong>វេរលុយឲ្យមិត្តភក្តិ និងក្រុមគ្រួសារ<br />គ្រប់ទីកន្លែងទូទាំងប្រទេស!</strong>
-										<p>មិនថាអ្នកនៅកន្លែងណា​ អ្នកអាចវេរលុយបានយ៉ាង<br />រហ័សនិងមានសុវត្ថិភាព</p>
+										<p>មិនថាអ្នកនៅកន្លែងណា អ្នកអាចផ្ញើប្រាក់បានលឿននិងដោយសុវត្ថិភាពពេលអ្នកប្រើគណនីវីង!</p>
 									</div>
 								</li>
 
@@ -480,7 +484,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<h5>ចាំអីទៀត?</h5>
 						<h3>បើកគណនីវីងរបស់អ្នកឥឡូវនេះ​</h3>
-						<h3><strong>ដើម្បីទទួលបានអត្ថប្រយោជន៏<br />កាន់តែច្រើន!</strong></h3>
+						<!-- <h3><strong>ដើម្បីទទួលបានអត្ថប្រយោជន៏<br />កាន់តែច្រើន!</strong></h3> -->
 
 						<a href="khmer-form.php" class="btn click-apply btn-desktop">ស្នើបើកគណនីវីងដោយឥតគិតថ្លៃ</a>
 					</div>
