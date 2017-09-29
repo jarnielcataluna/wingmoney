@@ -2,7 +2,7 @@ RewriteEngine On
 RewriteBase /
 
 RewriteCond %{SERVER_PORT} 80 
-RewriteRule ^(.*)$ https://www.example.com/$1 [R,L]
+RewriteRule ^(.*)$ https://account.wingmoney.com/$1 [R,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
