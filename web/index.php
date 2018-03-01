@@ -30,6 +30,7 @@ session_start();
 <meta name="theme-color" content="#b0c025">
 
 <link rel="stylesheet" href="css/style.css" media="all"/>
+<link rel="stylesheet" href="css/wing-tini.css" media="all"/>
 
 <style type="text/css">
 	.pace {
@@ -74,18 +75,18 @@ session_start();
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
 <!-- <script src='https://www.google.com/recaptcha/api.js?manual_challenge=false' defer></script>  -->
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KHPB6M2');</script>
+})(window,document,'script','dataLayer','GTM-KHPB6M2');</script> -->
 <!-- End Google Tag Manager -->
 </head>
 <body>
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHPB6M2"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHPB6M2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 <!-- End Google Tag Manager (noscript) -->
 <section id="main-container">
 
@@ -114,18 +115,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="table-wrap">
 						<div class="table-cell">
 							<div class="banner-text text-center">
-								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
-								<!-- <h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIT <i>to</i> get MORE!</h1> -->
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">Get your Wing Account<br style="display: block;" />in a Snap!</h1>
-								<!-- <p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register a Wing Account and <br> get 15% discount in any of our partner merchants.</p> -->
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register for a WING Account today to <br>start enjoying a new level of convenience!</p>
-								<!-- <div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div> -->
+								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200"><img src="images/wing-tini/wing-tini.png" alt=""></h1>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">is the start of your journey <br> into the new era of mobile banking.</p>
 								<br>
 								<br>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
 									<a href="form.php" class="btn click-apply apply-now-button">Apply now</a><br>
-									<!-- <a href="#" class="btn btn-ghost">See how it works <i class="fa fa-play" aria-hidden="true"></i></a> -->
+									<!-- <a href="#" class="btn btn-ghost">Find out how <br>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a> -->
 								</div>
 
 								<!-- <a href="#layout-2" class="find-out-more">WAIT, I WANT TO KNOW MORE <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a> -->
@@ -136,19 +135,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</section>
 
-		<?php /*
+		
 		<section id="layout-1" class="sec-pad null-top">
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>Get your FREE Wing <br>Account Rohas NOW </h3>
-						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Win MORE!</strong></h3>
-						<p>Enjoy fast, secure and convenient mobile money services in Cambodia!</p>
-						<a href="form.php" class="btn click-apply">CLICK HERE TO APPLY</a>
+						<h3>With Wing, you can practically do your banking needs anytime, anywhere. </h3>
+						<h3><strong>START TINI!</strong></h3>
+						<p>Enjoy fast, secure and convenient mobile <br>money services in Cambodia!</p>
+						<a href="form.php" class="btn click-apply">Get my wing account</a>
 						<p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/page_template/h-graphic1.png" alt="">
+						<img src="images/wing-tini/h-graphic1.png" alt="">
 						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
 						</div> -->
@@ -156,21 +155,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</section>
-		*/ ?>
+		
 
 		<section id="layout-2" class="sec-pad">
 			<div class="layout-2">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
-						<h3 style="text-transform: uppercase;">Use your Wing Account to send money, pay bills, shop online, and many more!</h3>
+						
 						<!-- <h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3> -->
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/page_template/h-graphic2.png" alt="">
+						<img src="images/wing-tini/h-graphic-2.png" alt="">
 					</div>
 					<div class="flexslider-wrapper animated hiding" data-animation="fadeInUp">
 						<div class="flexslider">
@@ -222,241 +221,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</section>
 
-
-		<section id="layout-4" class="sec-pad">
-			<div class="layout-2">
-				<div class="container">
-					<h3>Account Limit <!-- <br>&amp; Services Fee --></h3>
-					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-						<tr>
-							<th style="width:48px;" class="hide-mobile">No.</th>
-							<th>Service Type</th>
-							<th>Service Name</th>
-							<th>Limit per time</th>
-							<th>Limit per day</th>
-							<!-- <th>Service Fee</th> -->
-						</tr>
-						<tr>
-							<td rowspan="2" class="text-center hide-mobile"><strong>1</strong></td>
-							<td rowspan="2"><strong>Money Transfer</strong></td>
-							<td>Wing to Wing</td>
-							<td>USD 300</td>
-							<td>USD 300</td>
-							<!-- <td rowspan="8" class="text-center"><a href="https://www.wingmoney.com/fees/" target="_blank" style="color:#FFFFFF;text-decoration:underline;">Follow Standard Fee Charge</a></td> -->
-						</tr>
-						<tr>
-							<td>Wing WeiLuy</td>
-							<td>USD 100</td>
-							<td>USD 100</td>
-						</tr>
-						<tr>
-							<td class="text-center hide-mobile"><strong>2</strong></td>
-							<td><strong>Airtime Recharge</strong></td>
-							<td>Phone Top Up</td>
-							<td>USD 50</td>
-							<td>USD 3,000</td>
-						</tr>
-						
-						<tr>
-							<td rowspan="3" class="text-center hide-mobile"><strong>3</strong></td>
-							<td rowspan="3"><strong>Payments</strong></td>
-							<td>Bill Payment</td>
-							<td>USD 3,000</td>
-							<td>USD 3,000</td>
-						</tr>
-						<tr>
-							<td>Online Payment</td>
-							<td>USD 3,000</td>
-							<td>USD 3,000</td>
-						</tr>
-						<tr>
-							<td>Retail Payment</td>
-							<td>USD 3,000</td>
-							<td>USD 3,000</td>
-						</tr>
-						<tr>
-							<td rowspan="2" class="text-center hide-mobile"><strong>4</strong></td>
-							<td rowspan="2"><strong>Cash In/Out</strong></td>
-							<td>Cash In</td>
-							<td>USD 6,000</td>
-							<td>Unlimited</td>
-						</tr>
-						<tr>
-							<td>Cash Out</td>
-							<td>USD 100</td>
-							<td>USD 100</td>
-						</tr>
-						<tr>
-							<td class="text-center hide-mobile"><strong>5</strong></td>
-							<td colspan="2" ><strong>Wallet Storage</strong></td>
-							<td colspan="2" class="text-center">Unlimited</td>
-						</tr>
-					</table>
-
-					<h3 style="margin-top: 20px;">Fixed Transaction Fees</h3>
-					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;margin-top: 20px;">
-						<tr>
-							<th>Service</th>
-							<th>Fee (KHR)</th>
-							<th>Fee (USD)</th>
-						</tr>
-						<tr>
-							<td>Online Payment &amp; Retail Payment</td>
-							<td class="bg-white valign" rowspan="4" valign="center">FREE</td>
-							<td class="bg-white valign" rowspan="4" valign="center">FREE</td>
-						</tr>
-						<tr>
-							<td>Cash In</td>
-						</tr>
-						<tr>
-							<td>Phone Top Up</td>
-						</tr>
-						<tr>
-							<td>Bill Payment (DIGI, First Finance, KLD, OneTV, PPP, KTH, PPCTV, Manulife, Cambodian Life ...)</td>
-						</tr>
-						<tr>
-							<td>Bill Payment (AEON, Active People's MFI, Mega Leasing Plc, Piphup Thmey MFI)</td>
-							<td class="valign">2,000</td>
-							<td class="valign">0.5</td>
-						</tr>
-						<tr>
-						<td>Check Balance</td>
-							<td class="valign">100</td>
-							<td class="valign">0.02</td>
-						</tr>
-						<tr>
-						<td>Change Phone Number</td>
-							<td class="valign">1,000</td>
-							<td class="valign">0.25</td>
-						</tr>
-						<tr>
-						<td>Change Wallet Currency</td>
-							<td class="valign">5,000</td>
-							<td class="valign">1.25</td>
-						</tr>
-					</table>
-
-					<h3 style="margin-top: 20px;">Variable Transaction Fees</h3>
-					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;margin-top: 20px;">
-						<tr>
-							<th>Service</th>
-							<th style="width: 200px;">Amount (KHR)</th>
-							<th style="width: 120px; text-align: left;">Fee (KHR)</th>
-							<th style="width: 180px;">Amount (USD)</th>
-							<th style="width: 120px; text-align: left;">Fee (USD)</th>
-						</tr>
-						<tr>
-							<td class="text-left valign" rowspan="5">Cash Out</td>
-							<td>0 - 100,000</td>
-							<td>1,600</td>
-							<td>0 - 25</td>
-							<td>0.40</td>
-						</tr>
-						<tr>
-							<td>100,100 - 200,000</td>
-							<td>2,600</td>
-							<td>25.01 - 50</td>
-							<td>0.65</td>
-						</tr>
-						<tr>
-							<td>200,100 - 400,000</td>
-							<td>3,600</td>
-							<td>50.01 - 100</td>
-							<td>0.90</td>
-						</tr>
-						<tr>
-							<td>400,100 - 2,000,000</td>
-							<td>5,200</td>
-							<td>100.01 - 500</td>
-							<td>1.30</td>
-						</tr>
-						<tr>
-							<td>2,000,100 - 4,000,000</td>
-							<td>6,000</td>
-							<td>500.01 - 1,000</td>
-							<td>1.50</td>
-						</tr>
-						<tr>
-							<td class="text-left valign" rowspan="2">EDC Bill Payment (Phnom Penh, Siem Reap, Preah Sihanouk, Battambang)</td>
-							<td>0 - 100,000</td>
-							<td>Free</td>
-							<td>0 - 25</td>
-							<td>Free</td>
-						</tr>
-						<tr>
-							<td>From 100,001</td>
-							<td>1,000</td>
-							<td>From 25.01</td>
-							<td>0.25</td>
-						</tr>
-						<tr>
-							<td class="text-left valign" rowspan="2">PPWSA Bill Payment</td>
-							<td>0 - 100,000</td>
-							<td>Free</td>
-							<td>0 - 25</td>
-							<td>Free</td>
-						</tr>
-						<tr>
-							<td>From 100,001</td>
-							<td>1,000</td>
-							<td>From 25.01</td>
-							<td>0.25</td>
-						</tr>
-						<tr>
-							<td class="text-left valign" rowspan="3">WING-2-WING</td>
-							<td>0 - 400,000</td>
-							<td>400</td>
-							<td>0 - 100</td>
-							<td>0.10</td>
-						</tr>
-						<tr>
-							<td>400,100 - 2,000,000</td>
-							<td>800</td>
-							<td>100.01 - 500</td>
-							<td>0.20</td>
-						</tr>
-						<tr>
-							<td>2,000,100 - 4,000,000</td>
-							<td>1,200</td>
-							<td>500.01 - 1,000</td>
-							<td>0.30</td>
-						</tr>
-						<tr>
-							<td class="text-left valign" rowspan="5">Wing Wei Luy</td>
-							<td>0 - 100,000</td>
-							<td>2,000</td>
-							<td>0 - 25</td>
-							<td>0.50</td>
-						</tr>
-						<tr>
-							<td>100,100 - 200,000</td>
-							<td>3,000</td>
-							<td>25.01- 50</td>
-							<td>0.75</td>
-						</tr>
-						<tr>
-							<td>200,100 - 400,000</td>
-							<td>4,000</td>
-							<td>50.01 - 100</td>
-							<td>1.00</td>
-						</tr>
-						<tr>
-							<td>400,100 - 2,000,000</td>
-							<td>6,000</td>
-							<td>100.01 - 500</td>
-							<td>1.50</td>
-						</tr>
-						<tr>
-							<td>2,000,100 - 4,000,000</td>
-							<td>8,000</td>
-							<td>500.01 - 1,000</td>
-							<td>2.00</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</section>
-
 		<section class="sec-pad null-top null-bot">
 			<div class="layout-3">
 				<div class="layout-3-bg"></div>
@@ -468,7 +232,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<a href="form.php" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/page_template/h-graphic3.png" alt="">
+						<img src="images/wing-tini/h-graphic-3.png" alt="">
 					</div>
 					
 					<div class="clr"></div>

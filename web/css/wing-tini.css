@@ -1,0 +1,12 @@
+.banner-text p {
+	font-size: 40px;
+}
+
+.banner-text .btn {
+	font-weight: 300;
+}
+
+.banner-text .btn .fa {
+	margin-left: 0;
+	font-size: 42px;
+}

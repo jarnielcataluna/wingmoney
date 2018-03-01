@@ -8625,7 +8625,7 @@ header:before {
 }
 
 .logo a img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -9422,7 +9422,7 @@ strong {
   }
 
   .banner-text p  {
-    font-size: 24px;
+    font-size: 40px;
     max-width: 800px;
     margin: 0 auto;
   }
@@ -9710,9 +9710,9 @@ strong {
 
 @media (min-width: 768px) {
   .layout-1 .graphic-wrap {
-    max-width: 380px;
+    max-width: 480px;
     float: left;
-    width: 45%;
+    width: 50%;
     margin-top: 10px;
     margin-left: -30px;
   }
@@ -9847,16 +9847,15 @@ strong {
 
 .layout-2 .graphic-wrap {
   margin: 0 auto;
-  right: -40%;
+  right: -50%;
   top: -50px;
   position: relative;
 }
 
 @media (min-width: 768px) {
   .layout-2 .graphic-wrap {
-    top: -100px;
     right: 0;
-    width: 45%;
+    width: 50%;
     float: right;
     max-width: 100%;
   }
@@ -9864,7 +9863,7 @@ strong {
 
 @media (min-width: 1025px) {
   .layout-2 .graphic-wrap {
-    right: -100px;
+    right: 0px;
   }
 }
 
@@ -9905,16 +9904,16 @@ strong {
 @media (min-width: 768px) {
   .layout-2 .flexslider-wrapper {
     top: 0;
-    padding-top: 100px;
-    width: 55%;
+    padding-top: 0px;
+    width: 50%;
   }
 }
 
 @media (min-width: 991px) {
   .layout-2 .flexslider-wrapper {
     top: 0;
-    padding-top: 40px;
-    width: 55%;
+    padding-top: 0px;
+    width: 50%;
   }
 }
 
@@ -10124,7 +10123,7 @@ strong {
   .layout-3 .graphic-wrap {
     top: inherit;
     bottom: 0;
-    width: 45%;
+    width: 50%;
     max-width: 668px;
   }
 }
@@ -10158,7 +10157,7 @@ strong {
 
 .layout-3 .text-content h5 {
   font-family: "montserrat", "Helvetica", "Arial", "sans-serif";
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 10px;
   font-size: 17px;
 }
@@ -11013,7 +11012,7 @@ input::-webkit-inner-spin-button {
   margin: 0 auto 15px;
   max-width: 618px;
   background: #ffffff;
-  margin-top: -15px;
+  margin-top: 15px;
   box-shadow: 3px 2px 6px 0 rgba(0, 0, 0, 0.05);
   position: relative;
   width: 100%;
@@ -11860,7 +11859,7 @@ img#refresh {
   margin-top: 10px;
 }
 
-.btn-ghost i {
+/*.btn-ghost i {
   padding: 5px;
   background: transparent;
   border-radius: 50%;
@@ -11871,9 +11870,9 @@ img#refresh {
   top: 0;
   font-size: 14px;
   border: 2px solid #fff;
-}
+}*/
 
-.btn-ghost i:before {
+/*.btn-ghost i:before {
 
   content: "\f04b";
   position: relative;
@@ -11881,7 +11880,7 @@ img#refresh {
   left: 2px;
   font-size: 14px;
   color: #fff;
-}
+}*/
 
 table {
   border: 1px solid #fff;
