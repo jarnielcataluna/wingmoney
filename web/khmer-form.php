@@ -59,7 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section id="main-wrapper" class="form-bg">
 
         <header>
-            <div class="logo"><a href="khmer-home.php" alt=""><img src="images/page_template/wingit.png" alt=""></a></div>
+            <div class="logo"><a href="index.php" alt=""><img src="images/wing-tini/wing-tini.png" alt=""></a></div>
         </header>
 
         <section class="main-wrapper">
