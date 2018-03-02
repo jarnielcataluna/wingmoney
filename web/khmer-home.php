@@ -1,6 +1,31 @@
 <?php
 
 session_start();
+
+$source = "";
+$medium = "";
+$campaign = "";
+
+if ($_GET && array_key_exists('utm_source', $_GET)) {
+	$source = "?utm_source=".$_GET['utm_source'];
+}
+
+if ($_GET && array_key_exists('utm_medium', $_GET)) {
+	if ($source == "") {
+		$medium = "?utm_medium=".$_GET['utm_medium'];
+	} else {
+		$medium = "&utm_medium=".$_GET['utm_medium'];
+	}
+}
+
+if ($_GET && array_key_exists('utm_campaign', $_GET)) {
+	if ($source == "" && $medium == "") {
+		$campaign = "?utm_campaign=".$_GET['utm_campaign'];
+	} else {
+		$campaign = "&utm_campaign=".$_GET['utm_campaign'];
+	}
+}
+
 ?>
 <!doctype html>
 <html class="no-js" lang="km">
@@ -133,7 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<br>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
-									<a href="khmer-form.php" class="btn click-apply apply-now-button">បើកគណនីវីងដោយឥតគិតថ្លៃ</a><br>
+									<a href="khmer-form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply apply-now-button">បើកគណនីវីងដោយឥតគិតថ្លៃ</a><br>
 									<!-- <a href="#" class="btn btn-ghost">មើលពីរបៀបចុះឈ្មោះ<i class="fa fa-play" aria-hidden="true"></i></a> -->
 								</div>
 

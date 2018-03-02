@@ -1,4 +1,4 @@
-//Initialize Firebase
+// Initialize Firebase
 var config = {
     apiKey: "AIzaSyCGlkjuXIbRKSb5GHsi8JUZP6YGAxTUAsI",
     authDomain: "propelrr-wing-money.firebaseapp.com",
@@ -169,6 +169,11 @@ $(window).load(function(){
 
         if(  $('#pin-id').val() != '' && isvalidate == true ) {
 
+            // ATTRIBUTIONS
+            var _source = $('#source').val();
+            var _medium = $('#medium').val();
+            var _campaign = $('#campaign').val();
+
             $.ajax({
                 url: "/exec/validate2.php",
                 type: "POST",
@@ -205,6 +210,24 @@ $(window).load(function(){
                             a.setAttribute('value', accountNum);
                             f.appendChild(a);
 
+                            var _src = document.createElement("input");
+                            _src.setAttribute('type',"hidden");
+                            _src.setAttribute('name',"source");
+                            _src.setAttribute('value', _source);
+                            f.appendChild(_src);
+
+                            var _med = document.createElement("input");
+                            _med.setAttribute('type',"hidden");
+                            _med.setAttribute('name',"medium");
+                            _med.setAttribute('value', _medium);
+                            f.appendChild(_med);
+
+                            var _cam = document.createElement("input");
+                            _cam.setAttribute('type',"hidden");
+                            _cam.setAttribute('name',"campaign");
+                            _cam.setAttribute('value', _campaign);
+                            f.appendChild(_cam);
+
                         } else {
                             var f = document.createElement("form");
                             f.setAttribute('method',"post");
@@ -222,6 +245,24 @@ $(window).load(function(){
                             a.setAttribute('name', "accountNum");
                             a.setAttribute('value', accountNum);
                             f.appendChild(a);
+
+                            var _src = document.createElement("input");
+                            _src.setAttribute('type',"hidden");
+                            _src.setAttribute('name',"source");
+                            _src.setAttribute('value', _source);
+                            f.appendChild(_src);
+
+                            var _med = document.createElement("input");
+                            _med.setAttribute('type',"hidden");
+                            _med.setAttribute('name',"medium");
+                            _med.setAttribute('value', _medium);
+                            f.appendChild(_med);
+
+                            var _cam = document.createElement("input");
+                            _cam.setAttribute('type',"hidden");
+                            _cam.setAttribute('name',"campaign");
+                            _cam.setAttribute('value', _campaign);
+                            f.appendChild(_cam);
                         }
 
                         document.getElementsByTagName('body')[0].appendChild(f);

@@ -83,6 +83,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="dl-app-wrap">
 						<div class="dl-opt-item">
+
+							<input type="hidden" name="source" id="source" value="<?php echo $source; ?>" />
+                            <input type="hidden" name="medium" id="medium" value="<?php echo $medium; ?>" />
+                            <input type="hidden" name="campaign" id="campaign" value="<?php echo $campaign; ?>" />
+
+                            <?php
+								if ($_COOKIE && array_key_exists('_ga', $_COOKIE)) :
+									$gclid = explode('.', $_COOKIE['_ga']);
+								endif;
+							?>
+
+							<input type="hidden" name="client_id" id="client_id" value="<?php if ($_COOKIE && array_key_exists('_ga', $_COOKIE)) : echo $gclid[2].'.'.$gclid[3]; endif; ?>">
+
 							<div class="dl-img-wrap"><img src="images/page_template/dl-img1.png" alt=""></div>
 							<h3>កម្មវិធីស្មាតហ្វូនវីង</h3>
 							<p>ដំឡើងកម្មវិធីស្មាតហ្វូនវីងលើទូរស័ព្ទរបស់អ្នក ប្រើប្រាស់គណនីវីងរបស់អ្នក និងសេវាកម្មវីងទាំងអស់ភ្លាមៗ គ្រប់ពេលវេលា និងគ្រប់ទីកន្លែង</p>
@@ -152,6 +165,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="js/select.js" ></script>
 <script src="js/plugins.js" ></script>
 <script src="js/custom.js" ></script>
+<script type="text/javascript" src="js/jquery-qrcode/jquery.qrcode.min.js"></script>
+
+<script>
+	var _src = $('#source').val();
+	var _med = $('#medium').val();
+	var _cam = $('#campaign').val();
+	var _gclid = $('#client_id').val();
+
+	var _text = "https://fe5vp.app.goo.gl/?link=https://www.wingmoney.com/home&apn=com.wingmoney.wingpay&afl=https://play.google.com/store/apps/details?id%3Dcom.wingmoney.wingpay%26referrer%3Dutm_source%253D"+_src+"%2526utm_medium%253D"+_med+"%2526utm_campaign%253D"+_cam+"%2526utm_content%253Dgclid_"+_gclid+"&isi=1113286385&ibi=com.wingmoney.app&ifl=https://account.wingmoney.com/download.html?utm_source%3Dwebsite%26utm_medium%3Dbanner%26utm_campaign%3Dweb_to_mobile_app_install&utm_campaign="+_cam+"&utm_medium="+_med+"&utm_source="+_src+"&utm_content=gclid_"+_gclid+"";
+
+	makeQrCode(_text);
+	function makeQrCode(string)
+	{
+		$('#qrcode').qrcode({
+			text: string,
+			width : 300,
+			height : 300
+		});
+	}
+
+</script>
 
 </body>
 </html>
