@@ -62,8 +62,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		<header>
 			<div class="s-top">
-				<h2>អ្នកទើបតែបង្កើតគណនីវីង!</h2>
-				<h4>សូមអរគុណដែលបានបង្កើតគណនីវីងរបស់អ្នក!</h4>
+				<!-- <h2>អ្នកទើបតែបង្កើតគណនីវីង!</h2> -->
+				<h4 style="margin-top:20px;">សូមអរគុណដែលបានបង្កើតគណនីវីងរបស់អ្នក!</h4>
 			</div>
 		</header>
 
@@ -88,7 +88,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<p>ដំឡើងកម្មវិធីស្មាតហ្វូនវីងលើទូរស័ព្ទរបស់អ្នក ប្រើប្រាស់គណនីវីងរបស់អ្នក និងសេវាកម្មវីងទាំងអស់ភ្លាមៗ គ្រប់ពេលវេលា និងគ្រប់ទីកន្លែង</p>
 							<a href="https://itunes.apple.com/us/app/wing-money/id1113286385?mt=8" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
 							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
-							
+							<br><br>
+							<p>ឬហ្គេន QR Code ខាងក្រោមដើម្បីទាញយកកម្មវិធីស្មាតហ្វូនវីង</p>
+							<div id="qrcode"></div>
 						</div>
 					</div>
 				</section>

@@ -62,8 +62,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		<header>
 			<div class="s-top">
-				<h2>You’ve Just Winged It!</h2>
-				<h4>Thank you for activating your Wing account!</h4>
+				<!-- <h2>You’ve Just Winged It!</h2> -->
+				<h4 style="margin-top:20px;">Thank you for activating your Wing account!</h4>
 			</div>
 		</header>
 
@@ -88,7 +88,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<p>Install the Wing Money mobile app on your smartphone and access your Wing Account and all Wing Services instantly, anytime and anywhere</p>
 							<a href="https://itunes.apple.com/us/app/wing-money/id1113286385?mt=8" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
 							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
-							
+							<br><br>
+							<p>or scan the QR Code below <br>to download the app.</p>
+							<div id="qrcode"></div>
 						</div>
 					</div>
 				</section>

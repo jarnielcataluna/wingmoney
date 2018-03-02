@@ -9384,12 +9384,20 @@ strong {
   margin-bottom: 20px;
 }
 
+
 .khmer-lang .banner-text h1 {
   font-size: 30px;
 }
 
 .banner-text h1 i {
   font-weight: 400;
+}
+
+#qrcode {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  margin: 30px auto 0;
 }
 
 @media (min-width: 374px) {
@@ -9832,8 +9840,8 @@ strong {
 
 @media (min-width: 991px) {
   .layout-2 .text-content h3 {
-    font-size: 45px;
-    line-height: 1.4;
+    font-size: 40px;
+    line-height: 0.5;
     max-width: 550px;
   }
 }
@@ -9842,6 +9850,7 @@ strong {
   .layout-2 .text-content {
     clear: right;
     float: none;
+    margin-bottom: 60px;
   }
 }
 

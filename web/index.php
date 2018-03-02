@@ -30,6 +30,7 @@ session_start();
 <meta name="theme-color" content="#b0c025">
 
 <link rel="stylesheet" href="css/style.css" media="all"/>
+<link rel="stylesheet" href="css/wing-tini.css" media="all"/>
 
 <style type="text/css">
 	.pace {
@@ -74,18 +75,18 @@ session_start();
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
 <!-- <script src='https://www.google.com/recaptcha/api.js?manual_challenge=false' defer></script>  -->
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KHPB6M2');</script>
+})(window,document,'script','dataLayer','GTM-KHPB6M2');</script> -->
 <!-- End Google Tag Manager -->
 </head>
 <body>
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHPB6M2"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHPB6M2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 <!-- End Google Tag Manager (noscript) -->
 <section id="main-container">
 
@@ -114,18 +115,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="table-wrap">
 						<div class="table-cell">
 							<div class="banner-text text-center">
-								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
-								<!-- <h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">#WingIT <i>to</i> get MORE!</h1> -->
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">Get your Wing Account<br style="display: block;" />in a Snap!</h1>
-								<!-- <p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register a Wing Account and <br> get 15% discount in any of our partner merchants.</p> -->
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Register for a WING Account today to <br>start enjoying a new level of convenience!</p>
-								<!-- <div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div> -->
+								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200"><img src="images/wing-tini/wing-tini.png" alt=""></h1>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">is the start of your journey <br> into the new era of mobile banking.</p>
 								<br>
 								<br>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
 									<a href="form.php" class="btn click-apply apply-now-button">Apply now</a><br>
-									<!-- <a href="#" class="btn btn-ghost">See how it works <i class="fa fa-play" aria-hidden="true"></i></a> -->
+									<!-- <a href="#" class="btn btn-ghost">Find out how <br>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+									</a> -->
 								</div>
 
 								<!-- <a href="#layout-2" class="find-out-more">WAIT, I WANT TO KNOW MORE <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a> -->
@@ -136,19 +135,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</section>
 
-		<?php /*
+		
 		<section id="layout-1" class="sec-pad null-top">
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>Get your FREE Wing <br>Account Rohas NOW </h3>
-						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Win MORE!</strong></h3>
-						<p>Enjoy fast, secure and convenient mobile money services in Cambodia!</p>
-						<a href="form.php" class="btn click-apply">CLICK HERE TO APPLY</a>
+						<h3>With Wing, you can practically do your banking needs anytime, anywhere. </h3>
+						<h3><strong>START TINI!</strong></h3>
+						<p>Enjoy fast, secure and convenient mobile <br>money services in Cambodia!</p>
+						<a href="form.php" class="btn click-apply">Get my wing account</a>
 						<p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/page_template/h-graphic1.png" alt="">
+						<img src="images/wing-tini/h-graphic1.png" alt="">
 						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
 						</div> -->
@@ -156,21 +155,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</section>
-		*/ ?>
+		
 
 		<section id="layout-2" class="sec-pad">
 			<div class="layout-2">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
 						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
-						<h3 style="text-transform: uppercase;">Use your Wing Account to send money, pay bills, shop online, and many more!</h3>
+						
 						<!-- <h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3> -->
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->
+
+						<h3 style="text-transform: uppercase;">
+							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
+						Are the things <br> you can do with <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/page_template/h-graphic2.png" alt="">
+						<img src="images/wing-tini/h-graphic-2.png" alt="">
 					</div>
 					<div class="flexslider-wrapper animated hiding" data-animation="fadeInUp">
 						<div class="flexslider">
@@ -221,7 +224,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</section>
-
 
 		<section id="layout-4" class="sec-pad">
 			<div class="layout-2">
@@ -468,7 +470,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<a href="form.php" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/page_template/h-graphic3.png" alt="">
+						<img src="images/wing-tini/h-graphic-3.png" alt="">
 					</div>
 					
 					<div class="clr"></div>

@@ -31,6 +31,7 @@ session_start();
 <meta name="theme-color" content="#b0c025">
 
 <link rel="stylesheet" href="css/style.css" media="all"/>
+<link rel="stylesheet" href="css/wing-tini.css" media="all"/>
 
 <style type="text/css">
 	.pace {
@@ -126,9 +127,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
 								<!-- <h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">ប្រើប្រាស់វីង<br style="display: block;" />ដើម្បីទទួលបានអត្ថប្រយោជន៏<br style="display: block;" />កាន់តែច្រើន!</h1> -->
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">បើកគណនីវីងបានភ្លាមៗ!</h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">បើកគណនីវីងថ្ងៃនេះដើម្បីទទួលបានភាព<br />ងាយស្រួលមួយកំរិតទៀតក្នុងការគ្រប់គ្រងសាច់ប្រាក់​</p>
-								<!-- <div class="logo animated hiding" data-animation="fadeInUp" data-delay="400"><a href="" alt=""><img src="images/page_template/wingit.png" alt=""></a></div> -->
+								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200"><img src="images/wing-tini/wing-tini.png" alt=""></h1>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">គឺជាការចាប់ផ្តើមនៃដំណើរឆ្ពោះទៅយុគសម័យធនាគារតាមទូរស័ព្ទដៃ។ </p>
 								<br>
 								<br>
 
@@ -145,19 +145,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</section>
 
-		<?php /*
 		<section id="layout-1" class="sec-pad null-top">
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>Get your FREE Wing <br>Account Rohas NOW </h3>
-						<h3><strong>#WingIT <i style="font-weight:400;">to</i> Win MORE!</strong></h3>
-						<p>Enjoy fast, secure and convenient mobile money services in Cambodia!</p>
-						<a href="form.php" class="btn click-apply">CLICK HERE TO APPLY</a>
-						<p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
+						<h3>ជាមួយវីង អ្នកអាចធ្វើប្រតិបត្តិការធនាគារគ្រប់ពេលវេលា គ្រប់ទីកន្លែង។ </h3>
+						<h3><strong>ចាប់ផ្តើម TINI!</strong></h3>
+						<p>រីករាយជាមួយសេវាហិរញ្ញវត្ថុតាមទូរស័ព្ទដៃដែលរហ័ស ងាយស្រួល និងមានសុវត្ថិភាពនៅប្រទេសកម្ពុជា!</p>
+						<a href="form.php" class="btn click-apply">បើកគណនីវីងរបស់អ្នក</a>
+						<p><a href="#layout-2" class="btn-knowmore">ចាំបន្តិច ខ្ញុំចង់ដឹងបន្ថែមទៀត <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/page_template/h-graphic1.png" alt="">
+						<img src="images/wing-tini/h-graphic1.png" alt="">
 						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
 						</div> -->
@@ -165,23 +164,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</section>
-		*/ ?>
 
 		<section id="layout-2" class="sec-pad">
 			<div class="layout-2">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
+						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+						<p>ចង់ដឹងបន្ថែម?</p> -->
 						<!-- <h3>ប្រើប្រាស់វីងដើម្បីទទួលបានអត្ថប្រយោជន៍ជាច្រើន!</h3> -->
 						<!-- <h3><strong>ប្រើប្រាស់វីងដើម្បីទទួលបាន<br />អត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3> -->
-						<h3>ប្រើគណនីវីងដើម្បីផ្ញើប្រាក់ បង់វិក្កយបត្រ ទិញទំនិញអ៊នឡាញ ។ល។</h3>
+						<h3 style="text-transform: uppercase;">
+							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
+						គឺជាអ្វីដែលអ្នកអាចធ្វើបានជាមួយ <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->
 
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/page_template/h-graphic2.png" alt="">
+						<img src="images/wing-tini/h-graphic-2.png" alt="">
 					</div>
 					<div class="flexslider-wrapper animated hiding" data-animation="fadeInUp">
 						<div class="flexslider">
@@ -489,7 +490,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<a href="khmer-form.php" class="btn click-apply btn-desktop">ស្នើបើកគណនីវីងដោយឥតគិតថ្លៃ</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/page_template/h-graphic3.png" alt="">
+						<img src="images/wing-tini/h-graphic-3.png" alt="">
 					</div>
 					
 					<div class="clr"></div>
