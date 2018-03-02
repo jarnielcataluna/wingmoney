@@ -169,6 +169,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
 							<p class="resend-code">មិនទាន់ទទួលបានលេខកូដ PIN មែនទេ? <a href="#" id="resendCode">ផ្ញើលេខកូដ PIN ម្តងទៀត</a></p>
 							<p id="timer"></p>
+
+							<!-- Attributions -->
+							<input type="hidden" name="source" id="source" value="<?php if ($_POST && array_key_exists('source', $_POST)): echo $_POST['source']; endif; ?>" />
+							<input type="hidden" name="medium" id="medium" value="<?php if ($_POST && array_key_exists('medium', $_POST)): echo $_POST['medium']; endif; ?>" />
+							<input type="hidden" name="campaign" id="campaign" value="<?php if ($_POST && array_key_exists('campaign', $_POST)): echo $_POST['campaign']; endif; ?>" />
 						</form>
 					</div>
 				</div>
