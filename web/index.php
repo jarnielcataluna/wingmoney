@@ -136,7 +136,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</section>
 
 		
-		<section id="layout-1" class="sec-pad null-top">
+		<section id="layout-1" class="sec-pad null-top" style="background: #b2c224;">
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
@@ -147,7 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/wing-tini/h-graphic1.png" alt="">
+						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-1.gif" alt="">
 						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
 						</div> -->
@@ -173,7 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						Are the things <br> you can do with <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/wing-tini/h-graphic-2.png" alt="">
+						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-2.png" alt="">
 					</div>
 					<div class="flexslider-wrapper animated hiding" data-animation="fadeInUp">
 						<div class="flexslider">
@@ -470,7 +470,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<a href="form.php" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img src="images/wing-tini/h-graphic-3.png" alt="">
+						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-3.png" alt="">
 					</div>
 					
 					<div class="clr"></div>
@@ -495,6 +495,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="js/operators.js" ></script>
 <script src="js/materialize.js" ></script>
 <script src="js/jquery.appear.js" ></script>
+<script src="js/lazysizes.min.js" ></script>
 <script src="js/devices.js" ></script>
 <script src="js/jquery.flexslider.js" ></script>
 <script src="js/select.js" ></script>
