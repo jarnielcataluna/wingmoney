@@ -84,6 +84,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="dl-app-wrap">
 						<div class="dl-opt-item">
 
+							<?php
+								$source = "";
+								$medium = "";
+								$campaign = "";
+
+								if ($_POST && array_key_exists('source', $_POST)) {
+									$source = "?utm_source=".$_POST['source'];
+								}
+
+								if ($_POST && array_key_exists('medium', $_POST)) {
+									if ($source == "") {
+										$medium = "?utm_medium=".$_POST['medium'];
+									} else {
+										$medium = "&utm_medium=".$_POST['medium'];
+									}
+								}
+
+								if ($_POST && array_key_exists('campaign', $_POST)) {
+									if ($source == "" && $medium == "") {
+										$campaign = "?utm_campaign=".$_POST['campaign'];
+									} else {
+										$campaign = "&utm_campaign=".$_POST['campaign'];
+									}
+								}
+							?>
+
 							<input type="hidden" name="source" id="source" value="<?php echo $source; ?>" />
                             <input type="hidden" name="medium" id="medium" value="<?php echo $medium; ?>" />
                             <input type="hidden" name="campaign" id="campaign" value="<?php echo $campaign; ?>" />
@@ -99,11 +125,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class="dl-img-wrap"><img src="images/page_template/dl-img1.png" alt=""></div>
 							<h3>កម្មវិធីស្មាតហ្វូនវីង</h3>
 							<p>ដំឡើងកម្មវិធីស្មាតហ្វូនវីងលើទូរស័ព្ទរបស់អ្នក ប្រើប្រាស់គណនីវីងរបស់អ្នក និងសេវាកម្មវីងទាំងអស់ភ្លាមៗ គ្រប់ពេលវេលា និងគ្រប់ទីកន្លែង</p>
-							<a href="https://itunes.apple.com/us/app/wing-money/id1113286385?mt=8" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
-							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
-							<!-- <br><br>
-							<p>ឬហ្គេន QR Code ខាងក្រោមដើម្បីទាញយកកម្មវិធីស្មាតហ្វូនវីង</p>
-							<div id="qrcode"></div> -->
+							<a href="https://account.wingmoney.com/download.html<?php echo $source.$medium.$campaign; ?>" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
+							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay<?php echo str_replace('?utm_source', '&utm_source', $source).$medium.$campaign; ?>" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
+
+							<br><br>
+							<p>or scan the QR Code below <br>to download the app.</p>
+							<div id="qrcode"></div>
 						</div>
 					</div>
 				</section>
