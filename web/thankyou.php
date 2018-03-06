@@ -126,8 +126,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<h3>The WING MOBILE APP</h3>
 							<p>Install the Wing Money mobile app on your smartphone and access your Wing Account and all Wing Services instantly, anytime and anywhere</p>
 
-							<a href="https://account.wingmoney.com/download.html<?php echo $source.$medium.$campaign; ?>" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
-							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay<?php echo str_replace('?utm_source', '&utm_source', $source).$medium.$campaign; ?>" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
+							<a href="https://account.wingmoney.com/download.html<?php echo $source.$medium.$campaign; ?>&utm_content=gclid_<?php if ($_COOKIE && array_key_exists('_ga', $_COOKIE)) : echo $gclid[2].'.'.$gclid[3]; endif; ?>" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
+							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay<?php echo str_replace('?utm_source', '&utm_source', $source).$medium.$campaign; ?>&utm_content=gclid_<?php if ($_COOKIE && array_key_exists('_ga', $_COOKIE)) : echo $gclid[2].'.'.$gclid[3]; endif; ?>" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
 
 							<br><br>
 							<p>or scan the QR Code below <br>to download the app.</p>

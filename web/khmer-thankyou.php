@@ -125,8 +125,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class="dl-img-wrap"><img src="images/page_template/dl-img1.png" alt=""></div>
 							<h3>កម្មវិធីស្មាតហ្វូនវីង</h3>
 							<p>ដំឡើងកម្មវិធីស្មាតហ្វូនវីងលើទូរស័ព្ទរបស់អ្នក ប្រើប្រាស់គណនីវីងរបស់អ្នក និងសេវាកម្មវីងទាំងអស់ភ្លាមៗ គ្រប់ពេលវេលា និងគ្រប់ទីកន្លែង</p>
-							<a href="https://account.wingmoney.com/download.html<?php echo $source.$medium.$campaign; ?>" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
-							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay<?php echo str_replace('?utm_source', '&utm_source', $source).$medium.$campaign; ?>" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
+							<a href="https://account.wingmoney.com/download.html<?php echo $source.$medium.$campaign; ?>&utm_content=gclid_<?php if ($_COOKIE && array_key_exists('_ga', $_COOKIE)) : echo $gclid[2].'.'.$gclid[3]; endif; ?>" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
+							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay<?php echo str_replace('?utm_source', '&utm_source', $source).$medium.$campaign; ?>&utm_content=gclid_<?php if ($_COOKIE && array_key_exists('_ga', $_COOKIE)) : echo $gclid[2].'.'.$gclid[3]; endif; ?>" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
 
 							<br><br>
 							<p>or scan the QR Code below <br>to download the app.</p>
