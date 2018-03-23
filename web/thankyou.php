@@ -194,7 +194,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="js/plugins.js" ></script>
 <script src="js/custom.js" ></script>
 <script type="text/javascript" src="js/jquery-qrcode/jquery.qrcode.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://bit.ly/javascript-api.js?version=latest&login=o_4h48auu12a&apiKey=R_9ff288353529485bb8c1ea6be1b74143"></script>
 
 <script>
 	var _src = $('#source').val();
