@@ -37,7 +37,7 @@ if(isset($_GET['secret'])){
 }
 
 
-// if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header('Location: /'); }
+if(!isset($_POST['id']) || empty($_POST['id']) || is_null($_POST['id'])){ header('Location: /'); }
 
 ?>
 
