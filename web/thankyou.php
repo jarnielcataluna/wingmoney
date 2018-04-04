@@ -83,14 +83,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="dl-app-wrap">
 						<div class="dl-opt-item">
+
+							<?php
+								$source = "";
+								$medium = "";
+								$campaign = "";
+
+								if ($_POST && array_key_exists('source', $_POST)) {
+									$source = "?utm_source=".$_POST['source'];
+								}
+
+								if ($_POST && array_key_exists('medium', $_POST)) {
+									if ($source == "") {
+										$medium = "?utm_medium=".$_POST['medium'];
+									} else {
+										$medium = "&utm_medium=".$_POST['medium'];
+									}
+								}
+
+								if ($_POST && array_key_exists('campaign', $_POST)) {
+									if ($source == "" && $medium == "") {
+										$campaign = "?utm_campaign=".$_POST['campaign'];
+									} else {
+										$campaign = "&utm_campaign=".$_POST['campaign'];
+									}
+								}
+							?>
+
+							<input type="hidden" name="source" id="source" value="<?php if ($_POST && array_key_exists('source', $_POST)): echo $_POST['source']; endif; ?>" />
+                            <input type="hidden" name="medium" id="medium" value="<?php if ($_POST && array_key_exists('medium', $_POST)): echo $_POST['medium']; endif; ?>" />
+                            <input type="hidden" name="campaign" id="campaign" value="<?php if ($_POST && array_key_exists('campaign', $_POST)): echo $_POST['campaign']; endif; ?>" />
+
+                            <?php
+								if ($_COOKIE && array_key_exists('_ga', $_COOKIE)) :
+									$gclid = explode('.', $_COOKIE['_ga']);
+								endif;
+							?>
+
+							<input type="hidden" name="client_id" id="client_id" value="<?php if ($_COOKIE && array_key_exists('_ga', $_COOKIE)) : echo $gclid[2].'.'.$gclid[3]; endif; ?>">
+
 							<div class="dl-img-wrap"><img src="images/page_template/dl-img1.png" alt=""></div>
 							<h3>The WING MOBILE APP</h3>
 							<p>Install the Wing Money mobile app on your smartphone and access your Wing Account and all Wing Services instantly, anytime and anywhere</p>
-							<a href="https://itunes.apple.com/us/app/wing-money/id1113286385?mt=8" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
-							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
-							<!-- <br><br>
+
+							<a href="https://account.wingmoney.com/download.html<?php echo $source.$medium.$campaign; ?>&utm_content=gclid_<?php if ($_COOKIE && array_key_exists('_ga', $_COOKIE)) : echo $gclid[2].'.'.$gclid[3]; endif; ?>" class="dl-app dl-app-ios"><img src="images/page_template/ios.png"></a>
+							<a href="https://play.google.com/store/apps/details?id=com.wingmoney.wingpay<?php echo str_replace('?utm_source', '&utm_source', $source).$medium.$campaign; ?>&utm_content=gclid_<?php if ($_COOKIE && array_key_exists('_ga', $_COOKIE)) : echo $gclid[2].'.'.$gclid[3]; endif; ?>" class="dl-app dl-app-android"><img src="images/page_template/dl-app.jpg"></a>
+
+							<br><br>
 							<p>or scan the QR Code below <br>to download the app.</p>
-							<div id="qrcode"></div> -->
+							<div id="qrcode"></div>
 						</div>
 					</div>
 				</section>
@@ -152,6 +193,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="js/select.js" ></script>
 <script src="js/plugins.js" ></script>
 <script src="js/custom.js" ></script>
+<script type="text/javascript" src="js/jquery-qrcode/jquery.qrcode.min.js"></script>
+
+<script>
+	var _src = $('#source').val();
+	var _med = $('#medium').val();
+	var _cam = $('#campaign').val();
+	var _gclid = $('#client_id').val();
+
+	var _text = "https://fe5vp.app.goo.gl/?link=https://www.wingmoney.com/home&apn=com.wingmoney.wingpay&afl=https://play.google.com/store/apps/details?id%3Dcom.wingmoney.wingpay%26referrer%3Dutm_source%253D"+_src+"%2526utm_medium%253D"+_med+"%2526utm_campaign%253D"+_cam+"%2526utm_content%253Dgclid_"+_gclid+"&isi=1113286385&ibi=com.wingmoney.app&ifl=https://account.wingmoney.com/download.html?utm_source%3Dwebsite%26utm_medium%3Dbanner%26utm_campaign%3Dweb_to_mobile_app_install&utm_campaign="+_cam+"&utm_medium="+_med+"&utm_source="+_src+"&utm_content=gclid_"+_gclid+"";
+
+	makeQrCode(_text);
+	function makeQrCode(string)
+	{
+		$('#qrcode').qrcode({
+			text: string,
+			width : 300,
+			height : 300
+		});
+	}
+
+</script>
 
 </body>
 </html>

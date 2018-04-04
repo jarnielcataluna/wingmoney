@@ -87,6 +87,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <input type="hidden" name="client_ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>" />
                             <input type="hidden" name="client_id" value="<?php echo $_COOKIE['_ga']; ?>" />
                             <input type="hidden" name="language" id="language" value="kh" />
+
+                            <!-- Attributions -->
+                            <input type="hidden" name="source" id="source" value="<?php if ($_GET && array_key_exists('utm_source', $_GET)): echo $_GET['utm_source']; endif; ?>" />
+                            <input type="hidden" name="medium" id="medium" value="<?php if ($_GET && array_key_exists('utm_medium', $_GET)): echo $_GET['utm_medium']; endif; ?>" />
+                            <input type="hidden" name="campaign" id="campaign" value="<?php if ($_GET && array_key_exists('utm_campaign', $_GET)): echo $_GET['utm_campaign']; endif; ?>" />
+                            
                             <div class="form-row">
                                 
                                 <div class="input-wrap">

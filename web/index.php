@@ -1,5 +1,30 @@
 <?php
 session_start();
+
+$source = "";
+$medium = "";
+$campaign = "";
+
+if ($_GET && array_key_exists('utm_source', $_GET)) {
+	$source = "?utm_source=".$_GET['utm_source'];
+}
+
+if ($_GET && array_key_exists('utm_medium', $_GET)) {
+	if ($source == "") {
+		$medium = "?utm_medium=".$_GET['utm_medium'];
+	} else {
+		$medium = "&utm_medium=".$_GET['utm_medium'];
+	}
+}
+
+if ($_GET && array_key_exists('utm_campaign', $_GET)) {
+	if ($source == "" && $medium == "") {
+		$campaign = "?utm_campaign=".$_GET['utm_campaign'];
+	} else {
+		$campaign = "&utm_campaign=".$_GET['utm_campaign'];
+	}
+}
+
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -121,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<br>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
-									<a href="form.php" class="btn click-apply apply-now-button">Apply now</a><br>
+									<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply apply-now-button">Apply now</a><br>
 									<!-- <a href="#" class="btn btn-ghost">Find out how <br>
 										<i class="fa fa-angle-down" aria-hidden="true"></i>
 									</a> -->
@@ -143,7 +168,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<h3>With Wing, you can practically do your banking needs anytime, anywhere. </h3>
 						<h3><strong>START TINI!</strong></h3>
 						<p>Enjoy fast, secure and convenient mobile <br>money services in Cambodia!</p>
-						<a href="form.php" class="btn click-apply">Get my wing account</a>
+						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">Get my wing account</a>
 						<p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
@@ -468,7 +493,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<h5>Why wait?</h5>
 						<h3>Get your own<br />Wing Account NOW!</h3>
 						<!-- <h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3> -->
-						<a href="form.php" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
+						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-3.png" alt="">
@@ -476,7 +501,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 					<div class="clr"></div>
 					<div class="text-center">
-						<a href="form.php" class="btn click-apply btn-mobile">APPLY FOR FREE!</a>
+						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply btn-mobile">APPLY FOR FREE!</a>
 					</div>
 				</div>
 			</div>
