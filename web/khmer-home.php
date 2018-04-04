@@ -181,7 +181,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<p><a href="#layout-2" class="btn-knowmore">ចាំបន្តិច ខ្ញុំចង់ដឹងបន្ថែមទៀត <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-1.gif" alt="">
+						<!-- <img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-1.gif" alt=""> -->
+						<img class="lazyload" style="right:0; margin-left: auto; margin-right: auto;" src="images/lazyload.png" data-src="images/temp account.png" alt="">
 						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
 						</div> -->
