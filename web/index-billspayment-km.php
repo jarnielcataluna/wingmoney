@@ -141,12 +141,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="table-cell">
 							<div class="banner-text text-center">
 								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200"><img src="images/wing-tini/wing-tini.png" alt=""></h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Topping up your phone or your loved ones from any network has never been easier. </p>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">រីករាយជាមួយការទូទាត់វិក្កយបត្រ ដែលងាយស្រួល និងមានសុវត្ថិភាពតាមវីង </p>
 								<br>
 								<br>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
-									<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply apply-now-button">GET YOUR WING ACCOUNT NOW!</a><br>
+									<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply apply-now-button">បើកគណនីវីងរបស់អ្នកឥឡូវនេះ!</a><br>
 									<!-- <a href="#" class="btn btn-ghost">Find out how <br>
 										<i class="fa fa-angle-down" aria-hidden="true"></i>
 									</a> -->
@@ -165,14 +165,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>Stay connected 24/7 by topping up your phone whenever, wherever you need it.</h3>
-						<!-- <h3><strong>TRANSFER MONEY TINI</strong></h3> -->
-						<p>What are you waiting for? Top up with Wing now!</p>
-						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">GET YOUR WING ACCOUNT NOW!</a>
-						<!-- <p><a href="#layout-2" class="btn-knowmore">Do all these, TINI! <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p> -->
+						<h3>មិនចាំបាច់ពិបាកក្នុងការទូទាត់វិក្កយបត្រទៀតឡើយ។ វីងអនុញ្ញាតឲ្យអ្នកទូទាត់វិក្កយបត្រទាំងអស់បានរហ័ស សុវត្ថិភាព និងងាយស្រួល!</h3>
+						<!-- <h3><strong>PAY TINI</strong></h3> -->
+						<p>ប្រញាប់មែនទេ? ទូទាត់វិក្កយបត្រ ទីនេះ!</p>
+						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">បើកគណនីវីងរបស់អ្នកឥឡូវនេះ!</a>
+						<!-- <p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p> -->
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img class="lazyload" src="images/lazyload.png" data-src="images/img-april/phonetopup.png" alt="">
+						<img class="lazyload" src="images/lazyload.png" data-src="images/img-april/billpayment.png" alt="">
 						<!-- <img class="lazyload" style="right:0; margin-left: auto; margin-right: auto;" src="images/lazyload.png" data-src="images/temp account.png" alt=""> -->
 						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
@@ -186,22 +186,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="column-3-wrap">
 						<ul>
 							<li>
-								<figure><img src="images/img-april/topup1.png" alt=""></figure>
-								<p>Need phone credits? Top up with your Wing account anytime. No cash needed!</p>
+								<figure><img src="images/img-april/billpayment1.png" alt=""></figure>
+								<p>ទូទាត់វិក្កយបត្រទឹកភ្លើងក្រោម $25 ដោយឥតគិតថ្លៃ!</p>
 							</li>
 
 							<li>
-								<figure><img src="images/img-april/topup2.png" alt=""></figure>
-								<p>Top up your phone or your loved ones’ with any amount at any network.</p>
+								<figure><img src="images/img-april/billpayment2.png" alt=""></figure>
+								<p>ទូទាត់ទឹកភ្លើង កម្ចី ទៅកាន់អ្នកផ្គត់ផ្គង់ និងច្រើនទៀតតាមដៃគូបង់វិក្កយបត្រច្រើនជាង 80 ក្រុមហ៊ុន និងមីក្រូហិរញ្ញវត្ថុ 50 បានភ្លាមៗ។</p>
 							</li>
 
 							<li>
-								<figure><img src="images/img-april/topup3.png" alt=""></figure>
-								<p>Enjoy up to 7% cashback everytime you top up with Wing.</p>
+								<figure><img src="images/img-april/billpayment3.png" alt=""></figure>
+								<p>បទពិសោធន៍ទូទាត់វិក្កយបត្រដែលងាយស្រួលបំផុតមិនធ្លាប់មាន។ </p>
 							</li>
 						</ul>
 						<div class="text-center" style="padding-top: 30px;">
-							<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">GET YOUR WING ACCOUNT NOW!</a>
+							<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">បើកគណនីវីងរបស់អ្នកឥឡូវនេះ!</a>
 						</div>
 					</div>
 				</div>
@@ -213,16 +213,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="layout-2">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
-						
-						<!-- <h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3> -->
+						<!-- <span class="arrow-icon block"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+						<p>ចង់ដឹងបន្ថែម?</p> -->
+						<!-- <h3>ប្រើប្រាស់វីងដើម្បីទទួលបានអត្ថប្រយោជន៍ជាច្រើន!</h3> -->
+						<!-- <h3><strong>ប្រើប្រាស់វីងដើម្បីទទួលបាន<br />អត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3> -->
+						<h3 style="text-transform: uppercase;">
+							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
+						គឺជាអ្វីដែលអ្នកអាចធ្វើបានជាមួយ <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->
 
-						<h3 style="text-transform: uppercase;">
-							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
-						Are the things <br> you can do with <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-2.png" alt="">
@@ -232,49 +233,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<ul class="slides">
 								<li>
 									<div class="flex-item">
-										<h2>Send Money </h2>
-										<p><strong>Send Money to friends and family around Cambodia!</strong></p>
-										<p>No matter where you are, you'll be able to send money quickly and safely using your Wing Account</p>
+										<h2>វេរលុយ</h2>
+										<p>&nbsp;</p>
+										<p><strong>វេរលុយឲ្យមិត្តភក្តិ និងក្រុមគ្រួសារ<br />គ្រប់ទីកន្លែងទូទាំងប្រទេស!</strong>
+										<p>មិនថាអ្នកនៅកន្លែងណា អ្នកអាចផ្ញើប្រាក់បានលឿននិងដោយសុវត្ថិភាពពេលអ្នកប្រើគណនីវីង!</p>
+									</div>
+								</li>
+
+								<!-- <li>
+									<div class="flex-item">
+										<h2>បញ្ចូលទឹកប្រាក់ទូរស័ព្ទ</h2>
+										<p><strong>បញ្ចូលទឹកប្រាក់ទូរស័ព្ទបានរហ័ស</strong></p>
+										<p>អ្នកអាចបញ្ចូលទឹកប្រាក់ទូរស័ព្ទតាមគណនីវីង</p>
+										<p><strong>ឬ</strong></p>
+										<p>តាមភ្នាក់ងារវីង!</p>
+									</div>
+								</li> -->
+								<li>
+									<div class="flex-item">
+										<h2>បញ្ចូលលុយទូរស័ព្ទ</h2>
+										<p><strong>បញ្ចូលលុយទូរស័ព្ទ</strong></p>
+										<p>អ្នកអាចបញ្ចូលលុយទូរស័ព្ទតាមគណនីវីង</p>
+										<p><strong>ឬ</strong></p>
+										<p>តាមភ្នាក់ងារវីង!</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Phone Top Up</h2>
-										<p><strong>Recharge your phone's credits super quick.</strong></p>
-										<p>You can instantly top-up with your Wing account</p>
-										<p><strong>Or</strong></p>
-										<p>Through any Wing agent!</p>
+										<h2>ការទូទាត់វិក្កយបត្រ</h2>
+										<p><strong>ទូទាត់វិក្កយបត្រគ្រប់ទីកន្លែងតាមរយៈទូរស័ព្ទដៃរបស់អ្នក</strong></p>
+										<p>ទូទាត់វិក្កយបត្រតាមគណនីវីងលើទូរស័ព្ទដៃរបស់អ្នក</p>
+										<p><strong>ឬ</strong></p>
+										<p>ន ក់ រវងី !</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Bill Payment</h2>
-										<p><strong>You can make your bills payment anytime, anywhere using your mobile phone.</strong></p>
-										<p>Pay bills with your Wing account</p>
-										<p><strong>Or</strong></p>
-										<p>With any Wing agent!</p>
+										<h2>វីងគិតលុយ</h2>
+										<p><strong>គណនីវីង ផ្តល់ឲ្យអ្នកនូវភាពងាយស្រួលក្នុងការទូទាត់ជាមួយសេវាកម្មវីងគិតលុយនៅតាមភោជនីយដ្ឋាន រោងភាពយន្ត ហាងលក់សំលៀកបំពាក់ ល ដោយមិនចាំបាច់មានសាច់ប្រាក់!</strong></p>
+										<p>អតិថិជនគ្រាន់តែមានកាតវីង​ ឬទូរស័ព្ទដៃដែលភ្ជាប់ជាមួយគណនីវីងតែប៉ុណ្ណោះ</p>
+										<p>បង់ប្រាក់ភ្លាមៗជាមួយវីងគិតលុយនៅហាងណាមួយដែលអ្នកពេញចិត្ត</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Pay with wing</h2>
-										<p><strong>Wing account lets you conveniently pay with restaurants, cinemas, clothes shop and much more without the need to bring cash or worry about change.</strong></p>
-										<p>All you need is a swipe or a tap!</p>
-										<p>Instantly pay with Wing at your favorite merchants.</p>
+										<h2>ការទូទាត់តាមអ៊ីនធឺណិត</h2>
+										<p><strong>សេវាកម្មទូទាត់តាមអ៊ីនធឺណិតអនុញ្ញាតឲ្យអ្នកទិញទំនិញជាច្រើនប្រភេទដោយមិនចំាបាច់ធ្វើដំណើរទៅក្រៅ</strong></p>
+										<p>អតិថិជនវីងទាំងអស់អាចប្រើប្រាស់គណនីវីង<br />ដើម្បីទូទាត់តាមអ៊ីនធឺណិតជាមួយក្រុមហ៊ុនក្នុងស្រុក<br />ជាច្រើនប្រកបដោយភាពងាយស្រួល រហ័ស និងមានសុវត្ថិភាព។</p>
 									</div>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Online Payment</h2>
-										<p><strong>Online Payment lets you conveniently buy a wide variety of products without even leaving your home.</strong></p>
-										<p>Purchase with online local companies is just a click away. From movie ticket to license payment you can do it all with Wing Account.</p>
-									</div>
-								</li>
-								<li>
-									<div class="flex-item">
-										<h2>Wing Online Mastercard</h2>
-										<p><strong>Shop online and offline, book hotels and flights, and transact business internationally.</strong></p>
-										<p>Get your very own Mastercard accepted worldwide! <br> It's a self-issuance Mastercard that you can avail quickly.</p>
+										<h2>ការទូទាត់តាមអ៊ីនធឺណិត</h2>
+										<p><strong>ទិញទំនិញអនឡាញ កក់សណ្ឋាគារ និង សំបុត្រយន្តហោះ និងធ្វើជំនួញជាអន្តរជាតិ។</strong></p>
+										<p>សូមទទួលយកម៉ាស្ទ័រកាតដែលទទួលស្គាល់ទូទាំងពិភពលោក!<br />ជាម៉ាស្ទ័រកាតដែលបើកដោយខ្លួនអ្នកផ្ទាល់បានភ្លាមៗ។</p>
 									</div>
 								</li>
 							</ul>
@@ -287,131 +299,129 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<section id="layout-4" class="sec-pad">
 			<div class="layout-2">
 				<div class="container">
-					<h3>Account Limit <!-- <br>&amp; Services Fee --></h3>
+					<h3>ការកំណត់នៃគណនី</h3>
 					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
 						<tr>
-							<th style="width:48px;" class="hide-mobile">No.</th>
-							<th>Service Type</th>
-							<th>Service Name</th>
-							<th>Limit per time</th>
-							<th>Limit per day</th>
-							<!-- <th>Service Fee</th> -->
+							<th style="width:48px;" class="hide-mobile">លេខរៀង</th>
+							<th>ប្រភេទសេវា</th>
+							<th>ឈ្មោះសេវា</th>
+							<th>ចំនួនកំណត់ក្នុងមួយប្រតិបត្តិការ</th>
+							<th>ចំនួនកំណត់ក្នុងមួយថ្ងៃ</th>
 						</tr>
 						<tr>
 							<td rowspan="2" class="text-center hide-mobile"><strong>1</strong></td>
-							<td rowspan="2"><strong>Money Transfer</strong></td>
-							<td>Wing to Wing</td>
-							<td>USD 300</td>
-							<td>USD 300</td>
-							<!-- <td rowspan="8" class="text-center"><a href="https://www.wingmoney.com/fees/" target="_blank" style="color:#FFFFFF;text-decoration:underline;">Follow Standard Fee Charge</a></td> -->
+							<td rowspan="2"><strong>ផ្ទេរប្រាក់</strong></td>
+							<td>វីងទៅវីង</td>
+							<td>៣០០​ ដុល្លារ</td>
+							<td>៣០០​ ដុល្លារ</td>
 						</tr>
 						<tr>
-							<td>Wing WeiLuy</td>
-							<td>USD 100</td>
-							<td>USD 100</td>
+							<td>វីងវេរលុយ</td>
+							<td>១០០ ដុល្លារ</td>
+							<td>១០០ ដុល្លារ</td>
 						</tr>
 						<tr>
 							<td class="text-center hide-mobile"><strong>2</strong></td>
-							<td><strong>Airtime Recharge</strong></td>
-							<td>Phone Top Up</td>
-							<td>USD 50</td>
-							<td>USD 3,000</td>
+							<td><strong>បញ្ចូលលុយទូរស័ព្ទ</strong></td>
+							<td>បញ្ចូលលុយទូរស័ព្ទ</td>
+							<td>៥០​ ដុល្លារ</td>
+							<td>៣០០០ ដុល្លារ</td>
 						</tr>
 						
 						<tr>
 							<td rowspan="3" class="text-center hide-mobile"><strong>3</strong></td>
-							<td rowspan="3"><strong>Payments</strong></td>
-							<td>Bill Payment</td>
-							<td>USD 3,000</td>
-							<td>USD 3,000</td>
+							<td rowspan="3"><strong>ទូទាត់ចំណាយ</strong></td>
+							<td>ទូទាត់វិក្កយបត្រ</td>
+							<td>៣០០០ ដុល្លារ</td>
+							<td>៣០០០ ដុល្លារ</td>
 						</tr>
 						<tr>
-							<td>Online Payment</td>
-							<td>USD 3,000</td>
-							<td>USD 3,000</td>
+							<td>ទូទាត់វិក្កយបត្រតាមអនឡាញ</td>
+							<td>៣០០០ ដុល្លារ</td>
+							<td>៣០០០ ដុល្លារ</td>
 						</tr>
 						<tr>
-							<td>Retail Payment</td>
-							<td>USD 3,000</td>
-							<td>USD 3,000</td>
+							<td>វីងគិតលុយ</td>
+							<td>៣០០០ ដុល្លារ</td>
+							<td>៣០០០ ដុល្លារ</td>
 						</tr>
 						<tr>
 							<td rowspan="2" class="text-center hide-mobile"><strong>4</strong></td>
-							<td rowspan="2"><strong>Cash In/Out</strong></td>
-							<td>Cash In</td>
-							<td>USD 6,000</td>
-							<td>Unlimited</td>
+							<td rowspan="2"><strong>ដាក់ ឬ ដកប្រាក់</strong></td>
+							<td>ដាក់ប្រាក់</td>
+							<td>៦០០០ ដុល្លារ</td>
+							<td>ឥតកំណត់</td>
 						</tr>
 						<tr>
-							<td>Cash Out</td>
-							<td>USD 100</td>
-							<td>USD 100</td>
+							<td>ឥតកំណត់</td>
+							<td>១០០ ដុល្លារ</td>
+							<td>១០០ ដុល្លារ</td>
 						</tr>
 						<tr>
 							<td class="text-center hide-mobile"><strong>5</strong></td>
-							<td colspan="2" ><strong>Wallet Storage</strong></td>
-							<td colspan="2" class="text-center">Unlimited</td>
+							<td colspan="2" >ចំនួនទឹកប្រាក់តម្កល់ទុកក្នុងគណនី</td>
+							<td colspan="2" class="text-center">ឥតកំណត់</td>
 						</tr>
 					</table>
 
-					<h3 style="margin-top: 20px;">Fixed Transaction Fees</h3>
+					<h3 style="margin-top: 20px;">តម្លៃសេវាកម្មថេរ</h3>
 					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;margin-top: 20px;">
 						<tr>
-							<th>Service</th>
-							<th>Fee (KHR)</th>
-							<th>Fee (USD)</th>
+							<th>សេវាកម្ម</th>
+							<th style="width: 120px;">តម្លៃសេវាកម្មជាប្រាក់រៀល</th>
+							<th style="width: 120px;">តម្លៃសេវាកម្មជាប្រាក់ដុល្លារ</th>
 						</tr>
 						<tr>
-							<td>Online Payment &amp; Retail Payment</td>
-							<td class="bg-white valign" rowspan="4" valign="center">FREE</td>
-							<td class="bg-white valign" rowspan="4" valign="center">FREE</td>
+							<td>ការទូទាត់តាមអ៊ីនធឺណិត ឬ តាមម៉ាស៊ីនវីង</td>
+							<td class="bg-white valign" rowspan="4" valign="center">ឥតគិតថ្លៃ</td>
+							<td class="bg-white valign" rowspan="4" valign="center">ឥតគិតថ្លៃ</td>
 						</tr>
 						<tr>
-							<td>Cash In</td>
+							<td>ដាក់ប្រាក់</td>
 						</tr>
 						<tr>
-							<td>Phone Top Up</td>
+							<td>បញ្ចូលលុយទូរស័ព្ទ</td>
 						</tr>
 						<tr>
-							<td>Bill Payment (DIGI, First Finance, KLD, OneTV, PPP, KTH, PPCTV, Manulife, Cambodian Life ...)</td>
+							<td>បង់វិក្កយបត្រ(DIGI, First Finance, KLD, OneTV, PPP, KTH, PPCTV, Manulife, Cambodian Life ...)</td>
 						</tr>
 						<tr>
-							<td>Bill Payment (AEON, Active People's MFI, Mega Leasing Plc, Piphup Thmey MFI)</td>
+							<td>បង់វិក្កយបត្រ (AEON, Active People's MFI, Mega Leasing Plc, Piphup Thmey MFI)</td>
 							<td class="valign">2,000</td>
 							<td class="valign">0.5</td>
 						</tr>
 						<tr>
-						<td>Check Balance</td>
+							<td>ពិនិត្យទឹកប្រាក់នៅសល់</td>
 							<td class="valign">100</td>
 							<td class="valign">0.02</td>
 						</tr>
 						<tr>
-						<td>Change Phone Number</td>
+							<td>ផ្លាស់ប្តូរលេខទូរស័ព្ទ</td>
 							<td class="valign">1,000</td>
 							<td class="valign">0.25</td>
 						</tr>
 						<tr>
-						<td>Change Wallet Currency</td>
+							<td>ផ្លាស់ប្តូរប្រភេទគណនី (ខ្មែរ&lt;=&gt;ដុល្លារ)</td>
 							<td class="valign">5,000</td>
 							<td class="valign">1.25</td>
 						</tr>
 					</table>
 
-					<h3 style="margin-top: 20px;">Variable Transaction Fees</h3>
+					<h3 style="margin-top: 20px;">តម្លៃសេវាកម្មប្រែប្រួល</h3>
 					<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;margin-top: 20px;">
 						<tr>
-							<th>Service</th>
-							<th style="width: 200px;">Amount (KHR)</th>
-							<th style="width: 120px; text-align: left;">Fee (KHR)</th>
-							<th style="width: 180px;">Amount (USD)</th>
-							<th style="width: 120px; text-align: left;">Fee (USD)</th>
+							<th>សេវាកម្ម</th>
+							<th style="width: 200px;">ចំនួនទឹកប្រាក់ជាប្រាក់រៀល</th>
+							<th style="width: 120px;">តម្លៃសេវាកម្មជាប្រាក់រៀល</th>
+							<th style="width: 180px;">ចំនួនទឹកប្រាក់ជាប្រាក់ដុល្លារ</th>
+							<th style="width: 120px;">តម្លៃសេវាកម្មជាប្រាក់ដុល្លារ</th>
 						</tr>
 						<tr>
-							<td class="text-left valign" rowspan="5">Cash Out</td>
+							<td class="text-left valign" rowspan="5">ដកប្រាក់</td>
 							<td>0 - 100,000</td>
 							<td>1,600</td>
 							<td>0 - 25</td>
-							<td>0.28</td>
+							<td>0.40</td>
 						</tr>
 						<tr>
 							<td>100,100 - 200,000</td>
@@ -438,33 +448,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>1.50</td>
 						</tr>
 						<tr>
-							<td class="text-left valign" rowspan="2">EDC Bill Payment (Phnom Penh, Siem Reap, Preah Sihanouk, Battambang)</td>
+							<td class="text-left valign" rowspan="2">វិក្កយបត្រភ្លើង (ភ្នំពេញ សៀមរាប សីហនុ បាត់ដំបង)</td>
 							<td>0 - 100,000</td>
-							<td>Free</td>
+							<td>ឥតគិតថ្លៃ</td>
 							<td>0 - 25</td>
-							<td>Free</td>
+							<td>ឥតគិតថ្លៃ</td>
 						</tr>
 						<tr>
-							<td>From 100,001</td>
+							<td>100,001 ឡើងទៅ</td>
 							<td>1,000</td>
-							<td>From 25.01</td>
+							<td>25.01 ឡើងទៅ</td>
 							<td>0.25</td>
 						</tr>
 						<tr>
-							<td class="text-left valign" rowspan="2">PPWSA Bill Payment</td>
+						<td class="text-left valign" rowspan="2">វិក្កយបត្រទឹក</td>
 							<td>0 - 100,000</td>
-							<td>Free</td>
+							<td>ឥតគិតថ្លៃ</td>
 							<td>0 - 25</td>
-							<td>Free</td>
+							<td>ឥតគិតថ្លៃ</td>
 						</tr>
 						<tr>
-							<td>From 100,001</td>
+							<td>100,001 ឡើងទៅ</td>
 							<td>1,000</td>
-							<td>From 25.01</td>
+							<td>25.01 ឡើងទៅ</td>
 							<td>0.25</td>
 						</tr>
 						<tr>
-							<td class="text-left valign" rowspan="3">WING-2-WING</td>
+							<td class="text-left valign" rowspan="3">វេរលុយពីគណនីវីង ទៅគណនីវីង</td>
 							<td>0 - 400,000</td>
 							<td>400</td>
 							<td>0 - 100</td>
@@ -483,11 +493,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>0.30</td>
 						</tr>
 						<tr>
-							<td class="text-left valign" rowspan="5">Wing Wei Luy</td>
+							<td class="text-left valign" rowspan="5">វីងវេរលុយ</td>
 							<td>0 - 100,000</td>
-							<td>1,500</td>
+							<td>2,000</td>
 							<td>0 - 25</td>
-							<td>0.38</td>
+							<td>0.50</td>
 						</tr>
 						<tr>
 							<td>100,100 - 200,000</td>
@@ -555,10 +565,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="layout-3-bg"></div>
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h5>Why wait?</h5>
-						<h3>Get your own<br />Wing Account NOW!</h3>
-						<!-- <h3><strong>#WingIT <i style="font-weight:400;">to</i> get MORE!</strong></h3> -->
-						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply btn-desktop">APPLY FOR FREE!</a>
+						<h5>ចាំអីទៀត?</h5>
+						<h3>បើកគណនីវីងរបស់អ្នកឥឡូវនេះ​</h3>
+						<!-- <h3><strong>ដើម្បីទទួលបានអត្ថប្រយោជន៏<br />កាន់តែច្រើន!</strong></h3> -->
+
+						<a href="khmer-form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply btn-desktop">ស្នើបើកគណនីវីងដោយឥតគិតថ្លៃ</a>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-3.png" alt="">
@@ -566,7 +577,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 					<div class="clr"></div>
 					<div class="text-center">
-						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply btn-mobile">APPLY FOR FREE!</a>
+						<a href="khmer-form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply btn-mobile">ស្នើបើកគណនីវីងដោយឥតគិតថ្លៃ</a>
 					</div>
 				</div>
 			</div>
