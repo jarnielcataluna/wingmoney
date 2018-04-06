@@ -201,7 +201,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</li>
 						</ul>
 						<div class="text-center" style="padding-top: 30px;">
-							<a href="form.php" class="btn click-apply">Get YOUR wing account</a>
+							<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">Get YOUR wing account</a>
 						</div>
 					</div>
 				</div>
@@ -411,7 +411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>0 - 100,000</td>
 							<td>1,600</td>
 							<td>0 - 25</td>
-							<td>0.40</td>
+							<td>0.28</td>
 						</tr>
 						<tr>
 							<td>100,100 - 200,000</td>
@@ -485,9 +485,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<tr>
 							<td class="text-left valign" rowspan="5">Wing Wei Luy</td>
 							<td>0 - 100,000</td>
-							<td>2,000</td>
+							<td>1,500</td>
 							<td>0 - 25</td>
-							<td>0.50</td>
+							<td>0.38</td>
 						</tr>
 						<tr>
 							<td>100,100 - 200,000</td>
@@ -512,6 +512,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>8,000</td>
 							<td>500.01 - 1,000</td>
 							<td>2.00</td>
+						</tr>
+
+						<tr>
+							<td class="text-left valign" rowspan="5">Wei Luy Express</td>
+							<td>0 - 100,000</td>
+							<td>1,500</td>
+							<td>0 - 25</td>
+							<td>0.38</td>
+						</tr>
+						<tr>
+							<td>100,100 - 200,000</td>
+							<td>3,000</td>
+							<td>25.01- 50</td>
+							<td>0.75</td>
+						</tr>
+						<tr>
+							<td>200,100 - 400,000</td>
+							<td>4,000</td>
+							<td>50.01 - 100</td>
+							<td>1.00</td>
+						</tr>
+						<tr>
+							<td>400,100 - 2,000,000</td>
+							<td>6,000</td>
+							<td>100.01 - 500</td>
+							<td>1.50</td>
+						</tr>
+						<tr>
+							<td>2,000,100 - 4,000,000</td>
+							<td>10,000</td>
+							<td>500.01 - 1,000</td>
+							<td>2.50</td>
 						</tr>
 					</table>
 				</div>
