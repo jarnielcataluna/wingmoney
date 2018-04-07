@@ -395,9 +395,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<tr>
 							<td class="text-left valign" rowspan="5">ដកប្រាក់</td>
 							<td>0 - 100,000</td>
-							<td>1,600</td>
+							<td>1,100</td>
 							<td>0 - 25</td>
-							<td>0.40</td>
+							<td>0.28</td>
 						</tr>
 						<tr>
 							<td>100,100 - 200,000</td>
