@@ -106,8 +106,18 @@ if ($_GET && array_key_exists('utm_campaign', $_GET)) {
 		padding-top: 12vh;
 	}
 
-	.new-banner {
-		text-align: center;
+	.home-bg {
+		background-image: none;
+	}
+
+	.banner-wrap {
+		height: auto;
+		max-height: 100%;
+		padding-bottom: 30px;
+	}
+
+	.banner-wrap .table-wrap {
+		position: relative;
 	}
 
 	@media (max-width: 767px) {
