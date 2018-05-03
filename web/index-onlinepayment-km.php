@@ -122,11 +122,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<!-- <a href="form.php" class="apply-now fr">Watch Video</a> -->
 				<div class="wpml-languages enabled">
 					<a class="active tooltip" data-tooltip="No translations available for this page">
-						<img src="images/en.png" alt="" width="18" height="12">
+						<img src="images/km.png" alt="" width="18" height="12">
 						<i class="fa fa-angle-down" aria-hidden="true"></i>
 					</a>
 					<ul class="wpml-lang-dropdown">
-						<li><a href="khmer-home.php"><img src="images/km.png" alt="" width="18" height="12"></a></li>
+						<li><a href="index-onlinepayment.php"><img src="images/en.png" alt="" width="18" height="12"></a></li>
 					</ul>
 				</div>
 

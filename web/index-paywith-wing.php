@@ -126,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<i class="fa fa-angle-down" aria-hidden="true"></i>
 					</a>
 					<ul class="wpml-lang-dropdown">
-						<li><a href="khmer-home.php"><img src="images/km.png" alt="" width="18" height="12"></a></li>
+						<li><a href="index-paywith-wing-km.php"><img src="images/km.png" alt="" width="18" height="12"></a></li>
 					</ul>
 				</div>
 
