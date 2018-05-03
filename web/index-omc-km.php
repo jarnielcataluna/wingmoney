@@ -264,7 +264,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<p><strong>ទូទាត់វិក្កយបត្រគ្រប់ទីកន្លែងតាមរយៈទូរស័ព្ទដៃរបស់អ្នក</strong></p>
 										<p>ទូទាត់វិក្កយបត្រតាមគណនីវីងលើទូរស័ព្ទដៃរបស់អ្នក</p>
 										<p><strong>ឬ</strong></p>
-										<p>ន ក់ រវងី !</p>
+										<p>ជាមួយភ្នាក់ងារវីង!</p>
 									</div>
 								</li>
 								<li>
