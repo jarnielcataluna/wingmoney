@@ -152,7 +152,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class="banner-text text-center">
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
 								<!-- <h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">ប្រើប្រាស់វីង<br style="display: block;" />ដើម្បីទទួលបានអត្ថប្រយោជន៏<br style="display: block;" />កាន់តែច្រើន!</h1> -->
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200"><img src="images/wing-tini/wing-tini.png" alt=""></h1>
+								<h1>
+									<img src="images/wing-sept/first-image/general.png" alt="">
+								</h1>
 								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">គឺជាការចាប់ផ្តើមនៃដំណើរឆ្ពោះទៅយុគសម័យធនាគារតាមទូរស័ព្ទដៃ។ </p>
 								<br>
 								<br>
@@ -182,7 +184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<!-- <img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-1.gif" alt=""> -->
-						<img class="lazyload" style="right:0; margin-left: auto; margin-right: auto;" src="images/lazyload.png" data-src="images/temp account.png" alt="">
+						<img class="lazyload" style="right:0; margin-left: auto; margin-right: auto; max-width: 299px;" src="images/lazyload.png" data-src="images/wing-sept/second-image/General.png" alt="">
 						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
 						</div> -->
@@ -208,7 +210,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-2.png" alt="">
+						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-sept/photo-3rd.png" alt="">
 					</div>
 					<div class="flexslider-wrapper animated hiding" data-animation="fadeInUp">
 						<div class="flexslider">

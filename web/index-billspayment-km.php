@@ -140,7 +140,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="table-wrap">
 						<div class="table-cell">
 							<div class="banner-text text-center">
-								<h1 class="animated hiding" data-animation="fadeInUp" data-delay="200"><img src="images/wing-tini/wing-tini.png" alt=""></h1>
+								<h1>
+									<img src="images/wing-sept/first-image/bills.png" alt="">
+								</h1>
 								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">រីករាយជាមួយការទូទាត់វិក្កយបត្រ ដែលងាយស្រួល និងមានសុវត្ថិភាពតាមវីង </p>
 								<br>
 								<br>
@@ -172,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<!-- <p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p> -->
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img class="lazyload" src="images/lazyload.png" data-src="images/img-april/billpayment.png" alt="">
+						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-sept/second-image/Bills.png" alt="">
 						<!-- <img class="lazyload" style="right:0; margin-left: auto; margin-right: auto;" src="images/lazyload.png" data-src="images/temp account.png" alt=""> -->
 						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
@@ -226,7 +228,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-2.png" alt="">
+						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-sept/photo-3rd.png" alt="">
 					</div>
 					<div class="flexslider-wrapper animated hiding" data-animation="fadeInUp">
 						<div class="flexslider">
