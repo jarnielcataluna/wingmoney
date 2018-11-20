@@ -63,10 +63,10 @@ function useFacebook() {
 
     });
 
-    FB.api('/me/picture?type=large', function(fbResponse) {
-        $('#fb_profile_pic').val(fbResponse.data.url);
-        console.log(fbResponse.data.url);
-    });
-
+    //FB.api('/me/picture?type=large', function(fbResponse) {
+        //$('#fb_profile_pic').val(fbResponse.data.url);
+        //console.log(fbResponse.data.url);
+    //});
+    $('#fb_profile_pic').val('');
 
 }
