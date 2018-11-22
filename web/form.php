@@ -79,7 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <form class="wing-form" method="post" action="exec/validate.php" novalidate>
                             <div class="signup-fb">
                                 <a href="#" class="waves-effect" id="useFacebook" onclick="FB.login(function(response) { useFacebook() 
-                                    $('#birthday-label').css({'opacity' : 0});}, {scope:'publish_actions, email, public_profile, user_birthday, user_location, user_likes, user_education_history, pages_messaging_phone_number'});"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign up with Facebook</span></a>
+                                    $('#birthday-label').css({'opacity' : 0});}, {scope:'email, public_profile, user_birthday'});"><i class="fa fa-facebook" aria-hidden="true"></i><span>Sign up with Facebook</span></a>
                             </div>
                             <p class="form-text">Or fill up the form</p>
                             <input type="hidden" name="fb_uid" id="fb_uid"/>

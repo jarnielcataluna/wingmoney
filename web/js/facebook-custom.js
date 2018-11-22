@@ -25,13 +25,13 @@ $('#useFacebook').click(function(e) {
             FB.login(function(){
                 useFacebook();
                 $('#birthday-label').css({'opacity' : 0});
-            }, {scope: 'publish_actions, email, public_profile, user_birthday, user_location, user_likes, user_education_history, pages_messaging_phone_number'});
+            }, {scope: 'email, public_profile, user_birthday'});
         }
     });
 });
 
 function useFacebook() {
-    FB.api('/me', {fields: 'id,first_name,last_name,birthday,gender,about,email,education,bio,devices,hometown,location,likes,work,public_key'}, function(fbResponse) {
+    FB.api('/me', {fields: 'id,first_name,last_name,birthday,gender,email'}, function(fbResponse) {
 
 
         console.log(fbResponse);
@@ -63,10 +63,10 @@ function useFacebook() {
 
     });
 
-    FB.api('/me/picture?type=large', function(fbResponse) {
-        $('#fb_profile_pic').val(fbResponse.data.url);
-        console.log(fbResponse.data.url);
-    });
-
+    //FB.api('/me/picture?type=large', function(fbResponse) {
+        //$('#fb_profile_pic').val(fbResponse.data.url);
+        //console.log(fbResponse.data.url);
+    //});
+    $('#fb_profile_pic').val('');
 
 }
