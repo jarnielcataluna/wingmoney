@@ -406,32 +406,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>1.50</td>
 						</tr>
 						<tr>
-							<td class="text-left valign" rowspan="2">EDC Bill Payment (Phnom Penh, Siem Reap, Preah Sihanouk, Battambang)</td>
-							<td>0 - 100,000</td>
-							<td>Free</td>
-							<td>0 - 25</td>
-							<td>Free</td>
-						</tr>
-						<tr>
-							<td>From 100,001</td>
-							<td>1,000</td>
-							<td>From 25.01</td>
-							<td>0.25</td>
-						</tr>
-						<tr>
-							<td class="text-left valign" rowspan="2">PPWSA Bill Payment</td>
-							<td>0 - 100,000</td>
-							<td>Free</td>
-							<td>0 - 25</td>
-							<td>Free</td>
-						</tr>
-						<tr>
-							<td>From 100,001</td>
-							<td>1,000</td>
-							<td>From 25.01</td>
-							<td>0.25</td>
-						</tr>
-						<tr>
 							<td class="text-left valign" rowspan="3">WING-2-WING</td>
 							<td>0 - 400,000</td>
 							<td>400</td>
@@ -480,6 +454,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>8,000</td>
 							<td>500.01 - 1,000</td>
 							<td>2.00</td>
+						</tr>
+
+						<tr>
+							<td class="text-left valign" rowspan="5">Wei Luy Express</td>
+							<td>0 - 100,000</td>
+							<td>1,500</td>
+							<td>0 - 25</td>
+							<td>0.38</td>
+						</tr>
+						<tr>
+							<td>100,100 - 200,000</td>
+							<td>3,000</td>
+							<td>25.01- 50</td>
+							<td>0.75</td>
+						</tr>
+						<tr>
+							<td>200,100 - 400,000</td>
+							<td>4,000</td>
+							<td>50.01 - 100</td>
+							<td>1.00</td>
+						</tr>
+						<tr>
+							<td>400,100 - 2,000,000</td>
+							<td>6,000</td>
+							<td>100.01 - 500</td>
+							<td>1.50</td>
+						</tr>
+						<tr>
+							<td>2,000,100 - 4,000,000</td>
+							<td>10,000</td>
+							<td>500.01 - 1,000</td>
+							<td>2.50</td>
 						</tr>
 					</table>
 				</div>

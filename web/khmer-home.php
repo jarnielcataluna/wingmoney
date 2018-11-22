@@ -424,32 +424,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<td>1.50</td>
 						</tr>
 						<tr>
-							<td class="text-left valign" rowspan="2">វិក្កយបត្រភ្លើង (ភ្នំពេញ សៀមរាប សីហនុ បាត់ដំបង)</td>
-							<td>0 - 100,000</td>
-							<td>ឥតគិតថ្លៃ</td>
-							<td>0 - 25</td>
-							<td>ឥតគិតថ្លៃ</td>
-						</tr>
-						<tr>
-							<td>100,001 ឡើងទៅ</td>
-							<td>1,000</td>
-							<td>25.01 ឡើងទៅ</td>
-							<td>0.25</td>
-						</tr>
-						<tr>
-						<td class="text-left valign" rowspan="2">វិក្កយបត្រទឹក</td>
-							<td>0 - 100,000</td>
-							<td>ឥតគិតថ្លៃ</td>
-							<td>0 - 25</td>
-							<td>ឥតគិតថ្លៃ</td>
-						</tr>
-						<tr>
-							<td>100,001 ឡើងទៅ</td>
-							<td>1,000</td>
-							<td>25.01 ឡើងទៅ</td>
-							<td>0.25</td>
-						</tr>
-						<tr>
 							<td class="text-left valign" rowspan="3">វេរលុយពីគណនីវីង ទៅគណនីវីង</td>
 							<td>0 - 400,000</td>
 							<td>400</td>
@@ -470,6 +444,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</tr>
 						<tr>
 							<td class="text-left valign" rowspan="5">វីងវេរលុយ</td>
+							<td>0 - 100,000</td>
+							<td>2,000</td>
+							<td>0 - 25</td>
+							<td>0.50</td>
+						</tr>
+						<tr>
+							<td>100,100 - 200,000</td>
+							<td>3,000</td>
+							<td>25.01- 50</td>
+							<td>0.75</td>
+						</tr>
+						<tr>
+							<td>200,100 - 400,000</td>
+							<td>4,000</td>
+							<td>50.01 - 100</td>
+							<td>1.00</td>
+						</tr>
+						<tr>
+							<td>400,100 - 2,000,000</td>
+							<td>6,000</td>
+							<td>100.01 - 500</td>
+							<td>1.50</td>
+						</tr>
+						<tr>
+							<td>2,000,100 - 4,000,000</td>
+							<td>8,000</td>
+							<td>500.01 - 1,000</td>
+							<td>2.00</td>
+						</tr>
+
+						<tr>
+							<td class="text-left valign" rowspan="5">Wei Luy Express</td>
 							<td>0 - 100,000</td>
 							<td>1,500</td>
 							<td>0 - 25</td>
@@ -495,9 +501,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</tr>
 						<tr>
 							<td>2,000,100 - 4,000,000</td>
-							<td>8,000</td>
+							<td>10,000</td>
 							<td>500.01 - 1,000</td>
-							<td>2.00</td>
+							<td>2.50</td>
 						</tr>
 					</table>
 				</div>
