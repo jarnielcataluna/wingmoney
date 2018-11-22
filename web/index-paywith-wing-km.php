@@ -141,7 +141,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="table-cell">
 							<div class="banner-text text-center">
 								<h1><img src="images/wing-sept/first-image/wingpay.png" alt=""></h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">មិនចាំបាច់សាច់ប្រាក់សុទ្ធ ហើយថែមទាំងទទួលបានការផ្តល់ជូនពិសេសៗពីវីងទៀត!  </p>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">ទូទាត់ដោយគ្មានសាច់ប្រាក់ ព្រមទាំងទទួលបានកម្មវិធីប្រូម៉ូសិនពិសេសពីវីង!​អ្នកគ្រាន់តែស្កេនកូដគឺរួចរាល់! </p>
 								<br>
 								<br>
 
@@ -165,9 +165,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>មិនត្រឹមតែងាយស្រួលនិងមានសុវត្ថិភាពទេ ការទូទាត់ជាមួយដៃគូសហការតាមវីងនឹងផ្តល់ជូនអ្នកនូវកម្មវិធីផ្តល់ជូនពិសេសៗជាច្រើន។  </h3>
+						<h3>ការទូទាត់ដោយគ្មានសាច់ប្រាក់មានភាពងាយស្រួល និងមានសុវត្ថិភាព។ នៅមានអ្វីទៀត? វីងផ្តល់ជូនប្រូម៉ូសិនពិសេសជាច្រើនទៀត។ បទពិសោធន៍ទិញទំនិញដ៏អស្ចារ្យ និងការផ្តល់ជូនដ៏ពិសេសជាមួយវីង!</h3>
 						<!-- <h3><strong>PAY TINI</strong></h3> -->
-						<p>ការផ្តល់ជូនពិសេសជាច្រើនមាននៅ ទីនេះ!</p>
+						<!-- <p>ការផ្តល់ជូនពិសេសជាច្រើនមាននៅ ទីនេះ!</p> -->
 						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">បើកគណនីវីងរបស់អ្នកឥឡូវនេះ!</a>
 						<!-- <p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p> -->
 					</div>
@@ -218,8 +218,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<!-- <h3>ប្រើប្រាស់វីងដើម្បីទទួលបានអត្ថប្រយោជន៍ជាច្រើន!</h3> -->
 						<!-- <h3><strong>ប្រើប្រាស់វីងដើម្បីទទួលបាន<br />អត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3> -->
 						<h3 style="text-transform: uppercase;">
-							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
-						គឺជាអ្វីដែលអ្នកអាចធ្វើបានជាមួយ <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
+							តើអ្នកអាចធ្វើអ្វីបានខ្លះជាមួយវីង? <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->

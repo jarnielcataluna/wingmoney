@@ -141,7 +141,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="table-cell">
 							<div class="banner-text text-center">
 								<h1><img src="images/wing-sept/first-image/wingpay.png" alt=""></h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Say goodbye to your cash <br>and hello exclusive promos with Wing! </p>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Go cashless and say hello exclusive promos with Wing! Just scan the code and you're good to go!</p>
 								<br>
 								<br>
 
@@ -165,9 +165,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>It's not just safer and easier, paying merchants with Wing gives you access to the amazing deals. </h3>
+						<h3>Convenience and security is what you get with going cashless. What's more? Wing gives you access to the amazing deals.</h3>
 						<!-- <h3><strong>PAY TINI</strong></h3> -->
-						<p>A lot more exclusive deals are TINI!</p>
+						<p>A great shopping experience and even greater exclusive deals with Wing!</p>
 						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">Get my wing account</a>
 						<!-- <p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p> -->
 					</div>
@@ -221,8 +221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div> -->
 
 						<h3 style="text-transform: uppercase;">
-							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
-						Are the things <br> you can do with <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
+							What are the things you can do with Wing? <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-sept/photo-3rd.png" alt="">

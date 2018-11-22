@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h1>
 									<img src="images/wing-sept/first-image/PTU.png" alt="">
 								</h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Topping up your phone or your loved ones from any network has never been easier. </p>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">With Wing, you can easily top up your phone or your loved ones' from any network.</p>
 								<br>
 								<br>
 
@@ -167,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>Stay connected 24/7 by topping up your phone whenever, wherever you need it.</h3>
+						<h3>Top up to connect, whenever and wherever you need it.</h3>
 						<!-- <h3><strong>TRANSFER MONEY TINI</strong></h3> -->
 						<p>What are you waiting for? Top up with Wing now!</p>
 						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">GET YOUR WING ACCOUNT NOW!</a>
@@ -223,8 +223,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div> -->
 
 						<h3 style="text-transform: uppercase;">
-							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
-						Are the things <br> you can do with <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
+							What are the things you can do with Wing? <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-sept/photo-3rd.png" alt="">
@@ -250,7 +249,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Bill Payment</h2>
+										<h2>Pay Bills</h2>
 										<p><strong>You can make your bills payment anytime, anywhere using your mobile phone.</strong></p>
 										<p>Pay bills with your Wing account</p>
 										<p><strong>Or</strong></p>
@@ -259,7 +258,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Pay with wing</h2>
+										<h2>WingPay</h2>
 										<p><strong>Wing account lets you conveniently pay with restaurants, cinemas, clothes shop and much more without the need to bring cash or worry about change.</strong></p>
 										<p>All you need is a swipe or a tap!</p>
 										<p>Instantly pay with Wing at your favorite merchants.</p>

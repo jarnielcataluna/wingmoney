@@ -143,12 +143,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h1>
 									<img src="images/wing-sept/first-image/general.png" alt="">
 								</h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">is the start of your journey <br> into the new era of mobile banking.</p>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Superb mobile banking experience <br>made for you.</p>
 								<br>
 								<br>
 
 								<div class="text-center animated hiding" data-animation="fadeInUp" data-delay="500">
-									<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply apply-now-button">Apply now</a><br>
+									<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply apply-now-button">Register Now</a><br>
 									<!-- <a href="#" class="btn btn-ghost">Find out how <br>
 										<i class="fa fa-angle-down" aria-hidden="true"></i>
 									</a> -->
@@ -167,11 +167,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>With Wing, you can practically do your banking needs anytime, anywhere. </h3>
-						<h3><strong>START TINI!</strong></h3>
-						<p>Enjoy fast, secure and convenient mobile <br>money services in Cambodia!</p>
+						<h3>With Wing, you can practically do your banking needs anytime, anywhere.  </h3>
+						<!-- <h3><strong>START TINI!</strong></h3> -->
+						<p>Convenient, reliable, and secure mobile services for everyone.</p>
 						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">Get my wing account</a>
-						<p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
+						<p><a href="#layout-2" class="btn-knowmore">What are you waiting for? <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<!-- <img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-1.gif" alt=""> -->
@@ -197,8 +197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div> -->
 
 						<h3 style="text-transform: uppercase;">
-							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
-						Are the things <br> you can do with <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
+							What are the things you can do with Wing? <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-sept/photo-3rd.png" alt="">
@@ -224,7 +223,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Bill Payment</h2>
+										<h2>Pay Bills</h2>
 										<p><strong>You can make your bills payment anytime, anywhere using your mobile phone.</strong></p>
 										<p>Pay bills with your Wing account</p>
 										<p><strong>Or</strong></p>
@@ -233,7 +232,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Pay with wing</h2>
+										<h2>WingPay</h2>
 										<p><strong>Wing account lets you conveniently pay with restaurants, cinemas, clothes shop and much more without the need to bring cash or worry about change.</strong></p>
 										<p>All you need is a swipe or a tap!</p>
 										<p>Instantly pay with Wing at your favorite merchants.</p>

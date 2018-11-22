@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h1>
 									<img src="images/wing-sept/first-image/send.png" alt="">
 								</h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Send money instantly anytime, anywhere using your phone for as low as ៛400!  </p>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Send money instantly anytime, anywhere using your phone for as low as ៛400!</p>
 								<br>
 								<br>
 
@@ -167,9 +167,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>Wing gives you flexible options when sending money from your phone to your loved ones anywhere in Cambodia!</h3>
+						<h3>With a Wing account and a Wing Money App, you can send money from your phone to your loved ones anywhere in Cambodia! </h3>
 						<!-- <h3><strong>TRANSFER MONEY TINI</strong></h3> -->
-						<p>All you need is a Wing account and a Wing Money App! </p>
+						<p>Money sending options made just for you!</p>
 						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">Get YOUR wing account</a>
 						<p><a href="#layout-2" class="btn-knowmore">Do all these, TINI! </a></p>
 					</div>
@@ -223,8 +223,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</div> -->
 
 						<h3 style="text-transform: uppercase;">
-							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
-						Are the things <br> you can do with <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
+							តើអ្នកអាចធ្វើអ្វីបានខ្លះជាមួយវីង? <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-sept/photo-3rd.png" alt="">
@@ -250,7 +249,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Bill Payment</h2>
+										<h2>Pay Bills</h2>
 										<p><strong>You can make your bills payment anytime, anywhere using your mobile phone.</strong></p>
 										<p>Pay bills with your Wing account</p>
 										<p><strong>Or</strong></p>
@@ -259,7 +258,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</li>
 								<li>
 									<div class="flex-item">
-										<h2>Pay with wing</h2>
+										<h2>WingPay</h2>
 										<p><strong>Wing account lets you conveniently pay with restaurants, cinemas, clothes shop and much more without the need to bring cash or worry about change.</strong></p>
 										<p>All you need is a swipe or a tap!</p>
 										<p>Instantly pay with Wing at your favorite merchants.</p>

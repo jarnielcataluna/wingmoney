@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h1>
 									<img src="images/wing-sept/first-image/OMC.png" alt="">
 								</h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">ទីនេះ ទិញទំនិញពីគ្រប់ទីកន្លែងលើពិភពលោកដោយគ្រាន់តែប្រើទូរស័ព្ទដៃស្មាតហ្វូននិង Wing Online Mastecard! </p>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">ជាមួយទូរស័ព្ទស្មាតហ្វូន និងវីងអនឡាញម៉ាស្ទ័រកាត អ្នកអាចទិញទំនិញ ឬកក់សំបុត្រអនឡាញរបស់អ្នកដោយមិនបាច់ក្រោកចេញពីគ្រែ!</p>
 								<br>
 								<br>
 
@@ -167,9 +167,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>ធ្វើបានគ្រប់យ៉ាងក្នុងកាតតែមួយ។ ទិញទំនិញនៅតាមដៃគូសហការអនឡាញច្រើនជាង 1,300 កន្លែង កក់សណ្ឋាគារ និង សំបុត្រយន្តហោះ ទិញកម្មវិធីទូរស័ព្ទ និងច្រើនទៀតតាម Wing Online Mastercard។</h3>
+						<h3>អ្នកអាចធ្វើប្រតិបត្តិការបានជាច្រើនដោយប្រើប្រាស់កាតតែមួយ។ អ្នកអាចទិញទំនិញតាមហាងអនឡាញជាង13,000 កក់បន្ទប់សណ្ឋាគារ និងសំបុត្រយន្តហោះ  ទិញកម្មវិធីស្មាតហ្វូនផ្សេងៗ​តាមរយៈវីងអនឡាញម៉ាស្ទ័រកាត។ បើកកាតរបស់អ្នក ហើយចាប់ផ្តើមទិញទំនិញឥឡូវនេះ!</h3>
 						<!-- <h3><strong>PAY TINI</strong></h3> -->
-						<p>បើក Online Mastercard របស់អ្នកនិងចាប់ផ្តើមទិញទំនិញ ទីនេះ!</p>
+						<!-- <p>បើក Online Mastercard របស់អ្នកនិងចាប់ផ្តើមទិញទំនិញ ទីនេះ!</p> -->
 						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">បើកគណនីវីងរបស់អ្នកឥឡូវនេះ!</a>
 						<!-- <p><a href="#layout-2" class="btn-knowmore">WAIT, I WANT TO KNOW MORE <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p> -->
 					</div>
@@ -220,8 +220,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<!-- <h3>ប្រើប្រាស់វីងដើម្បីទទួលបានអត្ថប្រយោជន៍ជាច្រើន!</h3> -->
 						<!-- <h3><strong>ប្រើប្រាស់វីងដើម្បីទទួលបាន<br />អត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3> -->
 						<h3 style="text-transform: uppercase;">
-							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
-						គឺជាអ្វីដែលអ្នកអាចធ្វើបានជាមួយ <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
+							តើអ្នកអាចធ្វើអ្វីបានខ្លះជាមួយវីង? <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->

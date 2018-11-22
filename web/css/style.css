@@ -9847,7 +9847,6 @@ strong {
 @media (min-width: 991px) {
   .layout-2 .text-content h3 {
     font-size: 40px;
-    line-height: 0.5;
     max-width: 550px;
   }
 }

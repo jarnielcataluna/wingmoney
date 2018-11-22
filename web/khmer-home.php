@@ -155,7 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<h1>
 									<img src="images/wing-sept/first-image/general.png" alt="">
 								</h1>
-								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">គឺជាការចាប់ផ្តើមនៃដំណើរឆ្ពោះទៅយុគសម័យធនាគារតាមទូរស័ព្ទដៃ។ </p>
+								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">បទពិសោធន៍សេវាហិរញ្ញវត្ថុតាមទូរស័ព្ទដៃដ៏អស្ចារ្យបង្កើតឡើងសម្រាប់អ្នក</p>
 								<br>
 								<br>
 
@@ -176,11 +176,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="layout-1">
 				<div class="container">
 					<div class="text-content animated hiding" data-animation="fadeInUp">
-						<h3>ជាមួយវីង អ្នកអាចធ្វើប្រតិបត្តិការធនាគារគ្រប់ពេលវេលា គ្រប់ទីកន្លែង។ </h3>
-						<h3><strong>ចាប់ផ្តើម TINI!</strong></h3>
-						<p>រីករាយជាមួយសេវាហិរញ្ញវត្ថុតាមទូរស័ព្ទដៃដែលរហ័ស ងាយស្រួល និងមានសុវត្ថិភាពនៅប្រទេសកម្ពុជា!</p>
+						<h3>ជាមួយវីង អ្នកអាចធ្វើប្រតិបត្តិការធនាគារគ្រប់ពេលវេលា គ្រប់ទីកន្លែង។</h3>
+						<p>សេវាហិរញ្ញវត្ថុតាមទូរស័ព្ទដៃដ៏ងាយស្រួល ទំនុកចិត្ត និងមានសុវត្ថិភាពសម្រាប់អ្នក។</p>
 						<a href="form.php<?php echo $source.$medium.$campaign; ?>" class="btn click-apply">បើកគណនីវីងរបស់អ្នក</a>
-						<p><a href="#layout-2" class="btn-knowmore">ចាំបន្តិច ខ្ញុំចង់ដឹងបន្ថែមទៀត <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
+						<p><a href="#layout-2" class="btn-knowmore">តើអ្នកនៅចាំអីទៀត? <span class="arrow-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a></p>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<!-- <img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-1.gif" alt=""> -->
@@ -202,8 +201,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<!-- <h3>ប្រើប្រាស់វីងដើម្បីទទួលបានអត្ថប្រយោជន៍ជាច្រើន!</h3> -->
 						<!-- <h3><strong>ប្រើប្រាស់វីងដើម្បីទទួលបាន<br />អត្ថប្រយោជន៍កាន់តែច្រើន!</strong></h3> -->
 						<h3 style="text-transform: uppercase;">
-							<span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/wing-tini/wing-tini.png" style="position: relative; top: -4px;" width="130" alt=""></span>
-						គឺជាអ្វីដែលអ្នកអាចធ្វើបានជាមួយ <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
+							តើអ្នកអាចធ្វើអ្វីបានខ្លះជាមួយវីង? <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 						<!-- <div class="logo-inverted">
 							<img src="images/page_template/logo-inverted.png" alt="">
 						</div> -->
