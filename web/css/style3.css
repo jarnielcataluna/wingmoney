@@ -12079,7 +12079,7 @@ table {
 }
 
 .khmer-lang h1, .khmer-lang h2, .khmer-lang h3, .khmer-lang h4, .khmer-lang h5, .khmer-lang h6, .khmer-lang p, .khmer-lang span, .khmer-lang ul li, .khmer-lang div {
-  font-family: 'NiDAOdorMeanChey', sans-serif !important:;
+  font-family: 'NiDAOdorMeanChey', sans-serif !important;
   
   letter-spacing: -0.5px;
 }

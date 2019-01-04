@@ -38,7 +38,7 @@
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#b0c025">
 
-<link rel="stylesheet" href="css/style3.css" media="all"/>
+<link rel="stylesheet" href="css/style.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
 <!-- Google Tag Manager -->
