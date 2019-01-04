@@ -9689,6 +9689,11 @@ strong {
     font-size: 24px;
     line-height: 1.4;
   }
+
+  .khmer-lang .layout-1 .text-content h3, .khmer-lang .layout-2 .text-content h3 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
 }
 
 .layout-1 .text-content p, .layout-2 .text-content p {
@@ -12080,7 +12085,7 @@ table {
 
 .khmer-lang h1, .khmer-lang h2, .khmer-lang h3, .khmer-lang h4, .khmer-lang h5, .khmer-lang h6, .khmer-lang p, .khmer-lang span, .khmer-lang ul li, .khmer-lang div {
   font-family: 'NiDAOdorMeanChey', sans-serif !important;
-  
+  line-height: 1.5;
   letter-spacing: -0.5px;
 }
 

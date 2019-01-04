@@ -10625,10 +10625,18 @@ input::-webkit-inner-spin-button {
   margin: 20px 0 30px;
 }
 
+.choose-currency .custom-radio input[type="radio"] + label span {
+  line-height: 32px !important;
+}
+
 @media (min-width: 768px) {
   .choose-currency {
     max-width: 300px;
     margin: 10px auto 20px;
+  }
+
+  .choose-currency .custom-radio input[type="radio"] + label span {
+    line-height: 42px !important;
   }
 }
 
