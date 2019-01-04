@@ -12,12 +12,22 @@
   font-style: normal;
 }
 
-@font-face {
+/*@font-face {
    font-family: 'nida_odormeancheyregular';
    src: url('../fonts/nidaodormeanchey-webfont.woff2') format('woff2'),
         url('../fonts/nidaodormeanchey-webfont.woff') format('woff');
    font-weight: normal;
    font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'NiDAOdorMeanChey';
+    src: url('../fonts/NiDAOdorMeanChey.eot');
+    src: url('../fonts/NiDAOdorMeanChey.eot') format('embedded-opentype'),
+         url('../fonts/NiDAOdorMeanChey.woff2') format('woff2'),
+         url('../fonts/NiDAOdorMeanChey.woff') format('woff'),
+         url('../fonts/NiDAOdorMeanChey.ttf') format('truetype'),
+         url('../fonts/NiDAOdorMeanChey.svg#NiDAOdorMeanChey') format('svg');
 }
 
 .fa {
@@ -12062,13 +12072,18 @@ table {
   }
 }
 
-.home-bg.khmer-lang {
+.khmer-lang, {
   font-family: 'nida_odormeancheyregular', sans-serif;
+  
+  letter-spacing: -0.5px;
 }
 
-.home-bg.khmer-lang h1, .home-bg.khmer-lang h2, .home-bg.khmer-lang h3, .home-bg.khmer-lang h4, .home-bg.khmer-lang h5, .home-bg.khmer-lang h6, .home-bg.khmer-lang p, .home-bg.khmer-lang span, .home-bg.khmer-lang ul li, .home-bg.khmer-lang div {
+.khmer-lang h1, .khmer-lang h2, .khmer-lang h3, .khmer-lang h4, .khmer-lang h5, .khmer-lang h6, .khmer-lang p, .khmer-lang span, .khmer-lang ul li, .khmer-lang div {
   font-family: 'nida_odormeancheyregular', sans-serif;
+  
+  letter-spacing: -0.5px;
 }
+
 
 .column-3-wrap ul {
   margin: 0px -15px;

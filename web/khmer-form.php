@@ -56,7 +56,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p><strong>គណនីវីងមានរួចហើយ។</strong> សូមចុះឈ្មោះជាមួយលេខទូរស័ព្ទផ្សេង។</p>
             </div>
         </div>
-    <section id="main-wrapper" class="form-bg">
+    <section id="main-wrapper" class="form-bg khmer-lang">
 
         <header>
             <div class="logo"><a href="index.php" alt=""><img src="images/wing-tini/wing-tini.png" alt=""></a></div>

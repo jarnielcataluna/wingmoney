@@ -58,7 +58,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section id="main-container">
 
-	<section id="main-wrapper" class="thank-bg">
+	<section id="main-wrapper" class="thank-bg khmer-lang">
 
 		<header>
 			<div class="s-top">

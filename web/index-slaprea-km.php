@@ -147,7 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <section id="main-container">
 
-	<section id="main-wrapper" class="home-bg">
+	<section id="main-wrapper" class="home-bg khmer-lang">
 		<div class="home-header">
 			<div class="container">
 				<div class="w-logo fl"><img src="images/page_template/logo.png" alt=""></div>
