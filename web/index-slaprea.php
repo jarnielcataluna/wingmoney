@@ -54,7 +54,7 @@ if ($_GET && array_key_exists('utm_campaign', $_GET)) {
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#b0c025">
 
-<link rel="stylesheet" href="css/style2.css" media="all"/>
+<link rel="stylesheet" href="css/style3.css" media="all"/>
 <link rel="stylesheet" href="css/wing-tini.css" media="all"/>
 
 <style type="text/css">
