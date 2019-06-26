@@ -12086,17 +12086,16 @@ table {
 }
 
 .khmer-lang {
-  font-family: 'NiDAOdorMeanChey', sans-serif !important;
+  font-family: 'NiDAOdorMeanChey', 'Roboto', sans-serif !important;
   
   letter-spacing: -0.5px;
 }
 
 .khmer-lang h1, .khmer-lang h2, .khmer-lang h3, .khmer-lang h4, .khmer-lang h5, .khmer-lang h6, .khmer-lang p, .khmer-lang span, .khmer-lang ul li, .khmer-lang div {
-  font-family: 'NiDAOdorMeanChey', sans-serif !important;
+  font-family: 'NiDAOdorMeanChey', 'Roboto', sans-serif !important;
   line-height: 1.5;
   letter-spacing: -0.5px;
 }
-
 
 .column-3-wrap ul {
   margin: 0px -15px;
