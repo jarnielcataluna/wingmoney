@@ -28,7 +28,7 @@
 
 <link rel="stylesheet" href="css/font-awesome.css" media="all"/>
 <link rel="stylesheet" href="css/owl.carousel.css" media="all"/>
-<link rel="stylesheet" href="css/style1.css" media="all"/>
+<link rel="stylesheet" href="css/style2.css" media="all"/>
 
 <!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
 <script src="js/html5.js"></script>
