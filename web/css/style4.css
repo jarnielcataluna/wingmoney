@@ -21,6 +21,16 @@
 }*/
 
 @font-face {
+    font-family: 'SuwannaphumRegular';
+    src: url('../fonts/SuwannaphumRegular.eot');
+    src: url('../fonts/SuwannaphumRegular.eot') format('embedded-opentype'),
+         url('../fonts/SuwannaphumRegular.woff2') format('woff2'),
+         url('../fonts/SuwannaphumRegular.woff') format('woff'),
+         url('../fonts/SuwannaphumRegular.ttf') format('truetype'),
+         url('../fonts/SuwannaphumRegular.svg#SuwannaphumRegular') format('svg');
+}
+
+@font-face {
     font-family: 'NiDAOdorMeanChey';
     src: url('../fonts/NiDAOdorMeanChey.eot');
     src: url('../fonts/NiDAOdorMeanChey.eot') format('embedded-opentype'),
@@ -12083,11 +12093,15 @@ table {
   letter-spacing: -0.5px;
 }
 
-.khmer-lang h1, .khmer-lang h2, .khmer-lang h3, .khmer-lang h4, .khmer-lang h5, .khmer-lang h6, .khmer-lang p, .khmer-lang span, .khmer-lang ul li, .khmer-lang div {
+.khmer-lang h1, .khmer-lang h2, .khmer-lang h3, .khmer-lang h4, .khmer-lang h5, .khmer-lang h6 {
   font-family: 'NiDAOdorMeanChey', 'Roboto', sans-serif !important;
   line-height: 1.5;
   letter-spacing: -0.5px;
 }
+
+body .khmer-lang, .khmer-lang p, .khmer-lang li, .khmer-lang a, div.khmer-lang, .khmer-lang span {
+  font-family: 'SuwannaphumRegular', sans-serif !important;
+  letter-spacing: -0.5px; }
 
 
 .column-3-wrap ul {
@@ -12215,3 +12229,6 @@ table th {
     opacity: 0; }
   40% {
     opacity: 1; } }
+
+
+    

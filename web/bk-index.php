@@ -29,7 +29,7 @@ session_start();
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#b0c025">
 
-<link rel="stylesheet" href="css/style4.css" media="all"/>
+<link rel="stylesheet" href="css/style1.css" media="all"/>
 
 <style type="text/css">
 	.pace {

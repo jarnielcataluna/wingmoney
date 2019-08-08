@@ -55,7 +55,7 @@ if ($_GET && array_key_exists('utm_campaign', $_GET)) {
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#b0c025">
 
-<link rel="stylesheet" href="css/style4.css" media="all"/>
+<link rel="stylesheet" href="css/style1.css" media="all"/>
 <link rel="stylesheet" href="css/wing-tini.css" media="all"/>
 
 <style type="text/css">
@@ -153,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<!-- <h3 class="animated hiding" data-animation="fadeInUp" data-delay="200">Do you need to...</h3> -->
 								<!-- <h1 class="animated hiding" data-animation="fadeInUp" data-delay="200">ប្រើប្រាស់វីង<br style="display: block;" />ដើម្បីទទួលបានអត្ថប្រយោជន៏<br style="display: block;" />កាន់តែច្រើន!</h1> -->
 								<h1>
-									<img src="images/wing-sept/first-image/general.png" alt="">
+									<img src="images/wing-aug/first-image/general.png" alt="">
 								</h1>
 								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">បទពិសោធន៍សេវាហិរញ្ញវត្ថុតាមទូរស័ព្ទដៃដ៏អស្ចារ្យបង្កើតឡើងសម្រាប់អ្នក</p>
 								<br>
@@ -183,7 +183,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
 						<!-- <img class="lazyload" src="images/lazyload.png" data-src="images/wing-tini/h-graphic-1.gif" alt=""> -->
-						<img class="lazyload" style="right:0; margin-left: auto; margin-right: auto; max-width: 299px;" src="images/lazyload.png" data-src="images/wing-sept/second-image/General.png" alt="">
+						<img class="lazyload" style="right:0; margin-left: auto; margin-right: auto; max-width: 299px;" src="images/lazyload.png" data-src="images/wing-aug/second-image/General.png" alt="">
 						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
 						</div> -->
@@ -208,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-sept/photo-3rd.png" alt="">
+						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-aug/photo-3rd.png" alt="">
 					</div>
 					<div class="flexslider-wrapper animated hiding" data-animation="fadeInUp">
 						<div class="flexslider">

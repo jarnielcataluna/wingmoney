@@ -54,7 +54,7 @@ if ($_GET && array_key_exists('utm_campaign', $_GET)) {
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#b0c025">
 
-<link rel="stylesheet" href="css/style4.css" media="all"/>
+<link rel="stylesheet" href="css/style1.css" media="all"/>
 <link rel="stylesheet" href="css/wing-tini.css" media="all"/>
 
 <style type="text/css">
@@ -141,7 +141,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="table-cell">
 							<div class="banner-text text-center">
 								<h1>
-									<img src="images/wing-sept/first-image/send.png" alt="">
+									<img src="images/wing-aug/first-image/send.png" alt="">
 								</h1>
 								<p class="animated hiding" data-animation="fadeInUp" data-delay="300">Send money instantly anytime, anywhere using your phone for as low as ៛400!</p>
 								<br>
@@ -174,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<p><a href="#layout-2" class="btn-knowmore">Do all these, TINI! </a></p>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-sept/second-image/send-money.png" alt="">
+						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-aug/second-image/send-money.png" alt="">
 						<!-- <img class="lazyload" style="right:0; margin-left: auto; margin-right: auto;" src="images/lazyload.png" data-src="images/temp account.png" alt=""> -->
 						<!-- <div class="cc-circle">
 							<h5>Access your account via USSD!</h5>
@@ -226,7 +226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							តើអ្នកអាចធ្វើអ្វីបានខ្លះជាមួយវីង? <span style="margin-left: 8px; display: inline-block; vertical-align: middle;"><img src="images/page_template/logo.png" style="    position: relative; top: -5px;" width="130" alt=""></span></h3>
 					</div>
 					<div class="graphic-wrap animated hiding" data-animation="fadeInUp">
-						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-sept/photo-3rd.png" alt="">
+						<img class="lazyload" src="images/lazyload.png" data-src="images/wing-aug/photo-3rd.png" alt="">
 					</div>
 					<div class="flexslider-wrapper animated hiding" data-animation="fadeInUp">
 						<div class="flexslider">
